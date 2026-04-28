@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Candy Crush vs Snapchat",
+  "products": {
+    "candy-crush": {
+      "name": "Candy Crush",
+      "emoji": "🍬",
+      "category": "Gaming",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 10,
+        "trust_transparency": 4,
+        "ethical_alignment": 3
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Candy Crush Saga has generated over $20 billion in lifetime revenue by perfecting a single behavioral loop: give players a sense of near-mastery, then introduce failure through randomness, then offer to sell the solution. This is not accidental — it's the direct application of Natasha Schull's 'machine zone' concept from casino design to mobile gaming. The game's levels are algorithmically tuned to produce a specific failure rate: too easy and players don't spend, too hard and they quit. The optimal frustration point — where players believe they 'almost had it' and one more try (or one purchased power-up) will succeed — is the core monetization engine. The lives system (5 lives, 30-minute regeneration) creates artificial scarcity of play itself, making continued play feel like a premium commodity. King's brilliance is making the monetization feel like the player's choice ('I choose to buy a power-up') rather than the system's design ('the level was tuned to make you fail without one'). Candy Crush is the purest distillation of free-to-play behavioral economics: the product is free, and frustration is the revenue model.",
+      "top_technique": "Near-Miss Level Design as Monetization Engine"
+    },
+    "snapchat": {
+      "name": "Snapchat",
+      "emoji": "👻",
+      "category": "Social",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 7,
+        "motivation_design": 9,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 33,
+      "pct": 66,
+      "key_insight": "Snapchat's most powerful behavioral innovation isn't the disappearing message — it's the Streak. Snapstreaks (consecutive days of mutual messaging between two users) transformed an ephemeral messaging app into a daily obligation engine. A 365-day streak with a best friend isn't just a number — it's a quantified relationship artifact that feels emotionally devastating to lose. The streak mechanic exploits loss aversion at a personal level: you're not losing points or status — you're 'losing' proof of a friendship. This makes Snapchat's daily retention mechanism more powerful than any notification-based engagement system because the motivator is social guilt rather than curiosity or FOMO. Teens report feeling genuine anxiety about breaking streaks, maintaining them even during illness or vacation by sharing their passwords. Snapchat's disappearing messages further reinforce daily use: there's no archive to browse, no content to revisit, so the only way to stay connected is to keep sending. The combination of ephemeral content (nothing persists) and permanent metrics (streaks count up forever) is a brilliant behavioral design contradiction that maximizes daily engagement.",
+      "top_technique": "Snapstreaks as Loss Aversion Commitment Device"
+    }
+  },
+  "overall_winner": "snapchat",
+  "overall_difference": 1,
+  "dimension_wins": {
+    "candy-crush": 2,
+    "snapchat": 3,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "candy-crush": 7,
+      "snapchat": 8,
+      "difference": -1,
+      "winner": "snapchat"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "candy-crush": 8,
+      "snapchat": 7,
+      "difference": 1,
+      "winner": "candy-crush"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "candy-crush": 10,
+      "snapchat": 9,
+      "difference": 1,
+      "winner": "candy-crush"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "candy-crush": 4,
+      "snapchat": 5,
+      "difference": -1,
+      "winner": "snapchat"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "candy-crush": 3,
+      "snapchat": 4,
+      "difference": -1,
+      "winner": "snapchat"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/candy-crush-vs-snapchat/",
+    "product_a_detail": "/api/v1/products/candy-crush.json",
+    "product_b_detail": "/api/v1/products/snapchat.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/candy-crush/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/snapchat/"
+  }
+}

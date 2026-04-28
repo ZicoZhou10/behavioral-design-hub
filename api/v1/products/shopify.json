@@ -1,0 +1,98 @@
+{
+  "slug": "shopify",
+  "name": "Shopify",
+  "emoji": "🛒",
+  "emoji_html": "&#x1F6D2;",
+  "category": "E-Commerce / SaaS Platform",
+  "category_short": "E-Commerce",
+  "tagline": "Shopify's subscription UX is a behavioral design case study in how defaults, anchoring, and progressive commitment turn free trials into long-term subscriptions.",
+  "scores": {
+    "choice_architecture": 9,
+    "cognitive_load": 7,
+    "motivation_design": 8,
+    "trust_transparency": 7,
+    "ethical_alignment": 7
+  },
+  "total": 38,
+  "pct": 76,
+  "key_insight": "Shopify shows how behavioral design can serve both platform and user goals simultaneously. The setup wizard uses progressive commitment, but the merchant genuinely gets a working store. The $1 trial uses anchoring, but the merchant genuinely gets to test the platform risk-free. The app ecosystem creates lock-in, but it also creates genuine value. This alignment between behavioral technique and user outcome is what separates ethical persuasion from manipulation.",
+  "top_technique": "Trial-to-Paid Default Architecture",
+  "top_framework": "Nudge Theory",
+  "top_evidence": "Merchant retention 68% → 82% after $1/3mo trial (est. from Q4 2024 earnings). Merchants completing 5+ setup steps have 3.2x higher 90-day retention.",
+  "techniques": [
+    {
+      "title": "Trial-to-Paid Default Architecture",
+      "framework": "Nudge Theory",
+      "description": "Shopify's $1/month for 3 months offer reframes the purchase decision from 'pay $39/mo or leave' to 'pay $1 or lose everything you built.' The $1 price exploits two biases simultaneously: anchoring ($1 vs $39 makes $39 seem reasonable later) and sunk cost (you've already built your store). The transition from $1 to full price happens automatically — the default is to continue.",
+      "evidence": "Shopify's merchant retention rate increased from 68% to 82% after introducing the $1/3mo trial (estimated from Shopify Q4 2024 earnings). The default auto-renewal pattern matches Thaler & Sunstein's findings on opt-out organ donation."
+    },
+    {
+      "title": "Setup Wizard as Progressive Commitment",
+      "framework": "Cognitive Load Theory",
+      "description": "Shopify's onboarding breaks store creation into 7-8 discrete steps (add product → choose theme → set shipping → configure payments). Each step creates a micro-investment and reveals the next step — classic progressive disclosure. By the time a merchant has completed setup, they've invested 2-4 hours and feel committed even before making a single sale.",
+      "evidence": "Shopify's 2023 UX research: merchants who complete 5+ setup steps have 3.2x higher 90-day retention than those who complete <3 steps. The commitment escalation mirrors Cialdini's consistency principle."
+    },
+    {
+      "title": "App Store as Ecosystem Lock-In",
+      "framework": "Hook Model",
+      "description": "The Shopify App Store (8,000+ apps) creates an Investment loop that makes switching extremely costly. Each app a merchant installs (email marketing, reviews, SEO tools) deepens their commitment. The Investment phase of the Hook Model is traditionally the weakest — Shopify makes it the strongest by externalizing it to a marketplace ecosystem.",
+      "evidence": "Average Shopify merchant uses 6 third-party apps (Shopify Partner Report, 2024). Switching cost = reconfiguring 6 integrations on a new platform. This ecosystem moat is the primary reason Shopify's merchant retention exceeds WooCommerce and BigCommerce."
+    }
+  ],
+  "strengths": [
+    "Setup wizard is textbook progressive commitment",
+    "App ecosystem creates value alongside switching costs",
+    "$1 trial reframes purchase psychology brilliantly"
+  ],
+  "weaknesses": [
+    "Auto-renewal from $1 to full price catches some off-guard",
+    "Plan comparison uses anchoring that may not reflect needs",
+    "Checkout customization paywalled behind Plus"
+  ],
+  "behavioral_hooks": [
+    "$1 trial (anchoring + sunk cost)",
+    "setup wizard (progressive commitment)",
+    "app store (ecosystem lock-in)",
+    "auto-renewal default"
+  ],
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "links": {
+    "teardown_page": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/shopify/",
+    "products_list": "/api/v1/products.json",
+    "comparisons": {
+      "figma": "/api/v1/compare/figma-vs-shopify.json",
+      "airbnb": "/api/v1/compare/airbnb-vs-shopify.json",
+      "calm": "/api/v1/compare/calm-vs-shopify.json",
+      "duolingo": "/api/v1/compare/duolingo-vs-shopify.json",
+      "pinterest": "/api/v1/compare/pinterest-vs-shopify.json",
+      "strava": "/api/v1/compare/shopify-vs-strava.json",
+      "bumble": "/api/v1/compare/bumble-vs-shopify.json",
+      "notion": "/api/v1/compare/notion-vs-shopify.json",
+      "spotify": "/api/v1/compare/shopify-vs-spotify.json",
+      "whatsapp": "/api/v1/compare/shopify-vs-whatsapp.json",
+      "peloton": "/api/v1/compare/peloton-vs-shopify.json",
+      "discord": "/api/v1/compare/discord-vs-shopify.json",
+      "tinder": "/api/v1/compare/shopify-vs-tinder.json",
+      "venmo": "/api/v1/compare/shopify-vs-venmo.json",
+      "doordash": "/api/v1/compare/doordash-vs-shopify.json",
+      "snapchat": "/api/v1/compare/shopify-vs-snapchat.json",
+      "uber": "/api/v1/compare/shopify-vs-uber.json",
+      "amazon": "/api/v1/compare/amazon-vs-shopify.json",
+      "candy-crush": "/api/v1/compare/candy-crush-vs-shopify.json",
+      "chatgpt": "/api/v1/compare/chatgpt-vs-shopify.json",
+      "coinbase": "/api/v1/compare/coinbase-vs-shopify.json",
+      "tiktok": "/api/v1/compare/shopify-vs-tiktok.json",
+      "youtube": "/api/v1/compare/shopify-vs-youtube.json",
+      "slack": "/api/v1/compare/shopify-vs-slack.json",
+      "booking-com": "/api/v1/compare/booking-com-vs-shopify.json",
+      "linkedin": "/api/v1/compare/linkedin-vs-shopify.json",
+      "netflix": "/api/v1/compare/netflix-vs-shopify.json",
+      "robinhood": "/api/v1/compare/robinhood-vs-shopify.json",
+      "instagram": "/api/v1/compare/instagram-vs-shopify.json"
+    },
+    "category": "/api/v1/categories/e-commerce.json"
+  },
+  "rank": 2,
+  "rank_of": 30
+}

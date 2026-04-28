@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Booking.com vs Candy Crush",
+  "products": {
+    "booking-com": {
+      "name": "Booking.com",
+      "emoji": "🏨",
+      "category": "Travel",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 9,
+        "trust_transparency": 4,
+        "ethical_alignment": 3
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "Booking.com is arguably the most aggressive deployer of behavioral design patterns in consumer tech — and uniquely, they've been transparent about it. The platform runs over 1,000 A/B tests simultaneously, and the result is a UI so dense with urgency signals that it has become a case study in regulatory behavioral design complaints. 'Only 2 rooms left!' '14 people looking right now!' 'Booked 3 times in the last 24 hours!' — each message exploits a different psychological lever (scarcity, social proof, loss aversion). The EU fined Booking.com in 2020 for misleading urgency claims, yet the patterns persist because they work. The ethical tension is stark: Booking.com's design genuinely helps users make faster decisions in a complex market (hotels have variable pricing, real scarcity), but the same urgency cues are applied indiscriminately — to fully available hotels and nearly-sold-out ones alike. When scarcity signals are always on, they become manipulation rather than information. Booking.com represents what happens when conversion optimization is pursued without ethical guardrails.",
+      "top_technique": "Manufactured Urgency Through Scarcity Signals"
+    },
+    "candy-crush": {
+      "name": "Candy Crush",
+      "emoji": "🍬",
+      "category": "Gaming",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 10,
+        "trust_transparency": 4,
+        "ethical_alignment": 3
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Candy Crush Saga has generated over $20 billion in lifetime revenue by perfecting a single behavioral loop: give players a sense of near-mastery, then introduce failure through randomness, then offer to sell the solution. This is not accidental — it's the direct application of Natasha Schull's 'machine zone' concept from casino design to mobile gaming. The game's levels are algorithmically tuned to produce a specific failure rate: too easy and players don't spend, too hard and they quit. The optimal frustration point — where players believe they 'almost had it' and one more try (or one purchased power-up) will succeed — is the core monetization engine. The lives system (5 lives, 30-minute regeneration) creates artificial scarcity of play itself, making continued play feel like a premium commodity. King's brilliance is making the monetization feel like the player's choice ('I choose to buy a power-up') rather than the system's design ('the level was tuned to make you fail without one'). Candy Crush is the purest distillation of free-to-play behavioral economics: the product is free, and frustration is the revenue model.",
+      "top_technique": "Near-Miss Level Design as Monetization Engine"
+    }
+  },
+  "overall_winner": "candy-crush",
+  "overall_difference": 2,
+  "dimension_wins": {
+    "booking-com": 1,
+    "candy-crush": 2,
+    "ties": 2
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "booking-com": 8,
+      "candy-crush": 7,
+      "difference": 1,
+      "winner": "booking-com"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "booking-com": 6,
+      "candy-crush": 8,
+      "difference": -2,
+      "winner": "candy-crush"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "booking-com": 9,
+      "candy-crush": 10,
+      "difference": -1,
+      "winner": "candy-crush"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "booking-com": 4,
+      "candy-crush": 4,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "booking-com": 3,
+      "candy-crush": 3,
+      "difference": 0,
+      "winner": "tie"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/booking-com-vs-candy-crush/",
+    "product_a_detail": "/api/v1/products/booking-com.json",
+    "product_b_detail": "/api/v1/products/candy-crush.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/booking-com/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/candy-crush/"
+  }
+}

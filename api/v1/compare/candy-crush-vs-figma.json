@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Candy Crush vs Figma",
+  "products": {
+    "candy-crush": {
+      "name": "Candy Crush",
+      "emoji": "🍬",
+      "category": "Gaming",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 10,
+        "trust_transparency": 4,
+        "ethical_alignment": 3
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Candy Crush Saga has generated over $20 billion in lifetime revenue by perfecting a single behavioral loop: give players a sense of near-mastery, then introduce failure through randomness, then offer to sell the solution. This is not accidental — it's the direct application of Natasha Schull's 'machine zone' concept from casino design to mobile gaming. The game's levels are algorithmically tuned to produce a specific failure rate: too easy and players don't spend, too hard and they quit. The optimal frustration point — where players believe they 'almost had it' and one more try (or one purchased power-up) will succeed — is the core monetization engine. The lives system (5 lives, 30-minute regeneration) creates artificial scarcity of play itself, making continued play feel like a premium commodity. King's brilliance is making the monetization feel like the player's choice ('I choose to buy a power-up') rather than the system's design ('the level was tuned to make you fail without one'). Candy Crush is the purest distillation of free-to-play behavioral economics: the product is free, and frustration is the revenue model.",
+      "top_technique": "Near-Miss Level Design as Monetization Engine"
+    },
+    "figma": {
+      "name": "Figma",
+      "emoji": "🎨",
+      "category": "Design",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 7,
+        "trust_transparency": 8,
+        "ethical_alignment": 8
+      },
+      "total": 40,
+      "pct": 80,
+      "key_insight": "Figma is the most elegant example of network-effect behavioral design in B2B software. Every design decision serves a single behavioral insight: make collaboration so effortless that the tool becomes the team's shared space, not just one designer's workspace. The cursor presence feature (seeing teammates' cursors labeled with their names in real-time) is pure social facilitation — knowing someone is watching you work changes how you work. The generous free tier isn't charity — it's a viral acquisition mechanism: every designer who opens a Figma link to view a prototype becomes a potential user. Figma's file-sharing is designed like Google Docs, not like Photoshop: no installation, no file format confusion, no version control headaches. By eliminating every friction point in collaboration, Figma made itself structurally impossible to replace — switching to a competitor means convincing your entire team, your clients, and your developer handoff workflow to switch simultaneously. This is behavioral lock-in through genuine value creation, not dark patterns.",
+      "top_technique": "Multiplayer Cursor Presence as Social Facilitation"
+    }
+  },
+  "overall_winner": "figma",
+  "overall_difference": 8,
+  "dimension_wins": {
+    "candy-crush": 1,
+    "figma": 3,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "candy-crush": 7,
+      "figma": 9,
+      "difference": -2,
+      "winner": "figma"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "candy-crush": 8,
+      "figma": 8,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "candy-crush": 10,
+      "figma": 7,
+      "difference": 3,
+      "winner": "candy-crush"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "candy-crush": 4,
+      "figma": 8,
+      "difference": -4,
+      "winner": "figma"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "candy-crush": 3,
+      "figma": 8,
+      "difference": -5,
+      "winner": "figma"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/candy-crush-vs-figma/",
+    "product_a_detail": "/api/v1/products/candy-crush.json",
+    "product_b_detail": "/api/v1/products/figma.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/candy-crush/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/figma/"
+  }
+}

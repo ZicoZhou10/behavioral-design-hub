@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Calm vs Pinterest",
+  "products": {
+    "calm": {
+      "name": "Calm",
+      "emoji": "🧘",
+      "category": "Wellness",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 6,
+        "trust_transparency": 8,
+        "ethical_alignment": 8
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Calm's behavioral design challenge is philosophically interesting: can you ethically use behavioral science to help people build habits that may eliminate the need for your product? Calm's answer is content expansion — become a 'wellness platform' rather than a 'meditation app.' But this risks cognitive load creep as the product tries to be everything at once.",
+      "top_technique": "Sleep Stories as Habit Stacking"
+    },
+    "pinterest": {
+      "name": "Pinterest",
+      "emoji": "📌",
+      "category": "Discovery",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 8,
+        "trust_transparency": 6,
+        "ethical_alignment": 6
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Pinterest is the most underappreciated behavioral design case study in tech because its manipulation is gentle, positive, and self-reinforcing. Unlike platforms that exploit anxiety (Booking.com) or FOMO (Instagram), Pinterest exploits aspiration — the human desire to imagine a better future self. The 'Pin' mechanic is deceptively simple: save an image to a board. But each pin is a micro-commitment to a future identity (my dream kitchen, my wedding aesthetic, my workout goals). Over time, boards become externalized representations of the user's aspirational self — a sunk cost that deepens with every session. Pinterest's commercial genius is that aspiration naturally converts to purchase intent: 85% of Pinterest users say they use it to plan purchases, compared to <15% on Instagram. The platform doesn't need aggressive monetization because the user's own curation behavior creates buying intent organically. Pinterest's ethical score is relatively high because the aspiration loop genuinely helps users plan, discover, and execute projects — the alignment between behavioral design and user value is stronger than most platforms.",
+      "top_technique": "Pin-as-Micro-Commitment to Aspirational Identity"
+    }
+  },
+  "overall_winner": "tie",
+  "overall_difference": 0,
+  "dimension_wins": {
+    "calm": 2,
+    "pinterest": 2,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "calm": 7,
+      "pinterest": 9,
+      "difference": -2,
+      "winner": "pinterest"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "calm": 8,
+      "pinterest": 8,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "calm": 6,
+      "pinterest": 8,
+      "difference": -2,
+      "winner": "pinterest"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "calm": 8,
+      "pinterest": 6,
+      "difference": 2,
+      "winner": "calm"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "calm": 8,
+      "pinterest": 6,
+      "difference": 2,
+      "winner": "calm"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/calm-vs-pinterest/",
+    "product_a_detail": "/api/v1/products/calm.json",
+    "product_b_detail": "/api/v1/products/pinterest.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/calm/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/pinterest/"
+  }
+}

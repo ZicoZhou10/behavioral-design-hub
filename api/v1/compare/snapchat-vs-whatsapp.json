@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Snapchat vs WhatsApp",
+  "products": {
+    "snapchat": {
+      "name": "Snapchat",
+      "emoji": "👻",
+      "category": "Social",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 7,
+        "motivation_design": 9,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 33,
+      "pct": 66,
+      "key_insight": "Snapchat's most powerful behavioral innovation isn't the disappearing message — it's the Streak. Snapstreaks (consecutive days of mutual messaging between two users) transformed an ephemeral messaging app into a daily obligation engine. A 365-day streak with a best friend isn't just a number — it's a quantified relationship artifact that feels emotionally devastating to lose. The streak mechanic exploits loss aversion at a personal level: you're not losing points or status — you're 'losing' proof of a friendship. This makes Snapchat's daily retention mechanism more powerful than any notification-based engagement system because the motivator is social guilt rather than curiosity or FOMO. Teens report feeling genuine anxiety about breaking streaks, maintaining them even during illness or vacation by sharing their passwords. Snapchat's disappearing messages further reinforce daily use: there's no archive to browse, no content to revisit, so the only way to stay connected is to keep sending. The combination of ephemeral content (nothing persists) and permanent metrics (streaks count up forever) is a brilliant behavioral design contradiction that maximizes daily engagement.",
+      "top_technique": "Snapstreaks as Loss Aversion Commitment Device"
+    },
+    "whatsapp": {
+      "name": "WhatsApp",
+      "emoji": "📱",
+      "category": "Communication",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 9,
+        "motivation_design": 6,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "WhatsApp is the anti-TikTok: instead of sophisticated algorithmic manipulation, it uses radical simplicity and network effects as its behavioral architecture. The product doesn't need to hook you with variable rewards because your social obligations do the work. Blue ticks create response pressure, group chats create FOMO, and the social graph creates switching costs — all without a single gamification element. WhatsApp proves that the most powerful behavioral design can be invisible: no streaks, no likes, no algorithmic feed — just the weight of your social connections.",
+      "top_technique": "Blue Ticks as Social Obligation Architecture"
+    }
+  },
+  "overall_winner": "whatsapp",
+  "overall_difference": 3,
+  "dimension_wins": {
+    "snapchat": 2,
+    "whatsapp": 3,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "snapchat": 8,
+      "whatsapp": 7,
+      "difference": 1,
+      "winner": "snapchat"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "snapchat": 7,
+      "whatsapp": 9,
+      "difference": -2,
+      "winner": "whatsapp"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "snapchat": 9,
+      "whatsapp": 6,
+      "difference": 3,
+      "winner": "snapchat"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "snapchat": 5,
+      "whatsapp": 7,
+      "difference": -2,
+      "winner": "whatsapp"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "snapchat": 4,
+      "whatsapp": 7,
+      "difference": -3,
+      "winner": "whatsapp"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/snapchat-vs-whatsapp/",
+    "product_a_detail": "/api/v1/products/snapchat.json",
+    "product_b_detail": "/api/v1/products/whatsapp.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/snapchat/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/whatsapp/"
+  }
+}

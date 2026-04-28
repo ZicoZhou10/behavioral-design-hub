@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Airbnb vs Tinder",
+  "products": {
+    "airbnb": {
+      "name": "Airbnb",
+      "emoji": "🏠",
+      "category": "E-Commerce",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 7,
+        "motivation_design": 8,
+        "trust_transparency": 7,
+        "ethical_alignment": 6
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Airbnb's design is a masterclass in reducing the trust barrier of the sharing economy — reviews, verified photos, and Superhost badges genuinely solve the 'sleeping in a stranger's home' problem. But the same product that innovated trust also deploys classic conversion dark patterns: manufactured scarcity, fee hiding, and price anchoring. The tension between 'design that builds trust' and 'design that maximizes conversion' is visible in every booking flow. Airbnb's ethical score is middling precisely because it excels at both genuine value creation and subtle manipulation.",
+      "top_technique": "Photo-First Search as Decision Simplification"
+    },
+    "tinder": {
+      "name": "Tinder",
+      "emoji": "🔥",
+      "category": "Dating",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 4,
+        "ethical_alignment": 4
+      },
+      "total": 34,
+      "pct": 68,
+      "key_insight": "Tinder solved the paradox of choice in dating by reducing a multi-dimensional human evaluation to a binary swipe. This is brilliant choice architecture — and also the product's deepest ethical tension. The swipe creates a variable ratio reward schedule identical to slot machines: most swipes yield nothing, but the occasional match triggers a dopamine spike that reinforces the swiping behavior. Tinder's business model depends on users NOT finding matches efficiently (premium features gate the very discovery the app promises), creating a fundamental misalignment between user goals (find a partner) and business goals (maximize engagement time). The result: an app that is behaviorally addictive by design, yet genuinely useful as a discovery mechanism that didn't exist before.",
+      "top_technique": "Swipe as Binary Choice Architecture"
+    }
+  },
+  "overall_winner": "airbnb",
+  "overall_difference": 3,
+  "dimension_wins": {
+    "airbnb": 2,
+    "tinder": 2,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "airbnb": 9,
+      "tinder": 9,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "airbnb": 7,
+      "tinder": 8,
+      "difference": -1,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "airbnb": 8,
+      "tinder": 9,
+      "difference": -1,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "airbnb": 7,
+      "tinder": 4,
+      "difference": 3,
+      "winner": "airbnb"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "airbnb": 6,
+      "tinder": 4,
+      "difference": 2,
+      "winner": "airbnb"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/airbnb-vs-tinder/",
+    "product_a_detail": "/api/v1/products/airbnb.json",
+    "product_b_detail": "/api/v1/products/tinder.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/airbnb/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/tinder/"
+  }
+}

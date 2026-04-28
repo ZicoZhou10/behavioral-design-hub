@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Coinbase vs Peloton",
+  "products": {
+    "coinbase": {
+      "name": "Coinbase",
+      "emoji": "🪙",
+      "category": "Crypto",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 7,
+        "motivation_design": 8,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Coinbase occupies a unique position in behavioral design: it's simultaneously the most 'responsible' major crypto exchange (compliant, publicly traded, institutionally backed) and a platform whose core business benefits from the most volatile, speculative asset class in modern finance. The product design reflects this tension. Coinbase Earn pays users in crypto to complete educational modules — genuinely teaching blockchain fundamentals, but also creating an endowment effect (once you own some ETH, you're more likely to buy more). The simplified buy/sell interface removes friction that traditional finance considers protective. The portfolio tracker with real-time gains/losses creates a checking habit identical to Robinhood's. The price alerts are external triggers optimized for volatility spikes — exactly when behavioral economics predicts the worst decision-making. Coinbase's 'trusted, simple, compliant' brand positioning is genuine, but the product design still exploits the same FOMO, loss aversion, and variable reward dynamics that drive all speculative trading behavior.",
+      "top_technique": "Coinbase Earn as Endowment-Seeding Education"
+    },
+    "peloton": {
+      "name": "Peloton",
+      "emoji": "🚴",
+      "category": "Fitness",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 6,
+        "ethical_alignment": 6
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "Peloton's breakthrough insight was that fitness equipment isn't a product — it's a medium. The $2,000+ bike is a behavioral commitment device that creates sunk cost pressure to justify ongoing $44/month subscriptions. But the real retention engine is parasocial: instructors like Robin Arzón and Cody Rigsby are designed to feel like personal coaches who know you, creating an emotional bond that gym equipment alone can never generate. The live leaderboard adds competitive urgency (you can see your real-time rank among thousands of simultaneous riders), while high-fives from strangers simulate the social energy of a group fitness class. Peloton's post-pandemic challenge — 39% stock decline in 2022 — revealed the fragility of hardware-dependent behavioral lock-in: when users' sunk cost threshold was crossed, they abandoned the ecosystem entirely. The lesson is that parasocial motivation is powerful but insufficient when the financial commitment feels disproportionate to the perceived value.",
+      "top_technique": "Parasocial Instructor Relationships as Retention Engine"
+    }
+  },
+  "overall_winner": "peloton",
+  "overall_difference": 4,
+  "dimension_wins": {
+    "coinbase": 1,
+    "peloton": 4,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "coinbase": 8,
+      "peloton": 7,
+      "difference": 1,
+      "winner": "coinbase"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "coinbase": 7,
+      "peloton": 8,
+      "difference": -1,
+      "winner": "peloton"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "coinbase": 8,
+      "peloton": 9,
+      "difference": -1,
+      "winner": "peloton"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "coinbase": 5,
+      "peloton": 6,
+      "difference": -1,
+      "winner": "peloton"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "coinbase": 4,
+      "peloton": 6,
+      "difference": -2,
+      "winner": "peloton"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/coinbase-vs-peloton/",
+    "product_a_detail": "/api/v1/products/coinbase.json",
+    "product_b_detail": "/api/v1/products/peloton.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/coinbase/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/peloton/"
+  }
+}

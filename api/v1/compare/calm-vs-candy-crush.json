@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Calm vs Candy Crush",
+  "products": {
+    "calm": {
+      "name": "Calm",
+      "emoji": "🧘",
+      "category": "Wellness",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 6,
+        "trust_transparency": 8,
+        "ethical_alignment": 8
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Calm's behavioral design challenge is philosophically interesting: can you ethically use behavioral science to help people build habits that may eliminate the need for your product? Calm's answer is content expansion — become a 'wellness platform' rather than a 'meditation app.' But this risks cognitive load creep as the product tries to be everything at once.",
+      "top_technique": "Sleep Stories as Habit Stacking"
+    },
+    "candy-crush": {
+      "name": "Candy Crush",
+      "emoji": "🍬",
+      "category": "Gaming",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 10,
+        "trust_transparency": 4,
+        "ethical_alignment": 3
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Candy Crush Saga has generated over $20 billion in lifetime revenue by perfecting a single behavioral loop: give players a sense of near-mastery, then introduce failure through randomness, then offer to sell the solution. This is not accidental — it's the direct application of Natasha Schull's 'machine zone' concept from casino design to mobile gaming. The game's levels are algorithmically tuned to produce a specific failure rate: too easy and players don't spend, too hard and they quit. The optimal frustration point — where players believe they 'almost had it' and one more try (or one purchased power-up) will succeed — is the core monetization engine. The lives system (5 lives, 30-minute regeneration) creates artificial scarcity of play itself, making continued play feel like a premium commodity. King's brilliance is making the monetization feel like the player's choice ('I choose to buy a power-up') rather than the system's design ('the level was tuned to make you fail without one'). Candy Crush is the purest distillation of free-to-play behavioral economics: the product is free, and frustration is the revenue model.",
+      "top_technique": "Near-Miss Level Design as Monetization Engine"
+    }
+  },
+  "overall_winner": "calm",
+  "overall_difference": 5,
+  "dimension_wins": {
+    "calm": 2,
+    "candy-crush": 1,
+    "ties": 2
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "calm": 7,
+      "candy-crush": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "calm": 8,
+      "candy-crush": 8,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "calm": 6,
+      "candy-crush": 10,
+      "difference": -4,
+      "winner": "candy-crush"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "calm": 8,
+      "candy-crush": 4,
+      "difference": 4,
+      "winner": "calm"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "calm": 8,
+      "candy-crush": 3,
+      "difference": 5,
+      "winner": "calm"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/calm-vs-candy-crush/",
+    "product_a_detail": "/api/v1/products/calm.json",
+    "product_b_detail": "/api/v1/products/candy-crush.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/calm/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/candy-crush/"
+  }
+}

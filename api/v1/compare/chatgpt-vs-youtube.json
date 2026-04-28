@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "ChatGPT vs YouTube",
+  "products": {
+    "chatgpt": {
+      "name": "ChatGPT",
+      "emoji": "🤖",
+      "category": "AI",
+      "scores": {
+        "choice_architecture": 6,
+        "cognitive_load": 7,
+        "motivation_design": 8,
+        "trust_transparency": 5,
+        "ethical_alignment": 6
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "ChatGPT represents a paradigm shift in behavioral design: the product's interface IS the choice architecture. Every interaction requires the user to construct their own options (via prompts), which inverts the traditional Nudge Theory framework. This creates a fascinating paradox — the product that seems to give users 'infinite freedom' actually has enormous hidden defaults (training data biases, RLHF preferences, system prompt constraints) that shape every response.",
+      "top_technique": "Blank Prompt as Anti-Choice Architecture"
+    },
+    "youtube": {
+      "name": "YouTube",
+      "emoji": "▶️",
+      "category": "Video",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 9,
+        "trust_transparency": 5,
+        "ethical_alignment": 5
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "YouTube is the clearest example of a platform where behavioral design serves the algorithm more than the user. The recommendation engine is optimized for watch time, not user satisfaction — a distinction that became central to the 2020-2024 tech ethics debate. Autoplay removes the natural exit point between videos, Up Next suggestions exploit curiosity gaps, and the thumbnail ecosystem has evolved into an arms race of clickbait. Yet YouTube also genuinely democratized video education, entertainment, and creator economics. The tension is structural: every design choice that makes YouTube more 'engaging' also makes it harder to stop watching. YouTube's 'Take a Break' reminder is the company acknowledging this tension — but setting it to OFF by default reveals which side wins.",
+      "top_technique": "Autoplay as Default Continuation"
+    }
+  },
+  "overall_winner": "tie",
+  "overall_difference": 0,
+  "dimension_wins": {
+    "chatgpt": 2,
+    "youtube": 2,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "chatgpt": 6,
+      "youtube": 7,
+      "difference": -1,
+      "winner": "youtube"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "chatgpt": 7,
+      "youtube": 6,
+      "difference": 1,
+      "winner": "chatgpt"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "chatgpt": 8,
+      "youtube": 9,
+      "difference": -1,
+      "winner": "youtube"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "chatgpt": 5,
+      "youtube": 5,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "chatgpt": 6,
+      "youtube": 5,
+      "difference": 1,
+      "winner": "chatgpt"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/chatgpt-vs-youtube/",
+    "product_a_detail": "/api/v1/products/chatgpt.json",
+    "product_b_detail": "/api/v1/products/youtube.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/chatgpt/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/youtube/"
+  }
+}

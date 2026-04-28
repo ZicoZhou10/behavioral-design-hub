@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Candy Crush vs WhatsApp",
+  "products": {
+    "candy-crush": {
+      "name": "Candy Crush",
+      "emoji": "🍬",
+      "category": "Gaming",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 10,
+        "trust_transparency": 4,
+        "ethical_alignment": 3
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Candy Crush Saga has generated over $20 billion in lifetime revenue by perfecting a single behavioral loop: give players a sense of near-mastery, then introduce failure through randomness, then offer to sell the solution. This is not accidental — it's the direct application of Natasha Schull's 'machine zone' concept from casino design to mobile gaming. The game's levels are algorithmically tuned to produce a specific failure rate: too easy and players don't spend, too hard and they quit. The optimal frustration point — where players believe they 'almost had it' and one more try (or one purchased power-up) will succeed — is the core monetization engine. The lives system (5 lives, 30-minute regeneration) creates artificial scarcity of play itself, making continued play feel like a premium commodity. King's brilliance is making the monetization feel like the player's choice ('I choose to buy a power-up') rather than the system's design ('the level was tuned to make you fail without one'). Candy Crush is the purest distillation of free-to-play behavioral economics: the product is free, and frustration is the revenue model.",
+      "top_technique": "Near-Miss Level Design as Monetization Engine"
+    },
+    "whatsapp": {
+      "name": "WhatsApp",
+      "emoji": "📱",
+      "category": "Communication",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 9,
+        "motivation_design": 6,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "WhatsApp is the anti-TikTok: instead of sophisticated algorithmic manipulation, it uses radical simplicity and network effects as its behavioral architecture. The product doesn't need to hook you with variable rewards because your social obligations do the work. Blue ticks create response pressure, group chats create FOMO, and the social graph creates switching costs — all without a single gamification element. WhatsApp proves that the most powerful behavioral design can be invisible: no streaks, no likes, no algorithmic feed — just the weight of your social connections.",
+      "top_technique": "Blue Ticks as Social Obligation Architecture"
+    }
+  },
+  "overall_winner": "whatsapp",
+  "overall_difference": 4,
+  "dimension_wins": {
+    "candy-crush": 1,
+    "whatsapp": 3,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "candy-crush": 7,
+      "whatsapp": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "candy-crush": 8,
+      "whatsapp": 9,
+      "difference": -1,
+      "winner": "whatsapp"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "candy-crush": 10,
+      "whatsapp": 6,
+      "difference": 4,
+      "winner": "candy-crush"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "candy-crush": 4,
+      "whatsapp": 7,
+      "difference": -3,
+      "winner": "whatsapp"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "candy-crush": 3,
+      "whatsapp": 7,
+      "difference": -4,
+      "winner": "whatsapp"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/candy-crush-vs-whatsapp/",
+    "product_a_detail": "/api/v1/products/candy-crush.json",
+    "product_b_detail": "/api/v1/products/whatsapp.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/candy-crush/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/whatsapp/"
+  }
+}

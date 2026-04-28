@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Instagram vs Pinterest",
+  "products": {
+    "instagram": {
+      "name": "Instagram",
+      "emoji": "📸",
+      "category": "Social Media",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 5,
+        "motivation_design": 8,
+        "trust_transparency": 3,
+        "ethical_alignment": 3
+      },
+      "total": 27,
+      "pct": 54,
+      "key_insight": "Instagram shows what happens when a product's behavioral design evolves to serve the platform's needs rather than the user's. The original photo-sharing app had natural stopping cues (finite friend posts). The algorithmic feed, infinite scroll, and Reels removed those cues. Instagram's behavioral design is technically brilliant but strategically misaligned — it optimizes for time-spent at the cost of user wellbeing, a trade-off that's becoming increasingly visible (and regulated).",
+      "top_technique": "Pull-to-Refresh as Variable Ratio Slot Machine"
+    },
+    "pinterest": {
+      "name": "Pinterest",
+      "emoji": "📌",
+      "category": "Discovery",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 8,
+        "trust_transparency": 6,
+        "ethical_alignment": 6
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Pinterest is the most underappreciated behavioral design case study in tech because its manipulation is gentle, positive, and self-reinforcing. Unlike platforms that exploit anxiety (Booking.com) or FOMO (Instagram), Pinterest exploits aspiration — the human desire to imagine a better future self. The 'Pin' mechanic is deceptively simple: save an image to a board. But each pin is a micro-commitment to a future identity (my dream kitchen, my wedding aesthetic, my workout goals). Over time, boards become externalized representations of the user's aspirational self — a sunk cost that deepens with every session. Pinterest's commercial genius is that aspiration naturally converts to purchase intent: 85% of Pinterest users say they use it to plan purchases, compared to <15% on Instagram. The platform doesn't need aggressive monetization because the user's own curation behavior creates buying intent organically. Pinterest's ethical score is relatively high because the aspiration loop genuinely helps users plan, discover, and execute projects — the alignment between behavioral design and user value is stronger than most platforms.",
+      "top_technique": "Pin-as-Micro-Commitment to Aspirational Identity"
+    }
+  },
+  "overall_winner": "pinterest",
+  "overall_difference": 10,
+  "dimension_wins": {
+    "instagram": 0,
+    "pinterest": 4,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "instagram": 8,
+      "pinterest": 9,
+      "difference": -1,
+      "winner": "pinterest"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "instagram": 5,
+      "pinterest": 8,
+      "difference": -3,
+      "winner": "pinterest"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "instagram": 8,
+      "pinterest": 8,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "instagram": 3,
+      "pinterest": 6,
+      "difference": -3,
+      "winner": "pinterest"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "instagram": 3,
+      "pinterest": 6,
+      "difference": -3,
+      "winner": "pinterest"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/instagram-vs-pinterest/",
+    "product_a_detail": "/api/v1/products/instagram.json",
+    "product_b_detail": "/api/v1/products/pinterest.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/instagram/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/pinterest/"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "name": "Communication",
+  "slug": "communication",
+  "product_count": 1,
+  "avg_score": 36.0,
+  "dimension_averages": {
+    "choice_architecture": 7.0,
+    "cognitive_load": 9.0,
+    "motivation_design": 6.0,
+    "trust_transparency": 7.0,
+    "ethical_alignment": 7.0
+  },
+  "products": [
+    {
+      "slug": "whatsapp",
+      "name": "WhatsApp",
+      "emoji": "📱",
+      "category": "Messaging / Communication",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 9,
+        "motivation_design": 6,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "WhatsApp is the anti-TikTok: instead of sophisticated algorithmic manipulation, it uses radical simplicity and network effects as its behavioral architecture. The product doesn't need to hook you with variable rewards because your social obligations do the work. Blue ticks create response pressure, group chats create FOMO, and the social graph creates switching costs — all without a single gamification element. WhatsApp proves that the most powerful behavioral design can be invisible: no streaks, no likes, no algorithmic feed — just the weight of your social connections.",
+      "top_technique": "Blue Ticks as Social Obligation Architecture",
+      "links": {
+        "detail": "/api/v1/products/whatsapp.json",
+        "teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/whatsapp/"
+      }
+    }
+  ],
+  "links": {
+    "categories_list": "/api/v1/categories.json",
+    "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/communication/"
+  }
+}

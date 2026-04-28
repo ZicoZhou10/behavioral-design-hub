@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Pinterest vs Tinder",
+  "products": {
+    "pinterest": {
+      "name": "Pinterest",
+      "emoji": "📌",
+      "category": "Discovery",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 8,
+        "trust_transparency": 6,
+        "ethical_alignment": 6
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Pinterest is the most underappreciated behavioral design case study in tech because its manipulation is gentle, positive, and self-reinforcing. Unlike platforms that exploit anxiety (Booking.com) or FOMO (Instagram), Pinterest exploits aspiration — the human desire to imagine a better future self. The 'Pin' mechanic is deceptively simple: save an image to a board. But each pin is a micro-commitment to a future identity (my dream kitchen, my wedding aesthetic, my workout goals). Over time, boards become externalized representations of the user's aspirational self — a sunk cost that deepens with every session. Pinterest's commercial genius is that aspiration naturally converts to purchase intent: 85% of Pinterest users say they use it to plan purchases, compared to <15% on Instagram. The platform doesn't need aggressive monetization because the user's own curation behavior creates buying intent organically. Pinterest's ethical score is relatively high because the aspiration loop genuinely helps users plan, discover, and execute projects — the alignment between behavioral design and user value is stronger than most platforms.",
+      "top_technique": "Pin-as-Micro-Commitment to Aspirational Identity"
+    },
+    "tinder": {
+      "name": "Tinder",
+      "emoji": "🔥",
+      "category": "Dating",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 4,
+        "ethical_alignment": 4
+      },
+      "total": 34,
+      "pct": 68,
+      "key_insight": "Tinder solved the paradox of choice in dating by reducing a multi-dimensional human evaluation to a binary swipe. This is brilliant choice architecture — and also the product's deepest ethical tension. The swipe creates a variable ratio reward schedule identical to slot machines: most swipes yield nothing, but the occasional match triggers a dopamine spike that reinforces the swiping behavior. Tinder's business model depends on users NOT finding matches efficiently (premium features gate the very discovery the app promises), creating a fundamental misalignment between user goals (find a partner) and business goals (maximize engagement time). The result: an app that is behaviorally addictive by design, yet genuinely useful as a discovery mechanism that didn't exist before.",
+      "top_technique": "Swipe as Binary Choice Architecture"
+    }
+  },
+  "overall_winner": "pinterest",
+  "overall_difference": 3,
+  "dimension_wins": {
+    "pinterest": 2,
+    "tinder": 1,
+    "ties": 2
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "pinterest": 9,
+      "tinder": 9,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "pinterest": 8,
+      "tinder": 8,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "pinterest": 8,
+      "tinder": 9,
+      "difference": -1,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "pinterest": 6,
+      "tinder": 4,
+      "difference": 2,
+      "winner": "pinterest"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "pinterest": 6,
+      "tinder": 4,
+      "difference": 2,
+      "winner": "pinterest"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/pinterest-vs-tinder/",
+    "product_a_detail": "/api/v1/products/pinterest.json",
+    "product_b_detail": "/api/v1/products/tinder.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/pinterest/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/tinder/"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Coinbase vs Tinder",
+  "products": {
+    "coinbase": {
+      "name": "Coinbase",
+      "emoji": "🪙",
+      "category": "Crypto",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 7,
+        "motivation_design": 8,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Coinbase occupies a unique position in behavioral design: it's simultaneously the most 'responsible' major crypto exchange (compliant, publicly traded, institutionally backed) and a platform whose core business benefits from the most volatile, speculative asset class in modern finance. The product design reflects this tension. Coinbase Earn pays users in crypto to complete educational modules — genuinely teaching blockchain fundamentals, but also creating an endowment effect (once you own some ETH, you're more likely to buy more). The simplified buy/sell interface removes friction that traditional finance considers protective. The portfolio tracker with real-time gains/losses creates a checking habit identical to Robinhood's. The price alerts are external triggers optimized for volatility spikes — exactly when behavioral economics predicts the worst decision-making. Coinbase's 'trusted, simple, compliant' brand positioning is genuine, but the product design still exploits the same FOMO, loss aversion, and variable reward dynamics that drive all speculative trading behavior.",
+      "top_technique": "Coinbase Earn as Endowment-Seeding Education"
+    },
+    "tinder": {
+      "name": "Tinder",
+      "emoji": "🔥",
+      "category": "Dating",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 4,
+        "ethical_alignment": 4
+      },
+      "total": 34,
+      "pct": 68,
+      "key_insight": "Tinder solved the paradox of choice in dating by reducing a multi-dimensional human evaluation to a binary swipe. This is brilliant choice architecture — and also the product's deepest ethical tension. The swipe creates a variable ratio reward schedule identical to slot machines: most swipes yield nothing, but the occasional match triggers a dopamine spike that reinforces the swiping behavior. Tinder's business model depends on users NOT finding matches efficiently (premium features gate the very discovery the app promises), creating a fundamental misalignment between user goals (find a partner) and business goals (maximize engagement time). The result: an app that is behaviorally addictive by design, yet genuinely useful as a discovery mechanism that didn't exist before.",
+      "top_technique": "Swipe as Binary Choice Architecture"
+    }
+  },
+  "overall_winner": "tinder",
+  "overall_difference": 2,
+  "dimension_wins": {
+    "coinbase": 1,
+    "tinder": 3,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "coinbase": 8,
+      "tinder": 9,
+      "difference": -1,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "coinbase": 7,
+      "tinder": 8,
+      "difference": -1,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "coinbase": 8,
+      "tinder": 9,
+      "difference": -1,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "coinbase": 5,
+      "tinder": 4,
+      "difference": 1,
+      "winner": "coinbase"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "coinbase": 4,
+      "tinder": 4,
+      "difference": 0,
+      "winner": "tie"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/coinbase-vs-tinder/",
+    "product_a_detail": "/api/v1/products/coinbase.json",
+    "product_b_detail": "/api/v1/products/tinder.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/coinbase/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/tinder/"
+  }
+}

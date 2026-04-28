@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "LinkedIn vs Notion",
+  "products": {
+    "linkedin": {
+      "name": "LinkedIn",
+      "emoji": "💼",
+      "category": "Social Media",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 5,
+        "motivation_design": 7,
+        "trust_transparency": 6,
+        "ethical_alignment": 5
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "LinkedIn exploits professional anxiety as its core behavioral mechanism. Unlike entertainment apps that hook through pleasure (variable rewards, social validation), LinkedIn hooks through anxiety: career FOMO, profile inadequacy, and professional visibility paranoia. The platform is uniquely positioned to do this because professional identity is high-stakes — being 'not visible' on LinkedIn feels genuinely career-threatening in a way that being inactive on Instagram does not. This anxiety-as-engagement model is highly effective (LinkedIn has 1B+ members) but ethically concerning because it monetizes professional insecurity rather than professional development.",
+      "top_technique": "Profile Completeness as Guilt Architecture"
+    },
+    "notion": {
+      "name": "Notion",
+      "emoji": "📝",
+      "category": "Productivity",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 6,
+        "trust_transparency": 8,
+        "ethical_alignment": 9
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "Notion proves that 'more flexibility' doesn't always mean better behavioral design. The product excels at progressive disclosure for feature complexity, but struggles with the motivational design of creation from scratch. Products that help users *create* face fundamentally different behavioral challenges than products that help users *consume* — creation requires initial competence that can't be algorithmically provided.",
+      "top_technique": "Template Gallery as Choice Architecture"
+    }
+  },
+  "overall_winner": "notion",
+  "overall_difference": 6,
+  "dimension_wins": {
+    "linkedin": 1,
+    "notion": 3,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "linkedin": 7,
+      "notion": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "linkedin": 5,
+      "notion": 6,
+      "difference": -1,
+      "winner": "notion"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "linkedin": 7,
+      "notion": 6,
+      "difference": 1,
+      "winner": "linkedin"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "linkedin": 6,
+      "notion": 8,
+      "difference": -2,
+      "winner": "notion"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "linkedin": 5,
+      "notion": 9,
+      "difference": -4,
+      "winner": "notion"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/linkedin-vs-notion/",
+    "product_a_detail": "/api/v1/products/linkedin.json",
+    "product_b_detail": "/api/v1/products/notion.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/linkedin/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/notion/"
+  }
+}

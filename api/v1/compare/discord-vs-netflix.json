@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Discord vs Netflix",
+  "products": {
+    "discord": {
+      "name": "Discord",
+      "emoji": "💬",
+      "category": "Community",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 8,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 35,
+      "pct": 70,
+      "key_insight": "Discord's behavioral design success comes from an unusual source: it's one of the few major platforms where the engagement loop is primarily social rather than algorithmic. There's no recommendation algorithm pushing content — engagement is driven by genuine community belonging and real-time social presence. The 'someone is typing...' indicator, voice channel presence, and @mention notifications create a sense of liveness that makes communities feel inhabited rather than archived. Discord's investment escalation (join → customize → earn roles → moderate → build bots) creates deep switching costs through identity investment rather than content lock-in. This makes Discord's engagement more ethically defensible than algorithmic platforms: users return because they have genuine social bonds, not because an algorithm has learned to exploit their attention patterns.",
+      "top_technique": "Server Investment Escalation Ladder"
+    },
+    "netflix": {
+      "name": "Netflix",
+      "emoji": "🎬",
+      "category": "Entertainment",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 7,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "Netflix demonstrates the thin line between 'helpful choice architecture' and 'manipulation.' Autoplay genuinely solves the friction of episode transitions. But it also exploits the fact that humans are bad at stopping ongoing activities. Netflix's own CEO famously said their biggest competitor is 'sleep' — a framing that reveals the company optimizes for maximum viewing time, not optimal viewing experience.",
+      "top_technique": "Autoplay as the Ultimate Default Nudge"
+    }
+  },
+  "overall_winner": "discord",
+  "overall_difference": 5,
+  "dimension_wins": {
+    "discord": 3,
+    "netflix": 1,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "discord": 7,
+      "netflix": 8,
+      "difference": -1,
+      "winner": "netflix"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "discord": 6,
+      "netflix": 6,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "discord": 8,
+      "netflix": 7,
+      "difference": 1,
+      "winner": "discord"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "discord": 7,
+      "netflix": 5,
+      "difference": 2,
+      "winner": "discord"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "discord": 7,
+      "netflix": 4,
+      "difference": 3,
+      "winner": "discord"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/discord-vs-netflix/",
+    "product_a_detail": "/api/v1/products/discord.json",
+    "product_b_detail": "/api/v1/products/netflix.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/discord/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/netflix/"
+  }
+}

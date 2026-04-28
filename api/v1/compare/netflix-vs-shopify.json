@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Netflix vs Shopify",
+  "products": {
+    "netflix": {
+      "name": "Netflix",
+      "emoji": "🎬",
+      "category": "Entertainment",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 7,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "Netflix demonstrates the thin line between 'helpful choice architecture' and 'manipulation.' Autoplay genuinely solves the friction of episode transitions. But it also exploits the fact that humans are bad at stopping ongoing activities. Netflix's own CEO famously said their biggest competitor is 'sleep' — a framing that reveals the company optimizes for maximum viewing time, not optimal viewing experience.",
+      "top_technique": "Autoplay as the Ultimate Default Nudge"
+    },
+    "shopify": {
+      "name": "Shopify",
+      "emoji": "🛒",
+      "category": "E-Commerce",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 7,
+        "motivation_design": 8,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 38,
+      "pct": 76,
+      "key_insight": "Shopify shows how behavioral design can serve both platform and user goals simultaneously. The setup wizard uses progressive commitment, but the merchant genuinely gets a working store. The $1 trial uses anchoring, but the merchant genuinely gets to test the platform risk-free. The app ecosystem creates lock-in, but it also creates genuine value. This alignment between behavioral technique and user outcome is what separates ethical persuasion from manipulation.",
+      "top_technique": "Trial-to-Paid Default Architecture"
+    }
+  },
+  "overall_winner": "shopify",
+  "overall_difference": 8,
+  "dimension_wins": {
+    "netflix": 0,
+    "shopify": 5,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "netflix": 8,
+      "shopify": 9,
+      "difference": -1,
+      "winner": "shopify"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "netflix": 6,
+      "shopify": 7,
+      "difference": -1,
+      "winner": "shopify"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "netflix": 7,
+      "shopify": 8,
+      "difference": -1,
+      "winner": "shopify"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "netflix": 5,
+      "shopify": 7,
+      "difference": -2,
+      "winner": "shopify"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "netflix": 4,
+      "shopify": 7,
+      "difference": -3,
+      "winner": "shopify"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/netflix-vs-shopify/",
+    "product_a_detail": "/api/v1/products/netflix.json",
+    "product_b_detail": "/api/v1/products/shopify.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/netflix/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/shopify/"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Bumble vs Discord",
+  "products": {
+    "bumble": {
+      "name": "Bumble",
+      "emoji": "💛",
+      "category": "Dating",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 7,
+        "motivation_design": 7,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Bumble proves that behavioral constraints can be more powerful than behavioral nudges. While Tinder maximizes engagement through unlimited swiping and variable-ratio matching, Bumble deliberately constrains user behavior — women must message first within 24 hours or the match expires. This constraint solves three problems simultaneously: it reduces unwanted messages for women (the #1 complaint on dating apps), it forces genuine interest signaling (matches that survive the 24-hour window have higher intent), and it creates a differentiated brand identity ('the feminist dating app'). The 24-hour expiration exploits scarcity and loss aversion — a match that's about to expire feels more valuable than one that sits indefinitely. Bumble's expansion into BFF (friend-finding) and Bizz (professional networking) using the same swipe+constraint UX reveals the strategic insight: the behavioral mechanics of dating apps are not specific to dating — they are general-purpose social sorting mechanisms. The ethical dimension is genuinely positive: Bumble's constraint design demonstrably reduces harassment compared to unconstrained platforms.",
+      "top_technique": "Women-First Messaging Constraint as Power Architecture"
+    },
+    "discord": {
+      "name": "Discord",
+      "emoji": "💬",
+      "category": "Community",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 8,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 35,
+      "pct": 70,
+      "key_insight": "Discord's behavioral design success comes from an unusual source: it's one of the few major platforms where the engagement loop is primarily social rather than algorithmic. There's no recommendation algorithm pushing content — engagement is driven by genuine community belonging and real-time social presence. The 'someone is typing...' indicator, voice channel presence, and @mention notifications create a sense of liveness that makes communities feel inhabited rather than archived. Discord's investment escalation (join → customize → earn roles → moderate → build bots) creates deep switching costs through identity investment rather than content lock-in. This makes Discord's engagement more ethically defensible than algorithmic platforms: users return because they have genuine social bonds, not because an algorithm has learned to exploit their attention patterns.",
+      "top_technique": "Server Investment Escalation Ladder"
+    }
+  },
+  "overall_winner": "bumble",
+  "overall_difference": 2,
+  "dimension_wins": {
+    "bumble": 2,
+    "discord": 1,
+    "ties": 2
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "bumble": 9,
+      "discord": 7,
+      "difference": 2,
+      "winner": "bumble"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "bumble": 7,
+      "discord": 6,
+      "difference": 1,
+      "winner": "bumble"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "bumble": 7,
+      "discord": 8,
+      "difference": -1,
+      "winner": "discord"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "bumble": 7,
+      "discord": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "bumble": 7,
+      "discord": 7,
+      "difference": 0,
+      "winner": "tie"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/bumble-vs-discord/",
+    "product_a_detail": "/api/v1/products/bumble.json",
+    "product_b_detail": "/api/v1/products/discord.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/bumble/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/discord/"
+  }
+}

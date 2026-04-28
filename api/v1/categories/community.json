@@ -1,0 +1,42 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "name": "Community",
+  "slug": "community",
+  "product_count": 1,
+  "avg_score": 35.0,
+  "dimension_averages": {
+    "choice_architecture": 7.0,
+    "cognitive_load": 6.0,
+    "motivation_design": 8.0,
+    "trust_transparency": 7.0,
+    "ethical_alignment": 7.0
+  },
+  "products": [
+    {
+      "slug": "discord",
+      "name": "Discord",
+      "emoji": "💬",
+      "category": "Communication / Community Chat",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 8,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 35,
+      "pct": 70,
+      "key_insight": "Discord's behavioral design success comes from an unusual source: it's one of the few major platforms where the engagement loop is primarily social rather than algorithmic. There's no recommendation algorithm pushing content — engagement is driven by genuine community belonging and real-time social presence. The 'someone is typing...' indicator, voice channel presence, and @mention notifications create a sense of liveness that makes communities feel inhabited rather than archived. Discord's investment escalation (join → customize → earn roles → moderate → build bots) creates deep switching costs through identity investment rather than content lock-in. This makes Discord's engagement more ethically defensible than algorithmic platforms: users return because they have genuine social bonds, not because an algorithm has learned to exploit their attention patterns.",
+      "top_technique": "Server Investment Escalation Ladder",
+      "links": {
+        "detail": "/api/v1/products/discord.json",
+        "teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/discord/"
+      }
+    }
+  ],
+  "links": {
+    "categories_list": "/api/v1/categories.json",
+    "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/community/"
+  }
+}

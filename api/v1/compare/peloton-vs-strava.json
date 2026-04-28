@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Peloton vs Strava",
+  "products": {
+    "peloton": {
+      "name": "Peloton",
+      "emoji": "🚴",
+      "category": "Fitness",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 6,
+        "ethical_alignment": 6
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "Peloton's breakthrough insight was that fitness equipment isn't a product — it's a medium. The $2,000+ bike is a behavioral commitment device that creates sunk cost pressure to justify ongoing $44/month subscriptions. But the real retention engine is parasocial: instructors like Robin Arzón and Cody Rigsby are designed to feel like personal coaches who know you, creating an emotional bond that gym equipment alone can never generate. The live leaderboard adds competitive urgency (you can see your real-time rank among thousands of simultaneous riders), while high-fives from strangers simulate the social energy of a group fitness class. Peloton's post-pandemic challenge — 39% stock decline in 2022 — revealed the fragility of hardware-dependent behavioral lock-in: when users' sunk cost threshold was crossed, they abandoned the ecosystem entirely. The lesson is that parasocial motivation is powerful but insufficient when the financial commitment feels disproportionate to the perceived value.",
+      "top_technique": "Parasocial Instructor Relationships as Retention Engine"
+    },
+    "strava": {
+      "name": "Strava",
+      "emoji": "🏃",
+      "category": "Fitness",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 7,
+        "motivation_design": 9,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Strava's genius is that it solved the hardest problem in fitness: motivation decay. Most fitness apps track what you did; Strava makes you care about doing more. The segment leaderboard transforms every road into a competition venue, and 'Local Legend' status turns your neighborhood into territory to defend. The social feed makes workouts performative — you're not just exercising, you're broadcasting achievement. The flywheel is elegant: more athletes → more segments → more competition → more motivation → more athletes. But the ethical nuance is real: Strava's design can push athletes into overtraining, dangerous segment attempts (the 'Strava hunting' phenomenon caused multiple cycling fatalities), and exercise addiction. The platform added safety features after lawsuits, but the core competitive architecture remains unchanged because it's what makes Strava sticky. Strava proves that social comparison is the most powerful behavioral lever in fitness — and also the most dangerous.",
+      "top_technique": "Segment Leaderboards as Territorial Competition"
+    }
+  },
+  "overall_winner": "strava",
+  "overall_difference": 1,
+  "dimension_wins": {
+    "peloton": 1,
+    "strava": 2,
+    "ties": 2
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "peloton": 7,
+      "strava": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "peloton": 8,
+      "strava": 7,
+      "difference": 1,
+      "winner": "peloton"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "peloton": 9,
+      "strava": 9,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "peloton": 6,
+      "strava": 7,
+      "difference": -1,
+      "winner": "strava"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "peloton": 6,
+      "strava": 7,
+      "difference": -1,
+      "winner": "strava"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/peloton-vs-strava/",
+    "product_a_detail": "/api/v1/products/peloton.json",
+    "product_b_detail": "/api/v1/products/strava.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/peloton/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/strava/"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Discord vs Notion",
+  "products": {
+    "discord": {
+      "name": "Discord",
+      "emoji": "💬",
+      "category": "Community",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 8,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 35,
+      "pct": 70,
+      "key_insight": "Discord's behavioral design success comes from an unusual source: it's one of the few major platforms where the engagement loop is primarily social rather than algorithmic. There's no recommendation algorithm pushing content — engagement is driven by genuine community belonging and real-time social presence. The 'someone is typing...' indicator, voice channel presence, and @mention notifications create a sense of liveness that makes communities feel inhabited rather than archived. Discord's investment escalation (join → customize → earn roles → moderate → build bots) creates deep switching costs through identity investment rather than content lock-in. This makes Discord's engagement more ethically defensible than algorithmic platforms: users return because they have genuine social bonds, not because an algorithm has learned to exploit their attention patterns.",
+      "top_technique": "Server Investment Escalation Ladder"
+    },
+    "notion": {
+      "name": "Notion",
+      "emoji": "📝",
+      "category": "Productivity",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 6,
+        "trust_transparency": 8,
+        "ethical_alignment": 9
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "Notion proves that 'more flexibility' doesn't always mean better behavioral design. The product excels at progressive disclosure for feature complexity, but struggles with the motivational design of creation from scratch. Products that help users *create* face fundamentally different behavioral challenges than products that help users *consume* — creation requires initial competence that can't be algorithmically provided.",
+      "top_technique": "Template Gallery as Choice Architecture"
+    }
+  },
+  "overall_winner": "notion",
+  "overall_difference": 1,
+  "dimension_wins": {
+    "discord": 1,
+    "notion": 2,
+    "ties": 2
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "discord": 7,
+      "notion": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "discord": 6,
+      "notion": 6,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "discord": 8,
+      "notion": 6,
+      "difference": 2,
+      "winner": "discord"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "discord": 7,
+      "notion": 8,
+      "difference": -1,
+      "winner": "notion"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "discord": 7,
+      "notion": 9,
+      "difference": -2,
+      "winner": "notion"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/discord-vs-notion/",
+    "product_a_detail": "/api/v1/products/discord.json",
+    "product_b_detail": "/api/v1/products/notion.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/discord/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/notion/"
+  }
+}

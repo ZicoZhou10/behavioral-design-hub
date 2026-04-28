@@ -1,0 +1,548 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "category_count": 22,
+  "total_products": 30,
+  "categories": [
+    {
+      "name": "Design",
+      "slug": "design",
+      "product_count": 1,
+      "avg_score": 40.0,
+      "max_score": 40,
+      "min_score": 40,
+      "leader": "figma",
+      "products": [
+        {
+          "slug": "figma",
+          "name": "Figma",
+          "emoji": "🎨",
+          "total": 40,
+          "pct": 80
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/design.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/design/"
+      }
+    },
+    {
+      "name": "Discovery",
+      "slug": "discovery",
+      "product_count": 1,
+      "avg_score": 37.0,
+      "max_score": 37,
+      "min_score": 37,
+      "leader": "pinterest",
+      "products": [
+        {
+          "slug": "pinterest",
+          "name": "Pinterest",
+          "emoji": "📌",
+          "total": 37,
+          "pct": 74
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/discovery.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/discovery/"
+      }
+    },
+    {
+      "name": "EdTech",
+      "slug": "edtech",
+      "product_count": 1,
+      "avg_score": 37.0,
+      "max_score": 37,
+      "min_score": 37,
+      "leader": "duolingo",
+      "products": [
+        {
+          "slug": "duolingo",
+          "name": "Duolingo",
+          "emoji": "🦉",
+          "total": 37,
+          "pct": 74
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/edtech.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/edtech/"
+      }
+    },
+    {
+      "name": "Wellness",
+      "slug": "wellness",
+      "product_count": 1,
+      "avg_score": 37.0,
+      "max_score": 37,
+      "min_score": 37,
+      "leader": "calm",
+      "products": [
+        {
+          "slug": "calm",
+          "name": "Calm",
+          "emoji": "🧘",
+          "total": 37,
+          "pct": 74
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/wellness.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/wellness/"
+      }
+    },
+    {
+      "name": "Fitness",
+      "slug": "fitness",
+      "product_count": 2,
+      "avg_score": 36.5,
+      "max_score": 37,
+      "min_score": 36,
+      "leader": "strava",
+      "products": [
+        {
+          "slug": "strava",
+          "name": "Strava",
+          "emoji": "🏃",
+          "total": 37,
+          "pct": 74
+        },
+        {
+          "slug": "peloton",
+          "name": "Peloton",
+          "emoji": "🚴",
+          "total": 36,
+          "pct": 72
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/fitness.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/fitness/"
+      }
+    },
+    {
+      "name": "Communication",
+      "slug": "communication",
+      "product_count": 1,
+      "avg_score": 36.0,
+      "max_score": 36,
+      "min_score": 36,
+      "leader": "whatsapp",
+      "products": [
+        {
+          "slug": "whatsapp",
+          "name": "WhatsApp",
+          "emoji": "📱",
+          "total": 36,
+          "pct": 72
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/communication.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/communication/"
+      }
+    },
+    {
+      "name": "E-Commerce",
+      "slug": "e-commerce",
+      "product_count": 3,
+      "avg_score": 35.7,
+      "max_score": 38,
+      "min_score": 32,
+      "leader": "shopify",
+      "products": [
+        {
+          "slug": "shopify",
+          "name": "Shopify",
+          "emoji": "🛒",
+          "total": 38,
+          "pct": 76
+        },
+        {
+          "slug": "airbnb",
+          "name": "Airbnb",
+          "emoji": "🏠",
+          "total": 37,
+          "pct": 74
+        },
+        {
+          "slug": "amazon",
+          "name": "Amazon",
+          "emoji": "📦",
+          "total": 32,
+          "pct": 64
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/e-commerce.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/e-commerce/"
+      }
+    },
+    {
+      "name": "Dating",
+      "slug": "dating",
+      "product_count": 2,
+      "avg_score": 35.5,
+      "max_score": 37,
+      "min_score": 34,
+      "leader": "bumble",
+      "products": [
+        {
+          "slug": "bumble",
+          "name": "Bumble",
+          "emoji": "💛",
+          "total": 37,
+          "pct": 74
+        },
+        {
+          "slug": "tinder",
+          "name": "Tinder",
+          "emoji": "🔥",
+          "total": 34,
+          "pct": 68
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/dating.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/dating/"
+      }
+    },
+    {
+      "name": "Community",
+      "slug": "community",
+      "product_count": 1,
+      "avg_score": 35.0,
+      "max_score": 35,
+      "min_score": 35,
+      "leader": "discord",
+      "products": [
+        {
+          "slug": "discord",
+          "name": "Discord",
+          "emoji": "💬",
+          "total": 35,
+          "pct": 70
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/community.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/community/"
+      }
+    },
+    {
+      "name": "Payments",
+      "slug": "payments",
+      "product_count": 1,
+      "avg_score": 34.0,
+      "max_score": 34,
+      "min_score": 34,
+      "leader": "venmo",
+      "products": [
+        {
+          "slug": "venmo",
+          "name": "Venmo",
+          "emoji": "💸",
+          "total": 34,
+          "pct": 68
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/payments.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/payments/"
+      }
+    },
+    {
+      "name": "Productivity",
+      "slug": "productivity",
+      "product_count": 2,
+      "avg_score": 33.5,
+      "max_score": 36,
+      "min_score": 31,
+      "leader": "notion",
+      "products": [
+        {
+          "slug": "notion",
+          "name": "Notion",
+          "emoji": "📝",
+          "total": 36,
+          "pct": 72
+        },
+        {
+          "slug": "slack",
+          "name": "Slack",
+          "emoji": "💬",
+          "total": 31,
+          "pct": 62
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/productivity.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/productivity/"
+      }
+    },
+    {
+      "name": "Delivery",
+      "slug": "delivery",
+      "product_count": 1,
+      "avg_score": 33.0,
+      "max_score": 33,
+      "min_score": 33,
+      "leader": "doordash",
+      "products": [
+        {
+          "slug": "doordash",
+          "name": "DoorDash",
+          "emoji": "🛕",
+          "total": 33,
+          "pct": 66
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/delivery.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/delivery/"
+      }
+    },
+    {
+      "name": "Entertainment",
+      "slug": "entertainment",
+      "product_count": 2,
+      "avg_score": 33.0,
+      "max_score": 36,
+      "min_score": 30,
+      "leader": "spotify",
+      "products": [
+        {
+          "slug": "spotify",
+          "name": "Spotify",
+          "emoji": "🎧",
+          "total": 36,
+          "pct": 72
+        },
+        {
+          "slug": "netflix",
+          "name": "Netflix",
+          "emoji": "🎬",
+          "total": 30,
+          "pct": 60
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/entertainment.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/entertainment/"
+      }
+    },
+    {
+      "name": "Social",
+      "slug": "social",
+      "product_count": 1,
+      "avg_score": 33.0,
+      "max_score": 33,
+      "min_score": 33,
+      "leader": "snapchat",
+      "products": [
+        {
+          "slug": "snapchat",
+          "name": "Snapchat",
+          "emoji": "👻",
+          "total": 33,
+          "pct": 66
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/social.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/social/"
+      }
+    },
+    {
+      "name": "Utility",
+      "slug": "utility",
+      "product_count": 1,
+      "avg_score": 33.0,
+      "max_score": 33,
+      "min_score": 33,
+      "leader": "uber",
+      "products": [
+        {
+          "slug": "uber",
+          "name": "Uber",
+          "emoji": "🚗",
+          "total": 33,
+          "pct": 66
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/utility.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/utility/"
+      }
+    },
+    {
+      "name": "AI",
+      "slug": "ai",
+      "product_count": 1,
+      "avg_score": 32.0,
+      "max_score": 32,
+      "min_score": 32,
+      "leader": "chatgpt",
+      "products": [
+        {
+          "slug": "chatgpt",
+          "name": "ChatGPT",
+          "emoji": "🤖",
+          "total": 32,
+          "pct": 64
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/ai.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/ai/"
+      }
+    },
+    {
+      "name": "Crypto",
+      "slug": "crypto",
+      "product_count": 1,
+      "avg_score": 32.0,
+      "max_score": 32,
+      "min_score": 32,
+      "leader": "coinbase",
+      "products": [
+        {
+          "slug": "coinbase",
+          "name": "Coinbase",
+          "emoji": "🪙",
+          "total": 32,
+          "pct": 64
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/crypto.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/crypto/"
+      }
+    },
+    {
+      "name": "Gaming",
+      "slug": "gaming",
+      "product_count": 1,
+      "avg_score": 32.0,
+      "max_score": 32,
+      "min_score": 32,
+      "leader": "candy-crush",
+      "products": [
+        {
+          "slug": "candy-crush",
+          "name": "Candy Crush",
+          "emoji": "🍬",
+          "total": 32,
+          "pct": 64
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/gaming.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/gaming/"
+      }
+    },
+    {
+      "name": "Video",
+      "slug": "video",
+      "product_count": 1,
+      "avg_score": 32.0,
+      "max_score": 32,
+      "min_score": 32,
+      "leader": "youtube",
+      "products": [
+        {
+          "slug": "youtube",
+          "name": "YouTube",
+          "emoji": "▶️",
+          "total": 32,
+          "pct": 64
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/video.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/video/"
+      }
+    },
+    {
+      "name": "FinTech",
+      "slug": "fintech",
+      "product_count": 1,
+      "avg_score": 30.0,
+      "max_score": 30,
+      "min_score": 30,
+      "leader": "robinhood",
+      "products": [
+        {
+          "slug": "robinhood",
+          "name": "Robinhood",
+          "emoji": "📈",
+          "total": 30,
+          "pct": 60
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/fintech.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/fintech/"
+      }
+    },
+    {
+      "name": "Travel",
+      "slug": "travel",
+      "product_count": 1,
+      "avg_score": 30.0,
+      "max_score": 30,
+      "min_score": 30,
+      "leader": "booking-com",
+      "products": [
+        {
+          "slug": "booking-com",
+          "name": "Booking.com",
+          "emoji": "🏨",
+          "total": 30,
+          "pct": 60
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/travel.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/travel/"
+      }
+    },
+    {
+      "name": "Social Media",
+      "slug": "social-media",
+      "product_count": 3,
+      "avg_score": 29.7,
+      "max_score": 32,
+      "min_score": 27,
+      "leader": "tiktok",
+      "products": [
+        {
+          "slug": "tiktok",
+          "name": "TikTok",
+          "emoji": "🎵",
+          "total": 32,
+          "pct": 64
+        },
+        {
+          "slug": "linkedin",
+          "name": "LinkedIn",
+          "emoji": "💼",
+          "total": 30,
+          "pct": 60
+        },
+        {
+          "slug": "instagram",
+          "name": "Instagram",
+          "emoji": "📸",
+          "total": 27,
+          "pct": 54
+        }
+      ],
+      "links": {
+        "detail": "/api/v1/categories/social-media.json",
+        "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/social-media/"
+      }
+    }
+  ]
+}

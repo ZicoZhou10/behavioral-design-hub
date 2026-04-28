@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Bumble vs Duolingo",
+  "products": {
+    "bumble": {
+      "name": "Bumble",
+      "emoji": "💛",
+      "category": "Dating",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 7,
+        "motivation_design": 7,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Bumble proves that behavioral constraints can be more powerful than behavioral nudges. While Tinder maximizes engagement through unlimited swiping and variable-ratio matching, Bumble deliberately constrains user behavior — women must message first within 24 hours or the match expires. This constraint solves three problems simultaneously: it reduces unwanted messages for women (the #1 complaint on dating apps), it forces genuine interest signaling (matches that survive the 24-hour window have higher intent), and it creates a differentiated brand identity ('the feminist dating app'). The 24-hour expiration exploits scarcity and loss aversion — a match that's about to expire feels more valuable than one that sits indefinitely. Bumble's expansion into BFF (friend-finding) and Bizz (professional networking) using the same swipe+constraint UX reveals the strategic insight: the behavioral mechanics of dating apps are not specific to dating — they are general-purpose social sorting mechanisms. The ethical dimension is genuinely positive: Bumble's constraint design demonstrably reduces harassment compared to unconstrained platforms.",
+      "top_technique": "Women-First Messaging Constraint as Power Architecture"
+    },
+    "duolingo": {
+      "name": "Duolingo",
+      "emoji": "🦉",
+      "category": "EdTech",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 6,
+        "ethical_alignment": 5
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Duolingo is a masterclass in habit formation mechanics but struggles with the transition from extrinsic hooks to intrinsic motivation. The streak counter keeps users opening the app, but 'opening the app' ≠ 'learning a language.' Products that confuse engagement metrics with outcome metrics eventually face this tension.",
+      "top_technique": "Streak Mechanics as Loss Aversion Engine"
+    }
+  },
+  "overall_winner": "tie",
+  "overall_difference": 0,
+  "dimension_wins": {
+    "bumble": 2,
+    "duolingo": 2,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "bumble": 9,
+      "duolingo": 9,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "bumble": 7,
+      "duolingo": 8,
+      "difference": -1,
+      "winner": "duolingo"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "bumble": 7,
+      "duolingo": 9,
+      "difference": -2,
+      "winner": "duolingo"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "bumble": 7,
+      "duolingo": 6,
+      "difference": 1,
+      "winner": "bumble"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "bumble": 7,
+      "duolingo": 5,
+      "difference": 2,
+      "winner": "bumble"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/bumble-vs-duolingo/",
+    "product_a_detail": "/api/v1/products/bumble.json",
+    "product_b_detail": "/api/v1/products/duolingo.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/bumble/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/duolingo/"
+  }
+}

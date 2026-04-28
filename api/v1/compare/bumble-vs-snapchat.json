@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Bumble vs Snapchat",
+  "products": {
+    "bumble": {
+      "name": "Bumble",
+      "emoji": "💛",
+      "category": "Dating",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 7,
+        "motivation_design": 7,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Bumble proves that behavioral constraints can be more powerful than behavioral nudges. While Tinder maximizes engagement through unlimited swiping and variable-ratio matching, Bumble deliberately constrains user behavior — women must message first within 24 hours or the match expires. This constraint solves three problems simultaneously: it reduces unwanted messages for women (the #1 complaint on dating apps), it forces genuine interest signaling (matches that survive the 24-hour window have higher intent), and it creates a differentiated brand identity ('the feminist dating app'). The 24-hour expiration exploits scarcity and loss aversion — a match that's about to expire feels more valuable than one that sits indefinitely. Bumble's expansion into BFF (friend-finding) and Bizz (professional networking) using the same swipe+constraint UX reveals the strategic insight: the behavioral mechanics of dating apps are not specific to dating — they are general-purpose social sorting mechanisms. The ethical dimension is genuinely positive: Bumble's constraint design demonstrably reduces harassment compared to unconstrained platforms.",
+      "top_technique": "Women-First Messaging Constraint as Power Architecture"
+    },
+    "snapchat": {
+      "name": "Snapchat",
+      "emoji": "👻",
+      "category": "Social",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 7,
+        "motivation_design": 9,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 33,
+      "pct": 66,
+      "key_insight": "Snapchat's most powerful behavioral innovation isn't the disappearing message — it's the Streak. Snapstreaks (consecutive days of mutual messaging between two users) transformed an ephemeral messaging app into a daily obligation engine. A 365-day streak with a best friend isn't just a number — it's a quantified relationship artifact that feels emotionally devastating to lose. The streak mechanic exploits loss aversion at a personal level: you're not losing points or status — you're 'losing' proof of a friendship. This makes Snapchat's daily retention mechanism more powerful than any notification-based engagement system because the motivator is social guilt rather than curiosity or FOMO. Teens report feeling genuine anxiety about breaking streaks, maintaining them even during illness or vacation by sharing their passwords. Snapchat's disappearing messages further reinforce daily use: there's no archive to browse, no content to revisit, so the only way to stay connected is to keep sending. The combination of ephemeral content (nothing persists) and permanent metrics (streaks count up forever) is a brilliant behavioral design contradiction that maximizes daily engagement.",
+      "top_technique": "Snapstreaks as Loss Aversion Commitment Device"
+    }
+  },
+  "overall_winner": "bumble",
+  "overall_difference": 4,
+  "dimension_wins": {
+    "bumble": 3,
+    "snapchat": 1,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "bumble": 9,
+      "snapchat": 8,
+      "difference": 1,
+      "winner": "bumble"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "bumble": 7,
+      "snapchat": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "bumble": 7,
+      "snapchat": 9,
+      "difference": -2,
+      "winner": "snapchat"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "bumble": 7,
+      "snapchat": 5,
+      "difference": 2,
+      "winner": "bumble"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "bumble": 7,
+      "snapchat": 4,
+      "difference": 3,
+      "winner": "bumble"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/bumble-vs-snapchat/",
+    "product_a_detail": "/api/v1/products/bumble.json",
+    "product_b_detail": "/api/v1/products/snapchat.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/bumble/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/snapchat/"
+  }
+}

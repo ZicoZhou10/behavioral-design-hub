@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Shopify vs Tinder",
+  "products": {
+    "shopify": {
+      "name": "Shopify",
+      "emoji": "🛒",
+      "category": "E-Commerce",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 7,
+        "motivation_design": 8,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 38,
+      "pct": 76,
+      "key_insight": "Shopify shows how behavioral design can serve both platform and user goals simultaneously. The setup wizard uses progressive commitment, but the merchant genuinely gets a working store. The $1 trial uses anchoring, but the merchant genuinely gets to test the platform risk-free. The app ecosystem creates lock-in, but it also creates genuine value. This alignment between behavioral technique and user outcome is what separates ethical persuasion from manipulation.",
+      "top_technique": "Trial-to-Paid Default Architecture"
+    },
+    "tinder": {
+      "name": "Tinder",
+      "emoji": "🔥",
+      "category": "Dating",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 4,
+        "ethical_alignment": 4
+      },
+      "total": 34,
+      "pct": 68,
+      "key_insight": "Tinder solved the paradox of choice in dating by reducing a multi-dimensional human evaluation to a binary swipe. This is brilliant choice architecture — and also the product's deepest ethical tension. The swipe creates a variable ratio reward schedule identical to slot machines: most swipes yield nothing, but the occasional match triggers a dopamine spike that reinforces the swiping behavior. Tinder's business model depends on users NOT finding matches efficiently (premium features gate the very discovery the app promises), creating a fundamental misalignment between user goals (find a partner) and business goals (maximize engagement time). The result: an app that is behaviorally addictive by design, yet genuinely useful as a discovery mechanism that didn't exist before.",
+      "top_technique": "Swipe as Binary Choice Architecture"
+    }
+  },
+  "overall_winner": "shopify",
+  "overall_difference": 4,
+  "dimension_wins": {
+    "shopify": 2,
+    "tinder": 2,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "shopify": 9,
+      "tinder": 9,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "shopify": 7,
+      "tinder": 8,
+      "difference": -1,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "shopify": 8,
+      "tinder": 9,
+      "difference": -1,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "shopify": 7,
+      "tinder": 4,
+      "difference": 3,
+      "winner": "shopify"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "shopify": 7,
+      "tinder": 4,
+      "difference": 3,
+      "winner": "shopify"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/shopify-vs-tinder/",
+    "product_a_detail": "/api/v1/products/shopify.json",
+    "product_b_detail": "/api/v1/products/tinder.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/shopify/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/tinder/"
+  }
+}

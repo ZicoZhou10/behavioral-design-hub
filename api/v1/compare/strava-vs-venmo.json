@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Strava vs Venmo",
+  "products": {
+    "strava": {
+      "name": "Strava",
+      "emoji": "🏃",
+      "category": "Fitness",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 7,
+        "motivation_design": 9,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Strava's genius is that it solved the hardest problem in fitness: motivation decay. Most fitness apps track what you did; Strava makes you care about doing more. The segment leaderboard transforms every road into a competition venue, and 'Local Legend' status turns your neighborhood into territory to defend. The social feed makes workouts performative — you're not just exercising, you're broadcasting achievement. The flywheel is elegant: more athletes → more segments → more competition → more motivation → more athletes. But the ethical nuance is real: Strava's design can push athletes into overtraining, dangerous segment attempts (the 'Strava hunting' phenomenon caused multiple cycling fatalities), and exercise addiction. The platform added safety features after lawsuits, but the core competitive architecture remains unchanged because it's what makes Strava sticky. Strava proves that social comparison is the most powerful behavioral lever in fitness — and also the most dangerous.",
+      "top_technique": "Segment Leaderboards as Territorial Competition"
+    },
+    "venmo": {
+      "name": "Venmo",
+      "emoji": "💸",
+      "category": "Payments",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 9,
+        "motivation_design": 7,
+        "trust_transparency": 5,
+        "ethical_alignment": 5
+      },
+      "total": 34,
+      "pct": 68,
+      "key_insight": "Venmo's most controversial feature — the public social feed showing who paid whom and for what — is also its greatest behavioral design achievement. By making payments social by default, Venmo solved the cold-start problem that kills every payment app: getting both the sender and receiver to use the same platform. When you see friends splitting dinner, paying rent, or reimbursing concert tickets in your feed, each transaction is simultaneously a use case advertisement and social proof that Venmo is the normal way to pay friends. The feed also creates a subtle obligation loop: if everyone in your friend group uses Venmo, requesting payment through any other method feels inconvenient and socially awkward. The privacy implications are significant — researchers have used Venmo's public feed to reconstruct social networks, identify romantic relationships, and track drug transactions. Venmo made payments 'public by default' in the same way Facebook made profiles public by default: not because users wanted it, but because virality required it. The 2021 privacy controversy (BuzzFeed tracked President Biden's Venmo account) forced a redesign, but the social feed remains opt-out rather than opt-in — Venmo's growth depends on visibility.",
+      "top_technique": "Social Payment Feed as Viral Acquisition Engine"
+    }
+  },
+  "overall_winner": "strava",
+  "overall_difference": 3,
+  "dimension_wins": {
+    "strava": 3,
+    "venmo": 2,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "strava": 7,
+      "venmo": 8,
+      "difference": -1,
+      "winner": "venmo"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "strava": 7,
+      "venmo": 9,
+      "difference": -2,
+      "winner": "venmo"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "strava": 9,
+      "venmo": 7,
+      "difference": 2,
+      "winner": "strava"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "strava": 7,
+      "venmo": 5,
+      "difference": 2,
+      "winner": "strava"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "strava": 7,
+      "venmo": 5,
+      "difference": 2,
+      "winner": "strava"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/strava-vs-venmo/",
+    "product_a_detail": "/api/v1/products/strava.json",
+    "product_b_detail": "/api/v1/products/venmo.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/strava/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/venmo/"
+  }
+}

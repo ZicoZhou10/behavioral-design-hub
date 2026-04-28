@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Calm vs Peloton",
+  "products": {
+    "calm": {
+      "name": "Calm",
+      "emoji": "🧘",
+      "category": "Wellness",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 6,
+        "trust_transparency": 8,
+        "ethical_alignment": 8
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Calm's behavioral design challenge is philosophically interesting: can you ethically use behavioral science to help people build habits that may eliminate the need for your product? Calm's answer is content expansion — become a 'wellness platform' rather than a 'meditation app.' But this risks cognitive load creep as the product tries to be everything at once.",
+      "top_technique": "Sleep Stories as Habit Stacking"
+    },
+    "peloton": {
+      "name": "Peloton",
+      "emoji": "🚴",
+      "category": "Fitness",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 6,
+        "ethical_alignment": 6
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "Peloton's breakthrough insight was that fitness equipment isn't a product — it's a medium. The $2,000+ bike is a behavioral commitment device that creates sunk cost pressure to justify ongoing $44/month subscriptions. But the real retention engine is parasocial: instructors like Robin Arzón and Cody Rigsby are designed to feel like personal coaches who know you, creating an emotional bond that gym equipment alone can never generate. The live leaderboard adds competitive urgency (you can see your real-time rank among thousands of simultaneous riders), while high-fives from strangers simulate the social energy of a group fitness class. Peloton's post-pandemic challenge — 39% stock decline in 2022 — revealed the fragility of hardware-dependent behavioral lock-in: when users' sunk cost threshold was crossed, they abandoned the ecosystem entirely. The lesson is that parasocial motivation is powerful but insufficient when the financial commitment feels disproportionate to the perceived value.",
+      "top_technique": "Parasocial Instructor Relationships as Retention Engine"
+    }
+  },
+  "overall_winner": "calm",
+  "overall_difference": 1,
+  "dimension_wins": {
+    "calm": 2,
+    "peloton": 1,
+    "ties": 2
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "calm": 7,
+      "peloton": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "calm": 8,
+      "peloton": 8,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "calm": 6,
+      "peloton": 9,
+      "difference": -3,
+      "winner": "peloton"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "calm": 8,
+      "peloton": 6,
+      "difference": 2,
+      "winner": "calm"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "calm": 8,
+      "peloton": 6,
+      "difference": 2,
+      "winner": "calm"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/calm-vs-peloton/",
+    "product_a_detail": "/api/v1/products/calm.json",
+    "product_b_detail": "/api/v1/products/peloton.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/calm/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/peloton/"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "slug": "amazon",
+  "name": "Amazon",
+  "emoji": "📦",
+  "emoji_html": "&#x1F4E6;",
+  "category": "E-Commerce / Marketplace",
+  "category_short": "E-Commerce",
+  "tagline": "Amazon's one-click buy invented frictionless commerce — but Prime's cancellation flow is now a textbook case in regulatory dark pattern enforcement.",
+  "scores": {
+    "choice_architecture": 8,
+    "cognitive_load": 6,
+    "motivation_design": 9,
+    "trust_transparency": 5,
+    "ethical_alignment": 4
+  },
+  "total": 32,
+  "pct": 64,
+  "key_insight": "Amazon is the most commercially successful behavioral design in history — and the most ethically polarized. One-click buy genuinely reduces friction. Prime genuinely provides value. But the same behavioral toolkit that makes buying easy makes canceling hard. Amazon proves that behavioral design is morally neutral: identical techniques (friction manipulation, default exploitation, cognitive load management) create user value when applied to purchasing and destroy user autonomy when applied to retention. The regulatory response (FTC lawsuit, EU DSA) suggests that the market is beginning to price in behavioral design ethics.",
+  "top_technique": "One-Click Buy: The Friction Elimination Patent",
+  "top_framework": "Cognitive Load Theory",
+  "top_evidence": "One-click: 34% higher completion vs cart-based (antitrust hearings 2023). Prime members spend $1,400/yr vs $600 non-Prime (CIRP 2024). FTC sued Amazon 2023 over cancellation dark patterns.",
+  "techniques": [
+    {
+      "title": "One-Click Buy: The Friction Elimination Patent",
+      "framework": "Cognitive Load Theory",
+      "description": "Amazon's 1-Click ordering (US Patent 5,960,411) reduced the purchase decision from a multi-step process (add to cart → review cart → enter shipping → enter payment → confirm) to a single action. By eliminating every decision point between 'I want this' and 'I bought this,' Amazon minimized the cognitive load — and the opportunities for deliberation — in the purchase flow. This is friction elimination weaponized: the easier it is to buy, the more impulsive purchases occur.",
+      "evidence": "Amazon patented one-click in 1999 and it became their most strategically valuable patent. After the patent expired (2017), conversion rates across e-commerce increased industry-wide as competitors adopted the pattern. Amazon's internal data (leaked via antitrust hearings, 2023): one-click purchases have a 34% higher completion rate than cart-based purchases."
+    },
+    {
+      "title": "Prime as Sunk Cost Membership Architecture",
+      "framework": "Prospect Theory",
+      "description": "Amazon Prime ($139/year) exploits the sunk cost fallacy: once you've paid the annual fee, every purchase feels like it should go through Amazon to 'justify' the membership. Free shipping becomes a loss-avoidance mechanism — buying elsewhere means 'wasting' your Prime fee. Prime Video, Music, and Reading are bundled not because they're profitable individually, but because each additional use reinforces the sunk cost anchor: 'I'm getting my money's worth.'",
+      "evidence": "Prime members spend $1,400/year on Amazon vs $600 for non-members (Consumer Intelligence Research Partners, 2024). Morgan Stanley (2024): 73% of Prime members cite 'free shipping' as the reason they buy on Amazon instead of competitors — they frame it as 'free' even though they're paying $139/year. This is textbook mental accounting (Thaler, 1985)."
+    },
+    {
+      "title": "Lightning Deals: Scarcity + Urgency Compounding",
+      "framework": "Hook Model",
+      "description": "Lightning Deals combine three behavioral triggers simultaneously: time scarcity (countdown timer), quantity scarcity (percentage claimed bar), and social proof (X% claimed). The claimed-percentage bar creates a real-time visualization of loss — watching the bar fill triggers FOMO that compounds with each passing second. Prime Day amplifies this with 48 hours of continuous scarcity signals, creating a behavioral environment where not buying feels like losing.",
+      "evidence": "Amazon Prime Day 2024 generated $14.2B in 48 hours (Amazon press release). The countdown timer + claimed bar combination follows Cialdini's 'triple threat' — when scarcity, urgency, and social proof align, purchase likelihood increases by up to 332% compared to any single trigger alone (Cialdini, 2021 updated edition)."
+    },
+    {
+      "title": "Dark Pattern Cancellation Flow ('Project Iliad')",
+      "framework": "Nudge Theory",
+      "description": "Amazon's Prime cancellation flow requires navigating through 6+ screens with multiple 'are you sure?' prompts, benefit reminders, downgrade offers, and confusingly similar buttons. Internally called 'Project Iliad,' the flow is designed to exploit status quo bias and decision fatigue: each screen is a new decision point that drains cognitive resources, making the default (keep Prime) increasingly attractive. This is the dark mirror of libertarian paternalism — using choice architecture against user intent.",
+      "evidence": "The FTC sued Amazon in 2023 specifically over Prime cancellation dark patterns (FTC v. Amazon, Case 2:23-cv-00932). Internal Amazon documents revealed the cancellation flow was explicitly designed to maximize 'saves' (users who start cancellation but don't complete it). EU Digital Services Act forced Amazon to simplify the flow in Europe — post-simplification, cancellation rates increased 5x, suggesting the original flow was preventing 80%+ of intended cancellations."
+    }
+  ],
+  "strengths": [
+    "One-click genuinely revolutionized e-commerce",
+    "Prime bundle creates genuine cross-category value",
+    "Review system provides valuable social proof"
+  ],
+  "weaknesses": [
+    "Prime cancellation 'Project Iliad' is regulatory-targeted",
+    "'Amazon's Choice' criteria are opaque",
+    "Subscribe & Save auto-enrollment catches users"
+  ],
+  "behavioral_hooks": [
+    "one-click buy (friction elimination)",
+    "Prime (sunk cost membership)",
+    "Lightning Deals (triple scarcity)",
+    "cancellation dark patterns ('Project Iliad')"
+  ],
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "links": {
+    "teardown_page": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/amazon/",
+    "products_list": "/api/v1/products.json",
+    "comparisons": {
+      "figma": "/api/v1/compare/amazon-vs-figma.json",
+      "shopify": "/api/v1/compare/amazon-vs-shopify.json",
+      "airbnb": "/api/v1/compare/airbnb-vs-amazon.json",
+      "calm": "/api/v1/compare/amazon-vs-calm.json",
+      "duolingo": "/api/v1/compare/amazon-vs-duolingo.json",
+      "pinterest": "/api/v1/compare/amazon-vs-pinterest.json",
+      "strava": "/api/v1/compare/amazon-vs-strava.json",
+      "bumble": "/api/v1/compare/amazon-vs-bumble.json",
+      "notion": "/api/v1/compare/amazon-vs-notion.json",
+      "spotify": "/api/v1/compare/amazon-vs-spotify.json",
+      "whatsapp": "/api/v1/compare/amazon-vs-whatsapp.json",
+      "peloton": "/api/v1/compare/amazon-vs-peloton.json",
+      "discord": "/api/v1/compare/amazon-vs-discord.json",
+      "tinder": "/api/v1/compare/amazon-vs-tinder.json",
+      "venmo": "/api/v1/compare/amazon-vs-venmo.json",
+      "doordash": "/api/v1/compare/amazon-vs-doordash.json",
+      "snapchat": "/api/v1/compare/amazon-vs-snapchat.json",
+      "uber": "/api/v1/compare/amazon-vs-uber.json",
+      "candy-crush": "/api/v1/compare/amazon-vs-candy-crush.json",
+      "chatgpt": "/api/v1/compare/amazon-vs-chatgpt.json",
+      "coinbase": "/api/v1/compare/amazon-vs-coinbase.json",
+      "tiktok": "/api/v1/compare/amazon-vs-tiktok.json",
+      "youtube": "/api/v1/compare/amazon-vs-youtube.json",
+      "slack": "/api/v1/compare/amazon-vs-slack.json",
+      "booking-com": "/api/v1/compare/amazon-vs-booking-com.json",
+      "linkedin": "/api/v1/compare/amazon-vs-linkedin.json",
+      "netflix": "/api/v1/compare/amazon-vs-netflix.json",
+      "robinhood": "/api/v1/compare/amazon-vs-robinhood.json",
+      "instagram": "/api/v1/compare/amazon-vs-instagram.json"
+    },
+    "category": "/api/v1/categories/e-commerce.json"
+  },
+  "rank": 19,
+  "rank_of": 30
+}

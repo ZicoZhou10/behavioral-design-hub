@@ -1,0 +1,110 @@
+{
+  "slug": "duolingo",
+  "name": "Duolingo",
+  "emoji": "🦉",
+  "emoji_html": "&#x1F989;",
+  "category": "EdTech / Language Learning",
+  "category_short": "EdTech",
+  "tagline": "The most downloaded education app uses behavioral science to make language learning addictive — but the Hook Model starts breaking after Day 14.",
+  "scores": {
+    "choice_architecture": 9,
+    "cognitive_load": 8,
+    "motivation_design": 9,
+    "trust_transparency": 6,
+    "ethical_alignment": 5
+  },
+  "total": 37,
+  "pct": 74,
+  "key_insight": "Duolingo is a masterclass in habit formation mechanics but struggles with the transition from extrinsic hooks to intrinsic motivation. The streak counter keeps users opening the app, but 'opening the app' ≠ 'learning a language.' Products that confuse engagement metrics with outcome metrics eventually face this tension.",
+  "top_technique": "Streak Mechanics as Loss Aversion Engine",
+  "top_framework": "Prospect Theory",
+  "top_evidence": "Streak-based users have 2.3x higher DAU/MAU (Duolingo 2024 shareholder letter). Variable ratio reinforcement via leaderboard + XP creates slot-machine engagement patterns.",
+  "techniques": [
+    {
+      "title": "Streak Mechanics as Loss Aversion Engine",
+      "framework": "Prospect Theory",
+      "description": "Duolingo's streak counter exploits Kahneman & Tversky's finding that losses feel ~2x heavier than gains. A 30-day streak creates massive psychological cost to breaking it — users don't practice to learn, they practice to avoid loss. The Streak Freeze power-up monetizes this anxiety directly.",
+      "evidence": "Duolingo's 2024 shareholder letter: streak-based users have 2.3x higher DAU/MAU ratio. Streak Freeze is the #2 monetized feature after Super Duolingo."
+    },
+    {
+      "title": "Variable Ratio Reinforcement Schedule",
+      "framework": "Hook Model",
+      "description": "XP rewards, league positions, and achievement unlocks follow variable ratio schedules — the same pattern that makes slot machines engaging. Users never know exactly when the next 'celebration' will trigger, creating persistent checking behavior.",
+      "evidence": "B.F. Skinner's research shows variable ratio schedules produce the highest response rates and greatest resistance to extinction. Duolingo's leaderboard resets weekly, creating recurring variable reward cycles."
+    },
+    {
+      "title": "Progressive Disclosure Onboarding",
+      "framework": "Cognitive Load Theory",
+      "description": "New users see exactly 3 options at signup (language, goal, proficiency). The first lesson teaches exactly 4 words. Grammar rules appear only after pattern recognition is established. This textbook application of Sweller's CLT keeps extraneous cognitive load near zero.",
+      "evidence": "Duolingo's placement test alone reduced Day-1 churn by 12% (internal A/B test revealed in GDC 2023 talk). The 'no explanation first' approach maps directly to CLT's worked example effect."
+    },
+    {
+      "title": "Social Proof via Competitive Leagues",
+      "framework": "Self-Determination Theory",
+      "description": "The league system (Bronze→Diamond) serves dual SDT needs: competence (visible progress through tiers) and relatedness (you're competing alongside 30 other learners). But it undermines autonomy — the system decides when you're promoted/demoted, and passive users get pushed out.",
+      "evidence": "SDT research (Ryan & Deci, 2017): competitive structures boost short-term engagement but can undermine intrinsic motivation when perceived as controlling. Duolingo's league churn spike at Diamond tier suggests this tension."
+    },
+    {
+      "title": "The Day-14 Hook Model Decay Problem",
+      "framework": "Hook Model",
+      "description": "Nir Eyal's Hook Model (Trigger→Action→Variable Reward→Investment) powers Duolingo's first 14 days brilliantly. But after ~Day 14, external triggers (push notifications) lose novelty, variable rewards become predictable, and the investment-trigger loop weakens. This is why Duolingo's 30-day retention (~35%) drops sharply from 7-day retention (~55%).",
+      "evidence": "SensorTower 2025 data: Duolingo D7 retention 55%, D30 35%, D90 ~18%. The Hook Model was designed for habit formation, not sustained skill development — it needs a transition to intrinsic motivation that Duolingo hasn't fully solved."
+    }
+  ],
+  "strengths": [
+    "Best-in-class onboarding (near-zero cognitive load)",
+    "Streak mechanics create powerful daily habit",
+    "Gamification genuinely reduces perceived effort"
+  ],
+  "weaknesses": [
+    "Heavy reliance on loss aversion raises ethical questions",
+    "Day-14+ motivation transition needs intrinsic drivers",
+    "8-12 notifications/day for lapsed users approaches dark pattern territory"
+  ],
+  "behavioral_hooks": [
+    "streak counter (loss aversion)",
+    "variable ratio XP rewards",
+    "competitive leagues (social proof)",
+    "progressive disclosure onboarding"
+  ],
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "links": {
+    "teardown_page": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/duolingo/",
+    "products_list": "/api/v1/products.json",
+    "comparisons": {
+      "figma": "/api/v1/compare/duolingo-vs-figma.json",
+      "shopify": "/api/v1/compare/duolingo-vs-shopify.json",
+      "airbnb": "/api/v1/compare/airbnb-vs-duolingo.json",
+      "calm": "/api/v1/compare/calm-vs-duolingo.json",
+      "pinterest": "/api/v1/compare/duolingo-vs-pinterest.json",
+      "strava": "/api/v1/compare/duolingo-vs-strava.json",
+      "bumble": "/api/v1/compare/bumble-vs-duolingo.json",
+      "notion": "/api/v1/compare/duolingo-vs-notion.json",
+      "spotify": "/api/v1/compare/duolingo-vs-spotify.json",
+      "whatsapp": "/api/v1/compare/duolingo-vs-whatsapp.json",
+      "peloton": "/api/v1/compare/duolingo-vs-peloton.json",
+      "discord": "/api/v1/compare/discord-vs-duolingo.json",
+      "tinder": "/api/v1/compare/duolingo-vs-tinder.json",
+      "venmo": "/api/v1/compare/duolingo-vs-venmo.json",
+      "doordash": "/api/v1/compare/doordash-vs-duolingo.json",
+      "snapchat": "/api/v1/compare/duolingo-vs-snapchat.json",
+      "uber": "/api/v1/compare/duolingo-vs-uber.json",
+      "amazon": "/api/v1/compare/amazon-vs-duolingo.json",
+      "candy-crush": "/api/v1/compare/candy-crush-vs-duolingo.json",
+      "chatgpt": "/api/v1/compare/chatgpt-vs-duolingo.json",
+      "coinbase": "/api/v1/compare/coinbase-vs-duolingo.json",
+      "tiktok": "/api/v1/compare/duolingo-vs-tiktok.json",
+      "youtube": "/api/v1/compare/duolingo-vs-youtube.json",
+      "slack": "/api/v1/compare/duolingo-vs-slack.json",
+      "booking-com": "/api/v1/compare/booking-com-vs-duolingo.json",
+      "linkedin": "/api/v1/compare/duolingo-vs-linkedin.json",
+      "netflix": "/api/v1/compare/duolingo-vs-netflix.json",
+      "robinhood": "/api/v1/compare/duolingo-vs-robinhood.json",
+      "instagram": "/api/v1/compare/duolingo-vs-instagram.json"
+    },
+    "category": "/api/v1/categories/edtech.json"
+  },
+  "rank": 3,
+  "rank_of": 30
+}

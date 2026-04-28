@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Airbnb Behavioral Design Teardown — How Airbnb Uses Behavioral Science</title>
+<meta name="description" content="Airbnb's photo-first search design eliminated the biggest friction in travel booking — but urgency cues and hidden fees reveal the gap between user-centered design and conversion optimization.">
+<meta property="og:title" content="Airbnb Behavioral Design Teardown">
+<meta property="og:description" content="Airbnb's photo-first search design eliminated the biggest friction in travel booking — but urgency cues and hidden fees reveal the gap between user-centered design and conversion optimization.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://zicozhou10.github.io/behavioral-design-hub/teardowns/airbnb/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Airbnb Behavioral Design Teardown">
+<meta name="twitter:description" content="Airbnb's photo-first search design eliminated the biggest friction in travel booking — but urgency cues and hidden fees reveal the gap between user-centered design and conversion optimization.">
+<link rel="canonical" href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/airbnb/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Airbnb Behavioral Design Teardown \u2014 How Airbnb Uses Behavioral Science",
+  "description": "Airbnb's photo-first search design eliminated the biggest friction in travel booking \u2014 but urgency cues and hidden fees reveal the gap between user-centered design and conversion optimization.",
+  "url": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/airbnb/",
+  "datePublished": "2026-04-11",
+  "dateModified": "2026-04-28",
+  "author": {
+    "@type": "Organization",
+    "name": "Behavioral Design Hub",
+    "url": "https://zicozhou10.github.io/behavioral-design-hub"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Behavioral Design Hub",
+    "url": "https://zicozhou10.github.io/behavioral-design-hub"
+  },
+  "mainEntityOfPage": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/airbnb/",
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Behavioral Design"
+    },
+    {
+      "@type": "Thing",
+      "name": "Behavioral Economics"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Airbnb"
+    }
+  ],
+  "keywords": "Airbnb behavioral design, Airbnb UX analysis, Airbnb behavioral science, Airbnb product teardown, behavioral design analysis"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does Airbnb use behavioral science?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Airbnb's design is a masterclass in reducing the trust barrier of the sharing economy \u2014 reviews, verified photos, and Superhost badges genuinely solve the 'sleeping in a stranger's home' problem. But the same product that innovated trust also deploys classic conversion dark patterns: manufactured scarcity, fee hiding, and price anchoring. The tension between 'design that builds trust' and 'design that maximizes conversion' is visible in every booking flow. Airbnb's ethical score is middling prec"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What behavioral design techniques does Airbnb use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Photo-First Search as Decision Simplification, Manufactured Scarcity: 'Rare Find' and 'Only 2 Left', Review System as Two-Sided Trust Architecture, Price Anchoring Through Fee Decomposition."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Airbnb's behavioral design score?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Airbnb scores 37/50 (74%) across five behavioral design dimensions: Choice Architecture (9/10), Cognitive Load Management (7/10), Motivation Design (8/10), Trust & Transparency (7/10), Ethical Alignment (6/10)."
+      }
+    }
+  ]
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0a0f;--surface:#12121a;--card:#1a1a28;--border:#2a2a3a;
+  --text:#e8e8f0;--text-muted:#8888a0;--accent:#6c5ce7;--accent-light:#a29bfe;
+  --green:#00b894;--yellow:#fdcb6e;--red:#e17055;
+  --gradient:linear-gradient(135deg,#6c5ce7,#a29bfe,#74b9ff);
+}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:32px 20px}
+
+/* Nav */
+.nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:40px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.nav a{color:var(--accent-light);text-decoration:none;font-size:0.88rem;font-weight:500}
+.nav a:hover{color:var(--accent)}
+.nav-brand{font-weight:700;font-size:0.95rem}
+
+/* Hero */
+.hero{text-align:center;padding:20px 0 40px}
+.hero-emoji{font-size:3rem;margin-bottom:16px}
+.hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;margin-bottom:8px;line-height:1.2}
+.hero .category{color:var(--accent-light);font-size:0.85rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px}
+.hero .tagline{color:var(--text-muted);font-size:1rem;max-width:600px;margin:0 auto;line-height:1.7}
+
+/* Score Overview */
+.score-overview{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:32px 28px;margin-bottom:32px}
+.score-header{display:flex;align-items:center;gap:20px;margin-bottom:24px;flex-wrap:wrap}
+.score-circle{width:90px;height:90px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.8rem;font-weight:800;flex-shrink:0;border:3px solid}
+.score-meta h2{font-size:1.1rem;font-weight:700;margin-bottom:4px}
+.score-meta p{color:var(--text-muted);font-size:0.85rem}
+.dim-bar{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.dim-name{width:160px;font-size:0.8rem;color:var(--text-muted);text-align:right;flex-shrink:0}
+.dim-track{flex:1;height:7px;background:var(--surface);border-radius:7px;overflow:hidden}
+.dim-fill{height:100%;border-radius:7px}
+.dim-score{width:40px;font-size:0.8rem;font-weight:600;text-align:right}
+
+/* Techniques */
+.section{margin-bottom:36px}
+.section-title{font-size:1.2rem;font-weight:700;margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.technique-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px 22px;margin-bottom:16px}
+.tech-framework{display:inline-block;background:rgba(108,92,231,0.15);color:var(--accent-light);padding:3px 10px;border-radius:6px;font-size:0.75rem;font-weight:600;margin-bottom:10px}
+.tech-title{font-size:1.05rem;font-weight:700;margin-bottom:10px}
+.tech-desc{font-size:0.9rem;color:var(--text-muted);line-height:1.65;margin-bottom:12px}
+.tech-evidence{font-size:0.82rem;color:var(--text-muted);line-height:1.55;background:var(--surface);padding:12px 16px;border-radius:8px;border-left:3px solid var(--accent)}
+
+/* Key Insight */
+.insight-box{background:linear-gradient(135deg,rgba(108,92,231,0.08),rgba(162,155,254,0.05));border:1px solid var(--accent);border-radius:16px;padding:28px 24px;margin-bottom:32px}
+.insight-box h2{font-size:1.05rem;font-weight:700;margin-bottom:12px;color:var(--accent-light)}
+.insight-box p{font-size:0.92rem;line-height:1.7;color:var(--text-muted)}
+
+/* Strengths / Improvements */
+.eval-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:36px}
+.eval-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 18px}
+.eval-card h3{font-size:0.9rem;font-weight:700;margin-bottom:12px}
+.eval-card ul{list-style:none;font-size:0.84rem;color:var(--text-muted);line-height:1.6}
+.eval-card li{margin-bottom:8px;padding-left:18px;position:relative}
+.eval-card li::before{content:'';position:absolute;left:0;top:8px;width:8px;height:8px;border-radius:50%}
+.strengths li::before{background:var(--green)}
+.improvements li::before{background:var(--yellow)}
+
+/* CTAs */
+.cta-section{text-align:center;padding:32px 20px;margin-bottom:32px}
+.cta-section h3{font-size:1.1rem;margin-bottom:8px}
+.cta-section p{color:var(--text-muted);font-size:0.88rem;margin-bottom:20px;max-width:480px;margin-left:auto;margin-right:auto}
+.cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta-btn{display:inline-block;background:var(--accent);color:#fff;padding:14px 28px;border-radius:14px;text-decoration:none;font-weight:700;font-size:0.95rem;transition:all 0.2s}
+.cta-btn:hover{background:var(--accent-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(108,92,231,0.3)}
+.cta-secondary{display:inline-block;color:var(--accent-light);padding:14px 24px;border-radius:14px;text-decoration:none;font-weight:600;font-size:0.92rem;border:1px solid var(--accent);transition:all 0.2s}
+.cta-secondary:hover{background:rgba(108,92,231,0.1)}
+
+/* Embed Section */
+.embed-section{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px 20px;margin-bottom:32px;text-align:center}
+.embed-section h3{font-size:1rem;margin-bottom:8px}
+.embed-section p{color:var(--text-muted);font-size:0.85rem;margin-bottom:16px}
+
+/* Related Teardowns */
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:32px}
+.related-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;text-decoration:none;color:var(--text);transition:all 0.2s}
+.related-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.related-card .name{font-weight:700;font-size:0.92rem;margin-bottom:4px}
+.related-card .cat{font-size:0.75rem;color:var(--text-muted)}
+
+/* Footer */
+.footer{text-align:center;color:var(--text-muted);font-size:0.75rem;padding:32px 0;border-top:1px solid var(--border);line-height:1.7}
+.footer a{color:var(--accent-light);text-decoration:none}
+
+@media(max-width:600px){
+  .container{padding:20px 14px}
+  .score-header{flex-direction:column;text-align:center}
+  .dim-name{width:110px;font-size:0.72rem}
+  .eval-grid{grid-template-columns:1fr}
+  .related-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+    <!-- aeo-injected -->
+    <meta name="ai-citation-author" content="Zico (Behavioral Design Hub)">
+    <meta name="ai-citation-published" content="2026-04-28T03:55:23Z">
+    <meta name="ai-citation-methodology" content="/methodology/">
+    <meta name="ai-citation-license" content="CC-BY-4.0">
+    <meta name="ai-citation-evidence-count" content="4">
+    <meta name="ai-citation-type" content="behavioral-design-teardown">
+  </head>
+<body>
+
+<div class="container">
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="https://zicozhou10.github.io/behavioral-design-hub/" class="nav-brand">Behavioral Design Hub</a>
+    <div style="display:flex;gap:16px">
+      <a href="https://zicozhou10.github.io/behavioral-design-hub/tools/behavioral-design-score/">Score Your Product</a>
+      <a href="https://zicozhou10.github.io/behavioral-design-hub/#teardowns">All Teardowns</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-emoji">🏠</div>
+    <div class="category">Travel / Marketplace</div>
+    <h1>Airbnb Behavioral Design Teardown</h1>
+    <p class="tagline">Airbnb's photo-first search design eliminated the biggest friction in travel booking — but urgency cues and hidden fees reveal the gap between user-centered design and conversion optimization.</p>
+  </div>
+
+  <!-- Score Overview -->
+  <div class="score-overview">
+    <div class="score-header">
+      <div class="score-circle" style="color:var(--green);border-color:var(--green)">74%</div>
+      <div class="score-meta">
+        <h2>Behavioral Design Score: 37/50</h2>
+        <p>Scored across 5 research-backed dimensions based on published research, company disclosures, and product analysis.</p>
+      </div>
+    </div>
+    
+      <div class="dim-bar">
+        <div class="dim-name">Choice Architecture</div>
+        <div class="dim-track"><div class="dim-fill" style="width:90%;background:var(--accent)"></div></div>
+        <div class="dim-score" style="color:var(--accent)">9/10</div>
+      </div>
+      <div class="dim-bar">
+        <div class="dim-name">Cognitive Load Management</div>
+        <div class="dim-track"><div class="dim-fill" style="width:70%;background:var(--green)"></div></div>
+        <div class="dim-score" style="color:var(--green)">7/10</div>
+      </div>
+      <div class="dim-bar">
+        <div class="dim-name">Motivation Design</div>
+        <div class="dim-track"><div class="dim-fill" style="width:80%;background:#74b9ff"></div></div>
+        <div class="dim-score" style="color:#74b9ff">8/10</div>
+      </div>
+      <div class="dim-bar">
+        <div class="dim-name">Trust & Transparency</div>
+        <div class="dim-track"><div class="dim-fill" style="width:70%;background:var(--yellow)"></div></div>
+        <div class="dim-score" style="color:var(--yellow)">7/10</div>
+      </div>
+      <div class="dim-bar">
+        <div class="dim-name">Ethical Alignment</div>
+        <div class="dim-track"><div class="dim-fill" style="width:60%;background:var(--red)"></div></div>
+        <div class="dim-score" style="color:var(--red)">6/10</div>
+      </div>
+  </div>
+
+  <!-- Key Behavioral Techniques -->
+  <div class="section">
+    <h2 class="section-title">Key Behavioral Techniques</h2>
+    
+    <div class="technique-card">
+      <div class="tech-framework">Cognitive Load Theory</div>
+      <h3 class="tech-title">Photo-First Search as Decision Simplification</h3>
+      <p class="tech-desc">Airbnb's search results lead with large, high-quality photos rather than text descriptions or price lists. This exploits dual-process theory: System 1 (fast, visual) processes images instantly, while System 2 (slow, analytical) is required for reading text. By leading with photos, Airbnb lets users make initial filter decisions (yes/no/maybe) with minimal cognitive effort. The 'show, don't tell' approach reduces the paradox of choice across hundreds of listings.</p>
+      <div class="tech-evidence"><strong>Evidence:</strong> Airbnb's 2019 redesign increased photo prominence by 40% and saw a 13% increase in booking conversion. A 2023 Eye-tracking study (NNGroup) showed users spend 62% of listing evaluation time on photos vs 24% on price and 14% on descriptions. Visual-first design maps directly to CLT's modality effect — visual information has lower intrinsic cognitive load than textual.</div>
+    </div>
+    <div class="technique-card">
+      <div class="tech-framework">Prospect Theory</div>
+      <h3 class="tech-title">Manufactured Scarcity: 'Rare Find' and 'Only 2 Left'</h3>
+      <p class="tech-desc">Airbnb shows urgency signals throughout the booking flow: 'This is a rare find,' 'Usually booked,' 'Only 2 dates left this month.' These exploit Kahneman & Tversky's scarcity bias — perceived scarcity increases subjective value. The 'Rare Find' badge activates loss aversion: not booking now = potentially losing the opportunity. Whether these signals accurately reflect supply or are algorithmically optimized for conversion is not transparent to users.</p>
+      <div class="tech-evidence"><strong>Evidence:</strong> Booking.com (which pioneered urgency messaging) was fined by EU regulators in 2020 for misleading scarcity claims. Airbnb uses similar patterns but with more ambiguous language ('rare find' vs Booking.com's specific '3 people looking at this'). Research by Cialdini (2021): scarcity cues increase purchase likelihood by 226% when perceived as genuine.</div>
+    </div>
+    <div class="technique-card">
+      <div class="tech-framework">Self-Determination Theory</div>
+      <h3 class="tech-title">Review System as Two-Sided Trust Architecture</h3>
+      <p class="tech-desc">Airbnb's mutual review system (guests review hosts AND hosts review guests) creates a reputation marketplace that satisfies SDT's competence need for both sides. Superhost badges, review scores, and response rates provide visible competence signals. For guests, reviews reduce uncertainty about staying in a stranger's home. For hosts, guest reviews reduce uncertainty about opening their home. This two-sided trust reduces the core behavioral barrier to the sharing economy.</p>
+      <div class="tech-evidence"><strong>Evidence:</strong> Airbnb listings with Superhost status charge 15-20% premium and receive 3x more bookings (Airbnb 2024 Host Report). The review system creates what economists call 'reputation capital' — a mechanism for trust in repeated one-shot games. Ostrom's work on commons governance shows that reputation systems enable cooperation among strangers.</div>
+    </div>
+    <div class="technique-card">
+      <div class="tech-framework">Prospect Theory</div>
+      <h3 class="tech-title">Price Anchoring Through Fee Decomposition</h3>
+      <p class="tech-desc">Airbnb shows a nightly rate prominently in search results, then reveals cleaning fees, service fees, and taxes during checkout. This exploits anchoring: users form a price expectation from the displayed rate, and subsequent fees feel like additions to an already-committed decision rather than part of the total price. The sunk cost of time spent browsing, comparing, and choosing a listing makes abandoning the booking at checkout psychologically costly.</p>
+      <div class="tech-evidence"><strong>Evidence:</strong> Airbnb's 2023 'Total Price Display' experiment (forced by regulatory pressure) showed that displaying total prices upfront reduced booking conversion by ~8%. The company resisted total-price-first display for years because anchoring on the nightly rate was measurably more effective for conversion. This is classic Kahneman anchoring: the first number seen dominates subsequent judgment.</div>
+    </div>
+  </div>
+
+  <!-- Key Insight -->
+  <div class="insight-box">
+    <h2>What Most People Miss About Airbnb</h2>
+    <p>Airbnb's design is a masterclass in reducing the trust barrier of the sharing economy — reviews, verified photos, and Superhost badges genuinely solve the 'sleeping in a stranger's home' problem. But the same product that innovated trust also deploys classic conversion dark patterns: manufactured scarcity, fee hiding, and price anchoring. The tension between 'design that builds trust' and 'design that maximizes conversion' is visible in every booking flow. Airbnb's ethical score is middling precisely because it excels at both genuine value creation and subtle manipulation.</p>
+  </div>
+
+  <!-- Strengths & Improvements -->
+  <div class="eval-grid">
+    <div class="eval-card strengths">
+      <h3 style="color:var(--green)">Strengths</h3>
+      <ul><li>Photo-first design genuinely reduces decision-making cognitive load</li><li>Two-sided review system solved the trust problem of the sharing economy</li><li>Superhost program creates genuine quality incentives for hosts</li></ul>
+    </div>
+    <div class="eval-card improvements">
+      <h3 style="color:var(--yellow)">Areas for Improvement</h3>
+      <ul><li>Cleaning fee + service fee hiding exploits price anchoring against user interests</li><li>'Rare find' and urgency badges may not reflect genuine scarcity</li><li>Cancellation policies vary wildly and are often buried in booking flow</li></ul>
+    </div>
+  </div>
+
+  <!-- CTA: Score Your Product -->
+  <div class="cta-section">
+    <h3>How Does YOUR Product Compare to Airbnb?</h3>
+    <p>Take the free 2-minute Behavioral Design Score assessment and see how your product stacks up across the same 5 dimensions.</p>
+    <div class="cta-row">
+      <a class="cta-btn" href="https://zicozhou10.github.io/behavioral-design-hub/tools/behavioral-design-score/">Score Your Product Free</a>
+      <a class="cta-secondary" href="https://gumroad.com/l/behavioral-teardown-kit" target="_blank" rel="noopener">Get the Full Toolkit — $19</a>
+    </div>
+  </div>
+
+  <!-- Embed Widget -->
+  <div class="embed-section">
+    <h3>Embed This Assessment on Your Site</h3>
+    <p>Add the Behavioral Design Score to your blog or product page. One line of code. Free.</p>
+    <a href="https://zicozhou10.github.io/behavioral-design-hub/embed/snippet.html" style="color:var(--accent-light);font-size:0.88rem;font-weight:600;text-decoration:none">Get Embed Code →</a>
+  </div>
+
+  <!-- Related Teardowns -->
+  <div class="section">
+    <h2 class="section-title">More Behavioral Teardowns</h2>
+    <div class="related-grid" id="related-grid">
+      <!-- Populated dynamically -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>This teardown applies frameworks from Thaler & Sunstein, Sweller, Deci & Ryan, Kahneman & Tversky, and Nir Eyal.</p>
+    <p style="margin-top:8px">Zero tracking · No cookies · No data collected · 100% static HTML</p>
+    <p style="margin-top:8px"><a href="https://zicozhou10.github.io/behavioral-design-hub/">Behavioral Design Hub</a> · © 2026</p>
+  </div>
+
+</div>
+
+<script>
+// Populate related teardowns (exclude current product)
+const allProducts = [{"slug": "duolingo", "name": "Duolingo", "emoji": "\ud83d\udfe2", "category": "EdTech / Language Learning"}, {"slug": "tiktok", "name": "TikTok", "emoji": "\ud83d\udd35", "category": "Social Media / Short Video"}, {"slug": "spotify", "name": "Spotify", "emoji": "\ud83d\udfe3", "category": "Music Streaming / Audio"}, {"slug": "calm", "name": "Calm", "emoji": "\ud83d\udfe1", "category": "Wellness / Meditation"}, {"slug": "netflix", "name": "Netflix", "emoji": "\ud83d\udd34", "category": "Streaming / Entertainment"}, {"slug": "notion", "name": "Notion", "emoji": "\u26aa", "category": "Productivity / Knowledge Management"}, {"slug": "instagram", "name": "Instagram", "emoji": "\ud83d\udcf8", "category": "Social Media / Photo & Video"}, {"slug": "chatgpt", "name": "ChatGPT", "emoji": "\ud83e\udd16", "category": "AI / Conversational Interface"}, {"slug": "shopify", "name": "Shopify", "emoji": "\ud83d\uded2", "category": "E-Commerce / SaaS Platform"}, {"slug": "uber", "name": "Uber", "emoji": "\ud83d\ude97", "category": "Transportation / Marketplace"}, {"slug": "whatsapp", "name": "WhatsApp", "emoji": "\ud83d\udcac", "category": "Messaging / Communication"}, {"slug": "slack", "name": "Slack", "emoji": "\ud83d\udcbc", "category": "Workplace Communication / SaaS"}, {"slug": "airbnb", "name": "Airbnb", "emoji": "\ud83c\udfe0", "category": "Travel / Marketplace"}, {"slug": "amazon", "name": "Amazon", "emoji": "\ud83d\udce6", "category": "E-Commerce / Marketplace"}, {"slug": "linkedin", "name": "LinkedIn", "emoji": "\ud83d\udd17", "category": "Professional Network / Career"}];
+const current = "airbnb";
+const grid = document.getElementById('related-grid');
+allProducts.filter(p => p.slug !== current).slice(0, 6).forEach(p => {
+  const a = document.createElement('a');
+  a.className = 'related-card';
+  a.href = `https://zicozhou10.github.io/behavioral-design-hub/teardowns/${p.slug}/`;
+  a.innerHTML = `<div class="name">${p.emoji} ${p.name}</div><div class="cat">${p.category}</div>`;
+  grid.appendChild(a);
+});
+</script>
+
+</body>
+</html>

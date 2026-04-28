@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "ChatGPT vs Snapchat",
+  "products": {
+    "chatgpt": {
+      "name": "ChatGPT",
+      "emoji": "🤖",
+      "category": "AI",
+      "scores": {
+        "choice_architecture": 6,
+        "cognitive_load": 7,
+        "motivation_design": 8,
+        "trust_transparency": 5,
+        "ethical_alignment": 6
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "ChatGPT represents a paradigm shift in behavioral design: the product's interface IS the choice architecture. Every interaction requires the user to construct their own options (via prompts), which inverts the traditional Nudge Theory framework. This creates a fascinating paradox — the product that seems to give users 'infinite freedom' actually has enormous hidden defaults (training data biases, RLHF preferences, system prompt constraints) that shape every response.",
+      "top_technique": "Blank Prompt as Anti-Choice Architecture"
+    },
+    "snapchat": {
+      "name": "Snapchat",
+      "emoji": "👻",
+      "category": "Social",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 7,
+        "motivation_design": 9,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 33,
+      "pct": 66,
+      "key_insight": "Snapchat's most powerful behavioral innovation isn't the disappearing message — it's the Streak. Snapstreaks (consecutive days of mutual messaging between two users) transformed an ephemeral messaging app into a daily obligation engine. A 365-day streak with a best friend isn't just a number — it's a quantified relationship artifact that feels emotionally devastating to lose. The streak mechanic exploits loss aversion at a personal level: you're not losing points or status — you're 'losing' proof of a friendship. This makes Snapchat's daily retention mechanism more powerful than any notification-based engagement system because the motivator is social guilt rather than curiosity or FOMO. Teens report feeling genuine anxiety about breaking streaks, maintaining them even during illness or vacation by sharing their passwords. Snapchat's disappearing messages further reinforce daily use: there's no archive to browse, no content to revisit, so the only way to stay connected is to keep sending. The combination of ephemeral content (nothing persists) and permanent metrics (streaks count up forever) is a brilliant behavioral design contradiction that maximizes daily engagement.",
+      "top_technique": "Snapstreaks as Loss Aversion Commitment Device"
+    }
+  },
+  "overall_winner": "snapchat",
+  "overall_difference": 1,
+  "dimension_wins": {
+    "chatgpt": 1,
+    "snapchat": 2,
+    "ties": 2
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "chatgpt": 6,
+      "snapchat": 8,
+      "difference": -2,
+      "winner": "snapchat"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "chatgpt": 7,
+      "snapchat": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "chatgpt": 8,
+      "snapchat": 9,
+      "difference": -1,
+      "winner": "snapchat"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "chatgpt": 5,
+      "snapchat": 5,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "chatgpt": 6,
+      "snapchat": 4,
+      "difference": 2,
+      "winner": "chatgpt"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/chatgpt-vs-snapchat/",
+    "product_a_detail": "/api/v1/products/chatgpt.json",
+    "product_b_detail": "/api/v1/products/snapchat.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/chatgpt/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/snapchat/"
+  }
+}

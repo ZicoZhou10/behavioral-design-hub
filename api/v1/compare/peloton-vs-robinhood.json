@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Peloton vs Robinhood",
+  "products": {
+    "peloton": {
+      "name": "Peloton",
+      "emoji": "🚴",
+      "category": "Fitness",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 6,
+        "ethical_alignment": 6
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "Peloton's breakthrough insight was that fitness equipment isn't a product — it's a medium. The $2,000+ bike is a behavioral commitment device that creates sunk cost pressure to justify ongoing $44/month subscriptions. But the real retention engine is parasocial: instructors like Robin Arzón and Cody Rigsby are designed to feel like personal coaches who know you, creating an emotional bond that gym equipment alone can never generate. The live leaderboard adds competitive urgency (you can see your real-time rank among thousands of simultaneous riders), while high-fives from strangers simulate the social energy of a group fitness class. Peloton's post-pandemic challenge — 39% stock decline in 2022 — revealed the fragility of hardware-dependent behavioral lock-in: when users' sunk cost threshold was crossed, they abandoned the ecosystem entirely. The lesson is that parasocial motivation is powerful but insufficient when the financial commitment feels disproportionate to the perceived value.",
+      "top_technique": "Parasocial Instructor Relationships as Retention Engine"
+    },
+    "robinhood": {
+      "name": "Robinhood",
+      "emoji": "📈",
+      "category": "FinTech",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 7,
+        "motivation_design": 9,
+        "trust_transparency": 3,
+        "ethical_alignment": 3
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "Robinhood is the most controversial case study in behavioral design because it reveals what happens when you apply consumer-app engagement techniques to financial instruments. The confetti animation on trades, the one-tap execution, the push notifications on price movements — these are standard mobile engagement patterns, except the 'engagement' involves real money and real financial risk. The SEC's 2021 investigation and subsequent $65M fine specifically cited Robinhood's gamification. Robinhood's defense — that simplicity democratizes access — is valid. The counterargument — that simplicity in high-stakes domains removes protective friction — is also valid. This tension makes Robinhood the defining case study for when behavioral design ethics actually matter.",
+      "top_technique": "Confetti and Celebration UI as Operant Conditioning"
+    }
+  },
+  "overall_winner": "peloton",
+  "overall_difference": 6,
+  "dimension_wins": {
+    "peloton": 3,
+    "robinhood": 1,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "peloton": 7,
+      "robinhood": 8,
+      "difference": -1,
+      "winner": "robinhood"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "peloton": 8,
+      "robinhood": 7,
+      "difference": 1,
+      "winner": "peloton"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "peloton": 9,
+      "robinhood": 9,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "peloton": 6,
+      "robinhood": 3,
+      "difference": 3,
+      "winner": "peloton"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "peloton": 6,
+      "robinhood": 3,
+      "difference": 3,
+      "winner": "peloton"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/peloton-vs-robinhood/",
+    "product_a_detail": "/api/v1/products/peloton.json",
+    "product_b_detail": "/api/v1/products/robinhood.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/peloton/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/robinhood/"
+  }
+}

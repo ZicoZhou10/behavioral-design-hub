@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Discord vs Figma",
+  "products": {
+    "discord": {
+      "name": "Discord",
+      "emoji": "💬",
+      "category": "Community",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 8,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 35,
+      "pct": 70,
+      "key_insight": "Discord's behavioral design success comes from an unusual source: it's one of the few major platforms where the engagement loop is primarily social rather than algorithmic. There's no recommendation algorithm pushing content — engagement is driven by genuine community belonging and real-time social presence. The 'someone is typing...' indicator, voice channel presence, and @mention notifications create a sense of liveness that makes communities feel inhabited rather than archived. Discord's investment escalation (join → customize → earn roles → moderate → build bots) creates deep switching costs through identity investment rather than content lock-in. This makes Discord's engagement more ethically defensible than algorithmic platforms: users return because they have genuine social bonds, not because an algorithm has learned to exploit their attention patterns.",
+      "top_technique": "Server Investment Escalation Ladder"
+    },
+    "figma": {
+      "name": "Figma",
+      "emoji": "🎨",
+      "category": "Design",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 7,
+        "trust_transparency": 8,
+        "ethical_alignment": 8
+      },
+      "total": 40,
+      "pct": 80,
+      "key_insight": "Figma is the most elegant example of network-effect behavioral design in B2B software. Every design decision serves a single behavioral insight: make collaboration so effortless that the tool becomes the team's shared space, not just one designer's workspace. The cursor presence feature (seeing teammates' cursors labeled with their names in real-time) is pure social facilitation — knowing someone is watching you work changes how you work. The generous free tier isn't charity — it's a viral acquisition mechanism: every designer who opens a Figma link to view a prototype becomes a potential user. Figma's file-sharing is designed like Google Docs, not like Photoshop: no installation, no file format confusion, no version control headaches. By eliminating every friction point in collaboration, Figma made itself structurally impossible to replace — switching to a competitor means convincing your entire team, your clients, and your developer handoff workflow to switch simultaneously. This is behavioral lock-in through genuine value creation, not dark patterns.",
+      "top_technique": "Multiplayer Cursor Presence as Social Facilitation"
+    }
+  },
+  "overall_winner": "figma",
+  "overall_difference": 5,
+  "dimension_wins": {
+    "discord": 1,
+    "figma": 4,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "discord": 7,
+      "figma": 9,
+      "difference": -2,
+      "winner": "figma"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "discord": 6,
+      "figma": 8,
+      "difference": -2,
+      "winner": "figma"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "discord": 8,
+      "figma": 7,
+      "difference": 1,
+      "winner": "discord"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "discord": 7,
+      "figma": 8,
+      "difference": -1,
+      "winner": "figma"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "discord": 7,
+      "figma": 8,
+      "difference": -1,
+      "winner": "figma"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/discord-vs-figma/",
+    "product_a_detail": "/api/v1/products/discord.json",
+    "product_b_detail": "/api/v1/products/figma.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/discord/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/figma/"
+  }
+}

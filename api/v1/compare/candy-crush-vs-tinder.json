@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Candy Crush vs Tinder",
+  "products": {
+    "candy-crush": {
+      "name": "Candy Crush",
+      "emoji": "🍬",
+      "category": "Gaming",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 10,
+        "trust_transparency": 4,
+        "ethical_alignment": 3
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Candy Crush Saga has generated over $20 billion in lifetime revenue by perfecting a single behavioral loop: give players a sense of near-mastery, then introduce failure through randomness, then offer to sell the solution. This is not accidental — it's the direct application of Natasha Schull's 'machine zone' concept from casino design to mobile gaming. The game's levels are algorithmically tuned to produce a specific failure rate: too easy and players don't spend, too hard and they quit. The optimal frustration point — where players believe they 'almost had it' and one more try (or one purchased power-up) will succeed — is the core monetization engine. The lives system (5 lives, 30-minute regeneration) creates artificial scarcity of play itself, making continued play feel like a premium commodity. King's brilliance is making the monetization feel like the player's choice ('I choose to buy a power-up') rather than the system's design ('the level was tuned to make you fail without one'). Candy Crush is the purest distillation of free-to-play behavioral economics: the product is free, and frustration is the revenue model.",
+      "top_technique": "Near-Miss Level Design as Monetization Engine"
+    },
+    "tinder": {
+      "name": "Tinder",
+      "emoji": "🔥",
+      "category": "Dating",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 4,
+        "ethical_alignment": 4
+      },
+      "total": 34,
+      "pct": 68,
+      "key_insight": "Tinder solved the paradox of choice in dating by reducing a multi-dimensional human evaluation to a binary swipe. This is brilliant choice architecture — and also the product's deepest ethical tension. The swipe creates a variable ratio reward schedule identical to slot machines: most swipes yield nothing, but the occasional match triggers a dopamine spike that reinforces the swiping behavior. Tinder's business model depends on users NOT finding matches efficiently (premium features gate the very discovery the app promises), creating a fundamental misalignment between user goals (find a partner) and business goals (maximize engagement time). The result: an app that is behaviorally addictive by design, yet genuinely useful as a discovery mechanism that didn't exist before.",
+      "top_technique": "Swipe as Binary Choice Architecture"
+    }
+  },
+  "overall_winner": "tinder",
+  "overall_difference": 2,
+  "dimension_wins": {
+    "candy-crush": 1,
+    "tinder": 2,
+    "ties": 2
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "candy-crush": 7,
+      "tinder": 9,
+      "difference": -2,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "candy-crush": 8,
+      "tinder": 8,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "candy-crush": 10,
+      "tinder": 9,
+      "difference": 1,
+      "winner": "candy-crush"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "candy-crush": 4,
+      "tinder": 4,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "candy-crush": 3,
+      "tinder": 4,
+      "difference": -1,
+      "winner": "tinder"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/candy-crush-vs-tinder/",
+    "product_a_detail": "/api/v1/products/candy-crush.json",
+    "product_b_detail": "/api/v1/products/tinder.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/candy-crush/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/tinder/"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Bumble vs LinkedIn",
+  "products": {
+    "bumble": {
+      "name": "Bumble",
+      "emoji": "💛",
+      "category": "Dating",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 7,
+        "motivation_design": 7,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Bumble proves that behavioral constraints can be more powerful than behavioral nudges. While Tinder maximizes engagement through unlimited swiping and variable-ratio matching, Bumble deliberately constrains user behavior — women must message first within 24 hours or the match expires. This constraint solves three problems simultaneously: it reduces unwanted messages for women (the #1 complaint on dating apps), it forces genuine interest signaling (matches that survive the 24-hour window have higher intent), and it creates a differentiated brand identity ('the feminist dating app'). The 24-hour expiration exploits scarcity and loss aversion — a match that's about to expire feels more valuable than one that sits indefinitely. Bumble's expansion into BFF (friend-finding) and Bizz (professional networking) using the same swipe+constraint UX reveals the strategic insight: the behavioral mechanics of dating apps are not specific to dating — they are general-purpose social sorting mechanisms. The ethical dimension is genuinely positive: Bumble's constraint design demonstrably reduces harassment compared to unconstrained platforms.",
+      "top_technique": "Women-First Messaging Constraint as Power Architecture"
+    },
+    "linkedin": {
+      "name": "LinkedIn",
+      "emoji": "💼",
+      "category": "Social Media",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 5,
+        "motivation_design": 7,
+        "trust_transparency": 6,
+        "ethical_alignment": 5
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "LinkedIn exploits professional anxiety as its core behavioral mechanism. Unlike entertainment apps that hook through pleasure (variable rewards, social validation), LinkedIn hooks through anxiety: career FOMO, profile inadequacy, and professional visibility paranoia. The platform is uniquely positioned to do this because professional identity is high-stakes — being 'not visible' on LinkedIn feels genuinely career-threatening in a way that being inactive on Instagram does not. This anxiety-as-engagement model is highly effective (LinkedIn has 1B+ members) but ethically concerning because it monetizes professional insecurity rather than professional development.",
+      "top_technique": "Profile Completeness as Guilt Architecture"
+    }
+  },
+  "overall_winner": "bumble",
+  "overall_difference": 7,
+  "dimension_wins": {
+    "bumble": 4,
+    "linkedin": 0,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "bumble": 9,
+      "linkedin": 7,
+      "difference": 2,
+      "winner": "bumble"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "bumble": 7,
+      "linkedin": 5,
+      "difference": 2,
+      "winner": "bumble"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "bumble": 7,
+      "linkedin": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "bumble": 7,
+      "linkedin": 6,
+      "difference": 1,
+      "winner": "bumble"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "bumble": 7,
+      "linkedin": 5,
+      "difference": 2,
+      "winner": "bumble"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/bumble-vs-linkedin/",
+    "product_a_detail": "/api/v1/products/bumble.json",
+    "product_b_detail": "/api/v1/products/linkedin.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/bumble/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/linkedin/"
+  }
+}

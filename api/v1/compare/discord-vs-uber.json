@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Discord vs Uber",
+  "products": {
+    "discord": {
+      "name": "Discord",
+      "emoji": "💬",
+      "category": "Community",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 8,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 35,
+      "pct": 70,
+      "key_insight": "Discord's behavioral design success comes from an unusual source: it's one of the few major platforms where the engagement loop is primarily social rather than algorithmic. There's no recommendation algorithm pushing content — engagement is driven by genuine community belonging and real-time social presence. The 'someone is typing...' indicator, voice channel presence, and @mention notifications create a sense of liveness that makes communities feel inhabited rather than archived. Discord's investment escalation (join → customize → earn roles → moderate → build bots) creates deep switching costs through identity investment rather than content lock-in. This makes Discord's engagement more ethically defensible than algorithmic platforms: users return because they have genuine social bonds, not because an algorithm has learned to exploit their attention patterns.",
+      "top_technique": "Server Investment Escalation Ladder"
+    },
+    "uber": {
+      "name": "Uber",
+      "emoji": "🚗",
+      "category": "Utility",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 9,
+        "motivation_design": 7,
+        "trust_transparency": 4,
+        "ethical_alignment": 5
+      },
+      "total": 33,
+      "pct": 66,
+      "key_insight": "Uber is a case study in dual-sided behavioral design: the company applies behavioral science to both riders (friction elimination, surge anchoring) and drivers (gamification, loss aversion goals). The ethical tension is asymmetric — riders benefit from reduced friction, but drivers are nudged to work longer hours in ways that may not serve their interests. Uber's behavioral design works precisely because it's invisible: users don't know they're being nudged, and drivers don't realize the earnings goal is an anchor, not a recommendation.",
+      "top_technique": "Surge Pricing as Dynamic Anchoring"
+    }
+  },
+  "overall_winner": "discord",
+  "overall_difference": 2,
+  "dimension_wins": {
+    "discord": 3,
+    "uber": 2,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "discord": 7,
+      "uber": 8,
+      "difference": -1,
+      "winner": "uber"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "discord": 6,
+      "uber": 9,
+      "difference": -3,
+      "winner": "uber"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "discord": 8,
+      "uber": 7,
+      "difference": 1,
+      "winner": "discord"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "discord": 7,
+      "uber": 4,
+      "difference": 3,
+      "winner": "discord"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "discord": 7,
+      "uber": 5,
+      "difference": 2,
+      "winner": "discord"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/discord-vs-uber/",
+    "product_a_detail": "/api/v1/products/discord.json",
+    "product_b_detail": "/api/v1/products/uber.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/discord/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/uber/"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Amazon vs Candy Crush",
+  "products": {
+    "amazon": {
+      "name": "Amazon",
+      "emoji": "📦",
+      "category": "E-Commerce",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 9,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Amazon is the most commercially successful behavioral design in history — and the most ethically polarized. One-click buy genuinely reduces friction. Prime genuinely provides value. But the same behavioral toolkit that makes buying easy makes canceling hard. Amazon proves that behavioral design is morally neutral: identical techniques (friction manipulation, default exploitation, cognitive load management) create user value when applied to purchasing and destroy user autonomy when applied to retention. The regulatory response (FTC lawsuit, EU DSA) suggests that the market is beginning to price in behavioral design ethics.",
+      "top_technique": "One-Click Buy: The Friction Elimination Patent"
+    },
+    "candy-crush": {
+      "name": "Candy Crush",
+      "emoji": "🍬",
+      "category": "Gaming",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 10,
+        "trust_transparency": 4,
+        "ethical_alignment": 3
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Candy Crush Saga has generated over $20 billion in lifetime revenue by perfecting a single behavioral loop: give players a sense of near-mastery, then introduce failure through randomness, then offer to sell the solution. This is not accidental — it's the direct application of Natasha Schull's 'machine zone' concept from casino design to mobile gaming. The game's levels are algorithmically tuned to produce a specific failure rate: too easy and players don't spend, too hard and they quit. The optimal frustration point — where players believe they 'almost had it' and one more try (or one purchased power-up) will succeed — is the core monetization engine. The lives system (5 lives, 30-minute regeneration) creates artificial scarcity of play itself, making continued play feel like a premium commodity. King's brilliance is making the monetization feel like the player's choice ('I choose to buy a power-up') rather than the system's design ('the level was tuned to make you fail without one'). Candy Crush is the purest distillation of free-to-play behavioral economics: the product is free, and frustration is the revenue model.",
+      "top_technique": "Near-Miss Level Design as Monetization Engine"
+    }
+  },
+  "overall_winner": "tie",
+  "overall_difference": 0,
+  "dimension_wins": {
+    "amazon": 3,
+    "candy-crush": 2,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "amazon": 8,
+      "candy-crush": 7,
+      "difference": 1,
+      "winner": "amazon"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "amazon": 6,
+      "candy-crush": 8,
+      "difference": -2,
+      "winner": "candy-crush"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "amazon": 9,
+      "candy-crush": 10,
+      "difference": -1,
+      "winner": "candy-crush"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "amazon": 5,
+      "candy-crush": 4,
+      "difference": 1,
+      "winner": "amazon"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "amazon": 4,
+      "candy-crush": 3,
+      "difference": 1,
+      "winner": "amazon"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/amazon-vs-candy-crush/",
+    "product_a_detail": "/api/v1/products/amazon.json",
+    "product_b_detail": "/api/v1/products/candy-crush.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/amazon/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/candy-crush/"
+  }
+}

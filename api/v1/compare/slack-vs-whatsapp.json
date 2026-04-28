@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Slack vs WhatsApp",
+  "products": {
+    "slack": {
+      "name": "Slack",
+      "emoji": "💬",
+      "category": "Productivity",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 5,
+        "motivation_design": 7,
+        "trust_transparency": 7,
+        "ethical_alignment": 5
+      },
+      "total": 31,
+      "pct": 62,
+      "key_insight": "Slack is the clearest example of how behavioral design optimized for engagement metrics can directly conflict with user wellbeing in a workplace context. The green dot creates surveillance anxiety, channel proliferation fragments attention, and notification urgency turns every message into a potential trigger. The product works brilliantly for Slack's business (more messages = more 'engaged' = easier enterprise renewal) but actively undermines the deep work that knowledge workers are ostensibly paid to do. Slack proves that 'engagement' as a success metric can be actively harmful when the user's goal isn't entertainment but productive work.",
+      "top_technique": "The Green Dot: Presence as Social Control"
+    },
+    "whatsapp": {
+      "name": "WhatsApp",
+      "emoji": "📱",
+      "category": "Communication",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 9,
+        "motivation_design": 6,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "WhatsApp is the anti-TikTok: instead of sophisticated algorithmic manipulation, it uses radical simplicity and network effects as its behavioral architecture. The product doesn't need to hook you with variable rewards because your social obligations do the work. Blue ticks create response pressure, group chats create FOMO, and the social graph creates switching costs — all without a single gamification element. WhatsApp proves that the most powerful behavioral design can be invisible: no streaks, no likes, no algorithmic feed — just the weight of your social connections.",
+      "top_technique": "Blue Ticks as Social Obligation Architecture"
+    }
+  },
+  "overall_winner": "whatsapp",
+  "overall_difference": 5,
+  "dimension_wins": {
+    "slack": 1,
+    "whatsapp": 2,
+    "ties": 2
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "slack": 7,
+      "whatsapp": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "slack": 5,
+      "whatsapp": 9,
+      "difference": -4,
+      "winner": "whatsapp"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "slack": 7,
+      "whatsapp": 6,
+      "difference": 1,
+      "winner": "slack"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "slack": 7,
+      "whatsapp": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "slack": 5,
+      "whatsapp": 7,
+      "difference": -2,
+      "winner": "whatsapp"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/slack-vs-whatsapp/",
+    "product_a_detail": "/api/v1/products/slack.json",
+    "product_b_detail": "/api/v1/products/whatsapp.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/slack/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/whatsapp/"
+  }
+}

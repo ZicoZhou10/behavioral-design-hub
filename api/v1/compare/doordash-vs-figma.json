@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "DoorDash vs Figma",
+  "products": {
+    "doordash": {
+      "name": "DoorDash",
+      "emoji": "🛕",
+      "category": "Delivery",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 7,
+        "motivation_design": 8,
+        "trust_transparency": 5,
+        "ethical_alignment": 5
+      },
+      "total": 33,
+      "pct": 66,
+      "key_insight": "DoorDash's behavioral design reveals a fundamental tension in on-demand platforms: the features that make the user experience feel urgent and seamless (countdown timers, pre-selected tips, one-tap reorder) are the same features that obscure true costs and reduce deliberative decision-making. DoorDash charges a delivery fee, a service fee, a small order fee, and applies dynamic pricing — but the total only appears at checkout, after the user has invested time browsing menus and customizing orders (sunk cost). The DashPass subscription ($9.99/month) transforms occasional delivery into a committed habit by making each marginal order feel 'free.' DoorDash is a masterclass in how to design for habitual, low-friction purchasing — and a cautionary tale about what that means for consumer spending.",
+      "top_technique": "Delivery Time Countdown as Urgency Commitment"
+    },
+    "figma": {
+      "name": "Figma",
+      "emoji": "🎨",
+      "category": "Design",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 7,
+        "trust_transparency": 8,
+        "ethical_alignment": 8
+      },
+      "total": 40,
+      "pct": 80,
+      "key_insight": "Figma is the most elegant example of network-effect behavioral design in B2B software. Every design decision serves a single behavioral insight: make collaboration so effortless that the tool becomes the team's shared space, not just one designer's workspace. The cursor presence feature (seeing teammates' cursors labeled with their names in real-time) is pure social facilitation — knowing someone is watching you work changes how you work. The generous free tier isn't charity — it's a viral acquisition mechanism: every designer who opens a Figma link to view a prototype becomes a potential user. Figma's file-sharing is designed like Google Docs, not like Photoshop: no installation, no file format confusion, no version control headaches. By eliminating every friction point in collaboration, Figma made itself structurally impossible to replace — switching to a competitor means convincing your entire team, your clients, and your developer handoff workflow to switch simultaneously. This is behavioral lock-in through genuine value creation, not dark patterns.",
+      "top_technique": "Multiplayer Cursor Presence as Social Facilitation"
+    }
+  },
+  "overall_winner": "figma",
+  "overall_difference": 7,
+  "dimension_wins": {
+    "doordash": 1,
+    "figma": 4,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "doordash": 8,
+      "figma": 9,
+      "difference": -1,
+      "winner": "figma"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "doordash": 7,
+      "figma": 8,
+      "difference": -1,
+      "winner": "figma"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "doordash": 8,
+      "figma": 7,
+      "difference": 1,
+      "winner": "doordash"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "doordash": 5,
+      "figma": 8,
+      "difference": -3,
+      "winner": "figma"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "doordash": 5,
+      "figma": 8,
+      "difference": -3,
+      "winner": "figma"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/doordash-vs-figma/",
+    "product_a_detail": "/api/v1/products/doordash.json",
+    "product_b_detail": "/api/v1/products/figma.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/doordash/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/figma/"
+  }
+}

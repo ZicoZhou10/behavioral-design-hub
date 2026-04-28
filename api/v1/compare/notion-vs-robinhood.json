@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Notion vs Robinhood",
+  "products": {
+    "notion": {
+      "name": "Notion",
+      "emoji": "📝",
+      "category": "Productivity",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 6,
+        "trust_transparency": 8,
+        "ethical_alignment": 9
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "Notion proves that 'more flexibility' doesn't always mean better behavioral design. The product excels at progressive disclosure for feature complexity, but struggles with the motivational design of creation from scratch. Products that help users *create* face fundamentally different behavioral challenges than products that help users *consume* — creation requires initial competence that can't be algorithmically provided.",
+      "top_technique": "Template Gallery as Choice Architecture"
+    },
+    "robinhood": {
+      "name": "Robinhood",
+      "emoji": "📈",
+      "category": "FinTech",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 7,
+        "motivation_design": 9,
+        "trust_transparency": 3,
+        "ethical_alignment": 3
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "Robinhood is the most controversial case study in behavioral design because it reveals what happens when you apply consumer-app engagement techniques to financial instruments. The confetti animation on trades, the one-tap execution, the push notifications on price movements — these are standard mobile engagement patterns, except the 'engagement' involves real money and real financial risk. The SEC's 2021 investigation and subsequent $65M fine specifically cited Robinhood's gamification. Robinhood's defense — that simplicity democratizes access — is valid. The counterargument — that simplicity in high-stakes domains removes protective friction — is also valid. This tension makes Robinhood the defining case study for when behavioral design ethics actually matter.",
+      "top_technique": "Confetti and Celebration UI as Operant Conditioning"
+    }
+  },
+  "overall_winner": "notion",
+  "overall_difference": 6,
+  "dimension_wins": {
+    "notion": 2,
+    "robinhood": 3,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "notion": 7,
+      "robinhood": 8,
+      "difference": -1,
+      "winner": "robinhood"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "notion": 6,
+      "robinhood": 7,
+      "difference": -1,
+      "winner": "robinhood"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "notion": 6,
+      "robinhood": 9,
+      "difference": -3,
+      "winner": "robinhood"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "notion": 8,
+      "robinhood": 3,
+      "difference": 5,
+      "winner": "notion"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "notion": 9,
+      "robinhood": 3,
+      "difference": 6,
+      "winner": "notion"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/notion-vs-robinhood/",
+    "product_a_detail": "/api/v1/products/notion.json",
+    "product_b_detail": "/api/v1/products/robinhood.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/notion/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/robinhood/"
+  }
+}

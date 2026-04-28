@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Robinhood vs Snapchat",
+  "products": {
+    "robinhood": {
+      "name": "Robinhood",
+      "emoji": "📈",
+      "category": "FinTech",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 7,
+        "motivation_design": 9,
+        "trust_transparency": 3,
+        "ethical_alignment": 3
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "Robinhood is the most controversial case study in behavioral design because it reveals what happens when you apply consumer-app engagement techniques to financial instruments. The confetti animation on trades, the one-tap execution, the push notifications on price movements — these are standard mobile engagement patterns, except the 'engagement' involves real money and real financial risk. The SEC's 2021 investigation and subsequent $65M fine specifically cited Robinhood's gamification. Robinhood's defense — that simplicity democratizes access — is valid. The counterargument — that simplicity in high-stakes domains removes protective friction — is also valid. This tension makes Robinhood the defining case study for when behavioral design ethics actually matter.",
+      "top_technique": "Confetti and Celebration UI as Operant Conditioning"
+    },
+    "snapchat": {
+      "name": "Snapchat",
+      "emoji": "👻",
+      "category": "Social",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 7,
+        "motivation_design": 9,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 33,
+      "pct": 66,
+      "key_insight": "Snapchat's most powerful behavioral innovation isn't the disappearing message — it's the Streak. Snapstreaks (consecutive days of mutual messaging between two users) transformed an ephemeral messaging app into a daily obligation engine. A 365-day streak with a best friend isn't just a number — it's a quantified relationship artifact that feels emotionally devastating to lose. The streak mechanic exploits loss aversion at a personal level: you're not losing points or status — you're 'losing' proof of a friendship. This makes Snapchat's daily retention mechanism more powerful than any notification-based engagement system because the motivator is social guilt rather than curiosity or FOMO. Teens report feeling genuine anxiety about breaking streaks, maintaining them even during illness or vacation by sharing their passwords. Snapchat's disappearing messages further reinforce daily use: there's no archive to browse, no content to revisit, so the only way to stay connected is to keep sending. The combination of ephemeral content (nothing persists) and permanent metrics (streaks count up forever) is a brilliant behavioral design contradiction that maximizes daily engagement.",
+      "top_technique": "Snapstreaks as Loss Aversion Commitment Device"
+    }
+  },
+  "overall_winner": "snapchat",
+  "overall_difference": 3,
+  "dimension_wins": {
+    "robinhood": 0,
+    "snapchat": 2,
+    "ties": 3
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "robinhood": 8,
+      "snapchat": 8,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "robinhood": 7,
+      "snapchat": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "robinhood": 9,
+      "snapchat": 9,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "robinhood": 3,
+      "snapchat": 5,
+      "difference": -2,
+      "winner": "snapchat"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "robinhood": 3,
+      "snapchat": 4,
+      "difference": -1,
+      "winner": "snapchat"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/robinhood-vs-snapchat/",
+    "product_a_detail": "/api/v1/products/robinhood.json",
+    "product_b_detail": "/api/v1/products/snapchat.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/robinhood/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/snapchat/"
+  }
+}

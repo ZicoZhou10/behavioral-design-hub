@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Notion vs WhatsApp",
+  "products": {
+    "notion": {
+      "name": "Notion",
+      "emoji": "📝",
+      "category": "Productivity",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 6,
+        "trust_transparency": 8,
+        "ethical_alignment": 9
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "Notion proves that 'more flexibility' doesn't always mean better behavioral design. The product excels at progressive disclosure for feature complexity, but struggles with the motivational design of creation from scratch. Products that help users *create* face fundamentally different behavioral challenges than products that help users *consume* — creation requires initial competence that can't be algorithmically provided.",
+      "top_technique": "Template Gallery as Choice Architecture"
+    },
+    "whatsapp": {
+      "name": "WhatsApp",
+      "emoji": "📱",
+      "category": "Communication",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 9,
+        "motivation_design": 6,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "WhatsApp is the anti-TikTok: instead of sophisticated algorithmic manipulation, it uses radical simplicity and network effects as its behavioral architecture. The product doesn't need to hook you with variable rewards because your social obligations do the work. Blue ticks create response pressure, group chats create FOMO, and the social graph creates switching costs — all without a single gamification element. WhatsApp proves that the most powerful behavioral design can be invisible: no streaks, no likes, no algorithmic feed — just the weight of your social connections.",
+      "top_technique": "Blue Ticks as Social Obligation Architecture"
+    }
+  },
+  "overall_winner": "tie",
+  "overall_difference": 0,
+  "dimension_wins": {
+    "notion": 2,
+    "whatsapp": 1,
+    "ties": 2
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "notion": 7,
+      "whatsapp": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "notion": 6,
+      "whatsapp": 9,
+      "difference": -3,
+      "winner": "whatsapp"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "notion": 6,
+      "whatsapp": 6,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "notion": 8,
+      "whatsapp": 7,
+      "difference": 1,
+      "winner": "notion"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "notion": 9,
+      "whatsapp": 7,
+      "difference": 2,
+      "winner": "notion"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/notion-vs-whatsapp/",
+    "product_a_detail": "/api/v1/products/notion.json",
+    "product_b_detail": "/api/v1/products/whatsapp.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/notion/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/whatsapp/"
+  }
+}

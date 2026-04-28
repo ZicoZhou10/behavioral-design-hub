@@ -1,0 +1,104 @@
+{
+  "slug": "whatsapp",
+  "name": "WhatsApp",
+  "emoji": "📱",
+  "emoji_html": "&#x1F4AC;",
+  "category": "Messaging / Communication",
+  "category_short": "Communication",
+  "tagline": "WhatsApp's blue ticks transformed read receipts into a social norm engine — the simplest UI in tech hides the most powerful network lock-in.",
+  "scores": {
+    "choice_architecture": 7,
+    "cognitive_load": 9,
+    "motivation_design": 6,
+    "trust_transparency": 7,
+    "ethical_alignment": 7
+  },
+  "total": 36,
+  "pct": 72,
+  "key_insight": "WhatsApp is the anti-TikTok: instead of sophisticated algorithmic manipulation, it uses radical simplicity and network effects as its behavioral architecture. The product doesn't need to hook you with variable rewards because your social obligations do the work. Blue ticks create response pressure, group chats create FOMO, and the social graph creates switching costs — all without a single gamification element. WhatsApp proves that the most powerful behavioral design can be invisible: no streaks, no likes, no algorithmic feed — just the weight of your social connections.",
+  "top_technique": "Blue Ticks as Social Obligation Architecture",
+  "top_framework": "Nudge Theory",
+  "top_evidence": "67% of users feel response pressure with read receipts (Pew 2023). DAU/MAU 78% vs Telegram's 55% (Sensor Tower 2025). 2021 backlash → 25M Signal downloads → zero WhatsApp MAU decline.",
+  "techniques": [
+    {
+      "title": "Blue Ticks as Social Obligation Architecture",
+      "framework": "Nudge Theory",
+      "description": "WhatsApp's double blue ticks (read receipts) transformed a technical notification into a social norm. Once a sender sees you've read their message, not replying creates social friction. The default is ON — users must actively opt out, and doing so signals distrust. This turns a messaging app into a social obligation engine where 'seen' = 'must respond.'",
+      "evidence": "When WhatsApp introduced blue ticks in 2014, backlash was immediate — but churn was minimal because network effects prevented switching. A 2023 Pew Research study found 67% of users feel 'pressure to respond quickly' when read receipts are visible. The default-on design matches Thaler & Sunstein's finding that defaults shape 90%+ of behavior."
+    },
+    {
+      "title": "Radical Simplicity as Cognitive Load Elimination",
+      "framework": "Cognitive Load Theory",
+      "description": "WhatsApp's UI has essentially 3 screens: Chats, Status, Calls. No algorithmic feed, no explore page, no stories grid. This radical simplicity keeps extraneous cognitive load near zero. The decision architecture is: open app → see conversations sorted by recency → tap to respond. Sweller's CLT predicts that lower extraneous load = more capacity for the primary task (communication).",
+      "evidence": "WhatsApp has 2B+ MAU with essentially the same simple UI since 2014. Compare to Telegram (which added channels, bots, stories, premium) — WhatsApp's DAU/MAU ratio remains higher (78% vs Telegram's 55%, Sensor Tower 2025) despite fewer features. Simplicity itself is the retention mechanism."
+    },
+    {
+      "title": "Network Effect Lock-In: The Invisible Switching Cost",
+      "framework": "Prospect Theory",
+      "description": "WhatsApp's primary behavioral mechanism isn't in its UI — it's in the social graph. Every contact on WhatsApp is a sunk cost investment. Switching to Signal or Telegram means convincing your entire network to switch. Loss aversion makes this feel catastrophic: losing access to existing group chats, family groups, and work communications outweighs any feature advantage of alternatives.",
+      "evidence": "The 2021 WhatsApp privacy policy backlash caused 25M Signal downloads in 3 days — but WhatsApp's MAU didn't decline. Users downloaded alternatives but couldn't switch because their networks stayed. This is textbook loss aversion: the perceived loss of social connections > the gain of better privacy."
+    },
+    {
+      "title": "Status Feature as Passive Social Proof",
+      "framework": "Self-Determination Theory",
+      "description": "WhatsApp Status (24-hour disappearing stories) creates a relatedness loop without requiring direct interaction. Viewing someone's status satisfies the need for social connection with zero effort. The 'who viewed my status' metric gives posters a competence signal (people care about my life). Unlike Instagram Stories, Status is shown only to contacts — the audience is intimate, lowering the performance barrier.",
+      "evidence": "WhatsApp Status has 500M+ daily users (Meta 2024), surpassing Instagram Stories (500M) and Snapchat Stories (400M) despite minimal feature investment. The intimate audience (contacts only vs public followers) maps to Dunbar's social brain hypothesis — humans maintain ~150 meaningful relationships, and WhatsApp Status operates within this natural social layer."
+    }
+  ],
+  "strengths": [
+    "Radical UI simplicity = near-zero cognitive load",
+    "Network effect lock-in strongest in consumer tech",
+    "E2E encryption provides genuine trust"
+  ],
+  "weaknesses": [
+    "Blue tick default-on creates social pressure",
+    "Group admin lacks consent (anyone can add you)",
+    "Meta ownership creates trust tension"
+  ],
+  "behavioral_hooks": [
+    "blue ticks (social obligation)",
+    "radical simplicity (cognitive load elimination)",
+    "network lock-in (loss aversion)",
+    "Status (passive social proof)"
+  ],
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "links": {
+    "teardown_page": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/whatsapp/",
+    "products_list": "/api/v1/products.json",
+    "comparisons": {
+      "figma": "/api/v1/compare/figma-vs-whatsapp.json",
+      "shopify": "/api/v1/compare/shopify-vs-whatsapp.json",
+      "airbnb": "/api/v1/compare/airbnb-vs-whatsapp.json",
+      "calm": "/api/v1/compare/calm-vs-whatsapp.json",
+      "duolingo": "/api/v1/compare/duolingo-vs-whatsapp.json",
+      "pinterest": "/api/v1/compare/pinterest-vs-whatsapp.json",
+      "strava": "/api/v1/compare/strava-vs-whatsapp.json",
+      "bumble": "/api/v1/compare/bumble-vs-whatsapp.json",
+      "notion": "/api/v1/compare/notion-vs-whatsapp.json",
+      "spotify": "/api/v1/compare/spotify-vs-whatsapp.json",
+      "peloton": "/api/v1/compare/peloton-vs-whatsapp.json",
+      "discord": "/api/v1/compare/discord-vs-whatsapp.json",
+      "tinder": "/api/v1/compare/tinder-vs-whatsapp.json",
+      "venmo": "/api/v1/compare/venmo-vs-whatsapp.json",
+      "doordash": "/api/v1/compare/doordash-vs-whatsapp.json",
+      "snapchat": "/api/v1/compare/snapchat-vs-whatsapp.json",
+      "uber": "/api/v1/compare/uber-vs-whatsapp.json",
+      "amazon": "/api/v1/compare/amazon-vs-whatsapp.json",
+      "candy-crush": "/api/v1/compare/candy-crush-vs-whatsapp.json",
+      "chatgpt": "/api/v1/compare/chatgpt-vs-whatsapp.json",
+      "coinbase": "/api/v1/compare/coinbase-vs-whatsapp.json",
+      "tiktok": "/api/v1/compare/tiktok-vs-whatsapp.json",
+      "youtube": "/api/v1/compare/whatsapp-vs-youtube.json",
+      "slack": "/api/v1/compare/slack-vs-whatsapp.json",
+      "booking-com": "/api/v1/compare/booking-com-vs-whatsapp.json",
+      "linkedin": "/api/v1/compare/linkedin-vs-whatsapp.json",
+      "netflix": "/api/v1/compare/netflix-vs-whatsapp.json",
+      "robinhood": "/api/v1/compare/robinhood-vs-whatsapp.json",
+      "instagram": "/api/v1/compare/instagram-vs-whatsapp.json"
+    },
+    "category": "/api/v1/categories/communication.json"
+  },
+  "rank": 9,
+  "rank_of": 30
+}

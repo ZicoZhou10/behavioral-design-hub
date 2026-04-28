@@ -1,0 +1,97 @@
+{
+  "slug": "spotify",
+  "name": "Spotify",
+  "emoji": "🎧",
+  "emoji_html": "&#x1F3B5;",
+  "category": "Music Streaming / Audio",
+  "category_short": "Entertainment",
+  "tagline": "Spotify's Discover Weekly solves the exploration-exploitation trade-off better than almost any product — but personalization can become a behavioral cage.",
+  "scores": {
+    "choice_architecture": 8,
+    "cognitive_load": 7,
+    "motivation_design": 7,
+    "trust_transparency": 7,
+    "ethical_alignment": 7
+  },
+  "total": 36,
+  "pct": 72,
+  "key_insight": "Spotify demonstrates that behavioral design doesn't have to be adversarial. Discover Weekly genuinely helps users find music they love. Wrapped genuinely makes users happy. The product's behavioral techniques mostly align with user goals — a rare achievement in consumer tech. The risk is filter bubbles: algorithmic personalization can narrow taste over time, a problem Spotify actively works to counter with 'exploration boost' features.",
+  "top_technique": "Discover Weekly as Managed Exploration",
+  "top_framework": "Nudge Theory",
+  "top_evidence": "Discover Weekly generated 2.3B streams in first year. Wrapped 2024 shared 60M+ times on social media — largest organic marketing event in tech.",
+  "techniques": [
+    {
+      "title": "Discover Weekly as Managed Exploration",
+      "framework": "Nudge Theory",
+      "description": "Spotify solves the explore/exploit dilemma by automating exploration. Discover Weekly curates 30 new songs weekly based on listening patterns — users get novelty without the cognitive cost of searching. This is choice architecture at its best: the default (algorithmic playlist) is genuinely useful, and users can always override it.",
+      "evidence": "Spotify Engineering Blog: Discover Weekly generated 2.3 billion streams in its first year. User research showed that manual music discovery takes 15-20 minutes per session; Discover Weekly reduces this to zero."
+    },
+    {
+      "title": "Wrapped as Social Proof + Identity Investment",
+      "framework": "Self-Determination Theory",
+      "description": "Spotify Wrapped serves all three SDT needs simultaneously: Competence (you 'discovered' 847 artists), Autonomy (your taste profile is unique), and Relatedness (sharing Wrapped creates social bonding). The annual ritual transforms passive listening data into active identity construction.",
+      "evidence": "Wrapped 2024 was shared 60M+ times on social media. It's become the single largest organic marketing event in tech — users voluntarily advertise the product because it validates their identity."
+    },
+    {
+      "title": "Progressive Disclosure of Audio Complexity",
+      "framework": "Cognitive Load Theory",
+      "description": "Spotify's home screen shows 3 recently played items (recognition > recall) + a few algorithmic suggestions. It doesn't expose its 100M+ song catalog until you search. Podcast episodes surface only after you've followed shows. This progressive disclosure matches Sweller's recommendations for managing intrinsic cognitive load.",
+      "evidence": "Spotify's 2023 redesign further simplified the home screen from 8 shelves to 3-4, after A/B testing showed fewer options increased both streaming starts and session length."
+    }
+  ],
+  "strengths": [
+    "Discover Weekly is the gold standard for algorithmic recommendation",
+    "Wrapped creates organic virality without manipulation",
+    "Good balance of personalization and discovery"
+  ],
+  "weaknesses": [
+    "Podcast integration increases cognitive load",
+    "Free tier ad placement uses loss aversion aggressively",
+    "Personalization echo chamber risk"
+  ],
+  "behavioral_hooks": [
+    "Discover Weekly (managed exploration)",
+    "Wrapped (identity investment + social proof)",
+    "progressive disclosure of audio complexity"
+  ],
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "links": {
+    "teardown_page": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/spotify/",
+    "products_list": "/api/v1/products.json",
+    "comparisons": {
+      "figma": "/api/v1/compare/figma-vs-spotify.json",
+      "shopify": "/api/v1/compare/shopify-vs-spotify.json",
+      "airbnb": "/api/v1/compare/airbnb-vs-spotify.json",
+      "calm": "/api/v1/compare/calm-vs-spotify.json",
+      "duolingo": "/api/v1/compare/duolingo-vs-spotify.json",
+      "pinterest": "/api/v1/compare/pinterest-vs-spotify.json",
+      "strava": "/api/v1/compare/spotify-vs-strava.json",
+      "bumble": "/api/v1/compare/bumble-vs-spotify.json",
+      "notion": "/api/v1/compare/notion-vs-spotify.json",
+      "whatsapp": "/api/v1/compare/spotify-vs-whatsapp.json",
+      "peloton": "/api/v1/compare/peloton-vs-spotify.json",
+      "discord": "/api/v1/compare/discord-vs-spotify.json",
+      "tinder": "/api/v1/compare/spotify-vs-tinder.json",
+      "venmo": "/api/v1/compare/spotify-vs-venmo.json",
+      "doordash": "/api/v1/compare/doordash-vs-spotify.json",
+      "snapchat": "/api/v1/compare/snapchat-vs-spotify.json",
+      "uber": "/api/v1/compare/spotify-vs-uber.json",
+      "amazon": "/api/v1/compare/amazon-vs-spotify.json",
+      "candy-crush": "/api/v1/compare/candy-crush-vs-spotify.json",
+      "chatgpt": "/api/v1/compare/chatgpt-vs-spotify.json",
+      "coinbase": "/api/v1/compare/coinbase-vs-spotify.json",
+      "tiktok": "/api/v1/compare/spotify-vs-tiktok.json",
+      "youtube": "/api/v1/compare/spotify-vs-youtube.json",
+      "slack": "/api/v1/compare/slack-vs-spotify.json",
+      "booking-com": "/api/v1/compare/booking-com-vs-spotify.json",
+      "linkedin": "/api/v1/compare/linkedin-vs-spotify.json",
+      "netflix": "/api/v1/compare/netflix-vs-spotify.json",
+      "robinhood": "/api/v1/compare/robinhood-vs-spotify.json",
+      "instagram": "/api/v1/compare/instagram-vs-spotify.json"
+    },
+    "category": "/api/v1/categories/entertainment.json"
+  },
+  "rank": 9,
+  "rank_of": 30
+}

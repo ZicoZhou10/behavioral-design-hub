@@ -1,0 +1,63 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "name": "Entertainment",
+  "slug": "entertainment",
+  "product_count": 2,
+  "avg_score": 33.0,
+  "dimension_averages": {
+    "choice_architecture": 8.0,
+    "cognitive_load": 6.5,
+    "motivation_design": 7.0,
+    "trust_transparency": 6.0,
+    "ethical_alignment": 5.5
+  },
+  "products": [
+    {
+      "slug": "spotify",
+      "name": "Spotify",
+      "emoji": "🎧",
+      "category": "Music Streaming / Audio",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 7,
+        "motivation_design": 7,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "Spotify demonstrates that behavioral design doesn't have to be adversarial. Discover Weekly genuinely helps users find music they love. Wrapped genuinely makes users happy. The product's behavioral techniques mostly align with user goals — a rare achievement in consumer tech. The risk is filter bubbles: algorithmic personalization can narrow taste over time, a problem Spotify actively works to counter with 'exploration boost' features.",
+      "top_technique": "Discover Weekly as Managed Exploration",
+      "links": {
+        "detail": "/api/v1/products/spotify.json",
+        "teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/spotify/"
+      }
+    },
+    {
+      "slug": "netflix",
+      "name": "Netflix",
+      "emoji": "🎬",
+      "category": "Streaming / Entertainment",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 7,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "Netflix demonstrates the thin line between 'helpful choice architecture' and 'manipulation.' Autoplay genuinely solves the friction of episode transitions. But it also exploits the fact that humans are bad at stopping ongoing activities. Netflix's own CEO famously said their biggest competitor is 'sleep' — a framing that reveals the company optimizes for maximum viewing time, not optimal viewing experience.",
+      "top_technique": "Autoplay as the Ultimate Default Nudge",
+      "links": {
+        "detail": "/api/v1/products/netflix.json",
+        "teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/netflix/"
+      }
+    }
+  ],
+  "links": {
+    "categories_list": "/api/v1/categories.json",
+    "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/entertainment/"
+  }
+}

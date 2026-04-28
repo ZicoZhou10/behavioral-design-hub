@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Candy Crush vs Uber",
+  "products": {
+    "candy-crush": {
+      "name": "Candy Crush",
+      "emoji": "🍬",
+      "category": "Gaming",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 10,
+        "trust_transparency": 4,
+        "ethical_alignment": 3
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Candy Crush Saga has generated over $20 billion in lifetime revenue by perfecting a single behavioral loop: give players a sense of near-mastery, then introduce failure through randomness, then offer to sell the solution. This is not accidental — it's the direct application of Natasha Schull's 'machine zone' concept from casino design to mobile gaming. The game's levels are algorithmically tuned to produce a specific failure rate: too easy and players don't spend, too hard and they quit. The optimal frustration point — where players believe they 'almost had it' and one more try (or one purchased power-up) will succeed — is the core monetization engine. The lives system (5 lives, 30-minute regeneration) creates artificial scarcity of play itself, making continued play feel like a premium commodity. King's brilliance is making the monetization feel like the player's choice ('I choose to buy a power-up') rather than the system's design ('the level was tuned to make you fail without one'). Candy Crush is the purest distillation of free-to-play behavioral economics: the product is free, and frustration is the revenue model.",
+      "top_technique": "Near-Miss Level Design as Monetization Engine"
+    },
+    "uber": {
+      "name": "Uber",
+      "emoji": "🚗",
+      "category": "Utility",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 9,
+        "motivation_design": 7,
+        "trust_transparency": 4,
+        "ethical_alignment": 5
+      },
+      "total": 33,
+      "pct": 66,
+      "key_insight": "Uber is a case study in dual-sided behavioral design: the company applies behavioral science to both riders (friction elimination, surge anchoring) and drivers (gamification, loss aversion goals). The ethical tension is asymmetric — riders benefit from reduced friction, but drivers are nudged to work longer hours in ways that may not serve their interests. Uber's behavioral design works precisely because it's invisible: users don't know they're being nudged, and drivers don't realize the earnings goal is an anchor, not a recommendation.",
+      "top_technique": "Surge Pricing as Dynamic Anchoring"
+    }
+  },
+  "overall_winner": "uber",
+  "overall_difference": 1,
+  "dimension_wins": {
+    "candy-crush": 1,
+    "uber": 3,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "candy-crush": 7,
+      "uber": 8,
+      "difference": -1,
+      "winner": "uber"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "candy-crush": 8,
+      "uber": 9,
+      "difference": -1,
+      "winner": "uber"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "candy-crush": 10,
+      "uber": 7,
+      "difference": 3,
+      "winner": "candy-crush"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "candy-crush": 4,
+      "uber": 4,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "candy-crush": 3,
+      "uber": 5,
+      "difference": -2,
+      "winner": "uber"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/candy-crush-vs-uber/",
+    "product_a_detail": "/api/v1/products/candy-crush.json",
+    "product_b_detail": "/api/v1/products/uber.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/candy-crush/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/uber/"
+  }
+}

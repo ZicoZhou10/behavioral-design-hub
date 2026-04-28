@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "ChatGPT vs WhatsApp",
+  "products": {
+    "chatgpt": {
+      "name": "ChatGPT",
+      "emoji": "🤖",
+      "category": "AI",
+      "scores": {
+        "choice_architecture": 6,
+        "cognitive_load": 7,
+        "motivation_design": 8,
+        "trust_transparency": 5,
+        "ethical_alignment": 6
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "ChatGPT represents a paradigm shift in behavioral design: the product's interface IS the choice architecture. Every interaction requires the user to construct their own options (via prompts), which inverts the traditional Nudge Theory framework. This creates a fascinating paradox — the product that seems to give users 'infinite freedom' actually has enormous hidden defaults (training data biases, RLHF preferences, system prompt constraints) that shape every response.",
+      "top_technique": "Blank Prompt as Anti-Choice Architecture"
+    },
+    "whatsapp": {
+      "name": "WhatsApp",
+      "emoji": "📱",
+      "category": "Communication",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 9,
+        "motivation_design": 6,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "WhatsApp is the anti-TikTok: instead of sophisticated algorithmic manipulation, it uses radical simplicity and network effects as its behavioral architecture. The product doesn't need to hook you with variable rewards because your social obligations do the work. Blue ticks create response pressure, group chats create FOMO, and the social graph creates switching costs — all without a single gamification element. WhatsApp proves that the most powerful behavioral design can be invisible: no streaks, no likes, no algorithmic feed — just the weight of your social connections.",
+      "top_technique": "Blue Ticks as Social Obligation Architecture"
+    }
+  },
+  "overall_winner": "whatsapp",
+  "overall_difference": 4,
+  "dimension_wins": {
+    "chatgpt": 1,
+    "whatsapp": 4,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "chatgpt": 6,
+      "whatsapp": 7,
+      "difference": -1,
+      "winner": "whatsapp"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "chatgpt": 7,
+      "whatsapp": 9,
+      "difference": -2,
+      "winner": "whatsapp"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "chatgpt": 8,
+      "whatsapp": 6,
+      "difference": 2,
+      "winner": "chatgpt"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "chatgpt": 5,
+      "whatsapp": 7,
+      "difference": -2,
+      "winner": "whatsapp"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "chatgpt": 6,
+      "whatsapp": 7,
+      "difference": -1,
+      "winner": "whatsapp"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/chatgpt-vs-whatsapp/",
+    "product_a_detail": "/api/v1/products/chatgpt.json",
+    "product_b_detail": "/api/v1/products/whatsapp.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/chatgpt/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/whatsapp/"
+  }
+}

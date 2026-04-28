@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Amazon vs Discord",
+  "products": {
+    "amazon": {
+      "name": "Amazon",
+      "emoji": "📦",
+      "category": "E-Commerce",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 9,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Amazon is the most commercially successful behavioral design in history — and the most ethically polarized. One-click buy genuinely reduces friction. Prime genuinely provides value. But the same behavioral toolkit that makes buying easy makes canceling hard. Amazon proves that behavioral design is morally neutral: identical techniques (friction manipulation, default exploitation, cognitive load management) create user value when applied to purchasing and destroy user autonomy when applied to retention. The regulatory response (FTC lawsuit, EU DSA) suggests that the market is beginning to price in behavioral design ethics.",
+      "top_technique": "One-Click Buy: The Friction Elimination Patent"
+    },
+    "discord": {
+      "name": "Discord",
+      "emoji": "💬",
+      "category": "Community",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 8,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 35,
+      "pct": 70,
+      "key_insight": "Discord's behavioral design success comes from an unusual source: it's one of the few major platforms where the engagement loop is primarily social rather than algorithmic. There's no recommendation algorithm pushing content — engagement is driven by genuine community belonging and real-time social presence. The 'someone is typing...' indicator, voice channel presence, and @mention notifications create a sense of liveness that makes communities feel inhabited rather than archived. Discord's investment escalation (join → customize → earn roles → moderate → build bots) creates deep switching costs through identity investment rather than content lock-in. This makes Discord's engagement more ethically defensible than algorithmic platforms: users return because they have genuine social bonds, not because an algorithm has learned to exploit their attention patterns.",
+      "top_technique": "Server Investment Escalation Ladder"
+    }
+  },
+  "overall_winner": "discord",
+  "overall_difference": 3,
+  "dimension_wins": {
+    "amazon": 2,
+    "discord": 2,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "amazon": 8,
+      "discord": 7,
+      "difference": 1,
+      "winner": "amazon"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "amazon": 6,
+      "discord": 6,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "amazon": 9,
+      "discord": 8,
+      "difference": 1,
+      "winner": "amazon"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "amazon": 5,
+      "discord": 7,
+      "difference": -2,
+      "winner": "discord"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "amazon": 4,
+      "discord": 7,
+      "difference": -3,
+      "winner": "discord"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/amazon-vs-discord/",
+    "product_a_detail": "/api/v1/products/amazon.json",
+    "product_b_detail": "/api/v1/products/discord.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/amazon/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/discord/"
+  }
+}

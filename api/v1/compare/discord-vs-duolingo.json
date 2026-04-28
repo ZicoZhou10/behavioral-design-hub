@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Discord vs Duolingo",
+  "products": {
+    "discord": {
+      "name": "Discord",
+      "emoji": "💬",
+      "category": "Community",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 8,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 35,
+      "pct": 70,
+      "key_insight": "Discord's behavioral design success comes from an unusual source: it's one of the few major platforms where the engagement loop is primarily social rather than algorithmic. There's no recommendation algorithm pushing content — engagement is driven by genuine community belonging and real-time social presence. The 'someone is typing...' indicator, voice channel presence, and @mention notifications create a sense of liveness that makes communities feel inhabited rather than archived. Discord's investment escalation (join → customize → earn roles → moderate → build bots) creates deep switching costs through identity investment rather than content lock-in. This makes Discord's engagement more ethically defensible than algorithmic platforms: users return because they have genuine social bonds, not because an algorithm has learned to exploit their attention patterns.",
+      "top_technique": "Server Investment Escalation Ladder"
+    },
+    "duolingo": {
+      "name": "Duolingo",
+      "emoji": "🦉",
+      "category": "EdTech",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 6,
+        "ethical_alignment": 5
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Duolingo is a masterclass in habit formation mechanics but struggles with the transition from extrinsic hooks to intrinsic motivation. The streak counter keeps users opening the app, but 'opening the app' ≠ 'learning a language.' Products that confuse engagement metrics with outcome metrics eventually face this tension.",
+      "top_technique": "Streak Mechanics as Loss Aversion Engine"
+    }
+  },
+  "overall_winner": "duolingo",
+  "overall_difference": 2,
+  "dimension_wins": {
+    "discord": 2,
+    "duolingo": 3,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "discord": 7,
+      "duolingo": 9,
+      "difference": -2,
+      "winner": "duolingo"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "discord": 6,
+      "duolingo": 8,
+      "difference": -2,
+      "winner": "duolingo"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "discord": 8,
+      "duolingo": 9,
+      "difference": -1,
+      "winner": "duolingo"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "discord": 7,
+      "duolingo": 6,
+      "difference": 1,
+      "winner": "discord"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "discord": 7,
+      "duolingo": 5,
+      "difference": 2,
+      "winner": "discord"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/discord-vs-duolingo/",
+    "product_a_detail": "/api/v1/products/discord.json",
+    "product_b_detail": "/api/v1/products/duolingo.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/discord/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/duolingo/"
+  }
+}

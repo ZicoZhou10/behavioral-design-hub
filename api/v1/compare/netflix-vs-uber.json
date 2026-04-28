@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Netflix vs Uber",
+  "products": {
+    "netflix": {
+      "name": "Netflix",
+      "emoji": "🎬",
+      "category": "Entertainment",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 7,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "Netflix demonstrates the thin line between 'helpful choice architecture' and 'manipulation.' Autoplay genuinely solves the friction of episode transitions. But it also exploits the fact that humans are bad at stopping ongoing activities. Netflix's own CEO famously said their biggest competitor is 'sleep' — a framing that reveals the company optimizes for maximum viewing time, not optimal viewing experience.",
+      "top_technique": "Autoplay as the Ultimate Default Nudge"
+    },
+    "uber": {
+      "name": "Uber",
+      "emoji": "🚗",
+      "category": "Utility",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 9,
+        "motivation_design": 7,
+        "trust_transparency": 4,
+        "ethical_alignment": 5
+      },
+      "total": 33,
+      "pct": 66,
+      "key_insight": "Uber is a case study in dual-sided behavioral design: the company applies behavioral science to both riders (friction elimination, surge anchoring) and drivers (gamification, loss aversion goals). The ethical tension is asymmetric — riders benefit from reduced friction, but drivers are nudged to work longer hours in ways that may not serve their interests. Uber's behavioral design works precisely because it's invisible: users don't know they're being nudged, and drivers don't realize the earnings goal is an anchor, not a recommendation.",
+      "top_technique": "Surge Pricing as Dynamic Anchoring"
+    }
+  },
+  "overall_winner": "uber",
+  "overall_difference": 3,
+  "dimension_wins": {
+    "netflix": 1,
+    "uber": 2,
+    "ties": 2
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "netflix": 8,
+      "uber": 8,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "netflix": 6,
+      "uber": 9,
+      "difference": -3,
+      "winner": "uber"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "netflix": 7,
+      "uber": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "netflix": 5,
+      "uber": 4,
+      "difference": 1,
+      "winner": "netflix"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "netflix": 4,
+      "uber": 5,
+      "difference": -1,
+      "winner": "uber"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/netflix-vs-uber/",
+    "product_a_detail": "/api/v1/products/netflix.json",
+    "product_b_detail": "/api/v1/products/uber.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/netflix/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/uber/"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Booking.com vs Slack",
+  "products": {
+    "booking-com": {
+      "name": "Booking.com",
+      "emoji": "🏨",
+      "category": "Travel",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 9,
+        "trust_transparency": 4,
+        "ethical_alignment": 3
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "Booking.com is arguably the most aggressive deployer of behavioral design patterns in consumer tech — and uniquely, they've been transparent about it. The platform runs over 1,000 A/B tests simultaneously, and the result is a UI so dense with urgency signals that it has become a case study in regulatory behavioral design complaints. 'Only 2 rooms left!' '14 people looking right now!' 'Booked 3 times in the last 24 hours!' — each message exploits a different psychological lever (scarcity, social proof, loss aversion). The EU fined Booking.com in 2020 for misleading urgency claims, yet the patterns persist because they work. The ethical tension is stark: Booking.com's design genuinely helps users make faster decisions in a complex market (hotels have variable pricing, real scarcity), but the same urgency cues are applied indiscriminately — to fully available hotels and nearly-sold-out ones alike. When scarcity signals are always on, they become manipulation rather than information. Booking.com represents what happens when conversion optimization is pursued without ethical guardrails.",
+      "top_technique": "Manufactured Urgency Through Scarcity Signals"
+    },
+    "slack": {
+      "name": "Slack",
+      "emoji": "💬",
+      "category": "Productivity",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 5,
+        "motivation_design": 7,
+        "trust_transparency": 7,
+        "ethical_alignment": 5
+      },
+      "total": 31,
+      "pct": 62,
+      "key_insight": "Slack is the clearest example of how behavioral design optimized for engagement metrics can directly conflict with user wellbeing in a workplace context. The green dot creates surveillance anxiety, channel proliferation fragments attention, and notification urgency turns every message into a potential trigger. The product works brilliantly for Slack's business (more messages = more 'engaged' = easier enterprise renewal) but actively undermines the deep work that knowledge workers are ostensibly paid to do. Slack proves that 'engagement' as a success metric can be actively harmful when the user's goal isn't entertainment but productive work.",
+      "top_technique": "The Green Dot: Presence as Social Control"
+    }
+  },
+  "overall_winner": "slack",
+  "overall_difference": 1,
+  "dimension_wins": {
+    "booking-com": 3,
+    "slack": 2,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "booking-com": 8,
+      "slack": 7,
+      "difference": 1,
+      "winner": "booking-com"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "booking-com": 6,
+      "slack": 5,
+      "difference": 1,
+      "winner": "booking-com"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "booking-com": 9,
+      "slack": 7,
+      "difference": 2,
+      "winner": "booking-com"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "booking-com": 4,
+      "slack": 7,
+      "difference": -3,
+      "winner": "slack"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "booking-com": 3,
+      "slack": 5,
+      "difference": -2,
+      "winner": "slack"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/booking-com-vs-slack/",
+    "product_a_detail": "/api/v1/products/booking-com.json",
+    "product_b_detail": "/api/v1/products/slack.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/booking-com/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/slack/"
+  }
+}

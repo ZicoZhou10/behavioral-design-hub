@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Notion vs Strava",
+  "products": {
+    "notion": {
+      "name": "Notion",
+      "emoji": "📝",
+      "category": "Productivity",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 6,
+        "trust_transparency": 8,
+        "ethical_alignment": 9
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "Notion proves that 'more flexibility' doesn't always mean better behavioral design. The product excels at progressive disclosure for feature complexity, but struggles with the motivational design of creation from scratch. Products that help users *create* face fundamentally different behavioral challenges than products that help users *consume* — creation requires initial competence that can't be algorithmically provided.",
+      "top_technique": "Template Gallery as Choice Architecture"
+    },
+    "strava": {
+      "name": "Strava",
+      "emoji": "🏃",
+      "category": "Fitness",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 7,
+        "motivation_design": 9,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Strava's genius is that it solved the hardest problem in fitness: motivation decay. Most fitness apps track what you did; Strava makes you care about doing more. The segment leaderboard transforms every road into a competition venue, and 'Local Legend' status turns your neighborhood into territory to defend. The social feed makes workouts performative — you're not just exercising, you're broadcasting achievement. The flywheel is elegant: more athletes → more segments → more competition → more motivation → more athletes. But the ethical nuance is real: Strava's design can push athletes into overtraining, dangerous segment attempts (the 'Strava hunting' phenomenon caused multiple cycling fatalities), and exercise addiction. The platform added safety features after lawsuits, but the core competitive architecture remains unchanged because it's what makes Strava sticky. Strava proves that social comparison is the most powerful behavioral lever in fitness — and also the most dangerous.",
+      "top_technique": "Segment Leaderboards as Territorial Competition"
+    }
+  },
+  "overall_winner": "strava",
+  "overall_difference": 1,
+  "dimension_wins": {
+    "notion": 2,
+    "strava": 2,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "notion": 7,
+      "strava": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "notion": 6,
+      "strava": 7,
+      "difference": -1,
+      "winner": "strava"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "notion": 6,
+      "strava": 9,
+      "difference": -3,
+      "winner": "strava"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "notion": 8,
+      "strava": 7,
+      "difference": 1,
+      "winner": "notion"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "notion": 9,
+      "strava": 7,
+      "difference": 2,
+      "winner": "notion"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/notion-vs-strava/",
+    "product_a_detail": "/api/v1/products/notion.json",
+    "product_b_detail": "/api/v1/products/strava.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/notion/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/strava/"
+  }
+}

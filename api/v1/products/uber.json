@@ -1,0 +1,98 @@
+{
+  "slug": "uber",
+  "name": "Uber",
+  "emoji": "🚗",
+  "emoji_html": "&#x1F697;",
+  "category": "Transportation / Marketplace",
+  "category_short": "Utility",
+  "tagline": "Uber's surge pricing is the most visible application of behavioral economics in everyday life — and the most publicly controversial.",
+  "scores": {
+    "choice_architecture": 8,
+    "cognitive_load": 9,
+    "motivation_design": 7,
+    "trust_transparency": 4,
+    "ethical_alignment": 5
+  },
+  "total": 33,
+  "pct": 66,
+  "key_insight": "Uber is a case study in dual-sided behavioral design: the company applies behavioral science to both riders (friction elimination, surge anchoring) and drivers (gamification, loss aversion goals). The ethical tension is asymmetric — riders benefit from reduced friction, but drivers are nudged to work longer hours in ways that may not serve their interests. Uber's behavioral design works precisely because it's invisible: users don't know they're being nudged, and drivers don't realize the earnings goal is an anchor, not a recommendation.",
+  "top_technique": "Surge Pricing as Dynamic Anchoring",
+  "top_framework": "Prospect Theory",
+  "top_evidence": "Removing surge multiplier and showing only total fare reduced acceptance (leaked NYT 2017). Drivers exhibit strong reference-dependent behavior (Chen et al. 2019).",
+  "techniques": [
+    {
+      "title": "Surge Pricing as Dynamic Anchoring",
+      "framework": "Prospect Theory",
+      "description": "Uber's surge pricing uses reference dependence brilliantly. Users have a mental anchor for 'normal' price. When surge pricing shows '2.3x', users evaluate the price relative to their anchor — not relative to the absolute cost of the trip. After surge drops to '1.2x', it feels like a deal even if it's still more expensive than a traditional taxi. The surge multiplier creates a reference frame that makes non-surge prices feel like gains.",
+      "evidence": "Kahneman & Tversky's Prospect Theory: people evaluate outcomes relative to a reference point, not in absolute terms. Uber's own research (leaked to NYT, 2017): removing the surge multiplier and showing only the total fare reduced acceptance rates — users needed the reference frame to evaluate 'fairness.'"
+    },
+    {
+      "title": "One-Tap Ride Request: Friction Elimination",
+      "framework": "Cognitive Load Theory",
+      "description": "Uber reduced the entire taxi-hailing process (find taxi → negotiate → pay cash → tip) to a single button press. This radical friction elimination is CLT in action: by minimizing extraneous cognitive load (no mental math, no cash handling, no tipping anxiety), users can hail rides impulsively. The easier it is to do something, the more people do it.",
+      "evidence": "Before Uber, hailing a taxi in NYC involved 5+ decision points. Uber reduces this to 2 (enter destination, confirm pickup). Uber's 2016 Economic Impact Report: ride frequency increased 3x compared to pre-Uber taxi usage in comparable demographics."
+    },
+    {
+      "title": "Driver Gamification: Earnings Goals as Anchoring",
+      "framework": "Prospect Theory",
+      "description": "Uber shows drivers a daily earnings goal and uses progress indicators (you're $23 away from $200 today!). This exploits loss aversion — stopping before reaching the goal feels like a loss. Combined with 'quest' bonuses (complete 3 more rides for $15 extra), Uber creates a behavioral architecture where drivers work longer than they might otherwise choose to.",
+      "evidence": "Chen et al. (2019, Uber driver study): drivers exhibit strong reference-dependent behavior, working significantly longer on days when they haven't reached their earnings target. The labor supply curve bends the 'wrong' way from classical economics — because loss aversion overrides rational time-value calculation."
+    }
+  ],
+  "strengths": [
+    "Friction elimination for riders is genuinely life-improving",
+    "Map-based UX reduces uncertainty",
+    "Cashless payment removes tipping anxiety"
+  ],
+  "weaknesses": [
+    "Surge pricing transparency insufficient",
+    "Driver gamification optimizes for Uber's supply, not driver wellbeing",
+    "Earnings goals use loss aversion unrecognizably"
+  ],
+  "behavioral_hooks": [
+    "surge pricing (dynamic anchoring)",
+    "one-tap ride (friction elimination)",
+    "driver earnings goals (loss aversion)",
+    "quest bonuses (variable reward)"
+  ],
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "links": {
+    "teardown_page": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/uber/",
+    "products_list": "/api/v1/products.json",
+    "comparisons": {
+      "figma": "/api/v1/compare/figma-vs-uber.json",
+      "shopify": "/api/v1/compare/shopify-vs-uber.json",
+      "airbnb": "/api/v1/compare/airbnb-vs-uber.json",
+      "calm": "/api/v1/compare/calm-vs-uber.json",
+      "duolingo": "/api/v1/compare/duolingo-vs-uber.json",
+      "pinterest": "/api/v1/compare/pinterest-vs-uber.json",
+      "strava": "/api/v1/compare/strava-vs-uber.json",
+      "bumble": "/api/v1/compare/bumble-vs-uber.json",
+      "notion": "/api/v1/compare/notion-vs-uber.json",
+      "spotify": "/api/v1/compare/spotify-vs-uber.json",
+      "whatsapp": "/api/v1/compare/uber-vs-whatsapp.json",
+      "peloton": "/api/v1/compare/peloton-vs-uber.json",
+      "discord": "/api/v1/compare/discord-vs-uber.json",
+      "tinder": "/api/v1/compare/tinder-vs-uber.json",
+      "venmo": "/api/v1/compare/uber-vs-venmo.json",
+      "doordash": "/api/v1/compare/doordash-vs-uber.json",
+      "snapchat": "/api/v1/compare/snapchat-vs-uber.json",
+      "amazon": "/api/v1/compare/amazon-vs-uber.json",
+      "candy-crush": "/api/v1/compare/candy-crush-vs-uber.json",
+      "chatgpt": "/api/v1/compare/chatgpt-vs-uber.json",
+      "coinbase": "/api/v1/compare/coinbase-vs-uber.json",
+      "tiktok": "/api/v1/compare/tiktok-vs-uber.json",
+      "youtube": "/api/v1/compare/uber-vs-youtube.json",
+      "slack": "/api/v1/compare/slack-vs-uber.json",
+      "booking-com": "/api/v1/compare/booking-com-vs-uber.json",
+      "linkedin": "/api/v1/compare/linkedin-vs-uber.json",
+      "netflix": "/api/v1/compare/netflix-vs-uber.json",
+      "robinhood": "/api/v1/compare/robinhood-vs-uber.json",
+      "instagram": "/api/v1/compare/instagram-vs-uber.json"
+    },
+    "category": "/api/v1/categories/utility.json"
+  },
+  "rank": 16,
+  "rank_of": 30
+}

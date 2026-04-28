@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Netflix vs Tinder",
+  "products": {
+    "netflix": {
+      "name": "Netflix",
+      "emoji": "🎬",
+      "category": "Entertainment",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 7,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "Netflix demonstrates the thin line between 'helpful choice architecture' and 'manipulation.' Autoplay genuinely solves the friction of episode transitions. But it also exploits the fact that humans are bad at stopping ongoing activities. Netflix's own CEO famously said their biggest competitor is 'sleep' — a framing that reveals the company optimizes for maximum viewing time, not optimal viewing experience.",
+      "top_technique": "Autoplay as the Ultimate Default Nudge"
+    },
+    "tinder": {
+      "name": "Tinder",
+      "emoji": "🔥",
+      "category": "Dating",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 4,
+        "ethical_alignment": 4
+      },
+      "total": 34,
+      "pct": 68,
+      "key_insight": "Tinder solved the paradox of choice in dating by reducing a multi-dimensional human evaluation to a binary swipe. This is brilliant choice architecture — and also the product's deepest ethical tension. The swipe creates a variable ratio reward schedule identical to slot machines: most swipes yield nothing, but the occasional match triggers a dopamine spike that reinforces the swiping behavior. Tinder's business model depends on users NOT finding matches efficiently (premium features gate the very discovery the app promises), creating a fundamental misalignment between user goals (find a partner) and business goals (maximize engagement time). The result: an app that is behaviorally addictive by design, yet genuinely useful as a discovery mechanism that didn't exist before.",
+      "top_technique": "Swipe as Binary Choice Architecture"
+    }
+  },
+  "overall_winner": "tinder",
+  "overall_difference": 4,
+  "dimension_wins": {
+    "netflix": 1,
+    "tinder": 3,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "netflix": 8,
+      "tinder": 9,
+      "difference": -1,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "netflix": 6,
+      "tinder": 8,
+      "difference": -2,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "netflix": 7,
+      "tinder": 9,
+      "difference": -2,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "netflix": 5,
+      "tinder": 4,
+      "difference": 1,
+      "winner": "netflix"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "netflix": 4,
+      "tinder": 4,
+      "difference": 0,
+      "winner": "tie"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/netflix-vs-tinder/",
+    "product_a_detail": "/api/v1/products/netflix.json",
+    "product_b_detail": "/api/v1/products/tinder.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/netflix/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/tinder/"
+  }
+}

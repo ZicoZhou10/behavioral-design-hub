@@ -1,0 +1,104 @@
+{
+  "slug": "candy-crush",
+  "name": "Candy Crush",
+  "emoji": "🍬",
+  "emoji_html": "&#x1F36C;",
+  "category": "Gaming / Casual Puzzle",
+  "category_short": "Gaming",
+  "tagline": "Candy Crush Saga is the most financially successful application of behavioral psychology in gaming history — a masterclass in variable ratio reinforcement, artificial scarcity, and the monetization of frustration.",
+  "scores": {
+    "choice_architecture": 7,
+    "cognitive_load": 8,
+    "motivation_design": 10,
+    "trust_transparency": 4,
+    "ethical_alignment": 3
+  },
+  "total": 32,
+  "pct": 64,
+  "key_insight": "Candy Crush Saga has generated over $20 billion in lifetime revenue by perfecting a single behavioral loop: give players a sense of near-mastery, then introduce failure through randomness, then offer to sell the solution. This is not accidental — it's the direct application of Natasha Schull's 'machine zone' concept from casino design to mobile gaming. The game's levels are algorithmically tuned to produce a specific failure rate: too easy and players don't spend, too hard and they quit. The optimal frustration point — where players believe they 'almost had it' and one more try (or one purchased power-up) will succeed — is the core monetization engine. The lives system (5 lives, 30-minute regeneration) creates artificial scarcity of play itself, making continued play feel like a premium commodity. King's brilliance is making the monetization feel like the player's choice ('I choose to buy a power-up') rather than the system's design ('the level was tuned to make you fail without one'). Candy Crush is the purest distillation of free-to-play behavioral economics: the product is free, and frustration is the revenue model.",
+  "top_technique": "Near-Miss Level Design as Monetization Engine",
+  "top_framework": "Hook Model",
+  "top_evidence": "Candy Crush generated $1.2B in 2023 alone (Activision Blizzard Q4 2023). King's 240M+ MAU with only 3-5% paying (but $18.40 ARPU among payers). Lives system: 30-min regeneration creates $0.99 impulse purchase triggers proven by behavioral econ research on time discounting.",
+  "techniques": [
+    {
+      "title": "Near-Miss Level Design as Monetization Engine",
+      "framework": "Hook Model",
+      "description": "Candy Crush's level design follows a precise difficulty curve: early levels build confidence (high win rate), mid-game levels introduce mechanics (moderate challenge), and later levels are calibrated to produce 'near-misses' — failing with just 1-2 moves left, or with the board 90% cleared. These near-misses are not random; they're the result of algorithmic level tuning that King's designers have refined over a decade. The near-miss triggers the same neural response as casino slot machines: the player perceives the outcome as 'almost a win' rather than 'a loss,' which increases persistence and willingness to pay for boosters. The game frequently shows exactly how many moves were needed, reinforcing the illusion that success was one power-up away.",
+      "evidence": "Candy Crush Saga generated $1.2 billion in revenue in 2023 (Activision Blizzard Q4 earnings). King's patent (US10016688B2) describes 'dynamically adjusting difficulty' based on player behavior and monetization signals. Research by Dixon et al. (2010) on slot machine near-misses showed they activate the same brain reward circuits as actual wins — fMRI studies confirmed this extends to casual game mechanics (Habib & Dixon, 2010). The 3-5% payer conversion rate with $18.40 average monthly spend per payer shows the near-miss mechanic successfully converts frustration into revenue from a small but highly engaged subset."
+    },
+    {
+      "title": "Lives System as Artificial Scarcity of Play",
+      "framework": "Prospect Theory",
+      "description": "Candy Crush gives players 5 lives that deplete on each failed level attempt. Lives regenerate at 1 per 30 minutes (2.5 hours for full refill) or can be instantly refilled for $0.99. This system converts free gameplay into a scarce resource, exploiting two behavioral mechanisms simultaneously: loss aversion (I've been playing for 20 minutes and now I'm forced to stop) and temporal discounting (I can wait 30 minutes for free OR pay $0.99 to continue right now). The $0.99 price point is deliberately below the threshold where most people engage System 2 deliberative thinking about purchases. The wait timer is calibrated to be annoying enough to trigger purchases but not so long that players permanently disengage.",
+      "evidence": "Supercell (Clash of Clans) pioneered the timer-paywall pattern, but King perfected the calibration. Behavioral economics research on temporal discounting (Frederick, Loewenstein & O'Donoghue, 2002) shows that small immediate costs ($0.99 now) are systematically underweighted relative to equivalent delayed rewards (free life in 30 min). King's 240M+ monthly active users (MAU as of Activision Blizzard 2024) demonstrate that the lives system doesn't drive churn — the 30-minute timer actually builds anticipation (a Hook Model 'external trigger' for return). Mobile gaming analytics firm Sensor Tower reported that lives/energy purchases account for 38% of casual puzzle game revenue."
+    },
+    {
+      "title": "Variable Reward Cascade Through Board Randomness",
+      "framework": "Self-Determination Theory",
+      "description": "Candy Crush combines deterministic skill (pattern recognition, strategic moves) with stochastic board generation (random candy drops after each move). This hybrid creates a variable reward schedule: sometimes the board cascades into satisfying chain reactions (feels like skill), sometimes it dead-ends (feels like bad luck). The variable ratio of satisfying-to-frustrating outcomes keeps players in a 'flow channel' — the game is never fully predictable (which would be boring) or fully random (which would feel unfair). The cascade animations (screen-clearing combos, rainbow effects, score multipliers) are the reward peaks that reinforce continued play. Crucially, the randomness provides face-saving attribution: failure is 'bad luck with the board' rather than 'I'm not good enough,' protecting the player's competence need.",
+      "evidence": "Csikszentmihalyi's flow theory predicts that optimal engagement occurs when challenge slightly exceeds skill — Candy Crush's dynamic difficulty adjustment maintains this flow state across skill levels. King's internal analytics (reported by Head of Game Design Tommy Palm at GDC 2013) showed that cascade animations increase session length by 23% and that players attribute 67% of failures to 'bad luck' vs 33% to skill — exactly the ratio that preserves re-engagement. Schull's 'machine zone' concept (Addiction by Design, 2012) describes the trancelike state where slot machine players lose track of time — Candy Crush's cascade combos produce the same effect."
+    },
+    {
+      "title": "Social Obligation Through Map Progress and Life Requests",
+      "framework": "Nudge Theory",
+      "description": "Candy Crush's original Facebook integration created a social obligation loop: players could see friends' progress on the level map (social comparison), request lives from friends (reciprocity trigger), and send lives proactively (obligation creation). The map visualization exploits the goal gradient effect — seeing a friend 50 levels ahead creates aspiration, while seeing one just 5 levels ahead creates competitive urgency. Although Facebook integration has decreased, the pattern persists through team events and in-app friend features. The life-sharing mechanic is particularly clever: giving a free life costs the sender nothing but creates a reciprocity obligation that increases the recipient's engagement.",
+      "evidence": "At peak Facebook integration (2013-2015), Candy Crush was the #1 Facebook game with 93M daily active users. Cialdini's reciprocity principle predicts that receiving an unsolicited gift (a free life) creates a felt obligation to reciprocate — King reported that life-sharing features increased DAU by 18% (GDC 2014). The goal gradient effect (Hull, 1932; Kivetz et al., 2006) shows effort acceleration as individuals approach a goal — the level map visualization is a direct application. Although Facebook virality has decreased, King's team events and competitive leaderboards maintain the social comparison mechanism."
+    }
+  ],
+  "strengths": [
+    "Flow channel maintenance through dynamic difficulty creates genuinely satisfying puzzle experiences",
+    "Cascade animations produce peak reward moments that feel earned",
+    "Variable skill-luck blend preserves player confidence across all skill levels"
+  ],
+  "weaknesses": [
+    "Level design algorithmically tuned to create frustration at monetization-optimal points",
+    "Lives system gates a free activity behind artificial scarcity to extract payments",
+    "Near-miss mechanics exploit the same neural pathways as gambling addiction"
+  ],
+  "behavioral_hooks": [
+    "near-miss level design (frustration-to-purchase conversion)",
+    "lives scarcity (artificial play limitation + impulse purchase trigger)",
+    "cascade combos (variable reward reinforcement)",
+    "social map progression (competitive comparison + reciprocity)"
+  ],
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "links": {
+    "teardown_page": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/candy-crush/",
+    "products_list": "/api/v1/products.json",
+    "comparisons": {
+      "figma": "/api/v1/compare/candy-crush-vs-figma.json",
+      "shopify": "/api/v1/compare/candy-crush-vs-shopify.json",
+      "airbnb": "/api/v1/compare/airbnb-vs-candy-crush.json",
+      "calm": "/api/v1/compare/calm-vs-candy-crush.json",
+      "duolingo": "/api/v1/compare/candy-crush-vs-duolingo.json",
+      "pinterest": "/api/v1/compare/candy-crush-vs-pinterest.json",
+      "strava": "/api/v1/compare/candy-crush-vs-strava.json",
+      "bumble": "/api/v1/compare/bumble-vs-candy-crush.json",
+      "notion": "/api/v1/compare/candy-crush-vs-notion.json",
+      "spotify": "/api/v1/compare/candy-crush-vs-spotify.json",
+      "whatsapp": "/api/v1/compare/candy-crush-vs-whatsapp.json",
+      "peloton": "/api/v1/compare/candy-crush-vs-peloton.json",
+      "discord": "/api/v1/compare/candy-crush-vs-discord.json",
+      "tinder": "/api/v1/compare/candy-crush-vs-tinder.json",
+      "venmo": "/api/v1/compare/candy-crush-vs-venmo.json",
+      "doordash": "/api/v1/compare/candy-crush-vs-doordash.json",
+      "snapchat": "/api/v1/compare/candy-crush-vs-snapchat.json",
+      "uber": "/api/v1/compare/candy-crush-vs-uber.json",
+      "amazon": "/api/v1/compare/amazon-vs-candy-crush.json",
+      "chatgpt": "/api/v1/compare/candy-crush-vs-chatgpt.json",
+      "coinbase": "/api/v1/compare/candy-crush-vs-coinbase.json",
+      "tiktok": "/api/v1/compare/candy-crush-vs-tiktok.json",
+      "youtube": "/api/v1/compare/candy-crush-vs-youtube.json",
+      "slack": "/api/v1/compare/candy-crush-vs-slack.json",
+      "booking-com": "/api/v1/compare/booking-com-vs-candy-crush.json",
+      "linkedin": "/api/v1/compare/candy-crush-vs-linkedin.json",
+      "netflix": "/api/v1/compare/candy-crush-vs-netflix.json",
+      "robinhood": "/api/v1/compare/candy-crush-vs-robinhood.json",
+      "instagram": "/api/v1/compare/candy-crush-vs-instagram.json"
+    },
+    "category": "/api/v1/categories/gaming.json"
+  },
+  "rank": 19,
+  "rank_of": 30
+}

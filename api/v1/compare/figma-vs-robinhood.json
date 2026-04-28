@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Figma vs Robinhood",
+  "products": {
+    "figma": {
+      "name": "Figma",
+      "emoji": "🎨",
+      "category": "Design",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 7,
+        "trust_transparency": 8,
+        "ethical_alignment": 8
+      },
+      "total": 40,
+      "pct": 80,
+      "key_insight": "Figma is the most elegant example of network-effect behavioral design in B2B software. Every design decision serves a single behavioral insight: make collaboration so effortless that the tool becomes the team's shared space, not just one designer's workspace. The cursor presence feature (seeing teammates' cursors labeled with their names in real-time) is pure social facilitation — knowing someone is watching you work changes how you work. The generous free tier isn't charity — it's a viral acquisition mechanism: every designer who opens a Figma link to view a prototype becomes a potential user. Figma's file-sharing is designed like Google Docs, not like Photoshop: no installation, no file format confusion, no version control headaches. By eliminating every friction point in collaboration, Figma made itself structurally impossible to replace — switching to a competitor means convincing your entire team, your clients, and your developer handoff workflow to switch simultaneously. This is behavioral lock-in through genuine value creation, not dark patterns.",
+      "top_technique": "Multiplayer Cursor Presence as Social Facilitation"
+    },
+    "robinhood": {
+      "name": "Robinhood",
+      "emoji": "📈",
+      "category": "FinTech",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 7,
+        "motivation_design": 9,
+        "trust_transparency": 3,
+        "ethical_alignment": 3
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "Robinhood is the most controversial case study in behavioral design because it reveals what happens when you apply consumer-app engagement techniques to financial instruments. The confetti animation on trades, the one-tap execution, the push notifications on price movements — these are standard mobile engagement patterns, except the 'engagement' involves real money and real financial risk. The SEC's 2021 investigation and subsequent $65M fine specifically cited Robinhood's gamification. Robinhood's defense — that simplicity democratizes access — is valid. The counterargument — that simplicity in high-stakes domains removes protective friction — is also valid. This tension makes Robinhood the defining case study for when behavioral design ethics actually matter.",
+      "top_technique": "Confetti and Celebration UI as Operant Conditioning"
+    }
+  },
+  "overall_winner": "figma",
+  "overall_difference": 10,
+  "dimension_wins": {
+    "figma": 4,
+    "robinhood": 1,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "figma": 9,
+      "robinhood": 8,
+      "difference": 1,
+      "winner": "figma"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "figma": 8,
+      "robinhood": 7,
+      "difference": 1,
+      "winner": "figma"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "figma": 7,
+      "robinhood": 9,
+      "difference": -2,
+      "winner": "robinhood"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "figma": 8,
+      "robinhood": 3,
+      "difference": 5,
+      "winner": "figma"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "figma": 8,
+      "robinhood": 3,
+      "difference": 5,
+      "winner": "figma"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/figma-vs-robinhood/",
+    "product_a_detail": "/api/v1/products/figma.json",
+    "product_b_detail": "/api/v1/products/robinhood.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/figma/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/robinhood/"
+  }
+}

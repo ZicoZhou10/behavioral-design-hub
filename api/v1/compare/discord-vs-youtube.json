@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Discord vs YouTube",
+  "products": {
+    "discord": {
+      "name": "Discord",
+      "emoji": "💬",
+      "category": "Community",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 8,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 35,
+      "pct": 70,
+      "key_insight": "Discord's behavioral design success comes from an unusual source: it's one of the few major platforms where the engagement loop is primarily social rather than algorithmic. There's no recommendation algorithm pushing content — engagement is driven by genuine community belonging and real-time social presence. The 'someone is typing...' indicator, voice channel presence, and @mention notifications create a sense of liveness that makes communities feel inhabited rather than archived. Discord's investment escalation (join → customize → earn roles → moderate → build bots) creates deep switching costs through identity investment rather than content lock-in. This makes Discord's engagement more ethically defensible than algorithmic platforms: users return because they have genuine social bonds, not because an algorithm has learned to exploit their attention patterns.",
+      "top_technique": "Server Investment Escalation Ladder"
+    },
+    "youtube": {
+      "name": "YouTube",
+      "emoji": "▶️",
+      "category": "Video",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 9,
+        "trust_transparency": 5,
+        "ethical_alignment": 5
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "YouTube is the clearest example of a platform where behavioral design serves the algorithm more than the user. The recommendation engine is optimized for watch time, not user satisfaction — a distinction that became central to the 2020-2024 tech ethics debate. Autoplay removes the natural exit point between videos, Up Next suggestions exploit curiosity gaps, and the thumbnail ecosystem has evolved into an arms race of clickbait. Yet YouTube also genuinely democratized video education, entertainment, and creator economics. The tension is structural: every design choice that makes YouTube more 'engaging' also makes it harder to stop watching. YouTube's 'Take a Break' reminder is the company acknowledging this tension — but setting it to OFF by default reveals which side wins.",
+      "top_technique": "Autoplay as Default Continuation"
+    }
+  },
+  "overall_winner": "discord",
+  "overall_difference": 3,
+  "dimension_wins": {
+    "discord": 2,
+    "youtube": 1,
+    "ties": 2
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "discord": 7,
+      "youtube": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "discord": 6,
+      "youtube": 6,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "discord": 8,
+      "youtube": 9,
+      "difference": -1,
+      "winner": "youtube"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "discord": 7,
+      "youtube": 5,
+      "difference": 2,
+      "winner": "discord"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "discord": 7,
+      "youtube": 5,
+      "difference": 2,
+      "winner": "discord"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/discord-vs-youtube/",
+    "product_a_detail": "/api/v1/products/discord.json",
+    "product_b_detail": "/api/v1/products/youtube.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/discord/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/youtube/"
+  }
+}

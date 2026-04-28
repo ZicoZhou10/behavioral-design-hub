@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Netflix vs TikTok",
+  "products": {
+    "netflix": {
+      "name": "Netflix",
+      "emoji": "🎬",
+      "category": "Entertainment",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 7,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "Netflix demonstrates the thin line between 'helpful choice architecture' and 'manipulation.' Autoplay genuinely solves the friction of episode transitions. But it also exploits the fact that humans are bad at stopping ongoing activities. Netflix's own CEO famously said their biggest competitor is 'sleep' — a framing that reveals the company optimizes for maximum viewing time, not optimal viewing experience.",
+      "top_technique": "Autoplay as the Ultimate Default Nudge"
+    },
+    "tiktok": {
+      "name": "TikTok",
+      "emoji": "🎵",
+      "category": "Social Media",
+      "scores": {
+        "choice_architecture": 10,
+        "cognitive_load": 9,
+        "motivation_design": 8,
+        "trust_transparency": 3,
+        "ethical_alignment": 2
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "TikTok proves that sufficiently advanced choice architecture is indistinguishable from manipulation. The product removes all friction, all stopping cues, all cognitive load — leaving the user in a state of 'passive consumption' that can extend for hours. The ethical question isn't whether the behavioral design works (it clearly does), but whether 'works' should mean 'keeps users watching' or 'helps users achieve their goals.'",
+      "top_technique": "Algorithmic Choice Architecture at Scale"
+    }
+  },
+  "overall_winner": "tiktok",
+  "overall_difference": 2,
+  "dimension_wins": {
+    "netflix": 2,
+    "tiktok": 3,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "netflix": 8,
+      "tiktok": 10,
+      "difference": -2,
+      "winner": "tiktok"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "netflix": 6,
+      "tiktok": 9,
+      "difference": -3,
+      "winner": "tiktok"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "netflix": 7,
+      "tiktok": 8,
+      "difference": -1,
+      "winner": "tiktok"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "netflix": 5,
+      "tiktok": 3,
+      "difference": 2,
+      "winner": "netflix"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "netflix": 4,
+      "tiktok": 2,
+      "difference": 2,
+      "winner": "netflix"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/netflix-vs-tiktok/",
+    "product_a_detail": "/api/v1/products/netflix.json",
+    "product_b_detail": "/api/v1/products/tiktok.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/netflix/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/tiktok/"
+  }
+}

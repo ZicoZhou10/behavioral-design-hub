@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Calm vs WhatsApp",
+  "products": {
+    "calm": {
+      "name": "Calm",
+      "emoji": "🧘",
+      "category": "Wellness",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 6,
+        "trust_transparency": 8,
+        "ethical_alignment": 8
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Calm's behavioral design challenge is philosophically interesting: can you ethically use behavioral science to help people build habits that may eliminate the need for your product? Calm's answer is content expansion — become a 'wellness platform' rather than a 'meditation app.' But this risks cognitive load creep as the product tries to be everything at once.",
+      "top_technique": "Sleep Stories as Habit Stacking"
+    },
+    "whatsapp": {
+      "name": "WhatsApp",
+      "emoji": "📱",
+      "category": "Communication",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 9,
+        "motivation_design": 6,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "WhatsApp is the anti-TikTok: instead of sophisticated algorithmic manipulation, it uses radical simplicity and network effects as its behavioral architecture. The product doesn't need to hook you with variable rewards because your social obligations do the work. Blue ticks create response pressure, group chats create FOMO, and the social graph creates switching costs — all without a single gamification element. WhatsApp proves that the most powerful behavioral design can be invisible: no streaks, no likes, no algorithmic feed — just the weight of your social connections.",
+      "top_technique": "Blue Ticks as Social Obligation Architecture"
+    }
+  },
+  "overall_winner": "calm",
+  "overall_difference": 1,
+  "dimension_wins": {
+    "calm": 2,
+    "whatsapp": 1,
+    "ties": 2
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "calm": 7,
+      "whatsapp": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "calm": 8,
+      "whatsapp": 9,
+      "difference": -1,
+      "winner": "whatsapp"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "calm": 6,
+      "whatsapp": 6,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "calm": 8,
+      "whatsapp": 7,
+      "difference": 1,
+      "winner": "calm"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "calm": 8,
+      "whatsapp": 7,
+      "difference": 1,
+      "winner": "calm"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/calm-vs-whatsapp/",
+    "product_a_detail": "/api/v1/products/calm.json",
+    "product_b_detail": "/api/v1/products/whatsapp.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/calm/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/whatsapp/"
+  }
+}

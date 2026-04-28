@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Behavioral Design Leaderboard &mdash; 15 Products Ranked by Behavioral Science Score</title>
+<meta name="description" content="Which products have the best behavioral design? 15 products ranked across 5 research-backed dimensions: Choice Architecture, Cognitive Load, Motivation, Trust, and Ethics. Updated 2026-04-28.">
+<meta property="og:title" content="Behavioral Design Leaderboard &mdash; 15 Products Ranked">
+<meta property="og:description" content="15 products ranked by behavioral science scores across 5 dimensions. Shopify leads at 76%. See who wins on ethics, motivation, and more.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zicozhou10.github.io/behavioral-design-hub/leaderboard/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Behavioral Design Leaderboard &mdash; 15 Products Ranked">
+<meta name="twitter:description" content="Which products have the best behavioral design? Shopify leads at 76%, but TikTok has a perfect 10/10 on Choice Architecture. See all rankings.">
+<link rel="canonical" href="https://zicozhou10.github.io/behavioral-design-hub/leaderboard/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Behavioral Design Leaderboard",
+  "description": "15 products ranked by behavioral design score across 5 research-backed dimensions.",
+  "url": "https://zicozhou10.github.io/behavioral-design-hub/leaderboard/",
+  "numberOfItems": 15,
+  "itemListOrder": "https://schema.org/ItemListOrderDescending",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Shopify","url":"https://zicozhou10.github.io/behavioral-design-hub/teardowns/shopify/","description":"76% (38/50)"},
+    {"@type":"ListItem","position":2,"name":"Duolingo","url":"https://zicozhou10.github.io/behavioral-design-hub/teardowns/duolingo/","description":"74% (37/50)"},
+    {"@type":"ListItem","position":3,"name":"Calm","url":"https://zicozhou10.github.io/behavioral-design-hub/teardowns/calm/","description":"74% (37/50)"},
+    {"@type":"ListItem","position":4,"name":"Airbnb","url":"https://zicozhou10.github.io/behavioral-design-hub/teardowns/airbnb/","description":"74% (37/50)"},
+    {"@type":"ListItem","position":5,"name":"Spotify","url":"https://zicozhou10.github.io/behavioral-design-hub/teardowns/spotify/","description":"72% (36/50)"},
+    {"@type":"ListItem","position":6,"name":"Notion","url":"https://zicozhou10.github.io/behavioral-design-hub/teardowns/notion/","description":"72% (36/50)"},
+    {"@type":"ListItem","position":7,"name":"WhatsApp","url":"https://zicozhou10.github.io/behavioral-design-hub/teardowns/whatsapp/","description":"72% (36/50)"},
+    {"@type":"ListItem","position":8,"name":"Uber","url":"https://zicozhou10.github.io/behavioral-design-hub/teardowns/uber/","description":"66% (33/50)"},
+    {"@type":"ListItem","position":9,"name":"TikTok","url":"https://zicozhou10.github.io/behavioral-design-hub/teardowns/tiktok/","description":"64% (32/50)"},
+    {"@type":"ListItem","position":10,"name":"ChatGPT","url":"https://zicozhou10.github.io/behavioral-design-hub/teardowns/chatgpt/","description":"64% (32/50)"},
+    {"@type":"ListItem","position":11,"name":"Amazon","url":"https://zicozhou10.github.io/behavioral-design-hub/teardowns/amazon/","description":"64% (32/50)"},
+    {"@type":"ListItem","position":12,"name":"Slack","url":"https://zicozhou10.github.io/behavioral-design-hub/teardowns/slack/","description":"62% (31/50)"},
+    {"@type":"ListItem","position":13,"name":"Netflix","url":"https://zicozhou10.github.io/behavioral-design-hub/teardowns/netflix/","description":"60% (30/50)"},
+    {"@type":"ListItem","position":14,"name":"LinkedIn","url":"https://zicozhou10.github.io/behavioral-design-hub/teardowns/linkedin/","description":"60% (30/50)"},
+    {"@type":"ListItem","position":15,"name":"Instagram","url":"https://zicozhou10.github.io/behavioral-design-hub/teardowns/instagram/","description":"54% (27/50)"}
+  ]
+}
+</script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a0f;--surface:#12121a;--card:#1a1a28;--border:#2a2a3a;--text:#e8e8f0;--muted:#8888a0;--accent:#6c5ce7;--accent-l:#a29bfe;--green:#00b894;--yellow:#fdcb6e;--red:#e17055}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.ct{max-width:860px;margin:0 auto;padding:32px 20px}
+.nv{display:flex;justify-content:space-between;align-items:center;margin-bottom:40px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.nv a{color:var(--accent-l);text-decoration:none;font-size:.88rem;font-weight:500}
+.nb{font-weight:700;font-size:.95rem}
+.hero{text-align:center;padding:20px 0 40px}
+.hero h1{font-size:clamp(1.4rem,3.5vw,2rem);font-weight:800;margin-bottom:8px}
+.hero p{color:var(--muted);font-size:.92rem;max-width:600px;margin:0 auto}
+.stats{display:flex;justify-content:center;gap:32px;margin:24px 0;flex-wrap:wrap}
+.stat{text-align:center}
+.stat-val{font-size:1.6rem;font-weight:800}
+.stat-label{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.legend{display:flex;gap:16px;justify-content:center;margin-bottom:20px;font-size:.78rem;color:var(--muted)}
+.legend span{display:flex;align-items:center;gap:4px}
+.lb-header{display:grid;grid-template-columns:48px 1fr 120px 60px 180px;align-items:center;padding:8px 16px;font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid var(--border)}
+.lb-row{display:grid;grid-template-columns:48px 1fr 120px 60px 180px;align-items:center;padding:14px 16px;border-bottom:1px solid var(--border);text-decoration:none;color:var(--text);transition:background .15s}
+.lb-row:hover{background:var(--card)}
+.rank{font-size:1rem;font-weight:700;text-align:center}
+.product-name{font-weight:600;font-size:.92rem}
+.product-cat{font-size:.78rem;color:var(--muted)}
+.score{font-size:1.1rem;font-weight:800;text-align:center}
+.dims{display:flex;gap:6px;font-size:.78rem;font-weight:600}
+.dim{width:28px;text-align:center}
+.ctas{text-align:center;padding:40px 0}
+.ctas h2{font-size:1.1rem;font-weight:700;margin-bottom:16px}
+.cb{display:inline-block;padding:12px 28px;border-radius:10px;font-weight:700;text-decoration:none;font-size:.9rem;margin:6px}
+.cp{background:var(--accent);color:white}
+.cx{background:var(--card);color:var(--accent-l);border:1px solid var(--border)}
+.ft{text-align:center;padding:24px 0;border-top:1px solid var(--border);margin-top:20px;font-size:.78rem;color:var(--muted)}
+.ft a{color:var(--accent-l);text-decoration:none}
+@media(max-width:700px){
+  .lb-header,.lb-row{grid-template-columns:36px 1fr 48px;gap:4px}
+  .product-cat,.dims,.legend{display:none}
+}
+</style>
+    <!-- aeo-injected -->
+    <meta name="ai-citation-author" content="Zico (Behavioral Design Hub)">
+    <meta name="ai-citation-published" content="2026-04-28T03:55:23Z">
+    <meta name="ai-citation-methodology" content="/methodology/">
+    <meta name="ai-citation-license" content="CC-BY-4.0">
+    <meta name="ai-citation-evidence-count" content="4">
+    <meta name="ai-citation-type" content="behavioral-design-ranking">
+  </head>
+<body>
+<div class="ct">
+<nav class="nv">
+  <a href="https://zicozhou10.github.io/behavioral-design-hub/" class="nb">Behavioral Design Hub</a>
+  <div>
+    <a href="https://zicozhou10.github.io/behavioral-design-hub/categories/">Categories</a> &middot;
+    <a href="https://zicozhou10.github.io/behavioral-design-hub/compare/">Comparisons</a> &middot;
+    <a href="https://zicozhou10.github.io/behavioral-design-hub/tools/behavioral-design-score/">Score Yours</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>Behavioral Design Leaderboard</h1>
+  <p>15 products ranked by behavioral science score across 5 research-backed dimensions. Updated 2026-04-28.</p>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-val" style="color:var(--green)">76%</div><div class="stat-label">Highest (Shopify)</div></div>
+  <div class="stat"><div class="stat-val" style="color:var(--yellow)">67%</div><div class="stat-label">Average</div></div>
+  <div class="stat"><div class="stat-val" style="color:var(--red)">54%</div><div class="stat-label">Lowest (Instagram)</div></div>
+  <div class="stat"><div class="stat-val">15</div><div class="stat-label">Products</div></div>
+</div>
+
+<div class="legend">
+  <span>CA = Choice Architecture</span>
+  <span>CL = Cognitive Load</span>
+  <span>MD = Motivation</span>
+  <span>TT = Trust</span>
+  <span>EA = Ethics</span>
+</div>
+
+<div class="lb-header">
+  <span>Rank</span><span>Product</span><span>Category</span><span>Score</span>
+  <span style="display:flex;gap:6px"><span style="width:28px;text-align:center">CA</span><span style="width:28px;text-align:center">CL</span><span style="width:28px;text-align:center">MD</span><span style="width:28px;text-align:center">TT</span><span style="width:28px;text-align:center">EA</span></span>
+</div>
+
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/shopify/" class="lb-row">
+  <span class="rank">🥇</span>
+  <span class="product-name">🛒 Shopify</span>
+  <span class="product-cat">E-Commerce / SaaS Platform</span>
+  <span class="score" style="color:#00b894">76%</span>
+  <span class="dims"><span class="dim" style="color:#00b894">9</span><span class="dim" style="color:#fdcb6e">7</span><span class="dim" style="color:#00b894">8</span><span class="dim" style="color:#fdcb6e">7</span><span class="dim" style="color:#fdcb6e">7</span></span>
+</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/duolingo/" class="lb-row">
+  <span class="rank">🥈</span>
+  <span class="product-name">🟢 Duolingo</span>
+  <span class="product-cat">EdTech / Language Learning</span>
+  <span class="score" style="color:#00b894">74%</span>
+  <span class="dims"><span class="dim" style="color:#00b894">9</span><span class="dim" style="color:#00b894">8</span><span class="dim" style="color:#00b894">9</span><span class="dim" style="color:#fdcb6e">6</span><span class="dim" style="color:#e17055">5</span></span>
+</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/calm/" class="lb-row">
+  <span class="rank">🥉</span>
+  <span class="product-name">🟡 Calm</span>
+  <span class="product-cat">Wellness / Meditation</span>
+  <span class="score" style="color:#00b894">74%</span>
+  <span class="dims"><span class="dim" style="color:#fdcb6e">7</span><span class="dim" style="color:#00b894">8</span><span class="dim" style="color:#fdcb6e">6</span><span class="dim" style="color:#00b894">8</span><span class="dim" style="color:#00b894">8</span></span>
+</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/airbnb/" class="lb-row">
+  <span class="rank">#4</span>
+  <span class="product-name">🏠 Airbnb</span>
+  <span class="product-cat">Travel / Marketplace</span>
+  <span class="score" style="color:#00b894">74%</span>
+  <span class="dims"><span class="dim" style="color:#00b894">9</span><span class="dim" style="color:#fdcb6e">7</span><span class="dim" style="color:#00b894">8</span><span class="dim" style="color:#fdcb6e">7</span><span class="dim" style="color:#fdcb6e">6</span></span>
+</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/spotify/" class="lb-row">
+  <span class="rank">#5</span>
+  <span class="product-name">🟣 Spotify</span>
+  <span class="product-cat">Music Streaming / Audio</span>
+  <span class="score" style="color:#00b894">72%</span>
+  <span class="dims"><span class="dim" style="color:#00b894">8</span><span class="dim" style="color:#fdcb6e">7</span><span class="dim" style="color:#fdcb6e">7</span><span class="dim" style="color:#fdcb6e">7</span><span class="dim" style="color:#fdcb6e">7</span></span>
+</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/notion/" class="lb-row">
+  <span class="rank">#6</span>
+  <span class="product-name">⚪ Notion</span>
+  <span class="product-cat">Productivity / Knowledge Management</span>
+  <span class="score" style="color:#00b894">72%</span>
+  <span class="dims"><span class="dim" style="color:#fdcb6e">7</span><span class="dim" style="color:#fdcb6e">6</span><span class="dim" style="color:#fdcb6e">6</span><span class="dim" style="color:#00b894">8</span><span class="dim" style="color:#00b894">9</span></span>
+</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/whatsapp/" class="lb-row">
+  <span class="rank">#7</span>
+  <span class="product-name">💬 WhatsApp</span>
+  <span class="product-cat">Messaging / Communication</span>
+  <span class="score" style="color:#00b894">72%</span>
+  <span class="dims"><span class="dim" style="color:#fdcb6e">7</span><span class="dim" style="color:#00b894">9</span><span class="dim" style="color:#fdcb6e">6</span><span class="dim" style="color:#fdcb6e">7</span><span class="dim" style="color:#fdcb6e">7</span></span>
+</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/uber/" class="lb-row">
+  <span class="rank">#8</span>
+  <span class="product-name">🚗 Uber</span>
+  <span class="product-cat">Transportation / Marketplace</span>
+  <span class="score" style="color:#fdcb6e">66%</span>
+  <span class="dims"><span class="dim" style="color:#00b894">8</span><span class="dim" style="color:#00b894">9</span><span class="dim" style="color:#fdcb6e">7</span><span class="dim" style="color:#e17055">4</span><span class="dim" style="color:#e17055">5</span></span>
+</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/tiktok/" class="lb-row">
+  <span class="rank">#9</span>
+  <span class="product-name">🔵 TikTok</span>
+  <span class="product-cat">Social Media / Short Video</span>
+  <span class="score" style="color:#fdcb6e">64%</span>
+  <span class="dims"><span class="dim" style="color:#00b894">10</span><span class="dim" style="color:#00b894">9</span><span class="dim" style="color:#00b894">8</span><span class="dim" style="color:#e17055">3</span><span class="dim" style="color:#e17055">2</span></span>
+</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/chatgpt/" class="lb-row">
+  <span class="rank">#10</span>
+  <span class="product-name">🤖 ChatGPT</span>
+  <span class="product-cat">AI / Conversational Interface</span>
+  <span class="score" style="color:#fdcb6e">64%</span>
+  <span class="dims"><span class="dim" style="color:#fdcb6e">6</span><span class="dim" style="color:#fdcb6e">7</span><span class="dim" style="color:#00b894">8</span><span class="dim" style="color:#e17055">5</span><span class="dim" style="color:#fdcb6e">6</span></span>
+</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/amazon/" class="lb-row">
+  <span class="rank">#11</span>
+  <span class="product-name">📦 Amazon</span>
+  <span class="product-cat">E-Commerce / Marketplace</span>
+  <span class="score" style="color:#fdcb6e">64%</span>
+  <span class="dims"><span class="dim" style="color:#00b894">8</span><span class="dim" style="color:#fdcb6e">6</span><span class="dim" style="color:#00b894">9</span><span class="dim" style="color:#e17055">5</span><span class="dim" style="color:#e17055">4</span></span>
+</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/slack/" class="lb-row">
+  <span class="rank">#12</span>
+  <span class="product-name">💼 Slack</span>
+  <span class="product-cat">Workplace Communication / SaaS</span>
+  <span class="score" style="color:#fdcb6e">62%</span>
+  <span class="dims"><span class="dim" style="color:#fdcb6e">7</span><span class="dim" style="color:#e17055">5</span><span class="dim" style="color:#fdcb6e">7</span><span class="dim" style="color:#fdcb6e">7</span><span class="dim" style="color:#e17055">5</span></span>
+</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/netflix/" class="lb-row">
+  <span class="rank">#13</span>
+  <span class="product-name">🔴 Netflix</span>
+  <span class="product-cat">Streaming / Entertainment</span>
+  <span class="score" style="color:#fdcb6e">60%</span>
+  <span class="dims"><span class="dim" style="color:#00b894">8</span><span class="dim" style="color:#fdcb6e">6</span><span class="dim" style="color:#fdcb6e">7</span><span class="dim" style="color:#e17055">5</span><span class="dim" style="color:#e17055">4</span></span>
+</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/linkedin/" class="lb-row">
+  <span class="rank">#14</span>
+  <span class="product-name">🔗 LinkedIn</span>
+  <span class="product-cat">Professional Network / Career</span>
+  <span class="score" style="color:#fdcb6e">60%</span>
+  <span class="dims"><span class="dim" style="color:#fdcb6e">7</span><span class="dim" style="color:#e17055">5</span><span class="dim" style="color:#fdcb6e">7</span><span class="dim" style="color:#fdcb6e">6</span><span class="dim" style="color:#e17055">5</span></span>
+</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/instagram/" class="lb-row">
+  <span class="rank">#15</span>
+  <span class="product-name">📸 Instagram</span>
+  <span class="product-cat">Social Media / Photo & Video</span>
+  <span class="score" style="color:#e17055">54%</span>
+  <span class="dims"><span class="dim" style="color:#00b894">8</span><span class="dim" style="color:#e17055">5</span><span class="dim" style="color:#00b894">8</span><span class="dim" style="color:#e17055">3</span><span class="dim" style="color:#e17055">3</span></span>
+</a>
+
+
+<div class="ctas">
+  <h2>How Does Your Product Compare?</h2>
+  <a href="https://zicozhou10.github.io/behavioral-design-hub/tools/behavioral-design-score/" class="cb cp">Score Your Product Free</a>
+  <a href="https://zicozhou10.github.io/behavioral-design-hub/compare/" class="cb cx">View All 105 Comparisons</a>
+</div>
+
+<footer class="ft">
+  <p>&copy; 2026 <a href="https://zicozhou10.github.io/behavioral-design-hub/">Behavioral Design Hub</a>. Research-backed behavioral science tools for product teams.</p>
+  <p style="margin-top:8px">All product names are trademarks of their respective owners. Scores reflect behavioral science analysis, not product quality.</p>
+  <p style="margin-top:4px">Generated by rebuild.py &mdash; 2026-04-28</p>
+</footer>
+
+</div>
+</body>
+</html>

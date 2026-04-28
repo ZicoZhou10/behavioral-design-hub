@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Coinbase vs LinkedIn",
+  "products": {
+    "coinbase": {
+      "name": "Coinbase",
+      "emoji": "🪙",
+      "category": "Crypto",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 7,
+        "motivation_design": 8,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Coinbase occupies a unique position in behavioral design: it's simultaneously the most 'responsible' major crypto exchange (compliant, publicly traded, institutionally backed) and a platform whose core business benefits from the most volatile, speculative asset class in modern finance. The product design reflects this tension. Coinbase Earn pays users in crypto to complete educational modules — genuinely teaching blockchain fundamentals, but also creating an endowment effect (once you own some ETH, you're more likely to buy more). The simplified buy/sell interface removes friction that traditional finance considers protective. The portfolio tracker with real-time gains/losses creates a checking habit identical to Robinhood's. The price alerts are external triggers optimized for volatility spikes — exactly when behavioral economics predicts the worst decision-making. Coinbase's 'trusted, simple, compliant' brand positioning is genuine, but the product design still exploits the same FOMO, loss aversion, and variable reward dynamics that drive all speculative trading behavior.",
+      "top_technique": "Coinbase Earn as Endowment-Seeding Education"
+    },
+    "linkedin": {
+      "name": "LinkedIn",
+      "emoji": "💼",
+      "category": "Social Media",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 5,
+        "motivation_design": 7,
+        "trust_transparency": 6,
+        "ethical_alignment": 5
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "LinkedIn exploits professional anxiety as its core behavioral mechanism. Unlike entertainment apps that hook through pleasure (variable rewards, social validation), LinkedIn hooks through anxiety: career FOMO, profile inadequacy, and professional visibility paranoia. The platform is uniquely positioned to do this because professional identity is high-stakes — being 'not visible' on LinkedIn feels genuinely career-threatening in a way that being inactive on Instagram does not. This anxiety-as-engagement model is highly effective (LinkedIn has 1B+ members) but ethically concerning because it monetizes professional insecurity rather than professional development.",
+      "top_technique": "Profile Completeness as Guilt Architecture"
+    }
+  },
+  "overall_winner": "coinbase",
+  "overall_difference": 2,
+  "dimension_wins": {
+    "coinbase": 3,
+    "linkedin": 2,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "coinbase": 8,
+      "linkedin": 7,
+      "difference": 1,
+      "winner": "coinbase"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "coinbase": 7,
+      "linkedin": 5,
+      "difference": 2,
+      "winner": "coinbase"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "coinbase": 8,
+      "linkedin": 7,
+      "difference": 1,
+      "winner": "coinbase"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "coinbase": 5,
+      "linkedin": 6,
+      "difference": -1,
+      "winner": "linkedin"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "coinbase": 4,
+      "linkedin": 5,
+      "difference": -1,
+      "winner": "linkedin"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/coinbase-vs-linkedin/",
+    "product_a_detail": "/api/v1/products/coinbase.json",
+    "product_b_detail": "/api/v1/products/linkedin.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/coinbase/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/linkedin/"
+  }
+}

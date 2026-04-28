@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Duolingo vs Netflix",
+  "products": {
+    "duolingo": {
+      "name": "Duolingo",
+      "emoji": "🦉",
+      "category": "EdTech",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 6,
+        "ethical_alignment": 5
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Duolingo is a masterclass in habit formation mechanics but struggles with the transition from extrinsic hooks to intrinsic motivation. The streak counter keeps users opening the app, but 'opening the app' ≠ 'learning a language.' Products that confuse engagement metrics with outcome metrics eventually face this tension.",
+      "top_technique": "Streak Mechanics as Loss Aversion Engine"
+    },
+    "netflix": {
+      "name": "Netflix",
+      "emoji": "🎬",
+      "category": "Entertainment",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 7,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "Netflix demonstrates the thin line between 'helpful choice architecture' and 'manipulation.' Autoplay genuinely solves the friction of episode transitions. But it also exploits the fact that humans are bad at stopping ongoing activities. Netflix's own CEO famously said their biggest competitor is 'sleep' — a framing that reveals the company optimizes for maximum viewing time, not optimal viewing experience.",
+      "top_technique": "Autoplay as the Ultimate Default Nudge"
+    }
+  },
+  "overall_winner": "duolingo",
+  "overall_difference": 7,
+  "dimension_wins": {
+    "duolingo": 5,
+    "netflix": 0,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "duolingo": 9,
+      "netflix": 8,
+      "difference": 1,
+      "winner": "duolingo"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "duolingo": 8,
+      "netflix": 6,
+      "difference": 2,
+      "winner": "duolingo"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "duolingo": 9,
+      "netflix": 7,
+      "difference": 2,
+      "winner": "duolingo"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "duolingo": 6,
+      "netflix": 5,
+      "difference": 1,
+      "winner": "duolingo"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "duolingo": 5,
+      "netflix": 4,
+      "difference": 1,
+      "winner": "duolingo"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/duolingo-vs-netflix/",
+    "product_a_detail": "/api/v1/products/duolingo.json",
+    "product_b_detail": "/api/v1/products/netflix.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/duolingo/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/netflix/"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Slack vs Tinder",
+  "products": {
+    "slack": {
+      "name": "Slack",
+      "emoji": "💬",
+      "category": "Productivity",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 5,
+        "motivation_design": 7,
+        "trust_transparency": 7,
+        "ethical_alignment": 5
+      },
+      "total": 31,
+      "pct": 62,
+      "key_insight": "Slack is the clearest example of how behavioral design optimized for engagement metrics can directly conflict with user wellbeing in a workplace context. The green dot creates surveillance anxiety, channel proliferation fragments attention, and notification urgency turns every message into a potential trigger. The product works brilliantly for Slack's business (more messages = more 'engaged' = easier enterprise renewal) but actively undermines the deep work that knowledge workers are ostensibly paid to do. Slack proves that 'engagement' as a success metric can be actively harmful when the user's goal isn't entertainment but productive work.",
+      "top_technique": "The Green Dot: Presence as Social Control"
+    },
+    "tinder": {
+      "name": "Tinder",
+      "emoji": "🔥",
+      "category": "Dating",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 4,
+        "ethical_alignment": 4
+      },
+      "total": 34,
+      "pct": 68,
+      "key_insight": "Tinder solved the paradox of choice in dating by reducing a multi-dimensional human evaluation to a binary swipe. This is brilliant choice architecture — and also the product's deepest ethical tension. The swipe creates a variable ratio reward schedule identical to slot machines: most swipes yield nothing, but the occasional match triggers a dopamine spike that reinforces the swiping behavior. Tinder's business model depends on users NOT finding matches efficiently (premium features gate the very discovery the app promises), creating a fundamental misalignment between user goals (find a partner) and business goals (maximize engagement time). The result: an app that is behaviorally addictive by design, yet genuinely useful as a discovery mechanism that didn't exist before.",
+      "top_technique": "Swipe as Binary Choice Architecture"
+    }
+  },
+  "overall_winner": "tinder",
+  "overall_difference": 3,
+  "dimension_wins": {
+    "slack": 2,
+    "tinder": 3,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "slack": 7,
+      "tinder": 9,
+      "difference": -2,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "slack": 5,
+      "tinder": 8,
+      "difference": -3,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "slack": 7,
+      "tinder": 9,
+      "difference": -2,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "slack": 7,
+      "tinder": 4,
+      "difference": 3,
+      "winner": "slack"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "slack": 5,
+      "tinder": 4,
+      "difference": 1,
+      "winner": "slack"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/slack-vs-tinder/",
+    "product_a_detail": "/api/v1/products/slack.json",
+    "product_b_detail": "/api/v1/products/tinder.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/slack/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/tinder/"
+  }
+}

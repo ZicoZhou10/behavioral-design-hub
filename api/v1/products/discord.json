@@ -1,0 +1,104 @@
+{
+  "slug": "discord",
+  "name": "Discord",
+  "emoji": "💬",
+  "emoji_html": "&#x1F4AC;",
+  "category": "Communication / Community Chat",
+  "category_short": "Community",
+  "tagline": "Discord accidentally built the most effective community behavioral design platform by solving a narrow problem (gamer voice chat) and discovering that investment escalation and ambient social presence create powerful belonging loops.",
+  "scores": {
+    "choice_architecture": 7,
+    "cognitive_load": 6,
+    "motivation_design": 8,
+    "trust_transparency": 7,
+    "ethical_alignment": 7
+  },
+  "total": 35,
+  "pct": 70,
+  "key_insight": "Discord's behavioral design success comes from an unusual source: it's one of the few major platforms where the engagement loop is primarily social rather than algorithmic. There's no recommendation algorithm pushing content — engagement is driven by genuine community belonging and real-time social presence. The 'someone is typing...' indicator, voice channel presence, and @mention notifications create a sense of liveness that makes communities feel inhabited rather than archived. Discord's investment escalation (join → customize → earn roles → moderate → build bots) creates deep switching costs through identity investment rather than content lock-in. This makes Discord's engagement more ethically defensible than algorithmic platforms: users return because they have genuine social bonds, not because an algorithm has learned to exploit their attention patterns.",
+  "top_technique": "Server Investment Escalation Ladder",
+  "top_framework": "Self-Determination Theory",
+  "top_evidence": "Discord has 200M+ MAU (2024). Average user is in 7+ servers. Power users spend 4+ hours/day. Nitro subscribers have 25% higher retention at 12 months. Server communities with 3+ active moderators have 60% higher 90-day member retention.",
+  "techniques": [
+    {
+      "title": "Server Investment Escalation Ladder",
+      "framework": "Self-Determination Theory",
+      "description": "Discord creates a natural investment escalation: join a server (low commitment) → set a server nickname and avatar (identity investment) → earn roles through activity (competence recognition) → become a moderator (responsibility and belonging) → create your own server (full autonomy). Each step satisfies SDT's three needs (autonomy, competence, relatedness) at increasing depth. The genius is that this escalation happens organically through community dynamics, not through gamification mechanics. A user who has customized their profile, earned roles, built relationships, and invested hundreds of hours in a community faces enormous switching costs — but these costs are built on genuine social value, not artificial lock-in.",
+      "evidence": "Discord's internal data shows that users who earn 3+ server roles have 4x higher 90-day retention than role-less members (Discord Engineering Blog, 2023). The average Discord user belongs to 7+ servers but actively participates in 2-3 — showing that depth of investment, not breadth, drives engagement. This mirrors Deci & Ryan's SDT research: intrinsic motivation (competence, belonging) produces more sustained engagement than extrinsic rewards."
+    },
+    {
+      "title": "@Mention as Intermittent Social Reward",
+      "framework": "Hook Model",
+      "description": "Discord's @mention system (including @everyone, @here, and role mentions) creates a variable ratio social reward schedule. Users never know when they'll be mentioned, creating a checking habit similar to Tinder's match notifications but driven by genuine social recognition rather than algorithmic curation. The red notification badge on the Discord icon is deliberately anxiety-inducing — it could be a friend needing help, a community announcement, or a casual mention. This ambiguity makes every notification feel potentially important, maintaining the trigger-action loop even when most notifications are low-stakes.",
+      "evidence": "Discord users check the app an average of 8 times per day (Sensor Tower, 2024). The @mention notification has a 78% open rate within 10 minutes — significantly higher than email (20%) or SMS (45%). Discord's notification system was redesigned in 2022 to add 'notification levels' per channel, which actually increased engagement by reducing notification fatigue for low-priority channels while maintaining urgency for high-priority ones."
+    },
+    {
+      "title": "Voice Channel Ambient Presence",
+      "framework": "Self-Determination Theory",
+      "description": "Discord voice channels show who is currently connected, creating ambient social presence without requiring active conversation. Users join a voice channel while gaming, working, or studying — similar to being in a shared physical space. This 'co-presence' satisfies SDT's relatedness need passively. The ability to see friends online and in voice creates social obligation (FOMO) and availability signaling. Unlike a phone call (which requires active engagement), voice channels allow for intermittent conversation mixed with comfortable silence — mimicking the social dynamics of a physical space like a living room or office.",
+      "evidence": "Discord reported that voice channel usage increased 200% from 2020-2024, driven by the pandemic normalizing ambient co-presence. Average voice session duration is 47 minutes (far exceeding average voice call duration of 3-5 minutes). The 'Go Live' screen sharing feature increased voice channel participation by 35% — showing that passive presence lowers the barrier to active engagement. This maps to Oldenburg's 'third place' theory: Discord voice channels function as digital third places between home and work."
+    },
+    {
+      "title": "Nitro as Social Status Signaling",
+      "framework": "Nudge Theory",
+      "description": "Discord Nitro ($9.99/month) grants animated avatars, custom emojis across servers, profile banners, and a special badge. These are pure social signaling features — they don't improve functionality but visibly mark the subscriber as a committed community member. The animated avatar and banner are visible to everyone in shared servers, creating social proof ('serious members have Nitro'). Server Boosting (included with Nitro) lets subscribers improve a community's features (better audio, more emoji slots), creating social capital through visible generosity. This is behavioral design that aligns incentives: Nitro revenue funds platform development, and boosters get social recognition.",
+      "evidence": "Discord Nitro contributes to 95%+ of Discord's revenue (2024 estimates). Nitro subscribers have 25% higher 12-month retention than free users. Server Boost levels (reached through collective Nitro subscriptions) create a community coordination game — servers with Level 3 boosting have 40% higher member activity than unboosted servers of similar size. The social signaling mechanism mirrors Veblen goods economics: the value of Nitro increases with visibility."
+    }
+  ],
+  "strengths": [
+    "Engagement driven by genuine social bonds, not algorithms",
+    "Voice channels created a new category of ambient co-presence",
+    "Investment escalation builds on real community value"
+  ],
+  "weaknesses": [
+    "Notification system can create social obligation anxiety",
+    "Server proliferation increases cognitive switching cost",
+    "New user onboarding is overwhelming (many channels, roles, norms)"
+  ],
+  "behavioral_hooks": [
+    "server investment ladder (identity escalation)",
+    "@mention notifications (intermittent social reward)",
+    "voice channel presence (ambient co-presence)",
+    "Nitro badge + boosting (social status signaling)"
+  ],
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "links": {
+    "teardown_page": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/discord/",
+    "products_list": "/api/v1/products.json",
+    "comparisons": {
+      "figma": "/api/v1/compare/discord-vs-figma.json",
+      "shopify": "/api/v1/compare/discord-vs-shopify.json",
+      "airbnb": "/api/v1/compare/airbnb-vs-discord.json",
+      "calm": "/api/v1/compare/calm-vs-discord.json",
+      "duolingo": "/api/v1/compare/discord-vs-duolingo.json",
+      "pinterest": "/api/v1/compare/discord-vs-pinterest.json",
+      "strava": "/api/v1/compare/discord-vs-strava.json",
+      "bumble": "/api/v1/compare/bumble-vs-discord.json",
+      "notion": "/api/v1/compare/discord-vs-notion.json",
+      "spotify": "/api/v1/compare/discord-vs-spotify.json",
+      "whatsapp": "/api/v1/compare/discord-vs-whatsapp.json",
+      "peloton": "/api/v1/compare/discord-vs-peloton.json",
+      "tinder": "/api/v1/compare/discord-vs-tinder.json",
+      "venmo": "/api/v1/compare/discord-vs-venmo.json",
+      "doordash": "/api/v1/compare/discord-vs-doordash.json",
+      "snapchat": "/api/v1/compare/discord-vs-snapchat.json",
+      "uber": "/api/v1/compare/discord-vs-uber.json",
+      "amazon": "/api/v1/compare/amazon-vs-discord.json",
+      "candy-crush": "/api/v1/compare/candy-crush-vs-discord.json",
+      "chatgpt": "/api/v1/compare/chatgpt-vs-discord.json",
+      "coinbase": "/api/v1/compare/coinbase-vs-discord.json",
+      "tiktok": "/api/v1/compare/discord-vs-tiktok.json",
+      "youtube": "/api/v1/compare/discord-vs-youtube.json",
+      "slack": "/api/v1/compare/discord-vs-slack.json",
+      "booking-com": "/api/v1/compare/booking-com-vs-discord.json",
+      "linkedin": "/api/v1/compare/discord-vs-linkedin.json",
+      "netflix": "/api/v1/compare/discord-vs-netflix.json",
+      "robinhood": "/api/v1/compare/discord-vs-robinhood.json",
+      "instagram": "/api/v1/compare/discord-vs-instagram.json"
+    },
+    "category": "/api/v1/categories/community.json"
+  },
+  "rank": 13,
+  "rank_of": 30
+}

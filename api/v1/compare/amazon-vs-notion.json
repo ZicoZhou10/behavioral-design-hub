@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Amazon vs Notion",
+  "products": {
+    "amazon": {
+      "name": "Amazon",
+      "emoji": "📦",
+      "category": "E-Commerce",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 9,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Amazon is the most commercially successful behavioral design in history — and the most ethically polarized. One-click buy genuinely reduces friction. Prime genuinely provides value. But the same behavioral toolkit that makes buying easy makes canceling hard. Amazon proves that behavioral design is morally neutral: identical techniques (friction manipulation, default exploitation, cognitive load management) create user value when applied to purchasing and destroy user autonomy when applied to retention. The regulatory response (FTC lawsuit, EU DSA) suggests that the market is beginning to price in behavioral design ethics.",
+      "top_technique": "One-Click Buy: The Friction Elimination Patent"
+    },
+    "notion": {
+      "name": "Notion",
+      "emoji": "📝",
+      "category": "Productivity",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 6,
+        "trust_transparency": 8,
+        "ethical_alignment": 9
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "Notion proves that 'more flexibility' doesn't always mean better behavioral design. The product excels at progressive disclosure for feature complexity, but struggles with the motivational design of creation from scratch. Products that help users *create* face fundamentally different behavioral challenges than products that help users *consume* — creation requires initial competence that can't be algorithmically provided.",
+      "top_technique": "Template Gallery as Choice Architecture"
+    }
+  },
+  "overall_winner": "notion",
+  "overall_difference": 4,
+  "dimension_wins": {
+    "amazon": 2,
+    "notion": 2,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "amazon": 8,
+      "notion": 7,
+      "difference": 1,
+      "winner": "amazon"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "amazon": 6,
+      "notion": 6,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "amazon": 9,
+      "notion": 6,
+      "difference": 3,
+      "winner": "amazon"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "amazon": 5,
+      "notion": 8,
+      "difference": -3,
+      "winner": "notion"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "amazon": 4,
+      "notion": 9,
+      "difference": -5,
+      "winner": "notion"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/amazon-vs-notion/",
+    "product_a_detail": "/api/v1/products/amazon.json",
+    "product_b_detail": "/api/v1/products/notion.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/amazon/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/notion/"
+  }
+}

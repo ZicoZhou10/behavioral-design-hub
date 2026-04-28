@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Tinder vs Venmo",
+  "products": {
+    "tinder": {
+      "name": "Tinder",
+      "emoji": "🔥",
+      "category": "Dating",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 4,
+        "ethical_alignment": 4
+      },
+      "total": 34,
+      "pct": 68,
+      "key_insight": "Tinder solved the paradox of choice in dating by reducing a multi-dimensional human evaluation to a binary swipe. This is brilliant choice architecture — and also the product's deepest ethical tension. The swipe creates a variable ratio reward schedule identical to slot machines: most swipes yield nothing, but the occasional match triggers a dopamine spike that reinforces the swiping behavior. Tinder's business model depends on users NOT finding matches efficiently (premium features gate the very discovery the app promises), creating a fundamental misalignment between user goals (find a partner) and business goals (maximize engagement time). The result: an app that is behaviorally addictive by design, yet genuinely useful as a discovery mechanism that didn't exist before.",
+      "top_technique": "Swipe as Binary Choice Architecture"
+    },
+    "venmo": {
+      "name": "Venmo",
+      "emoji": "💸",
+      "category": "Payments",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 9,
+        "motivation_design": 7,
+        "trust_transparency": 5,
+        "ethical_alignment": 5
+      },
+      "total": 34,
+      "pct": 68,
+      "key_insight": "Venmo's most controversial feature — the public social feed showing who paid whom and for what — is also its greatest behavioral design achievement. By making payments social by default, Venmo solved the cold-start problem that kills every payment app: getting both the sender and receiver to use the same platform. When you see friends splitting dinner, paying rent, or reimbursing concert tickets in your feed, each transaction is simultaneously a use case advertisement and social proof that Venmo is the normal way to pay friends. The feed also creates a subtle obligation loop: if everyone in your friend group uses Venmo, requesting payment through any other method feels inconvenient and socially awkward. The privacy implications are significant — researchers have used Venmo's public feed to reconstruct social networks, identify romantic relationships, and track drug transactions. Venmo made payments 'public by default' in the same way Facebook made profiles public by default: not because users wanted it, but because virality required it. The 2021 privacy controversy (BuzzFeed tracked President Biden's Venmo account) forced a redesign, but the social feed remains opt-out rather than opt-in — Venmo's growth depends on visibility.",
+      "top_technique": "Social Payment Feed as Viral Acquisition Engine"
+    }
+  },
+  "overall_winner": "tie",
+  "overall_difference": 0,
+  "dimension_wins": {
+    "tinder": 2,
+    "venmo": 3,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "tinder": 9,
+      "venmo": 8,
+      "difference": 1,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "tinder": 8,
+      "venmo": 9,
+      "difference": -1,
+      "winner": "venmo"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "tinder": 9,
+      "venmo": 7,
+      "difference": 2,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "tinder": 4,
+      "venmo": 5,
+      "difference": -1,
+      "winner": "venmo"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "tinder": 4,
+      "venmo": 5,
+      "difference": -1,
+      "winner": "venmo"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/tinder-vs-venmo/",
+    "product_a_detail": "/api/v1/products/tinder.json",
+    "product_b_detail": "/api/v1/products/venmo.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/tinder/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/venmo/"
+  }
+}

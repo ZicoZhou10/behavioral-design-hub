@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Calm vs Discord",
+  "products": {
+    "calm": {
+      "name": "Calm",
+      "emoji": "🧘",
+      "category": "Wellness",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 6,
+        "trust_transparency": 8,
+        "ethical_alignment": 8
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Calm's behavioral design challenge is philosophically interesting: can you ethically use behavioral science to help people build habits that may eliminate the need for your product? Calm's answer is content expansion — become a 'wellness platform' rather than a 'meditation app.' But this risks cognitive load creep as the product tries to be everything at once.",
+      "top_technique": "Sleep Stories as Habit Stacking"
+    },
+    "discord": {
+      "name": "Discord",
+      "emoji": "💬",
+      "category": "Community",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 8,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 35,
+      "pct": 70,
+      "key_insight": "Discord's behavioral design success comes from an unusual source: it's one of the few major platforms where the engagement loop is primarily social rather than algorithmic. There's no recommendation algorithm pushing content — engagement is driven by genuine community belonging and real-time social presence. The 'someone is typing...' indicator, voice channel presence, and @mention notifications create a sense of liveness that makes communities feel inhabited rather than archived. Discord's investment escalation (join → customize → earn roles → moderate → build bots) creates deep switching costs through identity investment rather than content lock-in. This makes Discord's engagement more ethically defensible than algorithmic platforms: users return because they have genuine social bonds, not because an algorithm has learned to exploit their attention patterns.",
+      "top_technique": "Server Investment Escalation Ladder"
+    }
+  },
+  "overall_winner": "calm",
+  "overall_difference": 2,
+  "dimension_wins": {
+    "calm": 3,
+    "discord": 1,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "calm": 7,
+      "discord": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "calm": 8,
+      "discord": 6,
+      "difference": 2,
+      "winner": "calm"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "calm": 6,
+      "discord": 8,
+      "difference": -2,
+      "winner": "discord"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "calm": 8,
+      "discord": 7,
+      "difference": 1,
+      "winner": "calm"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "calm": 8,
+      "discord": 7,
+      "difference": 1,
+      "winner": "calm"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/calm-vs-discord/",
+    "product_a_detail": "/api/v1/products/calm.json",
+    "product_b_detail": "/api/v1/products/discord.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/calm/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/discord/"
+  }
+}

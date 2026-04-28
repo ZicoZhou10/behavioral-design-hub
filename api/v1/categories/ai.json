@@ -1,0 +1,42 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "name": "AI",
+  "slug": "ai",
+  "product_count": 1,
+  "avg_score": 32.0,
+  "dimension_averages": {
+    "choice_architecture": 6.0,
+    "cognitive_load": 7.0,
+    "motivation_design": 8.0,
+    "trust_transparency": 5.0,
+    "ethical_alignment": 6.0
+  },
+  "products": [
+    {
+      "slug": "chatgpt",
+      "name": "ChatGPT",
+      "emoji": "🤖",
+      "category": "AI / Conversational Interface",
+      "scores": {
+        "choice_architecture": 6,
+        "cognitive_load": 7,
+        "motivation_design": 8,
+        "trust_transparency": 5,
+        "ethical_alignment": 6
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "ChatGPT represents a paradigm shift in behavioral design: the product's interface IS the choice architecture. Every interaction requires the user to construct their own options (via prompts), which inverts the traditional Nudge Theory framework. This creates a fascinating paradox — the product that seems to give users 'infinite freedom' actually has enormous hidden defaults (training data biases, RLHF preferences, system prompt constraints) that shape every response.",
+      "top_technique": "Blank Prompt as Anti-Choice Architecture",
+      "links": {
+        "detail": "/api/v1/products/chatgpt.json",
+        "teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/chatgpt/"
+      }
+    }
+  ],
+  "links": {
+    "categories_list": "/api/v1/categories.json",
+    "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/ai/"
+  }
+}

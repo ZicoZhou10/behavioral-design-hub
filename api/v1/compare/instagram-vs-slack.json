@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Instagram vs Slack",
+  "products": {
+    "instagram": {
+      "name": "Instagram",
+      "emoji": "📸",
+      "category": "Social Media",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 5,
+        "motivation_design": 8,
+        "trust_transparency": 3,
+        "ethical_alignment": 3
+      },
+      "total": 27,
+      "pct": 54,
+      "key_insight": "Instagram shows what happens when a product's behavioral design evolves to serve the platform's needs rather than the user's. The original photo-sharing app had natural stopping cues (finite friend posts). The algorithmic feed, infinite scroll, and Reels removed those cues. Instagram's behavioral design is technically brilliant but strategically misaligned — it optimizes for time-spent at the cost of user wellbeing, a trade-off that's becoming increasingly visible (and regulated).",
+      "top_technique": "Pull-to-Refresh as Variable Ratio Slot Machine"
+    },
+    "slack": {
+      "name": "Slack",
+      "emoji": "💬",
+      "category": "Productivity",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 5,
+        "motivation_design": 7,
+        "trust_transparency": 7,
+        "ethical_alignment": 5
+      },
+      "total": 31,
+      "pct": 62,
+      "key_insight": "Slack is the clearest example of how behavioral design optimized for engagement metrics can directly conflict with user wellbeing in a workplace context. The green dot creates surveillance anxiety, channel proliferation fragments attention, and notification urgency turns every message into a potential trigger. The product works brilliantly for Slack's business (more messages = more 'engaged' = easier enterprise renewal) but actively undermines the deep work that knowledge workers are ostensibly paid to do. Slack proves that 'engagement' as a success metric can be actively harmful when the user's goal isn't entertainment but productive work.",
+      "top_technique": "The Green Dot: Presence as Social Control"
+    }
+  },
+  "overall_winner": "slack",
+  "overall_difference": 4,
+  "dimension_wins": {
+    "instagram": 2,
+    "slack": 2,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "instagram": 8,
+      "slack": 7,
+      "difference": 1,
+      "winner": "instagram"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "instagram": 5,
+      "slack": 5,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "instagram": 8,
+      "slack": 7,
+      "difference": 1,
+      "winner": "instagram"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "instagram": 3,
+      "slack": 7,
+      "difference": -4,
+      "winner": "slack"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "instagram": 3,
+      "slack": 5,
+      "difference": -2,
+      "winner": "slack"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/instagram-vs-slack/",
+    "product_a_detail": "/api/v1/products/instagram.json",
+    "product_b_detail": "/api/v1/products/slack.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/instagram/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/slack/"
+  }
+}

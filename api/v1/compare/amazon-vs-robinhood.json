@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Amazon vs Robinhood",
+  "products": {
+    "amazon": {
+      "name": "Amazon",
+      "emoji": "📦",
+      "category": "E-Commerce",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 9,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Amazon is the most commercially successful behavioral design in history — and the most ethically polarized. One-click buy genuinely reduces friction. Prime genuinely provides value. But the same behavioral toolkit that makes buying easy makes canceling hard. Amazon proves that behavioral design is morally neutral: identical techniques (friction manipulation, default exploitation, cognitive load management) create user value when applied to purchasing and destroy user autonomy when applied to retention. The regulatory response (FTC lawsuit, EU DSA) suggests that the market is beginning to price in behavioral design ethics.",
+      "top_technique": "One-Click Buy: The Friction Elimination Patent"
+    },
+    "robinhood": {
+      "name": "Robinhood",
+      "emoji": "📈",
+      "category": "FinTech",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 7,
+        "motivation_design": 9,
+        "trust_transparency": 3,
+        "ethical_alignment": 3
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "Robinhood is the most controversial case study in behavioral design because it reveals what happens when you apply consumer-app engagement techniques to financial instruments. The confetti animation on trades, the one-tap execution, the push notifications on price movements — these are standard mobile engagement patterns, except the 'engagement' involves real money and real financial risk. The SEC's 2021 investigation and subsequent $65M fine specifically cited Robinhood's gamification. Robinhood's defense — that simplicity democratizes access — is valid. The counterargument — that simplicity in high-stakes domains removes protective friction — is also valid. This tension makes Robinhood the defining case study for when behavioral design ethics actually matter.",
+      "top_technique": "Confetti and Celebration UI as Operant Conditioning"
+    }
+  },
+  "overall_winner": "amazon",
+  "overall_difference": 2,
+  "dimension_wins": {
+    "amazon": 2,
+    "robinhood": 1,
+    "ties": 2
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "amazon": 8,
+      "robinhood": 8,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "amazon": 6,
+      "robinhood": 7,
+      "difference": -1,
+      "winner": "robinhood"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "amazon": 9,
+      "robinhood": 9,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "amazon": 5,
+      "robinhood": 3,
+      "difference": 2,
+      "winner": "amazon"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "amazon": 4,
+      "robinhood": 3,
+      "difference": 1,
+      "winner": "amazon"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/amazon-vs-robinhood/",
+    "product_a_detail": "/api/v1/products/amazon.json",
+    "product_b_detail": "/api/v1/products/robinhood.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/amazon/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/robinhood/"
+  }
+}

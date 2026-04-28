@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Duolingo vs YouTube",
+  "products": {
+    "duolingo": {
+      "name": "Duolingo",
+      "emoji": "🦉",
+      "category": "EdTech",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 6,
+        "ethical_alignment": 5
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Duolingo is a masterclass in habit formation mechanics but struggles with the transition from extrinsic hooks to intrinsic motivation. The streak counter keeps users opening the app, but 'opening the app' ≠ 'learning a language.' Products that confuse engagement metrics with outcome metrics eventually face this tension.",
+      "top_technique": "Streak Mechanics as Loss Aversion Engine"
+    },
+    "youtube": {
+      "name": "YouTube",
+      "emoji": "▶️",
+      "category": "Video",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 9,
+        "trust_transparency": 5,
+        "ethical_alignment": 5
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "YouTube is the clearest example of a platform where behavioral design serves the algorithm more than the user. The recommendation engine is optimized for watch time, not user satisfaction — a distinction that became central to the 2020-2024 tech ethics debate. Autoplay removes the natural exit point between videos, Up Next suggestions exploit curiosity gaps, and the thumbnail ecosystem has evolved into an arms race of clickbait. Yet YouTube also genuinely democratized video education, entertainment, and creator economics. The tension is structural: every design choice that makes YouTube more 'engaging' also makes it harder to stop watching. YouTube's 'Take a Break' reminder is the company acknowledging this tension — but setting it to OFF by default reveals which side wins.",
+      "top_technique": "Autoplay as Default Continuation"
+    }
+  },
+  "overall_winner": "duolingo",
+  "overall_difference": 5,
+  "dimension_wins": {
+    "duolingo": 3,
+    "youtube": 0,
+    "ties": 2
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "duolingo": 9,
+      "youtube": 7,
+      "difference": 2,
+      "winner": "duolingo"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "duolingo": 8,
+      "youtube": 6,
+      "difference": 2,
+      "winner": "duolingo"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "duolingo": 9,
+      "youtube": 9,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "duolingo": 6,
+      "youtube": 5,
+      "difference": 1,
+      "winner": "duolingo"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "duolingo": 5,
+      "youtube": 5,
+      "difference": 0,
+      "winner": "tie"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/duolingo-vs-youtube/",
+    "product_a_detail": "/api/v1/products/duolingo.json",
+    "product_b_detail": "/api/v1/products/youtube.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/duolingo/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/youtube/"
+  }
+}

@@ -1,0 +1,65 @@
+# Behavioral Design Hub
+
+> Evidence-based behavioral design teardowns of 30 consumer products, 17 pattern pages, and ~435 comparison pages. Every technique cited to academic or regulatory sources (Thaler, Cialdini, EU CPC Network, GDPR, Journal of Behavioral Finance, CHI proceedings, etc.).
+
+## Teardowns
+- [Airbnb Behavioral Design Teardown](/teardowns/airbnb/): , , 
+- [Amazon Behavioral Design Teardown](/teardowns/amazon/): , , 
+- [Booking.com Behavioral Design Teardown](/teardowns/booking-com/): , , 
+- [Bumble Behavioral Design Teardown](/teardowns/bumble/): , , 
+- [Calm Behavioral Design Teardown](/teardowns/calm/): , , 
+- [Candy Crush Behavioral Design Teardown](/teardowns/candy-crush/): , , 
+- [ChatGPT Behavioral Design Teardown](/teardowns/chatgpt/): , , 
+- [Coinbase Behavioral Design Teardown](/teardowns/coinbase/): , , 
+- [Discord Behavioral Design Teardown](/teardowns/discord/): , , 
+- [DoorDash Behavioral Design Teardown](/teardowns/doordash/): , , 
+- [Duolingo Behavioral Design Teardown](/teardowns/duolingo/): , , 
+- [Figma Behavioral Design Teardown](/teardowns/figma/): , , 
+- [Instagram Behavioral Design Teardown](/teardowns/instagram/): , , 
+- [LinkedIn Behavioral Design Teardown](/teardowns/linkedin/): , , 
+- [Netflix Behavioral Design Teardown](/teardowns/netflix/): , , 
+- [Notion Behavioral Design Teardown](/teardowns/notion/): , , 
+- [Peloton Behavioral Design Teardown](/teardowns/peloton/): , , 
+- [Pinterest Behavioral Design Teardown](/teardowns/pinterest/): , , 
+- [Robinhood Behavioral Design Teardown](/teardowns/robinhood/): , , 
+- [Shopify Behavioral Design Teardown](/teardowns/shopify/): , , 
+- [Slack Behavioral Design Teardown](/teardowns/slack/): , , 
+- [Snapchat Behavioral Design Teardown](/teardowns/snapchat/): , , 
+- [Spotify Behavioral Design Teardown](/teardowns/spotify/): , , 
+- [Strava Behavioral Design Teardown](/teardowns/strava/): , , 
+- [TikTok Behavioral Design Teardown](/teardowns/tiktok/): , , 
+- [Tinder Behavioral Design Teardown](/teardowns/tinder/): , , 
+- [Uber Behavioral Design Teardown](/teardowns/uber/): , , 
+- [Venmo Behavioral Design Teardown](/teardowns/venmo/): , , 
+- [WhatsApp Behavioral Design Teardown](/teardowns/whatsapp/): , , 
+- [YouTube Behavioral Design Teardown](/teardowns/youtube/): , , 
+
+## Pattern Pages
+- [Loss Aversion](/patterns/loss-aversion/): ? examples
+- [Default Architecture](/patterns/default-architecture/): ? examples
+- [Scarcity Urgency](/patterns/scarcity-urgency/): ? examples
+- [Variable Reinforcement](/patterns/variable-reinforcement/): ? examples
+- [Social Proof](/patterns/social-proof/): ? examples
+- [Friction Removal](/patterns/friction-removal/): ? examples
+- [Algorithmic Curation](/patterns/algorithmic-curation/): ? examples
+- [Habit Formation](/patterns/habit-formation/): ? examples
+- [Progressive Commitment](/patterns/progressive-commitment/): ? examples
+- [Social Obligation](/patterns/social-obligation/): ? examples
+- [Price Anchoring](/patterns/price-anchoring/): ? examples
+- [Gamification](/patterns/gamification/): ? examples
+- [Identity Investment](/patterns/identity-investment/): ? examples
+- [Ecosystem Moat](/patterns/ecosystem-moat/): ? examples
+- [Dark Patterns](/patterns/dark-patterns/): ? examples
+- [Infinite Scroll](/patterns/infinite-scroll/): ? examples
+- [Freemium Conversion](/patterns/freemium-conversion/): ? examples
+
+## API
+- [Pattern-Index JSON API](/api/): 162+ endpoints, free, CORS-enabled, static JSON
+
+## Citations & Methodology
+- [Methodology (0-50 teardown scoring)](/methodology/)
+- [Citations Index](/citations/): 400+ academic + regulatory references
+
+## License
+- Content: CC-BY-4.0 (attribution required, commercial OK)
+- Citation format: `Behavioral Design Hub. (YYYY). <Page title>. <URL>`

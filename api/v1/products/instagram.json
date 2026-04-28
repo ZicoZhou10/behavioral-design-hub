@@ -1,0 +1,98 @@
+{
+  "slug": "instagram",
+  "name": "Instagram",
+  "emoji": "📸",
+  "emoji_html": "&#x1F4F8;",
+  "category": "Social Media / Photo & Video",
+  "category_short": "Social Media",
+  "tagline": "Instagram transformed from a simple photo filter app into a variable reward delivery system — and the Reels pivot reveals how platform incentives can override user preferences.",
+  "scores": {
+    "choice_architecture": 8,
+    "cognitive_load": 5,
+    "motivation_design": 8,
+    "trust_transparency": 3,
+    "ethical_alignment": 3
+  },
+  "total": 27,
+  "pct": 54,
+  "key_insight": "Instagram shows what happens when a product's behavioral design evolves to serve the platform's needs rather than the user's. The original photo-sharing app had natural stopping cues (finite friend posts). The algorithmic feed, infinite scroll, and Reels removed those cues. Instagram's behavioral design is technically brilliant but strategically misaligned — it optimizes for time-spent at the cost of user wellbeing, a trade-off that's becoming increasingly visible (and regulated).",
+  "top_technique": "Pull-to-Refresh as Variable Ratio Slot Machine",
+  "top_framework": "Hook Model",
+  "top_evidence": "Reels shift driven by competitive pressure, not user demand (Mosseri 2023). 300K+ petition to 'stop trying to be TikTok.' Internal research: 32% of teen girls said Instagram worsened body image.",
+  "techniques": [
+    {
+      "title": "Pull-to-Refresh as Variable Ratio Slot Machine",
+      "framework": "Hook Model",
+      "description": "Instagram's pull-to-refresh gesture mimics a slot machine lever. Each pull produces an unpredictable feed — sometimes great content from close friends, sometimes ads, sometimes stale posts. The variable ratio reinforcement schedule means users pull to refresh far more often than new content actually appears, because each pull *might* reveal something great.",
+      "evidence": "Aza Raskin and Tristan Harris (Center for Humane Technology) specifically cite pull-to-refresh as a variable ratio reinforcement pattern. Instagram users check the app ~10x/day on average (Statista 2025), far exceeding the actual content refresh rate from their network."
+    },
+    {
+      "title": "Reels: Algorithmic Override of Social Graph",
+      "framework": "Nudge Theory",
+      "description": "The Reels tab replaces social-graph-based content (posts from people you follow) with algorithmic content (posts the system predicts you'll watch). This is a massive choice architecture shift: the 'default' feed is no longer your friends' content but TikTok-style algorithmic recommendations. Users didn't choose this change — it was imposed to compete with TikTok.",
+      "evidence": "Instagram head Adam Mosseri acknowledged in 2023 that the shift to Reels was driven by competitive pressure, not user demand. A viral petition with 300K+ signatures asked Instagram to 'stop trying to be TikTok.' The platform proceeded anyway — competitive survival overrode stated user preference."
+    },
+    {
+      "title": "Social Validation Feedback Loop",
+      "framework": "Self-Determination Theory",
+      "description": "Likes, comments, and follower counts create a continuous competence feedback loop. But unlike genuine competence (which is internal), Instagram's validation is external, comparative, and public. SDT research predicts this leads to 'introjected regulation' — motivation driven by ego involvement rather than genuine interest. Users post not because they enjoy creating, but to maintain their social standing.",
+      "evidence": "Instagram's own internal research (leaked via WSJ, 2021): 32% of teen girls said Instagram made them feel worse about their bodies. The company considered hiding like counts, tested it, then made it optional — revealing that likes are too central to engagement metrics to remove."
+    }
+  ],
+  "strengths": [
+    "Explore page genuinely useful for discovery",
+    "Stories respects temporal boundaries (24hr expiry)",
+    "Shopping integration creates real utility"
+  ],
+  "weaknesses": [
+    "Like counts create toxic comparison",
+    "Reels was competitive, not user-driven",
+    "No meaningful usage awareness tools"
+  ],
+  "behavioral_hooks": [
+    "pull-to-refresh (variable ratio)",
+    "Reels algorithmic override",
+    "social validation feedback loop",
+    "likes as competence signal"
+  ],
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "links": {
+    "teardown_page": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/instagram/",
+    "products_list": "/api/v1/products.json",
+    "comparisons": {
+      "figma": "/api/v1/compare/figma-vs-instagram.json",
+      "shopify": "/api/v1/compare/instagram-vs-shopify.json",
+      "airbnb": "/api/v1/compare/airbnb-vs-instagram.json",
+      "calm": "/api/v1/compare/calm-vs-instagram.json",
+      "duolingo": "/api/v1/compare/duolingo-vs-instagram.json",
+      "pinterest": "/api/v1/compare/instagram-vs-pinterest.json",
+      "strava": "/api/v1/compare/instagram-vs-strava.json",
+      "bumble": "/api/v1/compare/bumble-vs-instagram.json",
+      "notion": "/api/v1/compare/instagram-vs-notion.json",
+      "spotify": "/api/v1/compare/instagram-vs-spotify.json",
+      "whatsapp": "/api/v1/compare/instagram-vs-whatsapp.json",
+      "peloton": "/api/v1/compare/instagram-vs-peloton.json",
+      "discord": "/api/v1/compare/discord-vs-instagram.json",
+      "tinder": "/api/v1/compare/instagram-vs-tinder.json",
+      "venmo": "/api/v1/compare/instagram-vs-venmo.json",
+      "doordash": "/api/v1/compare/doordash-vs-instagram.json",
+      "snapchat": "/api/v1/compare/instagram-vs-snapchat.json",
+      "uber": "/api/v1/compare/instagram-vs-uber.json",
+      "amazon": "/api/v1/compare/amazon-vs-instagram.json",
+      "candy-crush": "/api/v1/compare/candy-crush-vs-instagram.json",
+      "chatgpt": "/api/v1/compare/chatgpt-vs-instagram.json",
+      "coinbase": "/api/v1/compare/coinbase-vs-instagram.json",
+      "tiktok": "/api/v1/compare/instagram-vs-tiktok.json",
+      "youtube": "/api/v1/compare/instagram-vs-youtube.json",
+      "slack": "/api/v1/compare/instagram-vs-slack.json",
+      "booking-com": "/api/v1/compare/booking-com-vs-instagram.json",
+      "linkedin": "/api/v1/compare/instagram-vs-linkedin.json",
+      "netflix": "/api/v1/compare/instagram-vs-netflix.json",
+      "robinhood": "/api/v1/compare/instagram-vs-robinhood.json"
+    },
+    "category": "/api/v1/categories/social-media.json"
+  },
+  "rank": 30,
+  "rank_of": 30
+}

@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Airbnb vs Amazon",
+  "products": {
+    "airbnb": {
+      "name": "Airbnb",
+      "emoji": "🏠",
+      "category": "E-Commerce",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 7,
+        "motivation_design": 8,
+        "trust_transparency": 7,
+        "ethical_alignment": 6
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Airbnb's design is a masterclass in reducing the trust barrier of the sharing economy — reviews, verified photos, and Superhost badges genuinely solve the 'sleeping in a stranger's home' problem. But the same product that innovated trust also deploys classic conversion dark patterns: manufactured scarcity, fee hiding, and price anchoring. The tension between 'design that builds trust' and 'design that maximizes conversion' is visible in every booking flow. Airbnb's ethical score is middling precisely because it excels at both genuine value creation and subtle manipulation.",
+      "top_technique": "Photo-First Search as Decision Simplification"
+    },
+    "amazon": {
+      "name": "Amazon",
+      "emoji": "📦",
+      "category": "E-Commerce",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 9,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Amazon is the most commercially successful behavioral design in history — and the most ethically polarized. One-click buy genuinely reduces friction. Prime genuinely provides value. But the same behavioral toolkit that makes buying easy makes canceling hard. Amazon proves that behavioral design is morally neutral: identical techniques (friction manipulation, default exploitation, cognitive load management) create user value when applied to purchasing and destroy user autonomy when applied to retention. The regulatory response (FTC lawsuit, EU DSA) suggests that the market is beginning to price in behavioral design ethics.",
+      "top_technique": "One-Click Buy: The Friction Elimination Patent"
+    }
+  },
+  "overall_winner": "airbnb",
+  "overall_difference": 5,
+  "dimension_wins": {
+    "airbnb": 4,
+    "amazon": 1,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "airbnb": 9,
+      "amazon": 8,
+      "difference": 1,
+      "winner": "airbnb"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "airbnb": 7,
+      "amazon": 6,
+      "difference": 1,
+      "winner": "airbnb"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "airbnb": 8,
+      "amazon": 9,
+      "difference": -1,
+      "winner": "amazon"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "airbnb": 7,
+      "amazon": 5,
+      "difference": 2,
+      "winner": "airbnb"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "airbnb": 6,
+      "amazon": 4,
+      "difference": 2,
+      "winner": "airbnb"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/airbnb-vs-amazon/",
+    "product_a_detail": "/api/v1/products/airbnb.json",
+    "product_b_detail": "/api/v1/products/amazon.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/airbnb/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/amazon/"
+  }
+}

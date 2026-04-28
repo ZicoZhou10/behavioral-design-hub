@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Figma vs Uber",
+  "products": {
+    "figma": {
+      "name": "Figma",
+      "emoji": "🎨",
+      "category": "Design",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 7,
+        "trust_transparency": 8,
+        "ethical_alignment": 8
+      },
+      "total": 40,
+      "pct": 80,
+      "key_insight": "Figma is the most elegant example of network-effect behavioral design in B2B software. Every design decision serves a single behavioral insight: make collaboration so effortless that the tool becomes the team's shared space, not just one designer's workspace. The cursor presence feature (seeing teammates' cursors labeled with their names in real-time) is pure social facilitation — knowing someone is watching you work changes how you work. The generous free tier isn't charity — it's a viral acquisition mechanism: every designer who opens a Figma link to view a prototype becomes a potential user. Figma's file-sharing is designed like Google Docs, not like Photoshop: no installation, no file format confusion, no version control headaches. By eliminating every friction point in collaboration, Figma made itself structurally impossible to replace — switching to a competitor means convincing your entire team, your clients, and your developer handoff workflow to switch simultaneously. This is behavioral lock-in through genuine value creation, not dark patterns.",
+      "top_technique": "Multiplayer Cursor Presence as Social Facilitation"
+    },
+    "uber": {
+      "name": "Uber",
+      "emoji": "🚗",
+      "category": "Utility",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 9,
+        "motivation_design": 7,
+        "trust_transparency": 4,
+        "ethical_alignment": 5
+      },
+      "total": 33,
+      "pct": 66,
+      "key_insight": "Uber is a case study in dual-sided behavioral design: the company applies behavioral science to both riders (friction elimination, surge anchoring) and drivers (gamification, loss aversion goals). The ethical tension is asymmetric — riders benefit from reduced friction, but drivers are nudged to work longer hours in ways that may not serve their interests. Uber's behavioral design works precisely because it's invisible: users don't know they're being nudged, and drivers don't realize the earnings goal is an anchor, not a recommendation.",
+      "top_technique": "Surge Pricing as Dynamic Anchoring"
+    }
+  },
+  "overall_winner": "figma",
+  "overall_difference": 7,
+  "dimension_wins": {
+    "figma": 3,
+    "uber": 1,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "figma": 9,
+      "uber": 8,
+      "difference": 1,
+      "winner": "figma"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "figma": 8,
+      "uber": 9,
+      "difference": -1,
+      "winner": "uber"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "figma": 7,
+      "uber": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "figma": 8,
+      "uber": 4,
+      "difference": 4,
+      "winner": "figma"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "figma": 8,
+      "uber": 5,
+      "difference": 3,
+      "winner": "figma"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/figma-vs-uber/",
+    "product_a_detail": "/api/v1/products/figma.json",
+    "product_b_detail": "/api/v1/products/uber.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/figma/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/uber/"
+  }
+}

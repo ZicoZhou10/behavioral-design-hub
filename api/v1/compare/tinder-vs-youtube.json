@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Tinder vs YouTube",
+  "products": {
+    "tinder": {
+      "name": "Tinder",
+      "emoji": "🔥",
+      "category": "Dating",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 4,
+        "ethical_alignment": 4
+      },
+      "total": 34,
+      "pct": 68,
+      "key_insight": "Tinder solved the paradox of choice in dating by reducing a multi-dimensional human evaluation to a binary swipe. This is brilliant choice architecture — and also the product's deepest ethical tension. The swipe creates a variable ratio reward schedule identical to slot machines: most swipes yield nothing, but the occasional match triggers a dopamine spike that reinforces the swiping behavior. Tinder's business model depends on users NOT finding matches efficiently (premium features gate the very discovery the app promises), creating a fundamental misalignment between user goals (find a partner) and business goals (maximize engagement time). The result: an app that is behaviorally addictive by design, yet genuinely useful as a discovery mechanism that didn't exist before.",
+      "top_technique": "Swipe as Binary Choice Architecture"
+    },
+    "youtube": {
+      "name": "YouTube",
+      "emoji": "▶️",
+      "category": "Video",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 9,
+        "trust_transparency": 5,
+        "ethical_alignment": 5
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "YouTube is the clearest example of a platform where behavioral design serves the algorithm more than the user. The recommendation engine is optimized for watch time, not user satisfaction — a distinction that became central to the 2020-2024 tech ethics debate. Autoplay removes the natural exit point between videos, Up Next suggestions exploit curiosity gaps, and the thumbnail ecosystem has evolved into an arms race of clickbait. Yet YouTube also genuinely democratized video education, entertainment, and creator economics. The tension is structural: every design choice that makes YouTube more 'engaging' also makes it harder to stop watching. YouTube's 'Take a Break' reminder is the company acknowledging this tension — but setting it to OFF by default reveals which side wins.",
+      "top_technique": "Autoplay as Default Continuation"
+    }
+  },
+  "overall_winner": "tinder",
+  "overall_difference": 2,
+  "dimension_wins": {
+    "tinder": 2,
+    "youtube": 2,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "tinder": 9,
+      "youtube": 7,
+      "difference": 2,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "tinder": 8,
+      "youtube": 6,
+      "difference": 2,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "tinder": 9,
+      "youtube": 9,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "tinder": 4,
+      "youtube": 5,
+      "difference": -1,
+      "winner": "youtube"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "tinder": 4,
+      "youtube": 5,
+      "difference": -1,
+      "winner": "youtube"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/tinder-vs-youtube/",
+    "product_a_detail": "/api/v1/products/tinder.json",
+    "product_b_detail": "/api/v1/products/youtube.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/tinder/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/youtube/"
+  }
+}

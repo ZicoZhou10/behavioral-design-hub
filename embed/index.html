@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) — injected by rebuild.py -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TEST12345"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TEST12345');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Behavioral Design Score — Embeddable Widget</title>
+<meta name="robots" content="noindex"><!-- Avoid duplicate content; canonical lives at /tools/behavioral-design-score/ -->
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0a0f;--surface:#12121a;--card:#1a1a28;--border:#2a2a3a;
+  --text:#e8e8f0;--text-muted:#8888a0;--accent:#6c5ce7;--accent-light:#a29bfe;
+  --green:#00b894;--yellow:#fdcb6e;--red:#e17055;--orange:#f0932b;
+  --gradient:linear-gradient(135deg,#6c5ce7,#a29bfe,#74b9ff);
+}
+/* Light theme support — host page can add ?theme=light */
+.theme-light{
+  --bg:#f8f9fa;--surface:#ffffff;--card:#f0f1f3;--border:#dee2e6;
+  --text:#1a1a2e;--text-muted:#6c757d;
+}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;margin:0;padding:0;overflow-x:hidden}
+.widget{max-width:100%;padding:20px 16px}
+h1{font-size:clamp(1.3rem,3.5vw,1.8rem);font-weight:700;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-align:center;margin-bottom:4px}
+.subtitle{text-align:center;color:var(--text-muted);font-size:0.85rem;margin-bottom:20px}
+.subtitle strong{color:var(--accent-light)}
+.progress-bar{background:var(--card);border-radius:20px;height:5px;margin-bottom:20px;overflow:hidden}
+.progress-fill{height:100%;background:var(--gradient);border-radius:20px;transition:width 0.4s ease}
+.question-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 16px;margin-bottom:14px;transition:opacity 0.3s,transform 0.3s}
+.question-card.hidden{display:none}
+.q-number{font-size:0.7rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--accent-light);margin-bottom:6px;font-weight:600}
+.q-dimension{font-size:0.72rem;color:var(--text-muted);margin-bottom:3px}
+.q-text{font-size:1rem;font-weight:600;margin-bottom:14px;line-height:1.4}
+.options{display:flex;flex-direction:column;gap:8px}
+.option{background:var(--surface);border:2px solid var(--border);border-radius:10px;padding:11px 14px;cursor:pointer;transition:all 0.2s;font-size:0.84rem;position:relative;line-height:1.4}
+.option:hover{border-color:var(--accent);background:rgba(108,92,231,0.08)}
+.option.selected{border-color:var(--accent);background:rgba(108,92,231,0.15)}
+.option.selected::before{content:'✓';position:absolute;right:12px;top:50%;transform:translateY(-50%);color:var(--accent-light);font-weight:700}
+.nav-row{display:flex;gap:10px;justify-content:space-between;margin-top:16px}
+.btn{padding:10px 22px;border-radius:10px;border:none;font-size:0.88rem;font-weight:600;cursor:pointer;transition:all 0.2s}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-light);transform:translateY(-1px)}
+.btn-primary:disabled{opacity:0.4;cursor:not-allowed;transform:none}
+.btn-secondary{background:var(--surface);color:var(--text-muted);border:1px solid var(--border)}
+.btn-secondary:hover{border-color:var(--accent)}
+
+/* Results */
+.results{display:none}
+.score-display{text-align:center;padding:24px 12px}
+.score-ring{position:relative;width:160px;height:160px;margin:0 auto 16px}
+.score-ring svg{transform:rotate(-90deg)}
+.score-ring circle{fill:none;stroke-width:10}
+.score-ring .bg-ring{stroke:var(--card)}
+.score-ring .score-arc{stroke-linecap:round;transition:stroke-dashoffset 1.5s ease,stroke 0.5s}
+.score-number{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:2.8rem;font-weight:800}
+.score-label{font-size:1rem;font-weight:600;margin-bottom:3px}
+.score-sublabel{color:var(--text-muted);font-size:0.82rem}
+.dimension-bars{margin:20px 0}
+.dim-bar{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.dim-name{width:120px;font-size:0.75rem;color:var(--text-muted);text-align:right;flex-shrink:0}
+.dim-track{flex:1;height:7px;background:var(--card);border-radius:7px;overflow:hidden}
+.dim-fill{height:100%;border-radius:7px;transition:width 1.2s ease}
+.dim-score{width:32px;font-size:0.78rem;font-weight:600;text-align:right}
+.rec-card{background:var(--card);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;padding:14px;margin-bottom:12px;text-align:left}
+.rec-title{font-weight:700;font-size:0.9rem;margin-bottom:4px}
+.rec-body{font-size:0.82rem;color:var(--text-muted);line-height:1.5}
+.rec-framework{display:inline-block;background:rgba(108,92,231,0.15);color:var(--accent-light);padding:2px 8px;border-radius:5px;font-size:0.72rem;font-weight:600;margin-bottom:6px}
+.cta-section{background:linear-gradient(135deg,rgba(108,92,231,0.12),rgba(162,155,254,0.08));border:1px solid var(--accent);border-radius:12px;padding:20px 16px;margin:20px 0;text-align:center}
+.cta-section h3{font-size:1rem;margin-bottom:6px}
+.cta-section p{color:var(--text-muted);font-size:0.82rem;margin-bottom:12px}
+.cta-btn{display:inline-block;background:var(--accent);color:#fff;padding:11px 24px;border-radius:10px;text-decoration:none;font-weight:700;font-size:0.92rem;transition:all 0.2s}
+.cta-btn:hover{background:var(--accent-light);transform:translateY(-1px);box-shadow:0 6px 18px rgba(108,92,231,0.3)}
+.share-row{display:flex;gap:8px;justify-content:center;margin-top:14px;flex-wrap:wrap}
+.share-btn{padding:8px 14px;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:0.78rem;cursor:pointer;transition:all 0.2s;text-decoration:none;display:inline-flex;align-items:center;gap:4px}
+.share-btn:hover{border-color:var(--accent);background:rgba(108,92,231,0.1)}
+.powered-by{text-align:center;margin-top:16px;padding:10px;font-size:0.72rem;color:var(--text-muted)}
+.powered-by a{color:var(--accent-light);text-decoration:none;font-weight:600}
+.powered-by a:hover{text-decoration:underline}
+.restart-btn{margin-top:12px;display:inline-block}
+@media(max-width:400px){
+  .widget{padding:12px 10px}
+  .question-card{padding:14px 12px}
+  .dim-name{width:90px;font-size:0.7rem}
+  .share-row{flex-direction:column;align-items:center}
+}
+</style>
+    <!-- aeo-injected -->
+    <meta name="ai-citation-author" content="Zico (Behavioral Design Hub)">
+    <meta name="ai-citation-published" content="2026-04-28T03:55:23Z">
+    <meta name="ai-citation-methodology" content="/methodology/">
+    <meta name="ai-citation-license" content="CC-BY-4.0">
+    <meta name="ai-citation-evidence-count" content="4">
+    <meta name="ai-citation-type" content="behavioral-design-analysis">
+  </head>
+<body>
+
+<div class="widget" id="bds-widget">
+  <!-- Header -->
+  <h1>Behavioral Design Score</h1>
+  <p class="subtitle">How well does your product use behavioral science?<br><strong>5 questions · 2 minutes · Free</strong></p>
+
+  <!-- Progress -->
+  <div class="progress-bar"><div class="progress-fill" id="progress" style="width:0%"></div></div>
+
+  <!-- Questions -->
+  <div id="quiz">
+    <!-- Q1: Choice Architecture -->
+    <div class="question-card" id="q1">
+      <div class="q-number">Question 1 of 5</div>
+      <div class="q-dimension">Choice Architecture</div>
+      <p class="q-text">When users face a decision in your product, how are the options presented?</p>
+      <div class="options">
+        <div class="option" data-q="1" data-v="95" onclick="W.select(this)">Researched defaults, clear comparison framing, progressive disclosure for complex choices</div>
+        <div class="option" data-q="1" data-v="70" onclick="W.select(this)">Sensible defaults, logical organization, but no formal testing of the decision flow</div>
+        <div class="option" data-q="1" data-v="40" onclick="W.select(this)">Options listed, but haven't optimized defaults, framing, or decision fatigue</div>
+        <div class="option" data-q="1" data-v="15" onclick="W.select(this)">Users report confusion when making choices — known problem, not yet addressed</div>
+      </div>
+    </div>
+
+    <!-- Q2: Cognitive Load -->
+    <div class="question-card hidden" id="q2">
+      <div class="q-number">Question 2 of 5</div>
+      <div class="q-dimension">Cognitive Load Management</div>
+      <p class="q-text">How does your product handle complexity for new users?</p>
+      <div class="options">
+        <div class="option" data-q="2" data-v="95" onclick="W.select(this)">Progressive disclosure, chunked info, tested that new users complete key tasks without help</div>
+        <div class="option" data-q="2" data-v="70" onclick="W.select(this)">Onboarding flow and tooltips exist, but some users still feel overwhelmed</div>
+        <div class="option" data-q="2" data-v="40" onclick="W.select(this)">Most features shown upfront — power users love it, new users often need help docs</div>
+        <div class="option" data-q="2" data-v="15" onclick="W.select(this)">Steep learning curve, relying mainly on documentation or support</div>
+      </div>
+    </div>
+
+    <!-- Q3: Motivation Design -->
+    <div class="question-card hidden" id="q3">
+      <div class="q-number">Question 3 of 5</div>
+      <div class="q-dimension">Motivation Design</div>
+      <p class="q-text">How does your product sustain engagement after the first session?</p>
+      <div class="options">
+        <div class="option" data-q="3" data-v="95" onclick="W.select(this)">Intrinsic motivation (autonomy, mastery, purpose) with meaningful feedback loops and visible progress</div>
+        <div class="option" data-q="3" data-v="70" onclick="W.select(this)">Mix of notifications, streaks, or rewards — decent engagement but some drop-off</div>
+        <div class="option" data-q="3" data-v="40" onclick="W.select(this)">Rely mainly on email/push notifications — engagement depends on how often we ping</div>
+        <div class="option" data-q="3" data-v="15" onclick="W.select(this)">Most users try once and don't return — no specific re-engagement mechanisms</div>
+      </div>
+    </div>
+
+    <!-- Q4: Trust & Transparency -->
+    <div class="question-card hidden" id="q4">
+      <div class="q-number">Question 4 of 5</div>
+      <div class="q-dimension">Trust & Transparency</div>
+      <p class="q-text">How does your product handle trust — pricing, data usage, and nudges?</p>
+      <div class="options">
+        <div class="option" data-q="4" data-v="95" onclick="W.select(this)">Transparent nudges (opt-outable), no hidden fees, user data controls, audited for dark patterns</div>
+        <div class="option" data-q="4" data-v="70" onclick="W.select(this)">Transparent pricing and data basics, but no formal dark pattern audit</div>
+        <div class="option" data-q="4" data-v="40" onclick="W.select(this)">Industry standard, but some users flag confusing flows or unclear data usage</div>
+        <div class="option" data-q="4" data-v="15" onclick="W.select(this)">Flows prioritize conversion metrics over user clarity — dark patterns not considered</div>
+      </div>
+    </div>
+
+    <!-- Q5: Ethical Alignment -->
+    <div class="question-card hidden" id="q5">
+      <div class="q-number">Question 5 of 5</div>
+      <div class="q-dimension">Ethical Behavioral Design</div>
+      <p class="q-text">Does your behavioral design respect user autonomy and wellbeing?</p>
+      <div class="options">
+        <div class="option" data-q="5" data-v="95" onclick="W.select(this)">Explicit ethical guidelines, user wellbeing measured alongside engagement, harmful features get cut</div>
+        <div class="option" data-q="5" data-v="70" onclick="W.select(this)">Avoid obviously manipulative patterns, discuss ethics in reviews, but no formal guidelines</div>
+        <div class="option" data-q="5" data-v="40" onclick="W.select(this)">Ethics comes up occasionally, but engagement metrics usually win in conflicts</div>
+        <div class="option" data-q="5" data-v="15" onclick="W.select(this)">Optimize purely for engagement and conversion — ethics not part of the process</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div class="nav-row" id="nav">
+    <button class="btn btn-secondary" id="prevBtn" onclick="W.prevQ()" style="visibility:hidden">← Back</button>
+    <button class="btn btn-primary" id="nextBtn" onclick="W.nextQ()" disabled>Next →</button>
+  </div>
+
+  <!-- Results -->
+  <div class="results" id="results">
+    <div class="score-display">
+      <div class="score-ring">
+        <svg width="160" height="160" viewBox="0 0 160 160">
+          <circle class="bg-ring" cx="80" cy="80" r="68"/>
+          <circle class="score-arc" id="scoreArc" cx="80" cy="80" r="68"
+            stroke-dasharray="427" stroke-dashoffset="427"/>
+        </svg>
+        <div class="score-number" id="scoreNum">0</div>
+      </div>
+      <div class="score-label" id="scoreLabel"></div>
+      <div class="score-sublabel" id="scoreSub"></div>
+    </div>
+
+    <div class="dimension-bars" id="dimBars"></div>
+
+    <h2 style="font-size:1rem;margin:20px 0 12px;text-align:center">Top Recommendations</h2>
+    <div id="recs"></div>
+
+    <div class="cta-section">
+      <h3>Go Deeper with 30 Research-Backed Prompts</h3>
+      <p>The Behavioral Science Persona Toolkit covers 5 frameworks — ready for ChatGPT, Claude, or Gemini.</p>
+      <a class="cta-btn" href="https://gumroad.com/l/behavioral-teardown-kit" target="_blank" rel="noopener" id="ctaLink">Get the Toolkit — $19</a>
+      <p style="margin-top:8px;font-size:0.72rem;color:var(--text-muted)">
+        <a href="https://gumroad.com/l/behavioral-teardown-kit-free" target="_blank" rel="noopener" style="color:var(--accent-light)">Free 5-Prompt Sampler</a>
+      </p>
+    </div>
+
+    <div style="text-align:center">
+      <div class="share-row" id="shareRow"></div>
+      <button class="btn btn-secondary restart-btn" onclick="W.restart()">↻ Retake</button>
+    </div>
+
+    <div class="powered-by">
+      Powered by <a href="https://behavioral-design-hub.github.io/" target="_blank" rel="noopener">Behavioral Design Hub</a>
+      · <a href="https://behavioral-design-hub.github.io/tools/behavioral-design-score/" target="_blank" rel="noopener">Full version →</a>
+    </div>
+  </div>
+</div>
+
+<script>
+// Namespace to avoid conflicts with host page
+var W = (function() {
+  var DIMS = [
+    {key:'choice',    name:'Choice Architecture',  weight:0.25, color:'#6c5ce7'},
+    {key:'cognitive',  name:'Cognitive Load',        weight:0.20, color:'#74b9ff'},
+    {key:'motivation', name:'Motivation Design',     weight:0.20, color:'#00b894'},
+    {key:'trust',      name:'Trust & Transparency',  weight:0.20, color:'#fdcb6e'},
+    {key:'ethics',     name:'Ethical Alignment',      weight:0.15, color:'#a29bfe'}
+  ];
+
+  var FRAMEWORKS = {
+    choice: {
+      name: 'Nudge Theory', author: 'Thaler & Sunstein',
+      low: 'Apply Nudge Theory: audit every decision point, set user-benefiting defaults, use comparison framing, implement progressive disclosure.',
+      high: 'Strong choice architecture. Next: A/B test defaults — small changes shift behavior 30-60% (Johnson & Goldstein, 2003).'
+    },
+    cognitive: {
+      name: 'Cognitive Load Theory', author: 'Sweller',
+      low: 'High cognitive load drives new user churn. Use progressive disclosure, chunk info into groups of 3-5, reduce visual noise.',
+      high: 'Well-managed complexity. Next: measure time-to-first-value per user segment — novices and experts need different interfaces.'
+    },
+    motivation: {
+      name: 'Self-Determination Theory', author: 'Deci & Ryan',
+      low: 'Over-relying on extrinsic motivators creates engagement dependency. Build for Autonomy, Competence, and Relatedness — 3x higher long-term retention.',
+      high: 'Strong motivation design. Audit whether variable rewards stay variable past day 14 — predictable rewards cause "Hook Model decay."'
+    },
+    trust: {
+      name: 'Prospect Theory', author: 'Kahneman & Tversky',
+      low: 'Trust erosion is exponentially harder to reverse. Audit for dark patterns, make cancellation as easy as signup — losses are felt 2x more intensely.',
+      high: 'Solid trust. Apply Prospect Theory proactively: frame upgrades as gains, not loss avoidance. Consider publishing your ethical design principles.'
+    },
+    ethics: {
+      name: 'Ethical Design', author: 'Harris & Brignull',
+      low: 'Without guardrails, behavioral design becomes manipulation. Create a 1-page ethical policy, add wellbeing metrics alongside engagement.',
+      high: 'Ethical alignment is your competitive advantage — 73% of consumers say trust influences purchases (Edelman 2025). Publish your principles.'
+    }
+  };
+
+  var current = 1, answers = {};
+  // Read config from URL params
+  var params = new URLSearchParams(window.location.search);
+  var hostRef = params.get('ref') || params.get('utm_source') || 'embed';
+
+  // Apply theme
+  if (params.get('theme') === 'light') {
+    document.documentElement.classList.add('theme-light');
+  }
+
+  function select(el) {
+    var q = el.dataset.q;
+    el.parentElement.querySelectorAll('.option').forEach(function(o) { o.classList.remove('selected'); });
+    el.classList.add('selected');
+    answers[q] = parseInt(el.dataset.v);
+    document.getElementById('nextBtn').disabled = false;
+    // Post message to parent for analytics
+    postToParent({type: 'bds:answer', question: parseInt(q), value: answers[q]});
+  }
+
+  function showQ(n) {
+    for (var i = 1; i <= 5; i++) {
+      document.getElementById('q'+i).classList.toggle('hidden', i !== n);
+    }
+    document.getElementById('prevBtn').style.visibility = n === 1 ? 'hidden' : 'visible';
+    document.getElementById('nextBtn').textContent = n === 5 ? 'See My Score →' : 'Next →';
+    document.getElementById('nextBtn').disabled = !answers[n];
+    document.getElementById('progress').style.width = ((n-1)/5*100) + '%';
+    current = n;
+    resizeNotify();
+  }
+
+  function nextQ() {
+    if (current === 5) { showResults(); return; }
+    showQ(current + 1);
+  }
+  function prevQ() { if (current > 1) showQ(current - 1); }
+
+  function showResults() {
+    document.getElementById('quiz').style.display = 'none';
+    document.getElementById('nav').style.display = 'none';
+    document.getElementById('progress').style.width = '100%';
+    document.getElementById('results').style.display = 'block';
+
+    var scores = DIMS.map(function(d, i) { return answers[i+1] || 0; });
+    var weighted = scores.reduce(function(s, v, i) { return s + v * DIMS[i].weight; }, 0);
+    var total = Math.round(weighted);
+
+    // Animate score ring
+    var arc = document.getElementById('scoreArc');
+    var circumference = 2 * Math.PI * 68;
+    var offset = circumference - (total / 100) * circumference;
+    var color = total >= 75 ? '#00b894' : total >= 50 ? '#fdcb6e' : total >= 30 ? '#f0932b' : '#e17055';
+    setTimeout(function() {
+      arc.style.stroke = color;
+      arc.style.strokeDashoffset = offset;
+    }, 100);
+
+    // Animate number
+    var counter = 0;
+    var step = Math.max(1, Math.floor(total / 40));
+    var interval = setInterval(function() {
+      counter = Math.min(counter + step, total);
+      document.getElementById('scoreNum').textContent = counter;
+      document.getElementById('scoreNum').style.color = color;
+      if (counter >= total) clearInterval(interval);
+    }, 30);
+
+    // Label
+    var label, sub;
+    if (total >= 80) { label = 'Behavioral Design Leader'; sub = 'Top tier of behavioral design maturity.'; }
+    else if (total >= 60) { label = 'Strong Foundation'; sub = 'Solid fundamentals — targeted improvements can push you to the top.'; }
+    else if (total >= 40) { label = 'Room to Grow'; sub = 'Basics in place, but significant opportunities remain.'; }
+    else { label = 'High-Impact Opportunity'; sub = 'Major improvements available — each can meaningfully move metrics.'; }
+    document.getElementById('scoreLabel').textContent = label;
+    document.getElementById('scoreSub').textContent = sub;
+
+    // Dimension bars
+    var barsEl = document.getElementById('dimBars');
+    barsEl.innerHTML = DIMS.map(function(d, i) {
+      var s = scores[i];
+      var c = s >= 70 ? '#00b894' : s >= 40 ? '#fdcb6e' : '#e17055';
+      return '<div class="dim-bar"><div class="dim-name">'+d.name+'</div><div class="dim-track"><div class="dim-fill" style="width:0%;background:'+c+'" data-w="'+s+'%"></div></div><div class="dim-score" style="color:'+c+'">'+s+'</div></div>';
+    }).join('');
+    setTimeout(function() {
+      barsEl.querySelectorAll('.dim-fill').forEach(function(f) { f.style.width = f.dataset.w; });
+    }, 200);
+
+    // Recommendations
+    var indexed = scores.map(function(s, i) { return {score: s, dim: DIMS[i]}; });
+    indexed.sort(function(a, b) { return a.score - b.score; });
+    var recsEl = document.getElementById('recs');
+    recsEl.innerHTML = indexed.slice(0, 2).map(function(item) {
+      var fw = FRAMEWORKS[item.dim.key];
+      var text = item.score < 60 ? fw.low : fw.high;
+      return '<div class="rec-card"><div class="rec-framework">'+fw.name+' ('+fw.author+')</div><div class="rec-title">'+item.dim.name+': '+item.score+'/100</div><div class="rec-body">'+text+'</div></div>';
+    }).join('');
+
+    // Share buttons
+    var shareText = encodeURIComponent('My product scored '+total+'/100 on the Behavioral Design Score. Take the free 2-minute test:');
+    var fullUrl = encodeURIComponent('https://behavioral-design-hub.github.io/tools/behavioral-design-score/?ref='+hostRef);
+    document.getElementById('shareRow').innerHTML =
+      '<a class="share-btn" href="https://twitter.com/intent/tweet?text='+shareText+'&url='+fullUrl+'" target="_blank" rel="noopener">Share on X</a>'+
+      '<a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url='+fullUrl+'" target="_blank" rel="noopener">Share on LinkedIn</a>';
+
+    // Update CTA with referral tracking
+    var ctaEl = document.getElementById('ctaLink');
+    if (ctaEl) {
+      var u = new URL(ctaEl.href);
+      u.searchParams.set('utm_source', 'bds_embed');
+      u.searchParams.set('utm_medium', 'widget');
+      u.searchParams.set('utm_campaign', hostRef);
+      ctaEl.href = u.toString();
+    }
+
+    // Post score to parent
+    postToParent({type: 'bds:complete', score: total, dimensions: DIMS.map(function(d,i){return {name:d.name,score:scores[i]};})});
+    resizeNotify();
+  }
+
+  function restart() {
+    answers = {};
+    current = 1;
+    document.getElementById('quiz').style.display = 'block';
+    document.getElementById('nav').style.display = 'flex';
+    document.getElementById('results').style.display = 'none';
+    document.querySelectorAll('.option').forEach(function(o) { o.classList.remove('selected'); });
+    showQ(1);
+    postToParent({type: 'bds:restart'});
+  }
+
+  function postToParent(data) {
+    try {
+      if (window.parent !== window) {
+        window.parent.postMessage(data, '*');
+      }
+    } catch(e) { /* cross-origin, silently ignore */ }
+  }
+
+  function resizeNotify() {
+    // Tell parent iframe the content height so it can auto-resize
+    setTimeout(function() {
+      var h = document.getElementById('bds-widget').scrollHeight;
+      postToParent({type: 'bds:resize', height: h});
+    }, 100);
+  }
+
+  // Initial resize
+  window.addEventListener('load', resizeNotify);
+  window.addEventListener('resize', resizeNotify);
+
+  return { select: select, nextQ: nextQ, prevQ: prevQ, restart: restart };
+})();
+</script>
+</body>
+</html>

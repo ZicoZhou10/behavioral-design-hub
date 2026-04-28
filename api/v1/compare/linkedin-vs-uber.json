@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "LinkedIn vs Uber",
+  "products": {
+    "linkedin": {
+      "name": "LinkedIn",
+      "emoji": "💼",
+      "category": "Social Media",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 5,
+        "motivation_design": 7,
+        "trust_transparency": 6,
+        "ethical_alignment": 5
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "LinkedIn exploits professional anxiety as its core behavioral mechanism. Unlike entertainment apps that hook through pleasure (variable rewards, social validation), LinkedIn hooks through anxiety: career FOMO, profile inadequacy, and professional visibility paranoia. The platform is uniquely positioned to do this because professional identity is high-stakes — being 'not visible' on LinkedIn feels genuinely career-threatening in a way that being inactive on Instagram does not. This anxiety-as-engagement model is highly effective (LinkedIn has 1B+ members) but ethically concerning because it monetizes professional insecurity rather than professional development.",
+      "top_technique": "Profile Completeness as Guilt Architecture"
+    },
+    "uber": {
+      "name": "Uber",
+      "emoji": "🚗",
+      "category": "Utility",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 9,
+        "motivation_design": 7,
+        "trust_transparency": 4,
+        "ethical_alignment": 5
+      },
+      "total": 33,
+      "pct": 66,
+      "key_insight": "Uber is a case study in dual-sided behavioral design: the company applies behavioral science to both riders (friction elimination, surge anchoring) and drivers (gamification, loss aversion goals). The ethical tension is asymmetric — riders benefit from reduced friction, but drivers are nudged to work longer hours in ways that may not serve their interests. Uber's behavioral design works precisely because it's invisible: users don't know they're being nudged, and drivers don't realize the earnings goal is an anchor, not a recommendation.",
+      "top_technique": "Surge Pricing as Dynamic Anchoring"
+    }
+  },
+  "overall_winner": "uber",
+  "overall_difference": 3,
+  "dimension_wins": {
+    "linkedin": 1,
+    "uber": 2,
+    "ties": 2
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "linkedin": 7,
+      "uber": 8,
+      "difference": -1,
+      "winner": "uber"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "linkedin": 5,
+      "uber": 9,
+      "difference": -4,
+      "winner": "uber"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "linkedin": 7,
+      "uber": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "linkedin": 6,
+      "uber": 4,
+      "difference": 2,
+      "winner": "linkedin"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "linkedin": 5,
+      "uber": 5,
+      "difference": 0,
+      "winner": "tie"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/linkedin-vs-uber/",
+    "product_a_detail": "/api/v1/products/linkedin.json",
+    "product_b_detail": "/api/v1/products/uber.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/linkedin/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/uber/"
+  }
+}

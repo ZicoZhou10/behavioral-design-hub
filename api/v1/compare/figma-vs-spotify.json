@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Figma vs Spotify",
+  "products": {
+    "figma": {
+      "name": "Figma",
+      "emoji": "🎨",
+      "category": "Design",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 7,
+        "trust_transparency": 8,
+        "ethical_alignment": 8
+      },
+      "total": 40,
+      "pct": 80,
+      "key_insight": "Figma is the most elegant example of network-effect behavioral design in B2B software. Every design decision serves a single behavioral insight: make collaboration so effortless that the tool becomes the team's shared space, not just one designer's workspace. The cursor presence feature (seeing teammates' cursors labeled with their names in real-time) is pure social facilitation — knowing someone is watching you work changes how you work. The generous free tier isn't charity — it's a viral acquisition mechanism: every designer who opens a Figma link to view a prototype becomes a potential user. Figma's file-sharing is designed like Google Docs, not like Photoshop: no installation, no file format confusion, no version control headaches. By eliminating every friction point in collaboration, Figma made itself structurally impossible to replace — switching to a competitor means convincing your entire team, your clients, and your developer handoff workflow to switch simultaneously. This is behavioral lock-in through genuine value creation, not dark patterns.",
+      "top_technique": "Multiplayer Cursor Presence as Social Facilitation"
+    },
+    "spotify": {
+      "name": "Spotify",
+      "emoji": "🎧",
+      "category": "Entertainment",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 7,
+        "motivation_design": 7,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "Spotify demonstrates that behavioral design doesn't have to be adversarial. Discover Weekly genuinely helps users find music they love. Wrapped genuinely makes users happy. The product's behavioral techniques mostly align with user goals — a rare achievement in consumer tech. The risk is filter bubbles: algorithmic personalization can narrow taste over time, a problem Spotify actively works to counter with 'exploration boost' features.",
+      "top_technique": "Discover Weekly as Managed Exploration"
+    }
+  },
+  "overall_winner": "figma",
+  "overall_difference": 4,
+  "dimension_wins": {
+    "figma": 4,
+    "spotify": 0,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "figma": 9,
+      "spotify": 8,
+      "difference": 1,
+      "winner": "figma"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "figma": 8,
+      "spotify": 7,
+      "difference": 1,
+      "winner": "figma"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "figma": 7,
+      "spotify": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "figma": 8,
+      "spotify": 7,
+      "difference": 1,
+      "winner": "figma"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "figma": 8,
+      "spotify": 7,
+      "difference": 1,
+      "winner": "figma"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/figma-vs-spotify/",
+    "product_a_detail": "/api/v1/products/figma.json",
+    "product_b_detail": "/api/v1/products/spotify.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/figma/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/spotify/"
+  }
+}

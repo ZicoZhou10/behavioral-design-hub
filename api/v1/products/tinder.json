@@ -1,0 +1,104 @@
+{
+  "slug": "tinder",
+  "name": "Tinder",
+  "emoji": "🔥",
+  "emoji_html": "&#x1F525;",
+  "category": "Dating / Social Discovery",
+  "category_short": "Dating",
+  "tagline": "Tinder's swipe mechanic is arguably the most influential behavioral design innovation of the 2010s — reducing partner selection to a binary choice that mirrors slot machine psychology.",
+  "scores": {
+    "choice_architecture": 9,
+    "cognitive_load": 8,
+    "motivation_design": 9,
+    "trust_transparency": 4,
+    "ethical_alignment": 4
+  },
+  "total": 34,
+  "pct": 68,
+  "key_insight": "Tinder solved the paradox of choice in dating by reducing a multi-dimensional human evaluation to a binary swipe. This is brilliant choice architecture — and also the product's deepest ethical tension. The swipe creates a variable ratio reward schedule identical to slot machines: most swipes yield nothing, but the occasional match triggers a dopamine spike that reinforces the swiping behavior. Tinder's business model depends on users NOT finding matches efficiently (premium features gate the very discovery the app promises), creating a fundamental misalignment between user goals (find a partner) and business goals (maximize engagement time). The result: an app that is behaviorally addictive by design, yet genuinely useful as a discovery mechanism that didn't exist before.",
+  "top_technique": "Swipe as Binary Choice Architecture",
+  "top_framework": "Prospect Theory",
+  "top_evidence": "Tinder processes 2B+ swipes/day (Match Group 2024). Average session: 90 swipes in 7.2 minutes. Variable ratio schedule: match rate ~1-3% creates intermittent reinforcement identical to slot machine payout ratios (Schull, 2012).",
+  "techniques": [
+    {
+      "title": "Swipe as Binary Choice Architecture",
+      "framework": "Prospect Theory",
+      "description": "Tinder's core innovation is collapsing multi-dimensional partner evaluation (appearance, bio, interests, photos, distance) into a single binary gesture: swipe right (yes) or left (no). This eliminates the paradox of choice that plagued earlier dating sites with their complex search filters and compatibility scores. The swipe exploits Kahneman's System 1 processing — a split-second visual judgment that feels effortless. But the simplicity is deceptive: by reducing choice to binary, Tinder shifts evaluation from deliberative (System 2) to reflexive (System 1), meaning users make thousands of consequential social decisions on autopilot.",
+      "evidence": "Tinder processes over 2 billion swipes per day (Match Group Q4 2024 earnings). The average user makes 90 swipe decisions in 7.2 minutes — one decision every 4.8 seconds. Iyengar & Lepper's jam study (2000) showed that reducing choice from 24 to 6 options increased purchase rates 10x. Tinder went further: reducing choice to 2 (yes/no) on a stack of sequential options. Hinge's later 'designed to be deleted' positioning was a direct response to Tinder's engagement-maximizing architecture."
+    },
+    {
+      "title": "Variable Ratio Reward Schedule",
+      "framework": "Hook Model",
+      "description": "Tinder's match system creates a textbook variable ratio reinforcement schedule — the same mechanism that makes slot machines the most addictive form of gambling. Most swipes yield no match, but occasionally (at unpredictable intervals) a match notification appears with a satisfying animation. This unpredictability is key: fixed-ratio rewards (e.g., match every 10th swipe) would quickly lose effectiveness, but variable ratios maintain engagement indefinitely. The 'It's a Match!' screen is the reward that completes the Hook cycle: trigger (notification/boredom) → action (open app) → variable reward (maybe a match) → investment (profile optimization).",
+      "evidence": "Match rates on Tinder average 1-3% for men and 10-15% for women (Stanford Social Media Lab, 2023). These ratios mirror slot machine payout frequencies, which behavioral psychologist Natasha Schull documented as optimized for maximum 'time on device' in Addiction by Design (2012). Tinder's own patent (US10585585B2) describes 'methods for matching and presenting potential matches' that factor in 'engagement metrics' — confirming the reward schedule is algorithmically tuned."
+    },
+    {
+      "title": "Premium Feature Gating Through Artificial Scarcity",
+      "framework": "Nudge Theory",
+      "description": "Tinder limits free users to ~100 likes per 12 hours, hides who already liked them (unless they pay for Gold), and restricts location changes and 'Super Likes.' This artificial scarcity creates a frustration cycle: the free version gives enough matches to prove the system works, but not enough to feel satisfying. The upgrade decision is framed as removing a loss ('see who already likes you') rather than gaining a benefit — classic loss aversion framing. Tinder Gold's 'Likes You' feature is particularly clever: users know people have already liked them (the blurred grid is visible), creating a known-unknown that exploits curiosity and FOMO simultaneously.",
+      "evidence": "Match Group reported that Tinder Gold subscribers increased 20% YoY to 10.2M in 2024, with ARPU of $16.30/month. The blurred 'Likes You' grid was introduced in 2017 and became Tinder's highest-converting upgrade prompt. Behavioral research (Loewenstein, 1994) shows that 'information gaps' — knowing that information exists but is inaccessible — creates an almost irresistible urge to close the gap. Tinder weaponizes this perfectly."
+    },
+    {
+      "title": "Photo-Stack as First Impression Anchoring",
+      "framework": "Cognitive Load Theory",
+      "description": "Tinder's profile presentation leads with a full-screen photo stack, with bio text and other details requiring a deliberate tap to reveal. This design anchors the evaluation on physical appearance — the fastest System 1 judgment humans make (Willis & Todorov, 2006, showed first impressions form in 100ms). By making the photo the default evaluation surface and text optional, Tinder ensures that most swipe decisions are made on appearance alone. The progressive disclosure of bio, interests, and Instagram is designed to confirm rather than challenge the initial impression.",
+      "evidence": "Willis & Todorov (2006) demonstrated that people form reliable attractiveness judgments in 100ms. Tinder's eye-tracking studies (reported by former UX lead Scott Hurff) showed that 90% of swipe decisions are made without scrolling past the first photo. The average time-to-decision (4.8 seconds) supports that users rarely engage System 2 processing. This design choice is functionally a feature, not a bug — it optimizes for swipe throughput."
+    }
+  ],
+  "strengths": [
+    "Swipe mechanic is the most copied UX innovation in dating",
+    "Binary choice eliminates paradox-of-choice paralysis",
+    "Match animation creates powerful intermittent reward"
+  ],
+  "weaknesses": [
+    "Business model incentivizes engagement over successful matching",
+    "Algorithm opacity — ELO/desirability scoring hidden from users",
+    "Premium features gate basic discovery behind paywall"
+  ],
+  "behavioral_hooks": [
+    "swipe binary (choice simplification)",
+    "variable ratio matches (intermittent reinforcement)",
+    "blurred Likes You grid (information gap exploitation)",
+    "Super Like scarcity (artificial urgency)"
+  ],
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "links": {
+    "teardown_page": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/tinder/",
+    "products_list": "/api/v1/products.json",
+    "comparisons": {
+      "figma": "/api/v1/compare/figma-vs-tinder.json",
+      "shopify": "/api/v1/compare/shopify-vs-tinder.json",
+      "airbnb": "/api/v1/compare/airbnb-vs-tinder.json",
+      "calm": "/api/v1/compare/calm-vs-tinder.json",
+      "duolingo": "/api/v1/compare/duolingo-vs-tinder.json",
+      "pinterest": "/api/v1/compare/pinterest-vs-tinder.json",
+      "strava": "/api/v1/compare/strava-vs-tinder.json",
+      "bumble": "/api/v1/compare/bumble-vs-tinder.json",
+      "notion": "/api/v1/compare/notion-vs-tinder.json",
+      "spotify": "/api/v1/compare/spotify-vs-tinder.json",
+      "whatsapp": "/api/v1/compare/tinder-vs-whatsapp.json",
+      "peloton": "/api/v1/compare/peloton-vs-tinder.json",
+      "discord": "/api/v1/compare/discord-vs-tinder.json",
+      "venmo": "/api/v1/compare/tinder-vs-venmo.json",
+      "doordash": "/api/v1/compare/doordash-vs-tinder.json",
+      "snapchat": "/api/v1/compare/snapchat-vs-tinder.json",
+      "uber": "/api/v1/compare/tinder-vs-uber.json",
+      "amazon": "/api/v1/compare/amazon-vs-tinder.json",
+      "candy-crush": "/api/v1/compare/candy-crush-vs-tinder.json",
+      "chatgpt": "/api/v1/compare/chatgpt-vs-tinder.json",
+      "coinbase": "/api/v1/compare/coinbase-vs-tinder.json",
+      "tiktok": "/api/v1/compare/tiktok-vs-tinder.json",
+      "youtube": "/api/v1/compare/tinder-vs-youtube.json",
+      "slack": "/api/v1/compare/slack-vs-tinder.json",
+      "booking-com": "/api/v1/compare/booking-com-vs-tinder.json",
+      "linkedin": "/api/v1/compare/linkedin-vs-tinder.json",
+      "netflix": "/api/v1/compare/netflix-vs-tinder.json",
+      "robinhood": "/api/v1/compare/robinhood-vs-tinder.json",
+      "instagram": "/api/v1/compare/instagram-vs-tinder.json"
+    },
+    "category": "/api/v1/categories/dating.json"
+  },
+  "rank": 14,
+  "rank_of": 30
+}

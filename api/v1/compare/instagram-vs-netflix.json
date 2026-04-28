@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Instagram vs Netflix",
+  "products": {
+    "instagram": {
+      "name": "Instagram",
+      "emoji": "📸",
+      "category": "Social Media",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 5,
+        "motivation_design": 8,
+        "trust_transparency": 3,
+        "ethical_alignment": 3
+      },
+      "total": 27,
+      "pct": 54,
+      "key_insight": "Instagram shows what happens when a product's behavioral design evolves to serve the platform's needs rather than the user's. The original photo-sharing app had natural stopping cues (finite friend posts). The algorithmic feed, infinite scroll, and Reels removed those cues. Instagram's behavioral design is technically brilliant but strategically misaligned — it optimizes for time-spent at the cost of user wellbeing, a trade-off that's becoming increasingly visible (and regulated).",
+      "top_technique": "Pull-to-Refresh as Variable Ratio Slot Machine"
+    },
+    "netflix": {
+      "name": "Netflix",
+      "emoji": "🎬",
+      "category": "Entertainment",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 7,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "Netflix demonstrates the thin line between 'helpful choice architecture' and 'manipulation.' Autoplay genuinely solves the friction of episode transitions. But it also exploits the fact that humans are bad at stopping ongoing activities. Netflix's own CEO famously said their biggest competitor is 'sleep' — a framing that reveals the company optimizes for maximum viewing time, not optimal viewing experience.",
+      "top_technique": "Autoplay as the Ultimate Default Nudge"
+    }
+  },
+  "overall_winner": "netflix",
+  "overall_difference": 3,
+  "dimension_wins": {
+    "instagram": 1,
+    "netflix": 3,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "instagram": 8,
+      "netflix": 8,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "instagram": 5,
+      "netflix": 6,
+      "difference": -1,
+      "winner": "netflix"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "instagram": 8,
+      "netflix": 7,
+      "difference": 1,
+      "winner": "instagram"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "instagram": 3,
+      "netflix": 5,
+      "difference": -2,
+      "winner": "netflix"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "instagram": 3,
+      "netflix": 4,
+      "difference": -1,
+      "winner": "netflix"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/instagram-vs-netflix/",
+    "product_a_detail": "/api/v1/products/instagram.json",
+    "product_b_detail": "/api/v1/products/netflix.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/instagram/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/netflix/"
+  }
+}

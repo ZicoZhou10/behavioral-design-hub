@@ -1,0 +1,84 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "name": "Social Media",
+  "slug": "social-media",
+  "product_count": 3,
+  "avg_score": 29.7,
+  "dimension_averages": {
+    "choice_architecture": 8.3,
+    "cognitive_load": 6.3,
+    "motivation_design": 7.7,
+    "trust_transparency": 4.0,
+    "ethical_alignment": 3.3
+  },
+  "products": [
+    {
+      "slug": "tiktok",
+      "name": "TikTok",
+      "emoji": "🎵",
+      "category": "Social Media / Short Video",
+      "scores": {
+        "choice_architecture": 10,
+        "cognitive_load": 9,
+        "motivation_design": 8,
+        "trust_transparency": 3,
+        "ethical_alignment": 2
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "TikTok proves that sufficiently advanced choice architecture is indistinguishable from manipulation. The product removes all friction, all stopping cues, all cognitive load — leaving the user in a state of 'passive consumption' that can extend for hours. The ethical question isn't whether the behavioral design works (it clearly does), but whether 'works' should mean 'keeps users watching' or 'helps users achieve their goals.'",
+      "top_technique": "Algorithmic Choice Architecture at Scale",
+      "links": {
+        "detail": "/api/v1/products/tiktok.json",
+        "teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/tiktok/"
+      }
+    },
+    {
+      "slug": "linkedin",
+      "name": "LinkedIn",
+      "emoji": "💼",
+      "category": "Professional Network / Career",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 5,
+        "motivation_design": 7,
+        "trust_transparency": 6,
+        "ethical_alignment": 5
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "LinkedIn exploits professional anxiety as its core behavioral mechanism. Unlike entertainment apps that hook through pleasure (variable rewards, social validation), LinkedIn hooks through anxiety: career FOMO, profile inadequacy, and professional visibility paranoia. The platform is uniquely positioned to do this because professional identity is high-stakes — being 'not visible' on LinkedIn feels genuinely career-threatening in a way that being inactive on Instagram does not. This anxiety-as-engagement model is highly effective (LinkedIn has 1B+ members) but ethically concerning because it monetizes professional insecurity rather than professional development.",
+      "top_technique": "Profile Completeness as Guilt Architecture",
+      "links": {
+        "detail": "/api/v1/products/linkedin.json",
+        "teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/linkedin/"
+      }
+    },
+    {
+      "slug": "instagram",
+      "name": "Instagram",
+      "emoji": "📸",
+      "category": "Social Media / Photo & Video",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 5,
+        "motivation_design": 8,
+        "trust_transparency": 3,
+        "ethical_alignment": 3
+      },
+      "total": 27,
+      "pct": 54,
+      "key_insight": "Instagram shows what happens when a product's behavioral design evolves to serve the platform's needs rather than the user's. The original photo-sharing app had natural stopping cues (finite friend posts). The algorithmic feed, infinite scroll, and Reels removed those cues. Instagram's behavioral design is technically brilliant but strategically misaligned — it optimizes for time-spent at the cost of user wellbeing, a trade-off that's becoming increasingly visible (and regulated).",
+      "top_technique": "Pull-to-Refresh as Variable Ratio Slot Machine",
+      "links": {
+        "detail": "/api/v1/products/instagram.json",
+        "teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/instagram/"
+      }
+    }
+  ],
+  "links": {
+    "categories_list": "/api/v1/categories.json",
+    "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/social-media/"
+  }
+}

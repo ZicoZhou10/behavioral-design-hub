@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Calm vs Shopify",
+  "products": {
+    "calm": {
+      "name": "Calm",
+      "emoji": "🧘",
+      "category": "Wellness",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 6,
+        "trust_transparency": 8,
+        "ethical_alignment": 8
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Calm's behavioral design challenge is philosophically interesting: can you ethically use behavioral science to help people build habits that may eliminate the need for your product? Calm's answer is content expansion — become a 'wellness platform' rather than a 'meditation app.' But this risks cognitive load creep as the product tries to be everything at once.",
+      "top_technique": "Sleep Stories as Habit Stacking"
+    },
+    "shopify": {
+      "name": "Shopify",
+      "emoji": "🛒",
+      "category": "E-Commerce",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 7,
+        "motivation_design": 8,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 38,
+      "pct": 76,
+      "key_insight": "Shopify shows how behavioral design can serve both platform and user goals simultaneously. The setup wizard uses progressive commitment, but the merchant genuinely gets a working store. The $1 trial uses anchoring, but the merchant genuinely gets to test the platform risk-free. The app ecosystem creates lock-in, but it also creates genuine value. This alignment between behavioral technique and user outcome is what separates ethical persuasion from manipulation.",
+      "top_technique": "Trial-to-Paid Default Architecture"
+    }
+  },
+  "overall_winner": "shopify",
+  "overall_difference": 1,
+  "dimension_wins": {
+    "calm": 3,
+    "shopify": 2,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "calm": 7,
+      "shopify": 9,
+      "difference": -2,
+      "winner": "shopify"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "calm": 8,
+      "shopify": 7,
+      "difference": 1,
+      "winner": "calm"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "calm": 6,
+      "shopify": 8,
+      "difference": -2,
+      "winner": "shopify"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "calm": 8,
+      "shopify": 7,
+      "difference": 1,
+      "winner": "calm"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "calm": 8,
+      "shopify": 7,
+      "difference": 1,
+      "winner": "calm"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/calm-vs-shopify/",
+    "product_a_detail": "/api/v1/products/calm.json",
+    "product_b_detail": "/api/v1/products/shopify.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/calm/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/shopify/"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "LinkedIn vs Slack",
+  "products": {
+    "linkedin": {
+      "name": "LinkedIn",
+      "emoji": "💼",
+      "category": "Social Media",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 5,
+        "motivation_design": 7,
+        "trust_transparency": 6,
+        "ethical_alignment": 5
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "LinkedIn exploits professional anxiety as its core behavioral mechanism. Unlike entertainment apps that hook through pleasure (variable rewards, social validation), LinkedIn hooks through anxiety: career FOMO, profile inadequacy, and professional visibility paranoia. The platform is uniquely positioned to do this because professional identity is high-stakes — being 'not visible' on LinkedIn feels genuinely career-threatening in a way that being inactive on Instagram does not. This anxiety-as-engagement model is highly effective (LinkedIn has 1B+ members) but ethically concerning because it monetizes professional insecurity rather than professional development.",
+      "top_technique": "Profile Completeness as Guilt Architecture"
+    },
+    "slack": {
+      "name": "Slack",
+      "emoji": "💬",
+      "category": "Productivity",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 5,
+        "motivation_design": 7,
+        "trust_transparency": 7,
+        "ethical_alignment": 5
+      },
+      "total": 31,
+      "pct": 62,
+      "key_insight": "Slack is the clearest example of how behavioral design optimized for engagement metrics can directly conflict with user wellbeing in a workplace context. The green dot creates surveillance anxiety, channel proliferation fragments attention, and notification urgency turns every message into a potential trigger. The product works brilliantly for Slack's business (more messages = more 'engaged' = easier enterprise renewal) but actively undermines the deep work that knowledge workers are ostensibly paid to do. Slack proves that 'engagement' as a success metric can be actively harmful when the user's goal isn't entertainment but productive work.",
+      "top_technique": "The Green Dot: Presence as Social Control"
+    }
+  },
+  "overall_winner": "slack",
+  "overall_difference": 1,
+  "dimension_wins": {
+    "linkedin": 0,
+    "slack": 1,
+    "ties": 4
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "linkedin": 7,
+      "slack": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "linkedin": 5,
+      "slack": 5,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "linkedin": 7,
+      "slack": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "linkedin": 6,
+      "slack": 7,
+      "difference": -1,
+      "winner": "slack"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "linkedin": 5,
+      "slack": 5,
+      "difference": 0,
+      "winner": "tie"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/linkedin-vs-slack/",
+    "product_a_detail": "/api/v1/products/linkedin.json",
+    "product_b_detail": "/api/v1/products/slack.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/linkedin/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/slack/"
+  }
+}

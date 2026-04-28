@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Discord vs Venmo",
+  "products": {
+    "discord": {
+      "name": "Discord",
+      "emoji": "💬",
+      "category": "Community",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 8,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 35,
+      "pct": 70,
+      "key_insight": "Discord's behavioral design success comes from an unusual source: it's one of the few major platforms where the engagement loop is primarily social rather than algorithmic. There's no recommendation algorithm pushing content — engagement is driven by genuine community belonging and real-time social presence. The 'someone is typing...' indicator, voice channel presence, and @mention notifications create a sense of liveness that makes communities feel inhabited rather than archived. Discord's investment escalation (join → customize → earn roles → moderate → build bots) creates deep switching costs through identity investment rather than content lock-in. This makes Discord's engagement more ethically defensible than algorithmic platforms: users return because they have genuine social bonds, not because an algorithm has learned to exploit their attention patterns.",
+      "top_technique": "Server Investment Escalation Ladder"
+    },
+    "venmo": {
+      "name": "Venmo",
+      "emoji": "💸",
+      "category": "Payments",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 9,
+        "motivation_design": 7,
+        "trust_transparency": 5,
+        "ethical_alignment": 5
+      },
+      "total": 34,
+      "pct": 68,
+      "key_insight": "Venmo's most controversial feature — the public social feed showing who paid whom and for what — is also its greatest behavioral design achievement. By making payments social by default, Venmo solved the cold-start problem that kills every payment app: getting both the sender and receiver to use the same platform. When you see friends splitting dinner, paying rent, or reimbursing concert tickets in your feed, each transaction is simultaneously a use case advertisement and social proof that Venmo is the normal way to pay friends. The feed also creates a subtle obligation loop: if everyone in your friend group uses Venmo, requesting payment through any other method feels inconvenient and socially awkward. The privacy implications are significant — researchers have used Venmo's public feed to reconstruct social networks, identify romantic relationships, and track drug transactions. Venmo made payments 'public by default' in the same way Facebook made profiles public by default: not because users wanted it, but because virality required it. The 2021 privacy controversy (BuzzFeed tracked President Biden's Venmo account) forced a redesign, but the social feed remains opt-out rather than opt-in — Venmo's growth depends on visibility.",
+      "top_technique": "Social Payment Feed as Viral Acquisition Engine"
+    }
+  },
+  "overall_winner": "discord",
+  "overall_difference": 1,
+  "dimension_wins": {
+    "discord": 3,
+    "venmo": 2,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "discord": 7,
+      "venmo": 8,
+      "difference": -1,
+      "winner": "venmo"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "discord": 6,
+      "venmo": 9,
+      "difference": -3,
+      "winner": "venmo"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "discord": 8,
+      "venmo": 7,
+      "difference": 1,
+      "winner": "discord"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "discord": 7,
+      "venmo": 5,
+      "difference": 2,
+      "winner": "discord"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "discord": 7,
+      "venmo": 5,
+      "difference": 2,
+      "winner": "discord"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/discord-vs-venmo/",
+    "product_a_detail": "/api/v1/products/discord.json",
+    "product_b_detail": "/api/v1/products/venmo.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/discord/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/venmo/"
+  }
+}

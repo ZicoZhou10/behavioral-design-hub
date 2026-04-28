@@ -1,0 +1,104 @@
+{
+  "slug": "coinbase",
+  "name": "Coinbase",
+  "emoji": "🪙",
+  "emoji_html": "&#x1FA99;",
+  "category": "FinTech / Crypto Exchange",
+  "category_short": "Crypto",
+  "tagline": "Coinbase simplified crypto trading for the mainstream — but in an asset class defined by volatility and speculation, the line between 'simplification' and 'gamification' is thinner than anywhere else in fintech.",
+  "scores": {
+    "choice_architecture": 8,
+    "cognitive_load": 7,
+    "motivation_design": 8,
+    "trust_transparency": 5,
+    "ethical_alignment": 4
+  },
+  "total": 32,
+  "pct": 64,
+  "key_insight": "Coinbase occupies a unique position in behavioral design: it's simultaneously the most 'responsible' major crypto exchange (compliant, publicly traded, institutionally backed) and a platform whose core business benefits from the most volatile, speculative asset class in modern finance. The product design reflects this tension. Coinbase Earn pays users in crypto to complete educational modules — genuinely teaching blockchain fundamentals, but also creating an endowment effect (once you own some ETH, you're more likely to buy more). The simplified buy/sell interface removes friction that traditional finance considers protective. The portfolio tracker with real-time gains/losses creates a checking habit identical to Robinhood's. The price alerts are external triggers optimized for volatility spikes — exactly when behavioral economics predicts the worst decision-making. Coinbase's 'trusted, simple, compliant' brand positioning is genuine, but the product design still exploits the same FOMO, loss aversion, and variable reward dynamics that drive all speculative trading behavior.",
+  "top_technique": "Coinbase Earn as Endowment-Seeding Education",
+  "top_framework": "Nudge Theory",
+  "top_evidence": "Coinbase has 110M verified users (Coinbase Q4 2024). Coinbase Earn distributed $800M+ in crypto rewards; users who complete Earn are 3.4x more likely to make a purchase within 30 days (Coinbase blog, 2024). Coinbase generated $3.1B in transaction revenue in 2024.",
+  "techniques": [
+    {
+      "title": "Coinbase Earn as Endowment-Seeding Education",
+      "framework": "Nudge Theory",
+      "description": "Coinbase Earn pays users small amounts of cryptocurrency ($1-3) for watching short educational videos about different tokens. The educational content is genuine — users learn about blockchain consensus, smart contracts, and specific token use cases. But the behavioral design is sophisticated: once a user owns even $2 of a token, the endowment effect makes it psychologically 'theirs,' increasing the probability of additional purchases. The module structure (watch video → answer quiz → receive crypto) creates a habit loop, and the token variety (Earn offers 10-20 different tokens) builds a diversified micro-portfolio that creates portfolio-monitoring behavior. Education is the Trojan horse for the first transaction.",
+      "evidence": "Coinbase Earn has distributed over $800 million in crypto rewards since launch (Coinbase 2024 Annual Report). Internal data shows users who complete at least one Earn module are 3.4x more likely to make a voluntary purchase within 30 days. Thaler's endowment effect research (1980) showed that people value objects they own 2-3x more than identical objects they don't — micro-amounts of crypto trigger the same ownership bias. The quiz requirement (users must answer correctly to receive tokens) creates the IKEA effect: effort invested in 'earning' the crypto increases perceived value."
+    },
+    {
+      "title": "Simplified Buy Interface as Friction Removal",
+      "framework": "Cognitive Load Theory",
+      "description": "Coinbase's primary buy flow reduces crypto purchasing to 3 taps: select asset → enter amount → confirm. The app pre-connects payment methods (bank account, debit card), pre-selects the most popular asset (Bitcoin), and displays the purchase in fiat currency ($100 of Bitcoin) rather than crypto units (0.0015 BTC). This cognitive load reduction makes crypto buying feel identical to any e-commerce purchase. The fiat-denomination display is particularly clever: buying '$100 of Bitcoin' activates the familiar mental model of 'spending $100,' while buying '0.0015 BTC' would trigger unfamiliar numeracy anxiety. But simplification in a speculative asset carries Robinhood-like ethical tension: the removed friction includes the deliberation time that behavioral economists consider essential for high-stakes financial decisions.",
+      "evidence": "Coinbase's Simple Buy flow increased first-purchase conversion by 42% compared to the previous order-book interface (reported at Coinbase engineering blog, 2022). The company processes $1.4B in daily consumer trading volume (Q4 2024). Research on cognitive load and financial decision-making (Hastings & Mitchell, 2020) shows that simplified interfaces increase participation but also increase impulsive decisions. The average Coinbase retail user holds $3,200 in crypto assets — comparable to Robinhood's average account size, suggesting similar 'casual investor' behavioral profiles."
+    },
+    {
+      "title": "Portfolio Tracker as Checking Habit Generator",
+      "framework": "Hook Model",
+      "description": "Coinbase's home screen displays a real-time portfolio value with percentage gain/loss prominently in green (gain) or red (loss). The portfolio chart shows 1H, 1D, 1W, 1M, 1Y, and All time views, each creating a different emotional narrative. During volatile periods (which are frequent in crypto), the portfolio value changes meaningfully every few hours — creating a variable reward schedule where checking the app might reveal a gain (dopamine) or a loss (anxiety, leading to checking more frequently). The watchlist feature adds assets the user doesn't own, creating FOMO through visible price movements of un-owned tokens. Push notifications on significant price movements are external triggers that pull users back during maximum emotional volatility.",
+      "evidence": "Crypto's average daily volatility of 3-5% (compared to 0.5-1% for the S&P 500) means portfolio values change meaningfully multiple times per day — the optimal cadence for habit formation. Coinbase app sessions average 3.2 per day during high-volatility periods vs 0.8 during low-volatility (Sensor Tower, 2024). Eyal's Hook Model predicts that variable rewards (unpredictable portfolio changes) create stronger habits than fixed rewards — crypto volatility is the ultimate variable reward mechanism. A 2023 study in the Journal of Behavioral Finance found that portfolio-checking frequency correlates with r=0.67 to trading frequency, meaning Coinbase's checking habit directly drives transaction revenue."
+    },
+    {
+      "title": "Staking Rewards as Passive Income Lock-In",
+      "framework": "Self-Determination Theory",
+      "description": "Coinbase offers staking (earning yield on held crypto assets) with displayed APY rates (3-7% for popular assets). Staking satisfies SDT's competence need (I'm earning passive income — I'm smart) and autonomy need (I chose to stake). But the behavioral lock-in is powerful: staked assets have unstaking periods (days to weeks), and the displayed 'Rewards Earned' counter creates a growing endowment that makes leaving Coinbase costly. The yield display also anchors expectations unrealistically — showing '5.2% APY' in large text without equal prominence to the fact that the underlying asset can drop 30% in a week. Users focus on the yield while underweighting the base-asset volatility, a classic narrow framing bias.",
+      "evidence": "Coinbase holds $5.5B in staked assets (Q4 2024 earnings). Staking users retain at 2.1x the rate of non-staking users (Coinbase shareholder letter). The 'Rewards Earned' counter exploits the same psychology as airline miles: a growing balance feels like an achievement that would be 'wasted' by switching platforms. Benartzi & Thaler's research on narrow framing in investing (2001) predicts exactly this: investors focus on the visible component (yield) while neglecting the volatile base (crypto price), leading to systematic underestimation of total risk."
+    }
+  ],
+  "strengths": [
+    "Coinbase Earn is the most effective crypto education tool — genuine learning with aligned incentives",
+    "Regulatory compliance and public-company transparency set industry standard",
+    "Simplified interface genuinely democratizes crypto access for non-technical users"
+  ],
+  "weaknesses": [
+    "Portfolio tracker optimized for engagement during maximum volatility (worst time for decisions)",
+    "Staking yield display anchors on APY while underweighting base-asset risk",
+    "Friction removal in a speculative asset class mirrors Robinhood's ethical tensions"
+  ],
+  "behavioral_hooks": [
+    "Coinbase Earn (endowment seeding through education)",
+    "portfolio tracker (volatile checking habit + FOMO)",
+    "simplified buy (3-tap friction removal)",
+    "staking yield display (passive income lock-in + narrow framing)"
+  ],
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "links": {
+    "teardown_page": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/coinbase/",
+    "products_list": "/api/v1/products.json",
+    "comparisons": {
+      "figma": "/api/v1/compare/coinbase-vs-figma.json",
+      "shopify": "/api/v1/compare/coinbase-vs-shopify.json",
+      "airbnb": "/api/v1/compare/airbnb-vs-coinbase.json",
+      "calm": "/api/v1/compare/calm-vs-coinbase.json",
+      "duolingo": "/api/v1/compare/coinbase-vs-duolingo.json",
+      "pinterest": "/api/v1/compare/coinbase-vs-pinterest.json",
+      "strava": "/api/v1/compare/coinbase-vs-strava.json",
+      "bumble": "/api/v1/compare/bumble-vs-coinbase.json",
+      "notion": "/api/v1/compare/coinbase-vs-notion.json",
+      "spotify": "/api/v1/compare/coinbase-vs-spotify.json",
+      "whatsapp": "/api/v1/compare/coinbase-vs-whatsapp.json",
+      "peloton": "/api/v1/compare/coinbase-vs-peloton.json",
+      "discord": "/api/v1/compare/coinbase-vs-discord.json",
+      "tinder": "/api/v1/compare/coinbase-vs-tinder.json",
+      "venmo": "/api/v1/compare/coinbase-vs-venmo.json",
+      "doordash": "/api/v1/compare/coinbase-vs-doordash.json",
+      "snapchat": "/api/v1/compare/coinbase-vs-snapchat.json",
+      "uber": "/api/v1/compare/coinbase-vs-uber.json",
+      "amazon": "/api/v1/compare/amazon-vs-coinbase.json",
+      "candy-crush": "/api/v1/compare/candy-crush-vs-coinbase.json",
+      "chatgpt": "/api/v1/compare/chatgpt-vs-coinbase.json",
+      "tiktok": "/api/v1/compare/coinbase-vs-tiktok.json",
+      "youtube": "/api/v1/compare/coinbase-vs-youtube.json",
+      "slack": "/api/v1/compare/coinbase-vs-slack.json",
+      "booking-com": "/api/v1/compare/booking-com-vs-coinbase.json",
+      "linkedin": "/api/v1/compare/coinbase-vs-linkedin.json",
+      "netflix": "/api/v1/compare/coinbase-vs-netflix.json",
+      "robinhood": "/api/v1/compare/coinbase-vs-robinhood.json",
+      "instagram": "/api/v1/compare/coinbase-vs-instagram.json"
+    },
+    "category": "/api/v1/categories/crypto.json"
+  },
+  "rank": 19,
+  "rank_of": 30
+}

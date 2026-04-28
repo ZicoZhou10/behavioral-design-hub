@@ -1,0 +1,120 @@
+{
+  "api_version": "v1",
+  "base_url": "https://zicozhou10.github.io/behavioral-design-hub/api/v1",
+  "updated": "2026-04-28",
+  "description": "Behavioral Design Hub — Static JSON API. Research-backed behavioral science scores for digital products. Free, open, no authentication required.",
+  "product_count": 30,
+  "comparison_count": 435,
+  "category_count": 22,
+  "total_endpoints": 490,
+  "endpoints": {
+    "products_list": "/api/v1/products.json",
+    "single_product": "/api/v1/products/{slug}.json",
+    "comparison": "/api/v1/compare/{slug-a}-vs-{slug-b}.json",
+    "categories_list": "/api/v1/categories.json",
+    "single_category": "/api/v1/categories/{category-slug}.json"
+  },
+  "available_products": [
+    "figma",
+    "shopify",
+    "airbnb",
+    "calm",
+    "duolingo",
+    "pinterest",
+    "strava",
+    "bumble",
+    "notion",
+    "spotify",
+    "whatsapp",
+    "peloton",
+    "discord",
+    "tinder",
+    "venmo",
+    "doordash",
+    "snapchat",
+    "uber",
+    "amazon",
+    "candy-crush",
+    "chatgpt",
+    "coinbase",
+    "tiktok",
+    "youtube",
+    "slack",
+    "booking-com",
+    "linkedin",
+    "netflix",
+    "robinhood",
+    "instagram"
+  ],
+  "available_comparisons": [
+    "figma-vs-shopify",
+    "airbnb-vs-figma",
+    "calm-vs-figma",
+    "duolingo-vs-figma",
+    "figma-vs-pinterest",
+    "figma-vs-strava",
+    "bumble-vs-figma",
+    "figma-vs-notion",
+    "figma-vs-spotify",
+    "figma-vs-whatsapp"
+  ],
+  "available_comparisons_note": "Showing 10 of 435. Full list in /api/v1/products.json under each product's 'comparisons' array.",
+  "available_categories": [
+    "ai",
+    "communication",
+    "community",
+    "crypto",
+    "dating",
+    "delivery",
+    "design",
+    "discovery",
+    "e-commerce",
+    "edtech",
+    "entertainment",
+    "fintech",
+    "fitness",
+    "gaming",
+    "payments",
+    "productivity",
+    "social",
+    "social-media",
+    "travel",
+    "utility",
+    "video",
+    "wellness"
+  ],
+  "scoring": {
+    "dimensions": [
+      {
+        "key": "choice_architecture",
+        "abbrev": "ca",
+        "label": "Choice Architecture"
+      },
+      {
+        "key": "cognitive_load",
+        "abbrev": "cl",
+        "label": "Cognitive Load Management"
+      },
+      {
+        "key": "motivation_design",
+        "abbrev": "md",
+        "label": "Motivation Design"
+      },
+      {
+        "key": "trust_transparency",
+        "abbrev": "tt",
+        "label": "Trust & Transparency"
+      },
+      {
+        "key": "ethical_alignment",
+        "abbrev": "ea",
+        "label": "Ethical Alignment"
+      }
+    ],
+    "max_per_dimension": 10,
+    "max_total": 50
+  },
+  "license": "Data is free for non-commercial use. Attribution required: link to https://zicozhou10.github.io/behavioral-design-hub",
+  "human_readable": "https://zicozhou10.github.io/behavioral-design-hub/",
+  "cors": "Enabled for all origins via _headers"
+}

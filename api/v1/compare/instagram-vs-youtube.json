@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Instagram vs YouTube",
+  "products": {
+    "instagram": {
+      "name": "Instagram",
+      "emoji": "📸",
+      "category": "Social Media",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 5,
+        "motivation_design": 8,
+        "trust_transparency": 3,
+        "ethical_alignment": 3
+      },
+      "total": 27,
+      "pct": 54,
+      "key_insight": "Instagram shows what happens when a product's behavioral design evolves to serve the platform's needs rather than the user's. The original photo-sharing app had natural stopping cues (finite friend posts). The algorithmic feed, infinite scroll, and Reels removed those cues. Instagram's behavioral design is technically brilliant but strategically misaligned — it optimizes for time-spent at the cost of user wellbeing, a trade-off that's becoming increasingly visible (and regulated).",
+      "top_technique": "Pull-to-Refresh as Variable Ratio Slot Machine"
+    },
+    "youtube": {
+      "name": "YouTube",
+      "emoji": "▶️",
+      "category": "Video",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 9,
+        "trust_transparency": 5,
+        "ethical_alignment": 5
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "YouTube is the clearest example of a platform where behavioral design serves the algorithm more than the user. The recommendation engine is optimized for watch time, not user satisfaction — a distinction that became central to the 2020-2024 tech ethics debate. Autoplay removes the natural exit point between videos, Up Next suggestions exploit curiosity gaps, and the thumbnail ecosystem has evolved into an arms race of clickbait. Yet YouTube also genuinely democratized video education, entertainment, and creator economics. The tension is structural: every design choice that makes YouTube more 'engaging' also makes it harder to stop watching. YouTube's 'Take a Break' reminder is the company acknowledging this tension — but setting it to OFF by default reveals which side wins.",
+      "top_technique": "Autoplay as Default Continuation"
+    }
+  },
+  "overall_winner": "youtube",
+  "overall_difference": 5,
+  "dimension_wins": {
+    "instagram": 1,
+    "youtube": 4,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "instagram": 8,
+      "youtube": 7,
+      "difference": 1,
+      "winner": "instagram"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "instagram": 5,
+      "youtube": 6,
+      "difference": -1,
+      "winner": "youtube"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "instagram": 8,
+      "youtube": 9,
+      "difference": -1,
+      "winner": "youtube"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "instagram": 3,
+      "youtube": 5,
+      "difference": -2,
+      "winner": "youtube"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "instagram": 3,
+      "youtube": 5,
+      "difference": -2,
+      "winner": "youtube"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/instagram-vs-youtube/",
+    "product_a_detail": "/api/v1/products/instagram.json",
+    "product_b_detail": "/api/v1/products/youtube.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/instagram/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/youtube/"
+  }
+}

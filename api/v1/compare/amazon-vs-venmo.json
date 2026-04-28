@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Amazon vs Venmo",
+  "products": {
+    "amazon": {
+      "name": "Amazon",
+      "emoji": "📦",
+      "category": "E-Commerce",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 9,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Amazon is the most commercially successful behavioral design in history — and the most ethically polarized. One-click buy genuinely reduces friction. Prime genuinely provides value. But the same behavioral toolkit that makes buying easy makes canceling hard. Amazon proves that behavioral design is morally neutral: identical techniques (friction manipulation, default exploitation, cognitive load management) create user value when applied to purchasing and destroy user autonomy when applied to retention. The regulatory response (FTC lawsuit, EU DSA) suggests that the market is beginning to price in behavioral design ethics.",
+      "top_technique": "One-Click Buy: The Friction Elimination Patent"
+    },
+    "venmo": {
+      "name": "Venmo",
+      "emoji": "💸",
+      "category": "Payments",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 9,
+        "motivation_design": 7,
+        "trust_transparency": 5,
+        "ethical_alignment": 5
+      },
+      "total": 34,
+      "pct": 68,
+      "key_insight": "Venmo's most controversial feature — the public social feed showing who paid whom and for what — is also its greatest behavioral design achievement. By making payments social by default, Venmo solved the cold-start problem that kills every payment app: getting both the sender and receiver to use the same platform. When you see friends splitting dinner, paying rent, or reimbursing concert tickets in your feed, each transaction is simultaneously a use case advertisement and social proof that Venmo is the normal way to pay friends. The feed also creates a subtle obligation loop: if everyone in your friend group uses Venmo, requesting payment through any other method feels inconvenient and socially awkward. The privacy implications are significant — researchers have used Venmo's public feed to reconstruct social networks, identify romantic relationships, and track drug transactions. Venmo made payments 'public by default' in the same way Facebook made profiles public by default: not because users wanted it, but because virality required it. The 2021 privacy controversy (BuzzFeed tracked President Biden's Venmo account) forced a redesign, but the social feed remains opt-out rather than opt-in — Venmo's growth depends on visibility.",
+      "top_technique": "Social Payment Feed as Viral Acquisition Engine"
+    }
+  },
+  "overall_winner": "venmo",
+  "overall_difference": 2,
+  "dimension_wins": {
+    "amazon": 1,
+    "venmo": 2,
+    "ties": 2
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "amazon": 8,
+      "venmo": 8,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "amazon": 6,
+      "venmo": 9,
+      "difference": -3,
+      "winner": "venmo"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "amazon": 9,
+      "venmo": 7,
+      "difference": 2,
+      "winner": "amazon"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "amazon": 5,
+      "venmo": 5,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "amazon": 4,
+      "venmo": 5,
+      "difference": -1,
+      "winner": "venmo"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/amazon-vs-venmo/",
+    "product_a_detail": "/api/v1/products/amazon.json",
+    "product_b_detail": "/api/v1/products/venmo.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/amazon/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/venmo/"
+  }
+}

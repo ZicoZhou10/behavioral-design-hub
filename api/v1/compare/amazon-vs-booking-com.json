@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Amazon vs Booking.com",
+  "products": {
+    "amazon": {
+      "name": "Amazon",
+      "emoji": "📦",
+      "category": "E-Commerce",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 9,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Amazon is the most commercially successful behavioral design in history — and the most ethically polarized. One-click buy genuinely reduces friction. Prime genuinely provides value. But the same behavioral toolkit that makes buying easy makes canceling hard. Amazon proves that behavioral design is morally neutral: identical techniques (friction manipulation, default exploitation, cognitive load management) create user value when applied to purchasing and destroy user autonomy when applied to retention. The regulatory response (FTC lawsuit, EU DSA) suggests that the market is beginning to price in behavioral design ethics.",
+      "top_technique": "One-Click Buy: The Friction Elimination Patent"
+    },
+    "booking-com": {
+      "name": "Booking.com",
+      "emoji": "🏨",
+      "category": "Travel",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 9,
+        "trust_transparency": 4,
+        "ethical_alignment": 3
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "Booking.com is arguably the most aggressive deployer of behavioral design patterns in consumer tech — and uniquely, they've been transparent about it. The platform runs over 1,000 A/B tests simultaneously, and the result is a UI so dense with urgency signals that it has become a case study in regulatory behavioral design complaints. 'Only 2 rooms left!' '14 people looking right now!' 'Booked 3 times in the last 24 hours!' — each message exploits a different psychological lever (scarcity, social proof, loss aversion). The EU fined Booking.com in 2020 for misleading urgency claims, yet the patterns persist because they work. The ethical tension is stark: Booking.com's design genuinely helps users make faster decisions in a complex market (hotels have variable pricing, real scarcity), but the same urgency cues are applied indiscriminately — to fully available hotels and nearly-sold-out ones alike. When scarcity signals are always on, they become manipulation rather than information. Booking.com represents what happens when conversion optimization is pursued without ethical guardrails.",
+      "top_technique": "Manufactured Urgency Through Scarcity Signals"
+    }
+  },
+  "overall_winner": "amazon",
+  "overall_difference": 2,
+  "dimension_wins": {
+    "amazon": 2,
+    "booking-com": 0,
+    "ties": 3
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "amazon": 8,
+      "booking-com": 8,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "amazon": 6,
+      "booking-com": 6,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "amazon": 9,
+      "booking-com": 9,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "amazon": 5,
+      "booking-com": 4,
+      "difference": 1,
+      "winner": "amazon"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "amazon": 4,
+      "booking-com": 3,
+      "difference": 1,
+      "winner": "amazon"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/amazon-vs-booking-com/",
+    "product_a_detail": "/api/v1/products/amazon.json",
+    "product_b_detail": "/api/v1/products/booking-com.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/amazon/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/booking-com/"
+  }
+}

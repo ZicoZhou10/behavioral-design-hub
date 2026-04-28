@@ -1,0 +1,63 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "name": "Dating",
+  "slug": "dating",
+  "product_count": 2,
+  "avg_score": 35.5,
+  "dimension_averages": {
+    "choice_architecture": 9.0,
+    "cognitive_load": 7.5,
+    "motivation_design": 8.0,
+    "trust_transparency": 5.5,
+    "ethical_alignment": 5.5
+  },
+  "products": [
+    {
+      "slug": "bumble",
+      "name": "Bumble",
+      "emoji": "💛",
+      "category": "Dating / Relationships",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 7,
+        "motivation_design": 7,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Bumble proves that behavioral constraints can be more powerful than behavioral nudges. While Tinder maximizes engagement through unlimited swiping and variable-ratio matching, Bumble deliberately constrains user behavior — women must message first within 24 hours or the match expires. This constraint solves three problems simultaneously: it reduces unwanted messages for women (the #1 complaint on dating apps), it forces genuine interest signaling (matches that survive the 24-hour window have higher intent), and it creates a differentiated brand identity ('the feminist dating app'). The 24-hour expiration exploits scarcity and loss aversion — a match that's about to expire feels more valuable than one that sits indefinitely. Bumble's expansion into BFF (friend-finding) and Bizz (professional networking) using the same swipe+constraint UX reveals the strategic insight: the behavioral mechanics of dating apps are not specific to dating — they are general-purpose social sorting mechanisms. The ethical dimension is genuinely positive: Bumble's constraint design demonstrably reduces harassment compared to unconstrained platforms.",
+      "top_technique": "Women-First Messaging Constraint as Power Architecture",
+      "links": {
+        "detail": "/api/v1/products/bumble.json",
+        "teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/bumble/"
+      }
+    },
+    {
+      "slug": "tinder",
+      "name": "Tinder",
+      "emoji": "🔥",
+      "category": "Dating / Social Discovery",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 4,
+        "ethical_alignment": 4
+      },
+      "total": 34,
+      "pct": 68,
+      "key_insight": "Tinder solved the paradox of choice in dating by reducing a multi-dimensional human evaluation to a binary swipe. This is brilliant choice architecture — and also the product's deepest ethical tension. The swipe creates a variable ratio reward schedule identical to slot machines: most swipes yield nothing, but the occasional match triggers a dopamine spike that reinforces the swiping behavior. Tinder's business model depends on users NOT finding matches efficiently (premium features gate the very discovery the app promises), creating a fundamental misalignment between user goals (find a partner) and business goals (maximize engagement time). The result: an app that is behaviorally addictive by design, yet genuinely useful as a discovery mechanism that didn't exist before.",
+      "top_technique": "Swipe as Binary Choice Architecture",
+      "links": {
+        "detail": "/api/v1/products/tinder.json",
+        "teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/tinder/"
+      }
+    }
+  ],
+  "links": {
+    "categories_list": "/api/v1/categories.json",
+    "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/dating/"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "slug": "youtube",
+  "name": "YouTube",
+  "emoji": "▶️",
+  "emoji_html": "&#x25B6;&#xFE0F;",
+  "category": "Entertainment / Video Platform",
+  "category_short": "Video",
+  "tagline": "YouTube's autoplay and algorithmic recommendations created the template for attention-maximizing design — a system so effective at keeping viewers watching that it reshaped how a generation consumes information.",
+  "scores": {
+    "choice_architecture": 7,
+    "cognitive_load": 6,
+    "motivation_design": 9,
+    "trust_transparency": 5,
+    "ethical_alignment": 5
+  },
+  "total": 32,
+  "pct": 64,
+  "key_insight": "YouTube is the clearest example of a platform where behavioral design serves the algorithm more than the user. The recommendation engine is optimized for watch time, not user satisfaction — a distinction that became central to the 2020-2024 tech ethics debate. Autoplay removes the natural exit point between videos, Up Next suggestions exploit curiosity gaps, and the thumbnail ecosystem has evolved into an arms race of clickbait. Yet YouTube also genuinely democratized video education, entertainment, and creator economics. The tension is structural: every design choice that makes YouTube more 'engaging' also makes it harder to stop watching. YouTube's 'Take a Break' reminder is the company acknowledging this tension — but setting it to OFF by default reveals which side wins.",
+  "top_technique": "Autoplay as Default Continuation",
+  "top_framework": "Hook Model",
+  "top_evidence": "YouTube serves 1B+ hours/day (YouTube Culture & Trends 2024). Autoplay increases average session length by 60% (internal A/B cited by former PM). 70% of watch time is algorithmically recommended (YouTube CTO Neal Mohan, 2024).",
+  "techniques": [
+    {
+      "title": "Autoplay as Default Continuation",
+      "framework": "Hook Model",
+      "description": "YouTube's autoplay removes the most critical decision point in video consumption: the choice to stop watching. After each video, the next one begins automatically with a brief countdown. This exploits Thaler & Sunstein's default effect — the option that requires no action (continue watching) dominates the option that requires action (stop). The countdown timer creates a false sense of agency ('you can cancel') while the momentum of continued viewing makes cancellation feel effortful. Autoplay transforms a series of discrete content choices into a continuous stream, eliminating the natural pause where users might ask 'should I keep watching?'",
+      "evidence": "YouTube's internal A/B tests showed autoplay increases average session duration by 60% (reported by former YouTube PM Guillaume Chaslot in 2019 Senate testimony). The feature was controversial enough that YouTube added a toggle in 2018 — but set the default to ON. Thaler's research on organ donation defaults showed that opt-out systems achieve 85-100% participation vs 4-27% for opt-in — the same asymmetry applies to autoplay."
+    },
+    {
+      "title": "Algorithmic Rabbit Holes via Recommendation Cascade",
+      "framework": "Prospect Theory",
+      "description": "YouTube's 'Up Next' sidebar and post-video recommendations create a curiosity cascade. Each recommended video is selected to maximize the probability of continued engagement — not to maximize user satisfaction or learning. The algorithm exploits Loewenstein's information gap theory: each recommendation promises to close an information gap while opening new ones. The visual layout (video title + thumbnail + view count) is optimized for System 1 click decisions. Notably, the algorithm tends toward increasingly extreme or sensational content because that content has higher click-through rates — the 'rabbit hole' effect documented by researchers.",
+      "evidence": "70% of YouTube watch time comes from algorithmically recommended videos (YouTube CTO Neal Mohan, 2024). Mozilla Foundation's 2021 'YouTube Regrets' study found that 71% of users reported being recommended content they regretted watching. The recommendation system processes 80 billion signals daily to rank candidate videos. Former YouTube engineer Christos Goodrow stated the algorithm was redesigned in 2012 from click-based to watch-time-based optimization — a change that inadvertently favored longer, more addictive content."
+    },
+    {
+      "title": "Thumbnail-Title Arms Race as Attention Auction",
+      "framework": "Cognitive Load Theory",
+      "description": "YouTube's creator ecosystem has evolved a sophisticated behavioral design practice around thumbnails: exaggerated facial expressions, bright contrasting colors, large text overlays, and curiosity-gap titles ('You Won't Believe...'). This isn't accidental — YouTube Studio provides thumbnail click-through rate (CTR) data, effectively teaching millions of creators to A/B test attention-capture techniques. The result is a platform-wide arms race that raises the baseline stimulation level required to capture a click. Thumbnails exploit pre-attentive visual processing: faces, bright colors, and contrast are processed before conscious attention.",
+      "evidence": "YouTube Creator Academy explicitly teaches thumbnail optimization. Top creators like MrBeast reportedly spend $10,000+ per thumbnail and test 20+ variants. Average CTR on YouTube is 2-10%, with top performers at 15%+. The evolution from 2015 thumbnails (simple screenshots) to 2024 thumbnails (highly produced psychological triggers) represents a real-time demonstration of competitive behavioral design evolution."
+    },
+    {
+      "title": "Creator Economy as Two-Sided Engagement Flywheel",
+      "framework": "Self-Determination Theory",
+      "description": "YouTube's monetization system (ad revenue sharing, memberships, Super Chat) creates a two-sided behavioral loop. For creators, the variable reward of revenue + subscriber growth satisfies SDT's competence and autonomy needs, driving continuous content production. For viewers, parasocial relationships with creators create belonging and identity investment. The flywheel: more creators → more content → more viewers → more ad revenue → more creators. YouTube's genius is that creator-side behavioral design (analytics dashboards, milestone celebrations, community tab) drives viewer-side engagement without YouTube needing to directly manipulate viewers.",
+      "evidence": "YouTube paid creators $70B+ from 2021-2024 (Alphabet earnings). The platform has 2M+ creators in the YouTube Partner Program (2024). Creator-side features like YouTube Studio's real-time analytics dashboard creates a checking habit — Nir Eyal noted that YouTube Studio itself is a Hook Model product aimed at creators. The Shorts Fund and monetization milestones (1K subs, 4K watch hours) create goal-gradient motivation for aspiring creators."
+    }
+  ],
+  "strengths": [
+    "Democratized video education and entertainment globally",
+    "Creator economy provides real livelihood for millions",
+    "Search function still serves intentional discovery well"
+  ],
+  "weaknesses": [
+    "Autoplay default optimizes engagement over user intent",
+    "Recommendation algorithm documented to amplify extreme content",
+    "'Take a Break' reminders disabled by default"
+  ],
+  "behavioral_hooks": [
+    "autoplay (default continuation)",
+    "algorithmic Up Next (curiosity cascade)",
+    "thumbnail CTR arms race (attention auction)",
+    "creator analytics (two-sided engagement flywheel)"
+  ],
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "links": {
+    "teardown_page": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/youtube/",
+    "products_list": "/api/v1/products.json",
+    "comparisons": {
+      "figma": "/api/v1/compare/figma-vs-youtube.json",
+      "shopify": "/api/v1/compare/shopify-vs-youtube.json",
+      "airbnb": "/api/v1/compare/airbnb-vs-youtube.json",
+      "calm": "/api/v1/compare/calm-vs-youtube.json",
+      "duolingo": "/api/v1/compare/duolingo-vs-youtube.json",
+      "pinterest": "/api/v1/compare/pinterest-vs-youtube.json",
+      "strava": "/api/v1/compare/strava-vs-youtube.json",
+      "bumble": "/api/v1/compare/bumble-vs-youtube.json",
+      "notion": "/api/v1/compare/notion-vs-youtube.json",
+      "spotify": "/api/v1/compare/spotify-vs-youtube.json",
+      "whatsapp": "/api/v1/compare/whatsapp-vs-youtube.json",
+      "peloton": "/api/v1/compare/peloton-vs-youtube.json",
+      "discord": "/api/v1/compare/discord-vs-youtube.json",
+      "tinder": "/api/v1/compare/tinder-vs-youtube.json",
+      "venmo": "/api/v1/compare/venmo-vs-youtube.json",
+      "doordash": "/api/v1/compare/doordash-vs-youtube.json",
+      "snapchat": "/api/v1/compare/snapchat-vs-youtube.json",
+      "uber": "/api/v1/compare/uber-vs-youtube.json",
+      "amazon": "/api/v1/compare/amazon-vs-youtube.json",
+      "candy-crush": "/api/v1/compare/candy-crush-vs-youtube.json",
+      "chatgpt": "/api/v1/compare/chatgpt-vs-youtube.json",
+      "coinbase": "/api/v1/compare/coinbase-vs-youtube.json",
+      "tiktok": "/api/v1/compare/tiktok-vs-youtube.json",
+      "slack": "/api/v1/compare/slack-vs-youtube.json",
+      "booking-com": "/api/v1/compare/booking-com-vs-youtube.json",
+      "linkedin": "/api/v1/compare/linkedin-vs-youtube.json",
+      "netflix": "/api/v1/compare/netflix-vs-youtube.json",
+      "robinhood": "/api/v1/compare/robinhood-vs-youtube.json",
+      "instagram": "/api/v1/compare/instagram-vs-youtube.json"
+    },
+    "category": "/api/v1/categories/video.json"
+  },
+  "rank": 19,
+  "rank_of": 30
+}

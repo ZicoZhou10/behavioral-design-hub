@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "DoorDash vs Tinder",
+  "products": {
+    "doordash": {
+      "name": "DoorDash",
+      "emoji": "🛕",
+      "category": "Delivery",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 7,
+        "motivation_design": 8,
+        "trust_transparency": 5,
+        "ethical_alignment": 5
+      },
+      "total": 33,
+      "pct": 66,
+      "key_insight": "DoorDash's behavioral design reveals a fundamental tension in on-demand platforms: the features that make the user experience feel urgent and seamless (countdown timers, pre-selected tips, one-tap reorder) are the same features that obscure true costs and reduce deliberative decision-making. DoorDash charges a delivery fee, a service fee, a small order fee, and applies dynamic pricing — but the total only appears at checkout, after the user has invested time browsing menus and customizing orders (sunk cost). The DashPass subscription ($9.99/month) transforms occasional delivery into a committed habit by making each marginal order feel 'free.' DoorDash is a masterclass in how to design for habitual, low-friction purchasing — and a cautionary tale about what that means for consumer spending.",
+      "top_technique": "Delivery Time Countdown as Urgency Commitment"
+    },
+    "tinder": {
+      "name": "Tinder",
+      "emoji": "🔥",
+      "category": "Dating",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 4,
+        "ethical_alignment": 4
+      },
+      "total": 34,
+      "pct": 68,
+      "key_insight": "Tinder solved the paradox of choice in dating by reducing a multi-dimensional human evaluation to a binary swipe. This is brilliant choice architecture — and also the product's deepest ethical tension. The swipe creates a variable ratio reward schedule identical to slot machines: most swipes yield nothing, but the occasional match triggers a dopamine spike that reinforces the swiping behavior. Tinder's business model depends on users NOT finding matches efficiently (premium features gate the very discovery the app promises), creating a fundamental misalignment between user goals (find a partner) and business goals (maximize engagement time). The result: an app that is behaviorally addictive by design, yet genuinely useful as a discovery mechanism that didn't exist before.",
+      "top_technique": "Swipe as Binary Choice Architecture"
+    }
+  },
+  "overall_winner": "tinder",
+  "overall_difference": 1,
+  "dimension_wins": {
+    "doordash": 2,
+    "tinder": 3,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "doordash": 8,
+      "tinder": 9,
+      "difference": -1,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "doordash": 7,
+      "tinder": 8,
+      "difference": -1,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "doordash": 8,
+      "tinder": 9,
+      "difference": -1,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "doordash": 5,
+      "tinder": 4,
+      "difference": 1,
+      "winner": "doordash"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "doordash": 5,
+      "tinder": 4,
+      "difference": 1,
+      "winner": "doordash"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/doordash-vs-tinder/",
+    "product_a_detail": "/api/v1/products/doordash.json",
+    "product_b_detail": "/api/v1/products/tinder.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/doordash/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/tinder/"
+  }
+}

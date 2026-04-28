@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Price Anchoring &amp; Fee Architecture in Product Design — 9 Real-World Examples | Behavioral Design Hub</title>
+<meta name="description" content="The first number a user sees becomes the anchor against which all subsequent prices are judged. Strikethrough pricing, fee decomposition, surge pricing, an">
+<meta property="og:title" content="💰 Price Anchoring &amp; Fee Architecture — How 9 Products Use This Pattern">
+<meta property="og:description" content="The first number a user sees becomes the anchor against which all subsequent prices are judged. Strikethrough pricing, fee decomposition, surge pricing, and tiered plan comparisons all manipulate the ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://zicozhou10.github.io/behavioral-design-hub/patterns/price-anchoring/">
+<link rel="canonical" href="https://zicozhou10.github.io/behavioral-design-hub/patterns/price-anchoring/">
+<style>
+:root{--bg:#0a0a0f;--card:#12121a;--card-h:#1a1a28;--border:#1e1e2e;--text:#e0e0e8;--muted:#8888a0;--accent:#6366f1;--accent-l:#818cf8;--green:#22c55e;--yellow:#eab308;--red:#ef4444}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.6}
+.ct{max-width:880px;margin:0 auto;padding:16px}
+.nv{display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid var(--border);margin-bottom:24px;flex-wrap:wrap;gap:8px}
+.nb{font-weight:800;font-size:1rem;color:var(--accent-l);text-decoration:none}
+.nv a{color:var(--muted);text-decoration:none;font-size:.82rem}
+.nv a:hover{color:var(--accent-l)}
+.hero{text-align:center;padding:32px 0 24px}
+.hero-emoji{font-size:3rem;margin-bottom:12px}
+h1{font-size:1.6rem;font-weight:800;margin-bottom:12px;line-height:1.2}
+.hero p{color:var(--muted);font-size:.92rem;max-width:640px;margin:0 auto}
+.principle{background:var(--card);border-radius:12px;padding:20px;margin:20px 0;border-left:3px solid var(--accent)}
+.principle-label{font-size:.72rem;color:var(--accent-l);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;font-weight:600}
+.principle-text{font-size:.88rem;color:var(--text)}
+.section-title{font-size:1.1rem;font-weight:700;margin:28px 0 16px}
+.product-card{display:block;background:var(--card);border-radius:12px;padding:16px;margin:10px 0;text-decoration:none;color:var(--text);border:1px solid var(--border);transition:all .2s}
+.product-card:hover{background:var(--card-h);border-color:var(--accent);transform:translateY(-1px)}
+.pc-header{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.pc-emoji{font-size:1.5rem}
+.pc-name{font-weight:700;font-size:.92rem}
+.pc-cat{font-size:.72rem;color:var(--muted)}
+.pc-tech{font-size:.84rem;font-weight:600;color:var(--accent-l);margin-bottom:4px}
+.pc-mech{font-size:.82rem;color:var(--muted);line-height:1.5}
+.search-queries{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.sq{background:var(--card);padding:6px 12px;border-radius:20px;font-size:.76rem;color:var(--muted);border:1px solid var(--border)}
+.ethics{margin:28px 0}
+.eth-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.eth-card{background:var(--card);border-radius:10px;padding:14px;font-size:.82rem;display:flex;gap:8px}
+.eth-pos{border-left:3px solid var(--green)}
+.eth-neg{border-left:3px solid var(--yellow)}
+.eth-icon{font-size:1.1rem;flex-shrink:0}
+.related{margin:28px 0}
+.rp-grid{display:flex;flex-wrap:wrap;gap:8px}
+.rp-link{background:var(--card);padding:8px 14px;border-radius:10px;font-size:.82rem;color:var(--accent-l);text-decoration:none;border:1px solid var(--border);transition:all .15s}
+.rp-link:hover{background:var(--card-h);border-color:var(--accent)}
+.comparisons{margin:28px 0}
+.cmp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px}
+.cmp-link{background:var(--card);padding:10px 14px;border-radius:8px;font-size:.8rem;color:var(--text);text-decoration:none;border:1px solid var(--border);transition:all .15s;text-align:center}
+.cmp-link:hover{background:var(--card-h);border-color:var(--accent)}
+.ctas{text-align:center;padding:32px 0}
+.ctas h2{font-size:1rem;font-weight:700;margin-bottom:12px}
+.cb{display:inline-block;padding:10px 24px;border-radius:10px;font-weight:700;text-decoration:none;font-size:.85rem;margin:6px}
+.cp{background:var(--accent);color:white}
+.cx{background:var(--card);color:var(--accent-l);border:1px solid var(--border)}
+.ft{text-align:center;padding:20px 0;border-top:1px solid var(--border);margin-top:24px;font-size:.72rem;color:var(--muted)}
+.ft a{color:var(--accent-l);text-decoration:none}
+@media(max-width:600px){
+  .eth-grid{grid-template-columns:1fr}
+  .cmp-grid{grid-template-columns:1fr}
+  h1{font-size:1.3rem}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Price Anchoring & Fee Architecture — Behavioral Design Pattern",
+      "description": "The first number a user sees becomes the anchor against which all subsequent prices are judged. Strikethrough pricing, fee decomposition, surge pricing, and tiered plan comparisons all manipulate the reference point. The question isn't 'is this worth $X?' but 'is this cheap compared to the anchor?'",
+      "url": "https://zicozhou10.github.io/behavioral-design-hub/patterns/price-anchoring/",
+      "datePublished": "2026-04-01",
+      "dateModified": "2026-04-17",
+      "author": {
+        "@type": "Organization",
+        "name": "Behavioral Design Hub"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Behavioral Design Hub",
+        "url": "https://zicozhou10.github.io/behavioral-design-hub"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zicozhou10.github.io/behavioral-design-hub/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Patterns",
+          "item": "https://zicozhou10.github.io/behavioral-design-hub/patterns/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Price Anchoring & Fee Architecture",
+          "item": "https://zicozhou10.github.io/behavioral-design-hub/patterns/price-anchoring/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+    <!-- aeo-injected -->
+    <meta name="ai-citation-author" content="Zico (Behavioral Design Hub)">
+    <meta name="ai-citation-published" content="2026-04-28T03:55:24Z">
+    <meta name="ai-citation-methodology" content="/methodology/">
+    <meta name="ai-citation-license" content="CC-BY-4.0">
+    <meta name="ai-citation-evidence-count" content="4">
+    <meta name="ai-citation-type" content="behavioral-design-pattern">
+  </head>
+<body>
+<div class="ct">
+<nav class="nv">
+  <a href="https://zicozhou10.github.io/behavioral-design-hub/" class="nb">Behavioral Design Hub</a>
+  <div>
+    <a href="https://zicozhou10.github.io/behavioral-design-hub/patterns/">All Patterns</a> &middot;
+    <a href="https://zicozhou10.github.io/behavioral-design-hub/categories/">Categories</a> &middot;
+    <a href="https://zicozhou10.github.io/behavioral-design-hub/compare/">Comparisons</a> &middot;
+    <a href="https://zicozhou10.github.io/behavioral-design-hub/leaderboard/">Leaderboard</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-emoji">💰</div>
+  <h1>Price Anchoring &amp; Fee Architecture</h1>
+  <p>The first number a user sees becomes the anchor against which all subsequent prices are judged. Strikethrough pricing, fee decomposition, surge pricing, and tiered plan comparisons all manipulate the reference point. The question isn&#x27;t &#x27;is this worth $X?&#x27; but &#x27;is this cheap compared to the anchor?&#x27;</p>
+</div>
+
+<div class="principle">
+  <div class="principle-label">Psychological Principle</div>
+  <div class="principle-text">Anchoring Effect (Tversky &amp; Kahneman, 1974) — initial exposure to a number influences subsequent numerical judgments, even when the anchor is arbitrary</div>
+</div>
+
+<div class="search-queries">
+  <span class="sq" style="font-weight:600;color:var(--accent-l)">People also search:</span>
+  <span class="sq">price anchoring examples</span>
+<span class="sq">strikethrough pricing psychology</span>
+<span class="sq">fee decomposition manipulation</span>
+<span class="sq">surge pricing psychology</span>
+<span class="sq">tiered pricing design</span>
+</div>
+
+<h2 class="section-title">9 Products Using Price Anchoring &amp; Fee Architecture</h2>
+
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/booking-com/" class="product-card">
+  <div class="pc-header">
+    <span class="pc-emoji">🏨</span>
+    <div>
+      <div class="pc-name">Booking.com</div>
+      <div class="pc-cat">Travel &middot; 30/50</div>
+    </div>
+  </div>
+  <div class="pc-tech">Price Anchoring and Strikethrough Psychology</div>
+  <div class="pc-mech">Crossed-out original price makes the &#x27;deal price&#x27; seem like a bargain — even when the original was inflated</div>
+</a>
+
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/airbnb/" class="product-card">
+  <div class="pc-header">
+    <span class="pc-emoji">🏠</span>
+    <div>
+      <div class="pc-name">Airbnb</div>
+      <div class="pc-cat">E-Commerce &middot; 37/50</div>
+    </div>
+  </div>
+  <div class="pc-tech">Price Anchoring Through Fee Decomposition</div>
+  <div class="pc-mech">Nightly rate shown first (anchor), then cleaning fee + service fee added — total feels like &#x27;extras&#x27; on a good deal</div>
+</a>
+
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/uber/" class="product-card">
+  <div class="pc-header">
+    <span class="pc-emoji">🚗</span>
+    <div>
+      <div class="pc-name">Uber</div>
+      <div class="pc-cat">Utility &middot; 33/50</div>
+    </div>
+  </div>
+  <div class="pc-tech">Surge Pricing as Dynamic Anchoring</div>
+  <div class="pc-mech">Normal price becomes the anchor — 2.3x surge feels expensive but 1.3x feels &#x27;not bad&#x27;</div>
+</a>
+
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/shopify/" class="product-card">
+  <div class="pc-header">
+    <span class="pc-emoji">🛒</span>
+    <div>
+      <div class="pc-name">Shopify</div>
+      <div class="pc-cat">E-Commerce &middot; 38/50</div>
+    </div>
+  </div>
+  <div class="pc-tech">Trial-to-Paid Default Architecture</div>
+  <div class="pc-mech">$1/month anchors the price perception — $39/month feels reasonable after paying $1</div>
+</a>
+
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/doordash/" class="product-card">
+  <div class="pc-header">
+    <span class="pc-emoji">🛕</span>
+    <div>
+      <div class="pc-name">DoorDash</div>
+      <div class="pc-cat">Delivery &middot; 33/50</div>
+    </div>
+  </div>
+  <div class="pc-tech">Tip Pre-Selection as Social Norm Anchoring</div>
+  <div class="pc-mech">Pre-selected 20% tip anchors generosity expectations higher than users would self-select</div>
+</a>
+
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/doordash/" class="product-card">
+  <div class="pc-header">
+    <span class="pc-emoji">🛕</span>
+    <div>
+      <div class="pc-name">DoorDash</div>
+      <div class="pc-cat">Delivery &middot; 33/50</div>
+    </div>
+  </div>
+  <div class="pc-tech">Fee Decomposition and Dynamic Pricing Opacity</div>
+  <div class="pc-mech">Delivery fee + service fee + small order fee — decomposed fees obscure total cost</div>
+</a>
+
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/uber/" class="product-card">
+  <div class="pc-header">
+    <span class="pc-emoji">🚗</span>
+    <div>
+      <div class="pc-name">Uber</div>
+      <div class="pc-cat">Utility &middot; 33/50</div>
+    </div>
+  </div>
+  <div class="pc-tech">Driver Gamification: Earnings Goals as Anchoring</div>
+  <div class="pc-mech">Algorithm suggests earning goals that anchor drivers to work longer sessions</div>
+</a>
+
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/tinder/" class="product-card">
+  <div class="pc-header">
+    <span class="pc-emoji">🔥</span>
+    <div>
+      <div class="pc-name">Tinder</div>
+      <div class="pc-cat">Dating &middot; 34/50</div>
+    </div>
+  </div>
+  <div class="pc-tech">Premium Feature Gating Through Artificial Scarcity</div>
+  <div class="pc-mech">Free tier limitations anchor the value of premium — &#x27;look what you&#x27;re missing&#x27;</div>
+</a>
+
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/candy-crush/" class="product-card">
+  <div class="pc-header">
+    <span class="pc-emoji">🍬</span>
+    <div>
+      <div class="pc-name">Candy Crush</div>
+      <div class="pc-cat">Gaming &middot; 32/50</div>
+    </div>
+  </div>
+  <div class="pc-tech">Lives System as Artificial Scarcity of Play</div>
+  <div class="pc-mech">$0.99 for 5 lives — anchored against time cost of waiting 2.5 hours</div>
+</a>
+
+
+<div class="ethics">
+  <h2>Ethical Spectrum</h2>
+  <div class="eth-grid">
+    <div class="eth-card eth-pos"><span class="eth-icon">✅</span><div>Shopify&#x27;s $1 trial genuinely lets merchants test the platform with minimal risk</div></div>
+    <div class="eth-card eth-neg"><span class="eth-icon">⚠️</span><div>Airbnb&#x27;s fee decomposition hides the true cost until checkout, causing sticker shock</div></div>
+  </div>
+</div>
+<div class="related"><h2>Related Patterns</h2><div class="rp-grid"><a href="https://zicozhou10.github.io/behavioral-design-hub/patterns/scarcity-urgency/" class="rp-link">⏰ Scarcity &amp; Urgency Signals</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/patterns/default-architecture/" class="rp-link">🔧 Default &amp; Choice Architecture</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/patterns/dark-patterns/" class="rp-link">🕳️ Dark Patterns &amp; Deceptive Design</a></div></div>
+<div class="comparisons"><h2>Related Comparisons</h2><div class="cmp-grid"><a href="https://zicozhou10.github.io/behavioral-design-hub/compare/airbnb-vs-booking-com/" class="cmp-link">Booking.com vs Airbnb</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/booking-com-vs-uber/" class="cmp-link">Booking.com vs Uber</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/booking-com-vs-shopify/" class="cmp-link">Booking.com vs Shopify</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/booking-com-vs-doordash/" class="cmp-link">Booking.com vs DoorDash</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/booking-com-vs-tinder/" class="cmp-link">Booking.com vs Tinder</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/booking-com-vs-candy-crush/" class="cmp-link">Booking.com vs Candy Crush</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/airbnb-vs-uber/" class="cmp-link">Airbnb vs Uber</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/airbnb-vs-shopify/" class="cmp-link">Airbnb vs Shopify</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/airbnb-vs-doordash/" class="cmp-link">Airbnb vs DoorDash</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/airbnb-vs-tinder/" class="cmp-link">Airbnb vs Tinder</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/airbnb-vs-candy-crush/" class="cmp-link">Airbnb vs Candy Crush</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/shopify-vs-uber/" class="cmp-link">Uber vs Shopify</a></div></div>
+
+<div class="ctas">
+  <h2>Explore More Behavioral Patterns</h2>
+  <a href="https://zicozhou10.github.io/behavioral-design-hub/patterns/" class="cb cp">View All 18 Patterns</a>
+  <a href="https://zicozhou10.github.io/behavioral-design-hub/tools/behavioral-design-score/" class="cb cx">Score Your Product</a>
+</div>
+
+<footer class="ft">
+  <p>&copy; 2026 <a href="https://zicozhou10.github.io/behavioral-design-hub/">Behavioral Design Hub</a>. Research-backed behavioral science analysis.</p>
+  <p style="margin-top:4px">Generated from pattern-index.json &mdash; 2026-04-28</p>
+</footer>
+</div>
+</body>
+</html>

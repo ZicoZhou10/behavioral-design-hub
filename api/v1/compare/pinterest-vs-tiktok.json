@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Pinterest vs TikTok",
+  "products": {
+    "pinterest": {
+      "name": "Pinterest",
+      "emoji": "📌",
+      "category": "Discovery",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 8,
+        "trust_transparency": 6,
+        "ethical_alignment": 6
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Pinterest is the most underappreciated behavioral design case study in tech because its manipulation is gentle, positive, and self-reinforcing. Unlike platforms that exploit anxiety (Booking.com) or FOMO (Instagram), Pinterest exploits aspiration — the human desire to imagine a better future self. The 'Pin' mechanic is deceptively simple: save an image to a board. But each pin is a micro-commitment to a future identity (my dream kitchen, my wedding aesthetic, my workout goals). Over time, boards become externalized representations of the user's aspirational self — a sunk cost that deepens with every session. Pinterest's commercial genius is that aspiration naturally converts to purchase intent: 85% of Pinterest users say they use it to plan purchases, compared to <15% on Instagram. The platform doesn't need aggressive monetization because the user's own curation behavior creates buying intent organically. Pinterest's ethical score is relatively high because the aspiration loop genuinely helps users plan, discover, and execute projects — the alignment between behavioral design and user value is stronger than most platforms.",
+      "top_technique": "Pin-as-Micro-Commitment to Aspirational Identity"
+    },
+    "tiktok": {
+      "name": "TikTok",
+      "emoji": "🎵",
+      "category": "Social Media",
+      "scores": {
+        "choice_architecture": 10,
+        "cognitive_load": 9,
+        "motivation_design": 8,
+        "trust_transparency": 3,
+        "ethical_alignment": 2
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "TikTok proves that sufficiently advanced choice architecture is indistinguishable from manipulation. The product removes all friction, all stopping cues, all cognitive load — leaving the user in a state of 'passive consumption' that can extend for hours. The ethical question isn't whether the behavioral design works (it clearly does), but whether 'works' should mean 'keeps users watching' or 'helps users achieve their goals.'",
+      "top_technique": "Algorithmic Choice Architecture at Scale"
+    }
+  },
+  "overall_winner": "pinterest",
+  "overall_difference": 5,
+  "dimension_wins": {
+    "pinterest": 2,
+    "tiktok": 2,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "pinterest": 9,
+      "tiktok": 10,
+      "difference": -1,
+      "winner": "tiktok"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "pinterest": 8,
+      "tiktok": 9,
+      "difference": -1,
+      "winner": "tiktok"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "pinterest": 8,
+      "tiktok": 8,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "pinterest": 6,
+      "tiktok": 3,
+      "difference": 3,
+      "winner": "pinterest"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "pinterest": 6,
+      "tiktok": 2,
+      "difference": 4,
+      "winner": "pinterest"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/pinterest-vs-tiktok/",
+    "product_a_detail": "/api/v1/products/pinterest.json",
+    "product_b_detail": "/api/v1/products/tiktok.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/pinterest/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/tiktok/"
+  }
+}

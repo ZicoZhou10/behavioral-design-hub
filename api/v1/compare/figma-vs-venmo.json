@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Figma vs Venmo",
+  "products": {
+    "figma": {
+      "name": "Figma",
+      "emoji": "🎨",
+      "category": "Design",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 7,
+        "trust_transparency": 8,
+        "ethical_alignment": 8
+      },
+      "total": 40,
+      "pct": 80,
+      "key_insight": "Figma is the most elegant example of network-effect behavioral design in B2B software. Every design decision serves a single behavioral insight: make collaboration so effortless that the tool becomes the team's shared space, not just one designer's workspace. The cursor presence feature (seeing teammates' cursors labeled with their names in real-time) is pure social facilitation — knowing someone is watching you work changes how you work. The generous free tier isn't charity — it's a viral acquisition mechanism: every designer who opens a Figma link to view a prototype becomes a potential user. Figma's file-sharing is designed like Google Docs, not like Photoshop: no installation, no file format confusion, no version control headaches. By eliminating every friction point in collaboration, Figma made itself structurally impossible to replace — switching to a competitor means convincing your entire team, your clients, and your developer handoff workflow to switch simultaneously. This is behavioral lock-in through genuine value creation, not dark patterns.",
+      "top_technique": "Multiplayer Cursor Presence as Social Facilitation"
+    },
+    "venmo": {
+      "name": "Venmo",
+      "emoji": "💸",
+      "category": "Payments",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 9,
+        "motivation_design": 7,
+        "trust_transparency": 5,
+        "ethical_alignment": 5
+      },
+      "total": 34,
+      "pct": 68,
+      "key_insight": "Venmo's most controversial feature — the public social feed showing who paid whom and for what — is also its greatest behavioral design achievement. By making payments social by default, Venmo solved the cold-start problem that kills every payment app: getting both the sender and receiver to use the same platform. When you see friends splitting dinner, paying rent, or reimbursing concert tickets in your feed, each transaction is simultaneously a use case advertisement and social proof that Venmo is the normal way to pay friends. The feed also creates a subtle obligation loop: if everyone in your friend group uses Venmo, requesting payment through any other method feels inconvenient and socially awkward. The privacy implications are significant — researchers have used Venmo's public feed to reconstruct social networks, identify romantic relationships, and track drug transactions. Venmo made payments 'public by default' in the same way Facebook made profiles public by default: not because users wanted it, but because virality required it. The 2021 privacy controversy (BuzzFeed tracked President Biden's Venmo account) forced a redesign, but the social feed remains opt-out rather than opt-in — Venmo's growth depends on visibility.",
+      "top_technique": "Social Payment Feed as Viral Acquisition Engine"
+    }
+  },
+  "overall_winner": "figma",
+  "overall_difference": 6,
+  "dimension_wins": {
+    "figma": 3,
+    "venmo": 1,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "figma": 9,
+      "venmo": 8,
+      "difference": 1,
+      "winner": "figma"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "figma": 8,
+      "venmo": 9,
+      "difference": -1,
+      "winner": "venmo"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "figma": 7,
+      "venmo": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "figma": 8,
+      "venmo": 5,
+      "difference": 3,
+      "winner": "figma"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "figma": 8,
+      "venmo": 5,
+      "difference": 3,
+      "winner": "figma"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/figma-vs-venmo/",
+    "product_a_detail": "/api/v1/products/figma.json",
+    "product_b_detail": "/api/v1/products/venmo.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/figma/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/venmo/"
+  }
+}

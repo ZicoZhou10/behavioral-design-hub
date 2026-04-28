@@ -1,0 +1,98 @@
+{
+  "slug": "netflix",
+  "name": "Netflix",
+  "emoji": "🎬",
+  "emoji_html": "&#x1F3AC;",
+  "category": "Streaming / Entertainment",
+  "category_short": "Entertainment",
+  "tagline": "Netflix pioneered autoplay as a default nudge — a single design decision that redefined how 200M+ people consume media.",
+  "scores": {
+    "choice_architecture": 8,
+    "cognitive_load": 6,
+    "motivation_design": 7,
+    "trust_transparency": 5,
+    "ethical_alignment": 4
+  },
+  "total": 30,
+  "pct": 60,
+  "key_insight": "Netflix demonstrates the thin line between 'helpful choice architecture' and 'manipulation.' Autoplay genuinely solves the friction of episode transitions. But it also exploits the fact that humans are bad at stopping ongoing activities. Netflix's own CEO famously said their biggest competitor is 'sleep' — a framing that reveals the company optimizes for maximum viewing time, not optimal viewing experience.",
+  "top_technique": "Autoplay as the Ultimate Default Nudge",
+  "top_framework": "Nudge Theory",
+  "top_evidence": "Thaler & Sunstein: opt-out organ donation = 90%+ participation vs 15-20% opt-in. Netflix applies same principle. 'Continued viewing' = #1 retention metric (2024 shareholder letter).",
+  "techniques": [
+    {
+      "title": "Autoplay as the Ultimate Default Nudge",
+      "framework": "Nudge Theory",
+      "description": "Netflix's autoplay next episode exploits the most powerful finding in behavioral economics: people stick with defaults. The 'default' after an episode ends is to watch the next one — stopping requires active intervention (picking up remote, clicking 'stop'). This single design choice likely accounts for billions of extra viewing hours annually.",
+      "evidence": "Thaler & Sunstein's research on organ donation defaults: opt-out countries have 90%+ participation vs. 15-20% for opt-in. Netflix applies the same principle to episode watching. Netflix's 2024 shareholder letter attributes 'continued viewing' as the #1 retention metric."
+    },
+    {
+      "title": "Paradox of Choice Mitigation",
+      "framework": "Cognitive Load Theory",
+      "description": "With 15,000+ titles, Netflix faces Schwartz's Paradox of Choice directly. Their solution: algorithmically curate ~40 rows of 20-40 titles, personalized per user. But even this creates ~800 visible options. The 'Top 10' row, 'Because You Watched X' framing, and percentage-match scores all serve as cognitive shortcuts to reduce decision fatigue.",
+      "evidence": "Netflix research (2016): users browse for an average of 90 seconds before either choosing something or leaving. The 'Top 10' feature, introduced in 2020, reduced browse-to-play time by 15% in A/B testing."
+    },
+    {
+      "title": "Preview Autoplay as Commitment Device",
+      "framework": "Hook Model",
+      "description": "When you hover on a title, a trailer auto-plays after 2 seconds. This creates a micro-investment: you've already started watching something, so leaving feels like abandoning a sunk cost. It also provides a Variable Reward — each preview is different, and some will hook you enough to click play.",
+      "evidence": "Netflix reported preview autoplay increased 'play' clicks by 20% in initial testing. However, user backlash led them to add an opt-out in 2020 — a rare case where behavioral design was too aggressive even by Netflix's standards."
+    }
+  ],
+  "strengths": [
+    "Recommendation handles paradox of choice",
+    "Personalized thumbnails are innovative",
+    "Content quality creates genuine value"
+  ],
+  "weaknesses": [
+    "Autoplay removes natural stopping cues",
+    "'Still watching?' prompt is too infrequent",
+    "No usage awareness tools despite having the data"
+  ],
+  "behavioral_hooks": [
+    "autoplay (default nudge)",
+    "Top 10 row (social proof)",
+    "preview autoplay (commitment device)",
+    "paradox of choice mitigation"
+  ],
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "links": {
+    "teardown_page": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/netflix/",
+    "products_list": "/api/v1/products.json",
+    "comparisons": {
+      "figma": "/api/v1/compare/figma-vs-netflix.json",
+      "shopify": "/api/v1/compare/netflix-vs-shopify.json",
+      "airbnb": "/api/v1/compare/airbnb-vs-netflix.json",
+      "calm": "/api/v1/compare/calm-vs-netflix.json",
+      "duolingo": "/api/v1/compare/duolingo-vs-netflix.json",
+      "pinterest": "/api/v1/compare/netflix-vs-pinterest.json",
+      "strava": "/api/v1/compare/netflix-vs-strava.json",
+      "bumble": "/api/v1/compare/bumble-vs-netflix.json",
+      "notion": "/api/v1/compare/netflix-vs-notion.json",
+      "spotify": "/api/v1/compare/netflix-vs-spotify.json",
+      "whatsapp": "/api/v1/compare/netflix-vs-whatsapp.json",
+      "peloton": "/api/v1/compare/netflix-vs-peloton.json",
+      "discord": "/api/v1/compare/discord-vs-netflix.json",
+      "tinder": "/api/v1/compare/netflix-vs-tinder.json",
+      "venmo": "/api/v1/compare/netflix-vs-venmo.json",
+      "doordash": "/api/v1/compare/doordash-vs-netflix.json",
+      "snapchat": "/api/v1/compare/netflix-vs-snapchat.json",
+      "uber": "/api/v1/compare/netflix-vs-uber.json",
+      "amazon": "/api/v1/compare/amazon-vs-netflix.json",
+      "candy-crush": "/api/v1/compare/candy-crush-vs-netflix.json",
+      "chatgpt": "/api/v1/compare/chatgpt-vs-netflix.json",
+      "coinbase": "/api/v1/compare/coinbase-vs-netflix.json",
+      "tiktok": "/api/v1/compare/netflix-vs-tiktok.json",
+      "youtube": "/api/v1/compare/netflix-vs-youtube.json",
+      "slack": "/api/v1/compare/netflix-vs-slack.json",
+      "booking-com": "/api/v1/compare/booking-com-vs-netflix.json",
+      "linkedin": "/api/v1/compare/linkedin-vs-netflix.json",
+      "robinhood": "/api/v1/compare/netflix-vs-robinhood.json",
+      "instagram": "/api/v1/compare/instagram-vs-netflix.json"
+    },
+    "category": "/api/v1/categories/entertainment.json"
+  },
+  "rank": 26,
+  "rank_of": 30
+}

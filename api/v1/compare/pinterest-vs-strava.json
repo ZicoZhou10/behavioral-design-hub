@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Pinterest vs Strava",
+  "products": {
+    "pinterest": {
+      "name": "Pinterest",
+      "emoji": "📌",
+      "category": "Discovery",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 8,
+        "trust_transparency": 6,
+        "ethical_alignment": 6
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Pinterest is the most underappreciated behavioral design case study in tech because its manipulation is gentle, positive, and self-reinforcing. Unlike platforms that exploit anxiety (Booking.com) or FOMO (Instagram), Pinterest exploits aspiration — the human desire to imagine a better future self. The 'Pin' mechanic is deceptively simple: save an image to a board. But each pin is a micro-commitment to a future identity (my dream kitchen, my wedding aesthetic, my workout goals). Over time, boards become externalized representations of the user's aspirational self — a sunk cost that deepens with every session. Pinterest's commercial genius is that aspiration naturally converts to purchase intent: 85% of Pinterest users say they use it to plan purchases, compared to <15% on Instagram. The platform doesn't need aggressive monetization because the user's own curation behavior creates buying intent organically. Pinterest's ethical score is relatively high because the aspiration loop genuinely helps users plan, discover, and execute projects — the alignment between behavioral design and user value is stronger than most platforms.",
+      "top_technique": "Pin-as-Micro-Commitment to Aspirational Identity"
+    },
+    "strava": {
+      "name": "Strava",
+      "emoji": "🏃",
+      "category": "Fitness",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 7,
+        "motivation_design": 9,
+        "trust_transparency": 7,
+        "ethical_alignment": 7
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Strava's genius is that it solved the hardest problem in fitness: motivation decay. Most fitness apps track what you did; Strava makes you care about doing more. The segment leaderboard transforms every road into a competition venue, and 'Local Legend' status turns your neighborhood into territory to defend. The social feed makes workouts performative — you're not just exercising, you're broadcasting achievement. The flywheel is elegant: more athletes → more segments → more competition → more motivation → more athletes. But the ethical nuance is real: Strava's design can push athletes into overtraining, dangerous segment attempts (the 'Strava hunting' phenomenon caused multiple cycling fatalities), and exercise addiction. The platform added safety features after lawsuits, but the core competitive architecture remains unchanged because it's what makes Strava sticky. Strava proves that social comparison is the most powerful behavioral lever in fitness — and also the most dangerous.",
+      "top_technique": "Segment Leaderboards as Territorial Competition"
+    }
+  },
+  "overall_winner": "tie",
+  "overall_difference": 0,
+  "dimension_wins": {
+    "pinterest": 2,
+    "strava": 3,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "pinterest": 9,
+      "strava": 7,
+      "difference": 2,
+      "winner": "pinterest"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "pinterest": 8,
+      "strava": 7,
+      "difference": 1,
+      "winner": "pinterest"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "pinterest": 8,
+      "strava": 9,
+      "difference": -1,
+      "winner": "strava"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "pinterest": 6,
+      "strava": 7,
+      "difference": -1,
+      "winner": "strava"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "pinterest": 6,
+      "strava": 7,
+      "difference": -1,
+      "winner": "strava"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/pinterest-vs-strava/",
+    "product_a_detail": "/api/v1/products/pinterest.json",
+    "product_b_detail": "/api/v1/products/strava.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/pinterest/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/strava/"
+  }
+}

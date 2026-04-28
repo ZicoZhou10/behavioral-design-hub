@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Snapchat vs TikTok",
+  "products": {
+    "snapchat": {
+      "name": "Snapchat",
+      "emoji": "👻",
+      "category": "Social",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 7,
+        "motivation_design": 9,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 33,
+      "pct": 66,
+      "key_insight": "Snapchat's most powerful behavioral innovation isn't the disappearing message — it's the Streak. Snapstreaks (consecutive days of mutual messaging between two users) transformed an ephemeral messaging app into a daily obligation engine. A 365-day streak with a best friend isn't just a number — it's a quantified relationship artifact that feels emotionally devastating to lose. The streak mechanic exploits loss aversion at a personal level: you're not losing points or status — you're 'losing' proof of a friendship. This makes Snapchat's daily retention mechanism more powerful than any notification-based engagement system because the motivator is social guilt rather than curiosity or FOMO. Teens report feeling genuine anxiety about breaking streaks, maintaining them even during illness or vacation by sharing their passwords. Snapchat's disappearing messages further reinforce daily use: there's no archive to browse, no content to revisit, so the only way to stay connected is to keep sending. The combination of ephemeral content (nothing persists) and permanent metrics (streaks count up forever) is a brilliant behavioral design contradiction that maximizes daily engagement.",
+      "top_technique": "Snapstreaks as Loss Aversion Commitment Device"
+    },
+    "tiktok": {
+      "name": "TikTok",
+      "emoji": "🎵",
+      "category": "Social Media",
+      "scores": {
+        "choice_architecture": 10,
+        "cognitive_load": 9,
+        "motivation_design": 8,
+        "trust_transparency": 3,
+        "ethical_alignment": 2
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "TikTok proves that sufficiently advanced choice architecture is indistinguishable from manipulation. The product removes all friction, all stopping cues, all cognitive load — leaving the user in a state of 'passive consumption' that can extend for hours. The ethical question isn't whether the behavioral design works (it clearly does), but whether 'works' should mean 'keeps users watching' or 'helps users achieve their goals.'",
+      "top_technique": "Algorithmic Choice Architecture at Scale"
+    }
+  },
+  "overall_winner": "snapchat",
+  "overall_difference": 1,
+  "dimension_wins": {
+    "snapchat": 3,
+    "tiktok": 2,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "snapchat": 8,
+      "tiktok": 10,
+      "difference": -2,
+      "winner": "tiktok"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "snapchat": 7,
+      "tiktok": 9,
+      "difference": -2,
+      "winner": "tiktok"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "snapchat": 9,
+      "tiktok": 8,
+      "difference": 1,
+      "winner": "snapchat"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "snapchat": 5,
+      "tiktok": 3,
+      "difference": 2,
+      "winner": "snapchat"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "snapchat": 4,
+      "tiktok": 2,
+      "difference": 2,
+      "winner": "snapchat"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/snapchat-vs-tiktok/",
+    "product_a_detail": "/api/v1/products/snapchat.json",
+    "product_b_detail": "/api/v1/products/tiktok.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/snapchat/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/tiktok/"
+  }
+}

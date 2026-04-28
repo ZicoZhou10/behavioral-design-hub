@@ -1,0 +1,97 @@
+{
+  "slug": "notion",
+  "name": "Notion",
+  "emoji": "📝",
+  "emoji_html": "&#x1F4DD;",
+  "category": "Productivity / Knowledge Management",
+  "category_short": "Productivity",
+  "tagline": "Notion is a masterclass in progressive disclosure — but the blank page problem reveals the limits of 'freedom as feature.'",
+  "scores": {
+    "choice_architecture": 7,
+    "cognitive_load": 6,
+    "motivation_design": 6,
+    "trust_transparency": 8,
+    "ethical_alignment": 9
+  },
+  "total": 36,
+  "pct": 72,
+  "key_insight": "Notion proves that 'more flexibility' doesn't always mean better behavioral design. The product excels at progressive disclosure for feature complexity, but struggles with the motivational design of creation from scratch. Products that help users *create* face fundamentally different behavioral challenges than products that help users *consume* — creation requires initial competence that can't be algorithmically provided.",
+  "top_technique": "Template Gallery as Choice Architecture",
+  "top_framework": "Nudge Theory",
+  "top_evidence": "Template-first users have 2.5x higher 30-day retention (First Round Review 2023). Slash commands hide 100+ block types behind single interaction.",
+  "techniques": [
+    {
+      "title": "Template Gallery as Choice Architecture",
+      "framework": "Nudge Theory",
+      "description": "Notion's template gallery transforms a blank page (maximum cognitive load) into a curated set of starting points. Each template is a default — it pre-structures decisions about page layout, database schema, and workflow design. Users who start from templates are more productive faster because the hard architectural choices are already made.",
+      "evidence": "Notion's growth team reported that template-first users have 2.5x higher 30-day retention than blank-page-first users (First Round Review, 2023). The template gallery has become a PLG growth lever — each community template is effectively a referral."
+    },
+    {
+      "title": "Progressive Disclosure via Slash Commands",
+      "framework": "Cognitive Load Theory",
+      "description": "A new Notion page shows just a blank area with a subtle 'Type / to start' hint. This hides 100+ block types behind a single interaction. Users discover capabilities gradually (text → headings → toggles → databases → embeds) without ever being overwhelmed by the full feature set upfront.",
+      "evidence": "Sweller's CLT: extraneous cognitive load should be minimized during learning. Notion's slash command pattern achieves this — the interface complexity scales with user expertise. Compare to Microsoft Word's ribbon bar, which exposes 300+ features simultaneously."
+    },
+    {
+      "title": "The Blank Page Problem (Anti-Pattern)",
+      "framework": "Self-Determination Theory",
+      "description": "Notion's flexibility is also its biggest behavioral challenge. A blank page provides maximum autonomy but minimum competence scaffolding. Users who don't know what to build feel paralyzed — this is the paradox of choice applied to creation, not consumption. Notion's template gallery partially solves this, but 'which template?' introduces a meta-choice problem.",
+      "evidence": "Notion's churn analysis (leaked deck, 2024) showed that users who create 0 pages in their first 3 days have an 85% D30 churn rate. The blank page isn't freedom — it's a competence-undermining anxiety trigger for new users."
+    }
+  ],
+  "strengths": [
+    "Best-in-class progressive disclosure via slash commands",
+    "Template ecosystem drives community onboarding",
+    "Highly transparent about data and pricing"
+  ],
+  "weaknesses": [
+    "Blank page paralysis is a real competence barrier",
+    "Mobile has high cognitive load (desktop-first)",
+    "No quick wins for new users"
+  ],
+  "behavioral_hooks": [
+    "template gallery (choice architecture)",
+    "slash commands (progressive disclosure)",
+    "community templates (social proof)"
+  ],
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "links": {
+    "teardown_page": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/notion/",
+    "products_list": "/api/v1/products.json",
+    "comparisons": {
+      "figma": "/api/v1/compare/figma-vs-notion.json",
+      "shopify": "/api/v1/compare/notion-vs-shopify.json",
+      "airbnb": "/api/v1/compare/airbnb-vs-notion.json",
+      "calm": "/api/v1/compare/calm-vs-notion.json",
+      "duolingo": "/api/v1/compare/duolingo-vs-notion.json",
+      "pinterest": "/api/v1/compare/notion-vs-pinterest.json",
+      "strava": "/api/v1/compare/notion-vs-strava.json",
+      "bumble": "/api/v1/compare/bumble-vs-notion.json",
+      "spotify": "/api/v1/compare/notion-vs-spotify.json",
+      "whatsapp": "/api/v1/compare/notion-vs-whatsapp.json",
+      "peloton": "/api/v1/compare/notion-vs-peloton.json",
+      "discord": "/api/v1/compare/discord-vs-notion.json",
+      "tinder": "/api/v1/compare/notion-vs-tinder.json",
+      "venmo": "/api/v1/compare/notion-vs-venmo.json",
+      "doordash": "/api/v1/compare/doordash-vs-notion.json",
+      "snapchat": "/api/v1/compare/notion-vs-snapchat.json",
+      "uber": "/api/v1/compare/notion-vs-uber.json",
+      "amazon": "/api/v1/compare/amazon-vs-notion.json",
+      "candy-crush": "/api/v1/compare/candy-crush-vs-notion.json",
+      "chatgpt": "/api/v1/compare/chatgpt-vs-notion.json",
+      "coinbase": "/api/v1/compare/coinbase-vs-notion.json",
+      "tiktok": "/api/v1/compare/notion-vs-tiktok.json",
+      "youtube": "/api/v1/compare/notion-vs-youtube.json",
+      "slack": "/api/v1/compare/notion-vs-slack.json",
+      "booking-com": "/api/v1/compare/booking-com-vs-notion.json",
+      "linkedin": "/api/v1/compare/linkedin-vs-notion.json",
+      "netflix": "/api/v1/compare/netflix-vs-notion.json",
+      "robinhood": "/api/v1/compare/notion-vs-robinhood.json",
+      "instagram": "/api/v1/compare/instagram-vs-notion.json"
+    },
+    "category": "/api/v1/categories/productivity.json"
+  },
+  "rank": 9,
+  "rank_of": 30
+}

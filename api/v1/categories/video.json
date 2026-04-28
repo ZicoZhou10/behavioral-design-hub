@@ -1,0 +1,42 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "name": "Video",
+  "slug": "video",
+  "product_count": 1,
+  "avg_score": 32.0,
+  "dimension_averages": {
+    "choice_architecture": 7.0,
+    "cognitive_load": 6.0,
+    "motivation_design": 9.0,
+    "trust_transparency": 5.0,
+    "ethical_alignment": 5.0
+  },
+  "products": [
+    {
+      "slug": "youtube",
+      "name": "YouTube",
+      "emoji": "▶️",
+      "category": "Entertainment / Video Platform",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 9,
+        "trust_transparency": 5,
+        "ethical_alignment": 5
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "YouTube is the clearest example of a platform where behavioral design serves the algorithm more than the user. The recommendation engine is optimized for watch time, not user satisfaction — a distinction that became central to the 2020-2024 tech ethics debate. Autoplay removes the natural exit point between videos, Up Next suggestions exploit curiosity gaps, and the thumbnail ecosystem has evolved into an arms race of clickbait. Yet YouTube also genuinely democratized video education, entertainment, and creator economics. The tension is structural: every design choice that makes YouTube more 'engaging' also makes it harder to stop watching. YouTube's 'Take a Break' reminder is the company acknowledging this tension — but setting it to OFF by default reveals which side wins.",
+      "top_technique": "Autoplay as Default Continuation",
+      "links": {
+        "detail": "/api/v1/products/youtube.json",
+        "teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/youtube/"
+      }
+    }
+  ],
+  "links": {
+    "categories_list": "/api/v1/categories.json",
+    "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/video/"
+  }
+}

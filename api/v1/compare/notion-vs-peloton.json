@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Notion vs Peloton",
+  "products": {
+    "notion": {
+      "name": "Notion",
+      "emoji": "📝",
+      "category": "Productivity",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 6,
+        "motivation_design": 6,
+        "trust_transparency": 8,
+        "ethical_alignment": 9
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "Notion proves that 'more flexibility' doesn't always mean better behavioral design. The product excels at progressive disclosure for feature complexity, but struggles with the motivational design of creation from scratch. Products that help users *create* face fundamentally different behavioral challenges than products that help users *consume* — creation requires initial competence that can't be algorithmically provided.",
+      "top_technique": "Template Gallery as Choice Architecture"
+    },
+    "peloton": {
+      "name": "Peloton",
+      "emoji": "🚴",
+      "category": "Fitness",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 6,
+        "ethical_alignment": 6
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "Peloton's breakthrough insight was that fitness equipment isn't a product — it's a medium. The $2,000+ bike is a behavioral commitment device that creates sunk cost pressure to justify ongoing $44/month subscriptions. But the real retention engine is parasocial: instructors like Robin Arzón and Cody Rigsby are designed to feel like personal coaches who know you, creating an emotional bond that gym equipment alone can never generate. The live leaderboard adds competitive urgency (you can see your real-time rank among thousands of simultaneous riders), while high-fives from strangers simulate the social energy of a group fitness class. Peloton's post-pandemic challenge — 39% stock decline in 2022 — revealed the fragility of hardware-dependent behavioral lock-in: when users' sunk cost threshold was crossed, they abandoned the ecosystem entirely. The lesson is that parasocial motivation is powerful but insufficient when the financial commitment feels disproportionate to the perceived value.",
+      "top_technique": "Parasocial Instructor Relationships as Retention Engine"
+    }
+  },
+  "overall_winner": "tie",
+  "overall_difference": 0,
+  "dimension_wins": {
+    "notion": 2,
+    "peloton": 2,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "notion": 7,
+      "peloton": 7,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "notion": 6,
+      "peloton": 8,
+      "difference": -2,
+      "winner": "peloton"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "notion": 6,
+      "peloton": 9,
+      "difference": -3,
+      "winner": "peloton"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "notion": 8,
+      "peloton": 6,
+      "difference": 2,
+      "winner": "notion"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "notion": 9,
+      "peloton": 6,
+      "difference": 3,
+      "winner": "notion"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/notion-vs-peloton/",
+    "product_a_detail": "/api/v1/products/notion.json",
+    "product_b_detail": "/api/v1/products/peloton.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/notion/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/peloton/"
+  }
+}

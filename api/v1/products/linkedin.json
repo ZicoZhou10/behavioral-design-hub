@@ -1,0 +1,104 @@
+{
+  "slug": "linkedin",
+  "name": "LinkedIn",
+  "emoji": "💼",
+  "emoji_html": "&#x1F517;",
+  "category": "Professional Network / Career",
+  "category_short": "Social Media",
+  "tagline": "LinkedIn turned professional anxiety into an engagement engine — the profile completeness meter is the most effective guilt-driven design pattern in social media.",
+  "scores": {
+    "choice_architecture": 7,
+    "cognitive_load": 5,
+    "motivation_design": 7,
+    "trust_transparency": 6,
+    "ethical_alignment": 5
+  },
+  "total": 30,
+  "pct": 60,
+  "key_insight": "LinkedIn exploits professional anxiety as its core behavioral mechanism. Unlike entertainment apps that hook through pleasure (variable rewards, social validation), LinkedIn hooks through anxiety: career FOMO, profile inadequacy, and professional visibility paranoia. The platform is uniquely positioned to do this because professional identity is high-stakes — being 'not visible' on LinkedIn feels genuinely career-threatening in a way that being inactive on Instagram does not. This anxiety-as-engagement model is highly effective (LinkedIn has 1B+ members) but ethically concerning because it monetizes professional insecurity rather than professional development.",
+  "top_technique": "Profile Completeness as Guilt Architecture",
+  "top_framework": "Self-Determination Theory",
+  "top_evidence": "'All-Star' profiles 40x more likely to receive opportunities (LinkedIn 2024) — correlation not causation, but the claim itself is a nudge. 72% of endorsements are reciprocal (HBR 2023).",
+  "techniques": [
+    {
+      "title": "Profile Completeness Meter as Guilt Architecture",
+      "framework": "Self-Determination Theory",
+      "description": "LinkedIn's profile strength meter ('Beginner' → 'All-Star') exploits SDT's competence need in a professional context. An incomplete profile signals professional inadequacy. The meter uses the Zeigarnik effect — incomplete tasks create psychological tension that persists until resolved. Unlike gamification in entertainment apps (where incomplete = missing fun), LinkedIn's incompleteness implies career risk ('recruiters prefer All-Star profiles'), making the psychological cost of non-compliance much higher.",
+      "evidence": "LinkedIn reports that users with 'All-Star' profiles are 40x more likely to receive opportunities (LinkedIn Official Blog, 2024). However, this is correlation not causation — All-Star profiles likely belong to more senior professionals who would receive opportunities regardless. The '40x' claim is itself a nudge that exploits outcome bias."
+    },
+    {
+      "title": "'Who Viewed Your Profile' as Freemium Conversion Hook",
+      "framework": "Hook Model",
+      "description": "LinkedIn shows free users a blurred list of recent profile viewers — you can see that people viewed your profile, but not who. This creates an information gap (Loewenstein's curiosity gap theory) that can only be resolved by upgrading to Premium. The trigger (notification: 'X people viewed your profile this week') creates variable reward anticipation (who could it be? a recruiter? an ex-colleague?). The Investment phase is implicit: the more you use LinkedIn, the more profile views you generate, the more curiosity triggers you receive.",
+      "evidence": "LinkedIn Premium conversion relies heavily on 'Who Viewed Your Profile' — it's the #1 cited reason for Premium subscriptions (LinkedIn Investor Day, 2023). The feature follows Loewenstein's Information Gap Theory (1994): curiosity is aroused when there's a gap between what we know and what we want to know, and this gap creates an almost physical sensation of wanting resolution."
+    },
+    {
+      "title": "Feed Algorithm Rewards Engagement Bait",
+      "framework": "Nudge Theory",
+      "description": "LinkedIn's algorithm disproportionately amplifies posts with high engagement — particularly 'broetry' (short-sentence posts with forced line breaks), personal vulnerability narratives, and controversial takes. The algorithm creates a choice architecture where users see what generates reactions, not what provides professional value. This nudges creators toward engagement-optimized content, creating a negative content spiral where the feed becomes increasingly performative.",
+      "evidence": "Richard van der Blom's 2024 LinkedIn Algorithm Report (analyzing 1M+ posts): posts with personal stories receive 3.8x more engagement than industry analysis. Posts with 'agree?' or 'thoughts?' receive 2.4x more comments. The algorithm effectively punishes substantive professional content and rewards emotional engagement — the opposite of LinkedIn's stated professional mission."
+    },
+    {
+      "title": "Endorsement Nudges as Reciprocity Engine",
+      "framework": "Nudge Theory",
+      "description": "LinkedIn's 'Does [Name] have these skills?' prompt exploits Cialdini's reciprocity principle. When you endorse someone, LinkedIn immediately prompts them to endorse you back. This creates a reciprocity loop where endorsements become social currency rather than genuine skill validation. The prompt design (showing skills with a one-click 'Endorse' button) minimizes friction for giving endorsements while maximizing social obligation for returning them.",
+      "evidence": "Cialdini's reciprocity research shows that even small, unsolicited favors create obligation to reciprocate. LinkedIn endorsements follow this pattern — most endorsements are reciprocal rather than competence-based. A 2023 study by HBR found that 72% of LinkedIn endorsements come from people who were themselves recently endorsed by the same person."
+    }
+  ],
+  "strengths": [
+    "Profile meter genuinely helps professional presentation",
+    "'Who Viewed' provides unique intelligence",
+    "Endorsement creates lightweight validation"
+  ],
+  "weaknesses": [
+    "'Who Viewed' blur is textbook curiosity gap dark pattern",
+    "Feed algorithm rewards engagement bait over substance",
+    "Notification volume far exceeds professional utility"
+  ],
+  "behavioral_hooks": [
+    "profile completeness (guilt architecture)",
+    "'Who Viewed' (curiosity gap)",
+    "feed algorithm (engagement bait)",
+    "endorsement nudges (reciprocity)"
+  ],
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "links": {
+    "teardown_page": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/linkedin/",
+    "products_list": "/api/v1/products.json",
+    "comparisons": {
+      "figma": "/api/v1/compare/figma-vs-linkedin.json",
+      "shopify": "/api/v1/compare/linkedin-vs-shopify.json",
+      "airbnb": "/api/v1/compare/airbnb-vs-linkedin.json",
+      "calm": "/api/v1/compare/calm-vs-linkedin.json",
+      "duolingo": "/api/v1/compare/duolingo-vs-linkedin.json",
+      "pinterest": "/api/v1/compare/linkedin-vs-pinterest.json",
+      "strava": "/api/v1/compare/linkedin-vs-strava.json",
+      "bumble": "/api/v1/compare/bumble-vs-linkedin.json",
+      "notion": "/api/v1/compare/linkedin-vs-notion.json",
+      "spotify": "/api/v1/compare/linkedin-vs-spotify.json",
+      "whatsapp": "/api/v1/compare/linkedin-vs-whatsapp.json",
+      "peloton": "/api/v1/compare/linkedin-vs-peloton.json",
+      "discord": "/api/v1/compare/discord-vs-linkedin.json",
+      "tinder": "/api/v1/compare/linkedin-vs-tinder.json",
+      "venmo": "/api/v1/compare/linkedin-vs-venmo.json",
+      "doordash": "/api/v1/compare/doordash-vs-linkedin.json",
+      "snapchat": "/api/v1/compare/linkedin-vs-snapchat.json",
+      "uber": "/api/v1/compare/linkedin-vs-uber.json",
+      "amazon": "/api/v1/compare/amazon-vs-linkedin.json",
+      "candy-crush": "/api/v1/compare/candy-crush-vs-linkedin.json",
+      "chatgpt": "/api/v1/compare/chatgpt-vs-linkedin.json",
+      "coinbase": "/api/v1/compare/coinbase-vs-linkedin.json",
+      "tiktok": "/api/v1/compare/linkedin-vs-tiktok.json",
+      "youtube": "/api/v1/compare/linkedin-vs-youtube.json",
+      "slack": "/api/v1/compare/linkedin-vs-slack.json",
+      "booking-com": "/api/v1/compare/booking-com-vs-linkedin.json",
+      "netflix": "/api/v1/compare/linkedin-vs-netflix.json",
+      "robinhood": "/api/v1/compare/linkedin-vs-robinhood.json",
+      "instagram": "/api/v1/compare/instagram-vs-linkedin.json"
+    },
+    "category": "/api/v1/categories/social-media.json"
+  },
+  "rank": 26,
+  "rank_of": 30
+}

@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Calm vs Coinbase",
+  "products": {
+    "calm": {
+      "name": "Calm",
+      "emoji": "🧘",
+      "category": "Wellness",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 6,
+        "trust_transparency": 8,
+        "ethical_alignment": 8
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Calm's behavioral design challenge is philosophically interesting: can you ethically use behavioral science to help people build habits that may eliminate the need for your product? Calm's answer is content expansion — become a 'wellness platform' rather than a 'meditation app.' But this risks cognitive load creep as the product tries to be everything at once.",
+      "top_technique": "Sleep Stories as Habit Stacking"
+    },
+    "coinbase": {
+      "name": "Coinbase",
+      "emoji": "🪙",
+      "category": "Crypto",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 7,
+        "motivation_design": 8,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Coinbase occupies a unique position in behavioral design: it's simultaneously the most 'responsible' major crypto exchange (compliant, publicly traded, institutionally backed) and a platform whose core business benefits from the most volatile, speculative asset class in modern finance. The product design reflects this tension. Coinbase Earn pays users in crypto to complete educational modules — genuinely teaching blockchain fundamentals, but also creating an endowment effect (once you own some ETH, you're more likely to buy more). The simplified buy/sell interface removes friction that traditional finance considers protective. The portfolio tracker with real-time gains/losses creates a checking habit identical to Robinhood's. The price alerts are external triggers optimized for volatility spikes — exactly when behavioral economics predicts the worst decision-making. Coinbase's 'trusted, simple, compliant' brand positioning is genuine, but the product design still exploits the same FOMO, loss aversion, and variable reward dynamics that drive all speculative trading behavior.",
+      "top_technique": "Coinbase Earn as Endowment-Seeding Education"
+    }
+  },
+  "overall_winner": "calm",
+  "overall_difference": 5,
+  "dimension_wins": {
+    "calm": 3,
+    "coinbase": 2,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "calm": 7,
+      "coinbase": 8,
+      "difference": -1,
+      "winner": "coinbase"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "calm": 8,
+      "coinbase": 7,
+      "difference": 1,
+      "winner": "calm"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "calm": 6,
+      "coinbase": 8,
+      "difference": -2,
+      "winner": "coinbase"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "calm": 8,
+      "coinbase": 5,
+      "difference": 3,
+      "winner": "calm"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "calm": 8,
+      "coinbase": 4,
+      "difference": 4,
+      "winner": "calm"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/calm-vs-coinbase/",
+    "product_a_detail": "/api/v1/products/calm.json",
+    "product_b_detail": "/api/v1/products/coinbase.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/calm/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/coinbase/"
+  }
+}

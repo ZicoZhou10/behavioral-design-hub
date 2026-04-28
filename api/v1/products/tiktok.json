@@ -1,0 +1,104 @@
+{
+  "slug": "tiktok",
+  "name": "TikTok",
+  "emoji": "🎵",
+  "emoji_html": "&#x1F3AD;",
+  "category": "Social Media / Short Video",
+  "category_short": "Social Media",
+  "tagline": "TikTok's algorithmic feed is the most sophisticated choice architecture ever deployed at scale — and the most ethically contested.",
+  "scores": {
+    "choice_architecture": 10,
+    "cognitive_load": 9,
+    "motivation_design": 8,
+    "trust_transparency": 3,
+    "ethical_alignment": 2
+  },
+  "total": 32,
+  "pct": 64,
+  "key_insight": "TikTok proves that sufficiently advanced choice architecture is indistinguishable from manipulation. The product removes all friction, all stopping cues, all cognitive load — leaving the user in a state of 'passive consumption' that can extend for hours. The ethical question isn't whether the behavioral design works (it clearly does), but whether 'works' should mean 'keeps users watching' or 'helps users achieve their goals.'",
+  "top_technique": "Algorithmic Choice Architecture at Scale",
+  "top_framework": "Nudge Theory",
+  "top_evidence": "TikTok recommendation engine converges on user interests within 40 minutes (WSJ 2023). Average session 95 min vs Instagram 53 min (DataReportal 2025).",
+  "techniques": [
+    {
+      "title": "Algorithmic Choice Architecture at Scale",
+      "framework": "Nudge Theory",
+      "description": "TikTok's For You Page is pure choice architecture — you never choose what to watch. The algorithm presents one video at a time (eliminating paradox of choice), auto-plays it (default bias), and uses your micro-reactions (watch time, replays, shares) to refine the next choice. This is Thaler & Sunstein's 'libertarian paternalism' taken to its logical extreme.",
+      "evidence": "WSJ investigation (2023): TikTok's recommendation engine converges on user interests within 40 minutes of first use. Internal docs show the algorithm optimizes for 'time spent' not 'user satisfaction' — a critical distinction."
+    },
+    {
+      "title": "Variable Ratio Reinforcement via Content Diversity",
+      "framework": "Hook Model",
+      "description": "The feed mixes 'hits' (content matched to your interests) with 'exploration' (novel content) at an unpredictable ratio. This creates a slot machine effect: you keep scrolling because the next video *might* be the best one. The swipe-up gesture has near-zero friction — the action cost approaches zero while the reward variance stays high.",
+      "evidence": "Skinner's research: variable ratio schedules produce the highest engagement rates. TikTok's average session length (95 minutes) exceeds Instagram (53 min) and YouTube (74 min) — source: DataReportal 2025."
+    },
+    {
+      "title": "Infinite Scroll Removes Natural Stopping Cues",
+      "framework": "Cognitive Load Theory",
+      "description": "Traditional media has built-in stopping cues: chapters end, episodes conclude, pages turn. TikTok eliminates all of them. Each video is a complete unit (low cognitive load to process), and the next begins instantly. There's no natural 'I'm done' moment — the user must actively decide to stop, which requires cognitive effort that the design systematically removes.",
+      "evidence": "Aza Raskin (inventor of infinite scroll) has publicly stated he regrets the design: 'It's as if they removed the bottom from a wine glass.' TikTok's design extends this by making each content unit self-contained."
+    },
+    {
+      "title": "Creator Monetization as Investment Loop",
+      "framework": "Hook Model",
+      "description": "The Creator Fund and LIVE gifts create an Investment phase for creators: the more content they post, the more followers/income they earn, which triggers more content creation. This user-generated content becomes the Variable Reward for viewers, creating a self-reinforcing ecosystem where both sides are hooked.",
+      "evidence": "TikTok paid $1B to creators in 2023 (Creator Fund + LIVE). Creator-side retention is 3x higher for monetized creators vs non-monetized (TikTok for Business, 2024)."
+    }
+  ],
+  "strengths": [
+    "Most sophisticated recommendation system ever deployed",
+    "Near-perfect cognitive load management for consumption",
+    "Creator flywheel generates unlimited content"
+  ],
+  "weaknesses": [
+    "Transparency about algorithmic goals is near-zero",
+    "No meaningful user controls over optimization targets",
+    "Deliberately eliminates natural stopping cues"
+  ],
+  "behavioral_hooks": [
+    "algorithmic For You Page (choice architecture)",
+    "infinite scroll (stopping cue removal)",
+    "variable ratio content diversity",
+    "creator monetization (investment loop)"
+  ],
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "links": {
+    "teardown_page": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/tiktok/",
+    "products_list": "/api/v1/products.json",
+    "comparisons": {
+      "figma": "/api/v1/compare/figma-vs-tiktok.json",
+      "shopify": "/api/v1/compare/shopify-vs-tiktok.json",
+      "airbnb": "/api/v1/compare/airbnb-vs-tiktok.json",
+      "calm": "/api/v1/compare/calm-vs-tiktok.json",
+      "duolingo": "/api/v1/compare/duolingo-vs-tiktok.json",
+      "pinterest": "/api/v1/compare/pinterest-vs-tiktok.json",
+      "strava": "/api/v1/compare/strava-vs-tiktok.json",
+      "bumble": "/api/v1/compare/bumble-vs-tiktok.json",
+      "notion": "/api/v1/compare/notion-vs-tiktok.json",
+      "spotify": "/api/v1/compare/spotify-vs-tiktok.json",
+      "whatsapp": "/api/v1/compare/tiktok-vs-whatsapp.json",
+      "peloton": "/api/v1/compare/peloton-vs-tiktok.json",
+      "discord": "/api/v1/compare/discord-vs-tiktok.json",
+      "tinder": "/api/v1/compare/tiktok-vs-tinder.json",
+      "venmo": "/api/v1/compare/tiktok-vs-venmo.json",
+      "doordash": "/api/v1/compare/doordash-vs-tiktok.json",
+      "snapchat": "/api/v1/compare/snapchat-vs-tiktok.json",
+      "uber": "/api/v1/compare/tiktok-vs-uber.json",
+      "amazon": "/api/v1/compare/amazon-vs-tiktok.json",
+      "candy-crush": "/api/v1/compare/candy-crush-vs-tiktok.json",
+      "chatgpt": "/api/v1/compare/chatgpt-vs-tiktok.json",
+      "coinbase": "/api/v1/compare/coinbase-vs-tiktok.json",
+      "youtube": "/api/v1/compare/tiktok-vs-youtube.json",
+      "slack": "/api/v1/compare/slack-vs-tiktok.json",
+      "booking-com": "/api/v1/compare/booking-com-vs-tiktok.json",
+      "linkedin": "/api/v1/compare/linkedin-vs-tiktok.json",
+      "netflix": "/api/v1/compare/netflix-vs-tiktok.json",
+      "robinhood": "/api/v1/compare/robinhood-vs-tiktok.json",
+      "instagram": "/api/v1/compare/instagram-vs-tiktok.json"
+    },
+    "category": "/api/v1/categories/social-media.json"
+  },
+  "rank": 19,
+  "rank_of": 30
+}

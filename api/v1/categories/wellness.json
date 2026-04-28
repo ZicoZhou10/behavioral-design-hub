@@ -1,0 +1,42 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "name": "Wellness",
+  "slug": "wellness",
+  "product_count": 1,
+  "avg_score": 37.0,
+  "dimension_averages": {
+    "choice_architecture": 7.0,
+    "cognitive_load": 8.0,
+    "motivation_design": 6.0,
+    "trust_transparency": 8.0,
+    "ethical_alignment": 8.0
+  },
+  "products": [
+    {
+      "slug": "calm",
+      "name": "Calm",
+      "emoji": "🧘",
+      "category": "Wellness / Meditation",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 6,
+        "trust_transparency": 8,
+        "ethical_alignment": 8
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Calm's behavioral design challenge is philosophically interesting: can you ethically use behavioral science to help people build habits that may eliminate the need for your product? Calm's answer is content expansion — become a 'wellness platform' rather than a 'meditation app.' But this risks cognitive load creep as the product tries to be everything at once.",
+      "top_technique": "Sleep Stories as Habit Stacking",
+      "links": {
+        "detail": "/api/v1/products/calm.json",
+        "teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/calm/"
+      }
+    }
+  ],
+  "links": {
+    "categories_list": "/api/v1/categories.json",
+    "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/wellness/"
+  }
+}

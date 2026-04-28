@@ -1,0 +1,104 @@
+{
+  "slug": "snapchat",
+  "name": "Snapchat",
+  "emoji": "👻",
+  "emoji_html": "&#x1F47B;",
+  "category": "Social / Ephemeral Messaging",
+  "category_short": "Social",
+  "tagline": "Snapchat invented ephemeral messaging and Streaks — creating the most potent daily engagement mechanic in social media by turning friendships into quantified commitments that feel devastating to break.",
+  "scores": {
+    "choice_architecture": 8,
+    "cognitive_load": 7,
+    "motivation_design": 9,
+    "trust_transparency": 5,
+    "ethical_alignment": 4
+  },
+  "total": 33,
+  "pct": 66,
+  "key_insight": "Snapchat's most powerful behavioral innovation isn't the disappearing message — it's the Streak. Snapstreaks (consecutive days of mutual messaging between two users) transformed an ephemeral messaging app into a daily obligation engine. A 365-day streak with a best friend isn't just a number — it's a quantified relationship artifact that feels emotionally devastating to lose. The streak mechanic exploits loss aversion at a personal level: you're not losing points or status — you're 'losing' proof of a friendship. This makes Snapchat's daily retention mechanism more powerful than any notification-based engagement system because the motivator is social guilt rather than curiosity or FOMO. Teens report feeling genuine anxiety about breaking streaks, maintaining them even during illness or vacation by sharing their passwords. Snapchat's disappearing messages further reinforce daily use: there's no archive to browse, no content to revisit, so the only way to stay connected is to keep sending. The combination of ephemeral content (nothing persists) and permanent metrics (streaks count up forever) is a brilliant behavioral design contradiction that maximizes daily engagement.",
+  "top_technique": "Snapstreaks as Loss Aversion Commitment Device",
+  "top_framework": "Prospect Theory",
+  "top_evidence": "Snapchat has 414M DAU (Snap Inc Q4 2024). Average user opens app 40+ times/day (Snap Inc investor presentation). 71% of 13-24 year olds in the US use Snapchat (Pew Research, 2024). Streaks are cited as the #1 reason teens maintain daily use (Common Sense Media, 2023).",
+  "techniques": [
+    {
+      "title": "Snapstreaks as Loss Aversion Commitment Device",
+      "framework": "Prospect Theory",
+      "description": "Snapstreaks display a fire emoji (🔥) and day counter next to friends you've exchanged snaps with on consecutive days. A 100-day streak took 100 days of daily effort to build — and can be destroyed by a single day of inactivity. This creates the most asymmetric loss aversion in social media: the cost of maintenance (one snap per day, 5 seconds) is trivial, but the perceived cost of loss (destroying weeks/months of 'proof' of friendship) is emotionally enormous. The hourglass emoji (⌛) appears when a streak is about to expire, creating acute time pressure and anxiety. Snapchat provides no mechanism to restore broken streaks (though users frequently contact support), making the loss feel permanent. The streak mechanic transforms a messaging app into a daily obligation — and the obligation is social, not transactional, making it far more effective than any points system.",
+      "evidence": "Common Sense Media's 2023 survey found that 53% of teens consider maintaining Snapstreaks 'very important' and 29% have given friends their passwords to maintain streaks during vacations. Kahneman & Tversky's loss aversion coefficient (losses hurt ~2.25x more than equivalent gains) applies directly: losing a 200-day streak feels devastating despite being functionally meaningless. Snap Inc reports that users with at least one active streak open the app 2.5x more frequently than users without streaks (Snap Partner Summit, 2024). The average Snapchat power user maintains 5-15 simultaneous streaks, creating a daily routine that takes 3-5 minutes — multiplied by 300M+ daily users."
+    },
+    {
+      "title": "Ephemeral Content as FOMO Urgency Engine",
+      "framework": "Hook Model",
+      "description": "Snapchat's core innovation — messages and stories that disappear after viewing (or after 24 hours) — creates a unique temporal urgency that no archive-based platform can match. If you don't check Snapchat today, you miss your friends' stories permanently. This transforms every session into a time-sensitive event and every notification into an urgent trigger. The ephemeral design also reduces the psychological cost of sharing (low-quality content is acceptable because it won't persist), increasing posting frequency. The result is a higher-frequency, lower-quality content loop that creates more frequent checking behavior. Stories that disappear in 24 hours exploit temporal scarcity — a Cialdini principle applied to social content rather than commercial products.",
+      "evidence": "Snapchat users open the app an average of 40+ times per day (Snap Inc 2024 investor presentation) — significantly more than Instagram (8-10x/day) or TikTok (6-8x/day). The ephemeral design produces 5 billion+ snaps created per day (Snap Inc). Cialdini's scarcity principle predicts that time-limited availability increases perceived value — 24-hour Story windows create a daily 'collection' urgency. Research by Bayer et al. (2016) at University of Michigan found that Snapchat's ephemeral design increased sharing frequency by 3.2x compared to permanent-post platforms, because users felt less judged about content quality."
+    },
+    {
+      "title": "Camera-First as Behavioral Default Architecture",
+      "framework": "Cognitive Load Theory",
+      "description": "Snapchat opens directly to the camera — not a feed, not a message list, not a search bar. This default architecture biases the user toward content creation rather than content consumption. Every app open is an implicit prompt to create a snap. The camera-first design exploits the default effect: the action requiring zero taps (taking a photo) dominates actions requiring navigation (checking stories, reading messages). AR filters and Lenses add a playful reward layer to the camera, making creation feel like play rather than performance. This creation-first default is the behavioral opposite of TikTok's consumption-first design (which opens to the For You feed), and it's why Snapchat's user-generated content volume per capita exceeds any other platform.",
+      "evidence": "Snapchat's camera-first design produces 5B+ daily snaps from 414M DAU — approximately 12 snaps per user per day (Snap Inc Q4 2024). Compare to Instagram's ~100M daily posts from 2B+ MAU (less than 0.05 posts per user per day). Thaler & Sunstein's research on default effects shows that the default option captures 80-90% of behavior — Snapchat's camera default ensures creation is the modal behavior. AR Lenses are used 250M+ times per day (Snap Inc), with Lens engagement increasing session length by 35% (Snap Partner Summit, 2024). The camera-first architecture also creates a data moat: no other platform has this volume of real-time, camera-based behavioral data."
+    },
+    {
+      "title": "Snap Map as Social Surveillance and FOMO Trigger",
+      "framework": "Self-Determination Theory",
+      "description": "Snap Map shows friends' real-time locations (when they've opted in) overlaid with 'heat maps' of public snap activity. This feature satisfies SDT's relatedness need (I can see where my friends are) while simultaneously creating a powerful FOMO trigger (my friends are together and I'm not there). The opt-in design provides nominal user control, but social pressure makes opting out feel like hiding — creating a soft obligation to share location. Bitmoji avatars on the map add emotional texture: seeing your friend's cartoon character at a party you weren't invited to activates social exclusion anxiety. For teens, Snap Map has become a real-time social awareness tool that makes physical-world social dynamics visible and constant.",
+      "evidence": "Snap Map has 350M+ monthly active users (Snap Inc 2024). A 2023 Pew Research study found that 45% of US teens check Snap Map daily, and 23% report feeling 'left out' after seeing friends' locations. SDT's relatedness need predicts that social awareness features are intrinsically engaging, but the visibility of exclusion creates measurable anxiety. Royal Society for Public Health (UK, 2023) found that location-sharing features increase social comparison anxiety by 31% among 13-17 year olds. Snapchat addressed this by adding 'Ghost Mode' (invisible location), but the default is visible — and changing the default would significantly reduce engagement."
+    }
+  ],
+  "strengths": [
+    "Ephemeral design genuinely reduces social media performativity pressure",
+    "Camera-first architecture makes creation effortless and playful",
+    "AR Lenses are genuinely innovative and entertaining technology"
+  ],
+  "weaknesses": [
+    "Streak mechanic creates real anxiety and social obligation among teens",
+    "Snap Map enables social surveillance that amplifies exclusion anxiety",
+    "Ephemeral design forces daily check-ins — missing a day has real social costs"
+  ],
+  "behavioral_hooks": [
+    "Snapstreaks (loss aversion daily obligation)",
+    "ephemeral content (temporal scarcity + FOMO urgency)",
+    "camera-first default (creation bias architecture)",
+    "Snap Map (social surveillance + exclusion FOMO)"
+  ],
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "links": {
+    "teardown_page": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/snapchat/",
+    "products_list": "/api/v1/products.json",
+    "comparisons": {
+      "figma": "/api/v1/compare/figma-vs-snapchat.json",
+      "shopify": "/api/v1/compare/shopify-vs-snapchat.json",
+      "airbnb": "/api/v1/compare/airbnb-vs-snapchat.json",
+      "calm": "/api/v1/compare/calm-vs-snapchat.json",
+      "duolingo": "/api/v1/compare/duolingo-vs-snapchat.json",
+      "pinterest": "/api/v1/compare/pinterest-vs-snapchat.json",
+      "strava": "/api/v1/compare/snapchat-vs-strava.json",
+      "bumble": "/api/v1/compare/bumble-vs-snapchat.json",
+      "notion": "/api/v1/compare/notion-vs-snapchat.json",
+      "spotify": "/api/v1/compare/snapchat-vs-spotify.json",
+      "whatsapp": "/api/v1/compare/snapchat-vs-whatsapp.json",
+      "peloton": "/api/v1/compare/peloton-vs-snapchat.json",
+      "discord": "/api/v1/compare/discord-vs-snapchat.json",
+      "tinder": "/api/v1/compare/snapchat-vs-tinder.json",
+      "venmo": "/api/v1/compare/snapchat-vs-venmo.json",
+      "doordash": "/api/v1/compare/doordash-vs-snapchat.json",
+      "uber": "/api/v1/compare/snapchat-vs-uber.json",
+      "amazon": "/api/v1/compare/amazon-vs-snapchat.json",
+      "candy-crush": "/api/v1/compare/candy-crush-vs-snapchat.json",
+      "chatgpt": "/api/v1/compare/chatgpt-vs-snapchat.json",
+      "coinbase": "/api/v1/compare/coinbase-vs-snapchat.json",
+      "tiktok": "/api/v1/compare/snapchat-vs-tiktok.json",
+      "youtube": "/api/v1/compare/snapchat-vs-youtube.json",
+      "slack": "/api/v1/compare/slack-vs-snapchat.json",
+      "booking-com": "/api/v1/compare/booking-com-vs-snapchat.json",
+      "linkedin": "/api/v1/compare/linkedin-vs-snapchat.json",
+      "netflix": "/api/v1/compare/netflix-vs-snapchat.json",
+      "robinhood": "/api/v1/compare/robinhood-vs-snapchat.json",
+      "instagram": "/api/v1/compare/instagram-vs-snapchat.json"
+    },
+    "category": "/api/v1/categories/social.json"
+  },
+  "rank": 16,
+  "rank_of": 30
+}

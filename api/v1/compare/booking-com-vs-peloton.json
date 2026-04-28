@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Booking.com vs Peloton",
+  "products": {
+    "booking-com": {
+      "name": "Booking.com",
+      "emoji": "🏨",
+      "category": "Travel",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 9,
+        "trust_transparency": 4,
+        "ethical_alignment": 3
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "Booking.com is arguably the most aggressive deployer of behavioral design patterns in consumer tech — and uniquely, they've been transparent about it. The platform runs over 1,000 A/B tests simultaneously, and the result is a UI so dense with urgency signals that it has become a case study in regulatory behavioral design complaints. 'Only 2 rooms left!' '14 people looking right now!' 'Booked 3 times in the last 24 hours!' — each message exploits a different psychological lever (scarcity, social proof, loss aversion). The EU fined Booking.com in 2020 for misleading urgency claims, yet the patterns persist because they work. The ethical tension is stark: Booking.com's design genuinely helps users make faster decisions in a complex market (hotels have variable pricing, real scarcity), but the same urgency cues are applied indiscriminately — to fully available hotels and nearly-sold-out ones alike. When scarcity signals are always on, they become manipulation rather than information. Booking.com represents what happens when conversion optimization is pursued without ethical guardrails.",
+      "top_technique": "Manufactured Urgency Through Scarcity Signals"
+    },
+    "peloton": {
+      "name": "Peloton",
+      "emoji": "🚴",
+      "category": "Fitness",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 6,
+        "ethical_alignment": 6
+      },
+      "total": 36,
+      "pct": 72,
+      "key_insight": "Peloton's breakthrough insight was that fitness equipment isn't a product — it's a medium. The $2,000+ bike is a behavioral commitment device that creates sunk cost pressure to justify ongoing $44/month subscriptions. But the real retention engine is parasocial: instructors like Robin Arzón and Cody Rigsby are designed to feel like personal coaches who know you, creating an emotional bond that gym equipment alone can never generate. The live leaderboard adds competitive urgency (you can see your real-time rank among thousands of simultaneous riders), while high-fives from strangers simulate the social energy of a group fitness class. Peloton's post-pandemic challenge — 39% stock decline in 2022 — revealed the fragility of hardware-dependent behavioral lock-in: when users' sunk cost threshold was crossed, they abandoned the ecosystem entirely. The lesson is that parasocial motivation is powerful but insufficient when the financial commitment feels disproportionate to the perceived value.",
+      "top_technique": "Parasocial Instructor Relationships as Retention Engine"
+    }
+  },
+  "overall_winner": "peloton",
+  "overall_difference": 6,
+  "dimension_wins": {
+    "booking-com": 1,
+    "peloton": 3,
+    "ties": 1
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "booking-com": 8,
+      "peloton": 7,
+      "difference": 1,
+      "winner": "booking-com"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "booking-com": 6,
+      "peloton": 8,
+      "difference": -2,
+      "winner": "peloton"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "booking-com": 9,
+      "peloton": 9,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "booking-com": 4,
+      "peloton": 6,
+      "difference": -2,
+      "winner": "peloton"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "booking-com": 3,
+      "peloton": 6,
+      "difference": -3,
+      "winner": "peloton"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/booking-com-vs-peloton/",
+    "product_a_detail": "/api/v1/products/booking-com.json",
+    "product_b_detail": "/api/v1/products/peloton.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/booking-com/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/peloton/"
+  }
+}

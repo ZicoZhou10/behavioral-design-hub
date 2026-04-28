@@ -1,0 +1,42 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "name": "Gaming",
+  "slug": "gaming",
+  "product_count": 1,
+  "avg_score": 32.0,
+  "dimension_averages": {
+    "choice_architecture": 7.0,
+    "cognitive_load": 8.0,
+    "motivation_design": 10.0,
+    "trust_transparency": 4.0,
+    "ethical_alignment": 3.0
+  },
+  "products": [
+    {
+      "slug": "candy-crush",
+      "name": "Candy Crush",
+      "emoji": "🍬",
+      "category": "Gaming / Casual Puzzle",
+      "scores": {
+        "choice_architecture": 7,
+        "cognitive_load": 8,
+        "motivation_design": 10,
+        "trust_transparency": 4,
+        "ethical_alignment": 3
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Candy Crush Saga has generated over $20 billion in lifetime revenue by perfecting a single behavioral loop: give players a sense of near-mastery, then introduce failure through randomness, then offer to sell the solution. This is not accidental — it's the direct application of Natasha Schull's 'machine zone' concept from casino design to mobile gaming. The game's levels are algorithmically tuned to produce a specific failure rate: too easy and players don't spend, too hard and they quit. The optimal frustration point — where players believe they 'almost had it' and one more try (or one purchased power-up) will succeed — is the core monetization engine. The lives system (5 lives, 30-minute regeneration) creates artificial scarcity of play itself, making continued play feel like a premium commodity. King's brilliance is making the monetization feel like the player's choice ('I choose to buy a power-up') rather than the system's design ('the level was tuned to make you fail without one'). Candy Crush is the purest distillation of free-to-play behavioral economics: the product is free, and frustration is the revenue model.",
+      "top_technique": "Near-Miss Level Design as Monetization Engine",
+      "links": {
+        "detail": "/api/v1/products/candy-crush.json",
+        "teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/candy-crush/"
+      }
+    }
+  ],
+  "links": {
+    "categories_list": "/api/v1/categories.json",
+    "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/gaming/"
+  }
+}

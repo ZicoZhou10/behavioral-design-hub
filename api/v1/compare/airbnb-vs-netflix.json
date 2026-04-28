@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Airbnb vs Netflix",
+  "products": {
+    "airbnb": {
+      "name": "Airbnb",
+      "emoji": "🏠",
+      "category": "E-Commerce",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 7,
+        "motivation_design": 8,
+        "trust_transparency": 7,
+        "ethical_alignment": 6
+      },
+      "total": 37,
+      "pct": 74,
+      "key_insight": "Airbnb's design is a masterclass in reducing the trust barrier of the sharing economy — reviews, verified photos, and Superhost badges genuinely solve the 'sleeping in a stranger's home' problem. But the same product that innovated trust also deploys classic conversion dark patterns: manufactured scarcity, fee hiding, and price anchoring. The tension between 'design that builds trust' and 'design that maximizes conversion' is visible in every booking flow. Airbnb's ethical score is middling precisely because it excels at both genuine value creation and subtle manipulation.",
+      "top_technique": "Photo-First Search as Decision Simplification"
+    },
+    "netflix": {
+      "name": "Netflix",
+      "emoji": "🎬",
+      "category": "Entertainment",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 7,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "Netflix demonstrates the thin line between 'helpful choice architecture' and 'manipulation.' Autoplay genuinely solves the friction of episode transitions. But it also exploits the fact that humans are bad at stopping ongoing activities. Netflix's own CEO famously said their biggest competitor is 'sleep' — a framing that reveals the company optimizes for maximum viewing time, not optimal viewing experience.",
+      "top_technique": "Autoplay as the Ultimate Default Nudge"
+    }
+  },
+  "overall_winner": "airbnb",
+  "overall_difference": 7,
+  "dimension_wins": {
+    "airbnb": 5,
+    "netflix": 0,
+    "ties": 0
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "airbnb": 9,
+      "netflix": 8,
+      "difference": 1,
+      "winner": "airbnb"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "airbnb": 7,
+      "netflix": 6,
+      "difference": 1,
+      "winner": "airbnb"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "airbnb": 8,
+      "netflix": 7,
+      "difference": 1,
+      "winner": "airbnb"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "airbnb": 7,
+      "netflix": 5,
+      "difference": 2,
+      "winner": "airbnb"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "airbnb": 6,
+      "netflix": 4,
+      "difference": 2,
+      "winner": "airbnb"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/airbnb-vs-netflix/",
+    "product_a_detail": "/api/v1/products/airbnb.json",
+    "product_b_detail": "/api/v1/products/netflix.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/airbnb/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/netflix/"
+  }
+}

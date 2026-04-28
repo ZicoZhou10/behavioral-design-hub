@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progressive Commitment &amp; Escalation in Product Design — 10 Real-World Examples | Behavioral Design Hub</title>
+<meta name="description" content="Start with a tiny ask, escalate gradually. Free trials, setup wizards, profile completeness meters, and progressive disclosure all exploit the consistency ">
+<meta property="og:title" content="🪜 Progressive Commitment &amp; Escalation — How 10 Products Use This Pattern">
+<meta property="og:description" content="Start with a tiny ask, escalate gradually. Free trials, setup wizards, profile completeness meters, and progressive disclosure all exploit the consistency principle — once users take a small step, the">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://zicozhou10.github.io/behavioral-design-hub/patterns/progressive-commitment/">
+<link rel="canonical" href="https://zicozhou10.github.io/behavioral-design-hub/patterns/progressive-commitment/">
+<style>
+:root{--bg:#0a0a0f;--card:#12121a;--card-h:#1a1a28;--border:#1e1e2e;--text:#e0e0e8;--muted:#8888a0;--accent:#6366f1;--accent-l:#818cf8;--green:#22c55e;--yellow:#eab308;--red:#ef4444}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.6}
+.ct{max-width:880px;margin:0 auto;padding:16px}
+.nv{display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid var(--border);margin-bottom:24px;flex-wrap:wrap;gap:8px}
+.nb{font-weight:800;font-size:1rem;color:var(--accent-l);text-decoration:none}
+.nv a{color:var(--muted);text-decoration:none;font-size:.82rem}
+.nv a:hover{color:var(--accent-l)}
+.hero{text-align:center;padding:32px 0 24px}
+.hero-emoji{font-size:3rem;margin-bottom:12px}
+h1{font-size:1.6rem;font-weight:800;margin-bottom:12px;line-height:1.2}
+.hero p{color:var(--muted);font-size:.92rem;max-width:640px;margin:0 auto}
+.principle{background:var(--card);border-radius:12px;padding:20px;margin:20px 0;border-left:3px solid var(--accent)}
+.principle-label{font-size:.72rem;color:var(--accent-l);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;font-weight:600}
+.principle-text{font-size:.88rem;color:var(--text)}
+.section-title{font-size:1.1rem;font-weight:700;margin:28px 0 16px}
+.product-card{display:block;background:var(--card);border-radius:12px;padding:16px;margin:10px 0;text-decoration:none;color:var(--text);border:1px solid var(--border);transition:all .2s}
+.product-card:hover{background:var(--card-h);border-color:var(--accent);transform:translateY(-1px)}
+.pc-header{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.pc-emoji{font-size:1.5rem}
+.pc-name{font-weight:700;font-size:.92rem}
+.pc-cat{font-size:.72rem;color:var(--muted)}
+.pc-tech{font-size:.84rem;font-weight:600;color:var(--accent-l);margin-bottom:4px}
+.pc-mech{font-size:.82rem;color:var(--muted);line-height:1.5}
+.search-queries{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.sq{background:var(--card);padding:6px 12px;border-radius:20px;font-size:.76rem;color:var(--muted);border:1px solid var(--border)}
+.ethics{margin:28px 0}
+.eth-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.eth-card{background:var(--card);border-radius:10px;padding:14px;font-size:.82rem;display:flex;gap:8px}
+.eth-pos{border-left:3px solid var(--green)}
+.eth-neg{border-left:3px solid var(--yellow)}
+.eth-icon{font-size:1.1rem;flex-shrink:0}
+.related{margin:28px 0}
+.rp-grid{display:flex;flex-wrap:wrap;gap:8px}
+.rp-link{background:var(--card);padding:8px 14px;border-radius:10px;font-size:.82rem;color:var(--accent-l);text-decoration:none;border:1px solid var(--border);transition:all .15s}
+.rp-link:hover{background:var(--card-h);border-color:var(--accent)}
+.comparisons{margin:28px 0}
+.cmp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px}
+.cmp-link{background:var(--card);padding:10px 14px;border-radius:8px;font-size:.8rem;color:var(--text);text-decoration:none;border:1px solid var(--border);transition:all .15s;text-align:center}
+.cmp-link:hover{background:var(--card-h);border-color:var(--accent)}
+.ctas{text-align:center;padding:32px 0}
+.ctas h2{font-size:1rem;font-weight:700;margin-bottom:12px}
+.cb{display:inline-block;padding:10px 24px;border-radius:10px;font-weight:700;text-decoration:none;font-size:.85rem;margin:6px}
+.cp{background:var(--accent);color:white}
+.cx{background:var(--card);color:var(--accent-l);border:1px solid var(--border)}
+.ft{text-align:center;padding:20px 0;border-top:1px solid var(--border);margin-top:24px;font-size:.72rem;color:var(--muted)}
+.ft a{color:var(--accent-l);text-decoration:none}
+@media(max-width:600px){
+  .eth-grid{grid-template-columns:1fr}
+  .cmp-grid{grid-template-columns:1fr}
+  h1{font-size:1.3rem}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Progressive Commitment & Escalation — Behavioral Design Pattern",
+      "description": "Start with a tiny ask, escalate gradually. Free trials, setup wizards, profile completeness meters, and progressive disclosure all exploit the consistency principle — once users take a small step, they're more likely to take bigger ones to remain consistent with their self-image as someone who 'uses this product.'",
+      "url": "https://zicozhou10.github.io/behavioral-design-hub/patterns/progressive-commitment/",
+      "datePublished": "2026-04-01",
+      "dateModified": "2026-04-17",
+      "author": {
+        "@type": "Organization",
+        "name": "Behavioral Design Hub"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Behavioral Design Hub",
+        "url": "https://zicozhou10.github.io/behavioral-design-hub"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zicozhou10.github.io/behavioral-design-hub/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Patterns",
+          "item": "https://zicozhou10.github.io/behavioral-design-hub/patterns/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Progressive Commitment & Escalation",
+          "item": "https://zicozhou10.github.io/behavioral-design-hub/patterns/progressive-commitment/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+    <!-- aeo-injected -->
+    <meta name="ai-citation-author" content="Zico (Behavioral Design Hub)">
+    <meta name="ai-citation-published" content="2026-04-28T03:55:24Z">
+    <meta name="ai-citation-methodology" content="/methodology/">
+    <meta name="ai-citation-license" content="CC-BY-4.0">
+    <meta name="ai-citation-evidence-count" content="4">
+    <meta name="ai-citation-type" content="behavioral-design-pattern">
+  </head>
+<body>
+<div class="ct">
+<nav class="nv">
+  <a href="https://zicozhou10.github.io/behavioral-design-hub/" class="nb">Behavioral Design Hub</a>
+  <div>
+    <a href="https://zicozhou10.github.io/behavioral-design-hub/patterns/">All Patterns</a> &middot;
+    <a href="https://zicozhou10.github.io/behavioral-design-hub/categories/">Categories</a> &middot;
+    <a href="https://zicozhou10.github.io/behavioral-design-hub/compare/">Comparisons</a> &middot;
+    <a href="https://zicozhou10.github.io/behavioral-design-hub/leaderboard/">Leaderboard</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-emoji">🪜</div>
+  <h1>Progressive Commitment &amp; Escalation</h1>
+  <p>Start with a tiny ask, escalate gradually. Free trials, setup wizards, profile completeness meters, and progressive disclosure all exploit the consistency principle — once users take a small step, they&#x27;re more likely to take bigger ones to remain consistent with their self-image as someone who &#x27;uses this product.&#x27;</p>
+</div>
+
+<div class="principle">
+  <div class="principle-label">Psychological Principle</div>
+  <div class="principle-text">Consistency Principle (Cialdini, 1984) + Foot-in-the-Door Technique — small initial commitments increase compliance with larger subsequent requests</div>
+</div>
+
+<div class="search-queries">
+  <span class="sq" style="font-weight:600;color:var(--accent-l)">People also search:</span>
+  <span class="sq">progressive commitment in apps</span>
+<span class="sq">foot in the door UX</span>
+<span class="sq">setup wizard psychology</span>
+<span class="sq">free trial conversion tactics</span>
+<span class="sq">profile completeness meter design</span>
+</div>
+
+<h2 class="section-title">10 Products Using Progressive Commitment &amp; Escalation</h2>
+
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/shopify/" class="product-card">
+  <div class="pc-header">
+    <span class="pc-emoji">🛒</span>
+    <div>
+      <div class="pc-name">Shopify</div>
+      <div class="pc-cat">E-Commerce &middot; 38/50</div>
+    </div>
+  </div>
+  <div class="pc-tech">Setup Wizard as Progressive Commitment</div>
+  <div class="pc-mech">7-8 discrete setup steps — each micro-investment makes abandonment feel like waste</div>
+</a>
+
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/linkedin/" class="product-card">
+  <div class="pc-header">
+    <span class="pc-emoji">💼</span>
+    <div>
+      <div class="pc-name">LinkedIn</div>
+      <div class="pc-cat">Social Media &middot; 30/50</div>
+    </div>
+  </div>
+  <div class="pc-tech">Profile Completeness Meter as Guilt Architecture</div>
+  <div class="pc-mech">Progress bar from &#x27;Beginner&#x27; to &#x27;All-Star&#x27; exploits completion motivation + guilt</div>
+</a>
+
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/discord/" class="product-card">
+  <div class="pc-header">
+    <span class="pc-emoji">💬</span>
+    <div>
+      <div class="pc-name">Discord</div>
+      <div class="pc-cat">Community &middot; 35/50</div>
+    </div>
+  </div>
+  <div class="pc-tech">Server Investment Escalation Ladder</div>
+  <div class="pc-mech">Join → read → react → chat → create channels → manage roles → build bots — escalating investment</div>
+</a>
+
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/pinterest/" class="product-card">
+  <div class="pc-header">
+    <span class="pc-emoji">📌</span>
+    <div>
+      <div class="pc-name">Pinterest</div>
+      <div class="pc-cat">Discovery &middot; 37/50</div>
+    </div>
+  </div>
+  <div class="pc-tech">Pin-as-Micro-Commitment to Aspirational Identity</div>
+  <div class="pc-mech">Each pin is a micro-commitment to an aspirational identity — boards become self-concept</div>
+</a>
+
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/duolingo/" class="product-card">
+  <div class="pc-header">
+    <span class="pc-emoji">🦉</span>
+    <div>
+      <div class="pc-name">Duolingo</div>
+      <div class="pc-cat">EdTech &middot; 37/50</div>
+    </div>
+  </div>
+  <div class="pc-tech">Progressive Disclosure Onboarding</div>
+  <div class="pc-mech">First lesson requires zero setup — complexity emerges gradually as skills develop</div>
+</a>
+
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/notion/" class="product-card">
+  <div class="pc-header">
+    <span class="pc-emoji">📝</span>
+    <div>
+      <div class="pc-name">Notion</div>
+      <div class="pc-cat">Productivity &middot; 36/50</div>
+    </div>
+  </div>
+  <div class="pc-tech">Progressive Disclosure via Slash Commands</div>
+  <div class="pc-mech">Simple text editing first, advanced blocks appear only when users type &#x27;/&#x27; — power revealed gradually</div>
+</a>
+
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/spotify/" class="product-card">
+  <div class="pc-header">
+    <span class="pc-emoji">🎧</span>
+    <div>
+      <div class="pc-name">Spotify</div>
+      <div class="pc-cat">Entertainment &middot; 36/50</div>
+    </div>
+  </div>
+  <div class="pc-tech">Progressive Disclosure of Audio Complexity</div>
+  <div class="pc-mech">Play a song → build a playlist → follow artists → blend with friends → podcast → audiobook</div>
+</a>
+
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/booking-com/" class="product-card">
+  <div class="pc-header">
+    <span class="pc-emoji">🏨</span>
+    <div>
+      <div class="pc-name">Booking.com</div>
+      <div class="pc-cat">Travel &middot; 30/50</div>
+    </div>
+  </div>
+  <div class="pc-tech">Free Cancellation as Risk Reversal Architecture</div>
+  <div class="pc-mech">Zero-risk booking = first step. Once booked, commitment and planning increase cancellation friction</div>
+</a>
+
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/tinder/" class="product-card">
+  <div class="pc-header">
+    <span class="pc-emoji">🔥</span>
+    <div>
+      <div class="pc-name">Tinder</div>
+      <div class="pc-cat">Dating &middot; 34/50</div>
+    </div>
+  </div>
+  <div class="pc-tech">Photo-Stack as First Impression Anchoring</div>
+  <div class="pc-mech">Swipe requires zero commitment — but matches create investment that drives premium upgrades</div>
+</a>
+
+<a href="https://zicozhou10.github.io/behavioral-design-hub/teardowns/snapchat/" class="product-card">
+  <div class="pc-header">
+    <span class="pc-emoji">👻</span>
+    <div>
+      <div class="pc-name">Snapchat</div>
+      <div class="pc-cat">Social &middot; 33/50</div>
+    </div>
+  </div>
+  <div class="pc-tech">Snapstreaks as Loss Aversion Commitment Device</div>
+  <div class="pc-mech">Day 1 streak is trivial. Day 365 streak is an identity investment — commitment escalated without explicit choice</div>
+</a>
+
+
+<div class="ethics">
+  <h2>Ethical Spectrum</h2>
+  <div class="eth-grid">
+    <div class="eth-card eth-pos"><span class="eth-icon">✅</span><div>Duolingo&#x27;s progressive disclosure genuinely reduces the intimidation of learning a new language</div></div>
+    <div class="eth-card eth-neg"><span class="eth-icon">⚠️</span><div>LinkedIn&#x27;s completeness meter uses guilt to extract personal data beyond what&#x27;s professionally useful</div></div>
+  </div>
+</div>
+<div class="related"><h2>Related Patterns</h2><div class="rp-grid"><a href="https://zicozhou10.github.io/behavioral-design-hub/patterns/loss-aversion/" class="rp-link">😰 Loss Aversion &amp; Sunk Cost</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/patterns/identity-investment/" class="rp-link">🪞 Identity Investment &amp; Self-Expression</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/patterns/friction-removal/" class="rp-link">🧈 Friction Removal &amp; Simplification</a></div></div>
+<div class="comparisons"><h2>Related Comparisons</h2><div class="cmp-grid"><a href="https://zicozhou10.github.io/behavioral-design-hub/compare/linkedin-vs-shopify/" class="cmp-link">Shopify vs LinkedIn</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/discord-vs-shopify/" class="cmp-link">Shopify vs Discord</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/pinterest-vs-shopify/" class="cmp-link">Shopify vs Pinterest</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/duolingo-vs-shopify/" class="cmp-link">Shopify vs Duolingo</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/notion-vs-shopify/" class="cmp-link">Shopify vs Notion</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/shopify-vs-spotify/" class="cmp-link">Shopify vs Spotify</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/booking-com-vs-shopify/" class="cmp-link">Shopify vs Booking.com</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/shopify-vs-tinder/" class="cmp-link">Shopify vs Tinder</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/shopify-vs-snapchat/" class="cmp-link">Shopify vs Snapchat</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/discord-vs-linkedin/" class="cmp-link">LinkedIn vs Discord</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/linkedin-vs-pinterest/" class="cmp-link">LinkedIn vs Pinterest</a>
+<a href="https://zicozhou10.github.io/behavioral-design-hub/compare/duolingo-vs-linkedin/" class="cmp-link">LinkedIn vs Duolingo</a></div></div>
+
+<div class="ctas">
+  <h2>Explore More Behavioral Patterns</h2>
+  <a href="https://zicozhou10.github.io/behavioral-design-hub/patterns/" class="cb cp">View All 18 Patterns</a>
+  <a href="https://zicozhou10.github.io/behavioral-design-hub/tools/behavioral-design-score/" class="cb cx">Score Your Product</a>
+</div>
+
+<footer class="ft">
+  <p>&copy; 2026 <a href="https://zicozhou10.github.io/behavioral-design-hub/">Behavioral Design Hub</a>. Research-backed behavioral science analysis.</p>
+  <p style="margin-top:4px">Generated from pattern-index.json &mdash; 2026-04-28</p>
+</footer>
+</div>
+</body>
+</html>

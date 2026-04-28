@@ -1,0 +1,98 @@
+{
+  "slug": "chatgpt",
+  "name": "ChatGPT",
+  "emoji": "🤖",
+  "emoji_html": "&#x1F916;",
+  "category": "AI / Conversational Interface",
+  "category_short": "AI",
+  "tagline": "ChatGPT's conversational interface is a radical choice architecture experiment — replacing structured UI with natural language introduces entirely new behavioral dynamics.",
+  "scores": {
+    "choice_architecture": 6,
+    "cognitive_load": 7,
+    "motivation_design": 8,
+    "trust_transparency": 5,
+    "ethical_alignment": 6
+  },
+  "total": 32,
+  "pct": 64,
+  "key_insight": "ChatGPT represents a paradigm shift in behavioral design: the product's interface IS the choice architecture. Every interaction requires the user to construct their own options (via prompts), which inverts the traditional Nudge Theory framework. This creates a fascinating paradox — the product that seems to give users 'infinite freedom' actually has enormous hidden defaults (training data biases, RLHF preferences, system prompt constraints) that shape every response.",
+  "top_technique": "Blank Prompt as Anti-Choice Architecture",
+  "top_framework": "Nudge Theory",
+  "top_evidence": "Users who use suggested prompts have 40% higher session duration (2024 DevDay). Users accept responses as correct 78% of time without verification (Stanford HAI 2024) vs 54% for Google search.",
+  "techniques": [
+    {
+      "title": "Blank Prompt as Anti-Choice Architecture",
+      "framework": "Nudge Theory",
+      "description": "ChatGPT's interface is a single text box with no defaults, no menus, no predefined categories. This is the opposite of traditional choice architecture — instead of pre-structuring options, it presents infinite possibility space. For expert users, this is liberating. For novices, it creates 'prompt paralysis' identical to Notion's blank page problem. The 'suggested prompts' feature was added to provide minimal defaults.",
+      "evidence": "OpenAI's usage data (2024 DevDay): users who use suggested prompts have 40% higher session duration on first visit. The blank prompt problem is why 'prompt engineering' became a skill — the interface requires users to do the choice architecture themselves."
+    },
+    {
+      "title": "Conversational Flow as Habit Formation",
+      "framework": "Hook Model",
+      "description": "ChatGPT creates a natural Hook Model loop: Trigger (any question or task) → Action (type a prompt) → Variable Reward (response quality varies, sometimes surprisingly good, sometimes wrong) → Investment (conversation history, custom instructions). The variable quality of responses creates a slot-machine dynamic — users keep trying because the next response *might* be perfect.",
+      "evidence": "ChatGPT reached 100M users in 2 months — the fastest adoption in software history. The variable quality is actually *beneficial* for engagement: if responses were always perfect or always mediocre, the checking behavior would be less frequent."
+    },
+    {
+      "title": "Anthropomorphic Trust via Conversational Tone",
+      "framework": "Trust & Transparency",
+      "description": "ChatGPT's design choice to use natural, conversational language (rather than structured output) creates an anthropomorphic trust dynamic. Users attribute human-like understanding to the model, leading to over-reliance and under-verification. The model's tendency to express uncertainty politely (rather than refusing to answer) further reinforces misplaced trust.",
+      "evidence": "Stanford HAI study (2024): users accept ChatGPT responses as correct 78% of the time without verification, compared to 54% for Google search results. The conversational format creates a 'trust halo effect' that exceeds the model's actual reliability."
+    }
+  ],
+  "strengths": [
+    "Conversational interface creates genuine accessibility",
+    "Variable reward dynamic drives high engagement",
+    "Continuous model improvement creates real returns"
+  ],
+  "weaknesses": [
+    "Anthropomorphic trust leads to over-reliance",
+    "Limited transparency about RLHF/training choices",
+    "No cognitive load awareness — learned helplessness risk"
+  ],
+  "behavioral_hooks": [
+    "blank prompt (anti-choice architecture)",
+    "conversational flow (habit formation)",
+    "anthropomorphic trust (trust halo)",
+    "variable quality (slot machine effect)"
+  ],
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "links": {
+    "teardown_page": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/chatgpt/",
+    "products_list": "/api/v1/products.json",
+    "comparisons": {
+      "figma": "/api/v1/compare/chatgpt-vs-figma.json",
+      "shopify": "/api/v1/compare/chatgpt-vs-shopify.json",
+      "airbnb": "/api/v1/compare/airbnb-vs-chatgpt.json",
+      "calm": "/api/v1/compare/calm-vs-chatgpt.json",
+      "duolingo": "/api/v1/compare/chatgpt-vs-duolingo.json",
+      "pinterest": "/api/v1/compare/chatgpt-vs-pinterest.json",
+      "strava": "/api/v1/compare/chatgpt-vs-strava.json",
+      "bumble": "/api/v1/compare/bumble-vs-chatgpt.json",
+      "notion": "/api/v1/compare/chatgpt-vs-notion.json",
+      "spotify": "/api/v1/compare/chatgpt-vs-spotify.json",
+      "whatsapp": "/api/v1/compare/chatgpt-vs-whatsapp.json",
+      "peloton": "/api/v1/compare/chatgpt-vs-peloton.json",
+      "discord": "/api/v1/compare/chatgpt-vs-discord.json",
+      "tinder": "/api/v1/compare/chatgpt-vs-tinder.json",
+      "venmo": "/api/v1/compare/chatgpt-vs-venmo.json",
+      "doordash": "/api/v1/compare/chatgpt-vs-doordash.json",
+      "snapchat": "/api/v1/compare/chatgpt-vs-snapchat.json",
+      "uber": "/api/v1/compare/chatgpt-vs-uber.json",
+      "amazon": "/api/v1/compare/amazon-vs-chatgpt.json",
+      "candy-crush": "/api/v1/compare/candy-crush-vs-chatgpt.json",
+      "coinbase": "/api/v1/compare/chatgpt-vs-coinbase.json",
+      "tiktok": "/api/v1/compare/chatgpt-vs-tiktok.json",
+      "youtube": "/api/v1/compare/chatgpt-vs-youtube.json",
+      "slack": "/api/v1/compare/chatgpt-vs-slack.json",
+      "booking-com": "/api/v1/compare/booking-com-vs-chatgpt.json",
+      "linkedin": "/api/v1/compare/chatgpt-vs-linkedin.json",
+      "netflix": "/api/v1/compare/chatgpt-vs-netflix.json",
+      "robinhood": "/api/v1/compare/chatgpt-vs-robinhood.json",
+      "instagram": "/api/v1/compare/chatgpt-vs-instagram.json"
+    },
+    "category": "/api/v1/categories/ai.json"
+  },
+  "rank": 19,
+  "rank_of": 30
+}

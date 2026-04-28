@@ -1,0 +1,97 @@
+{
+  "slug": "calm",
+  "name": "Calm",
+  "emoji": "🧘",
+  "emoji_html": "&#x1F9D8;",
+  "category": "Wellness / Meditation",
+  "category_short": "Wellness",
+  "tagline": "Calm faces the hardest behavioral design challenge in consumer tech: building habits for an activity users genuinely want to quit doing early.",
+  "scores": {
+    "choice_architecture": 7,
+    "cognitive_load": 8,
+    "motivation_design": 6,
+    "trust_transparency": 8,
+    "ethical_alignment": 8
+  },
+  "total": 37,
+  "pct": 74,
+  "key_insight": "Calm's behavioral design challenge is philosophically interesting: can you ethically use behavioral science to help people build habits that may eliminate the need for your product? Calm's answer is content expansion — become a 'wellness platform' rather than a 'meditation app.' But this risks cognitive load creep as the product tries to be everything at once.",
+  "top_technique": "Sleep Stories as Habit Stacking",
+  "top_framework": "Hook Model",
+  "top_evidence": "Sleep Stories drove 2x more DAU than meditation (Bloomberg 2023). McConaughey's Sleep Story played 100M+ times. 10-min default maximized D7 retention (WWDC 2022).",
+  "techniques": [
+    {
+      "title": "Gentle Default Nudges",
+      "framework": "Nudge Theory",
+      "description": "Calm defaults new users to a 10-minute 'Daily Calm' session — long enough to feel meaningful, short enough to not intimidate. The daily reminder is positioned as an invitation, not a demand. This gentle default architecture contrasts sharply with Duolingo's loss-aversion-driven approach.",
+      "evidence": "Calm's user research (WWDC 2022 case study): 10-minute default was A/B tested against 5, 15, and 20 minutes. 10 minutes maximized D7 retention while maintaining perceived session value."
+    },
+    {
+      "title": "The Wellness App Retention Paradox",
+      "framework": "Self-Determination Theory",
+      "description": "Meditation apps face a unique challenge: users who succeed at building a meditation practice may not need the app anymore. Calm addresses this by continuously expanding content (Sleep Stories, music, nature sounds) to serve adjacent needs. But the core tension remains — if the app fulfills its promise (you feel calm), the motivation to open it decreases.",
+      "evidence": "Calm's D90 retention (~8%) is industry-typical for wellness apps but far below social/entertainment apps (~25%). This isn't a design failure — it may reflect genuine user success."
+    },
+    {
+      "title": "Sleep Stories as Habit Stacking",
+      "framework": "Hook Model",
+      "description": "Sleep Stories (narrated bedtime stories for adults) stack onto an existing habit (going to bed). This is the most effective trigger in Hook Model design — not a push notification, but a natural context that already occurs daily. By anchoring to bedtime, Calm gets a 'free' daily trigger without any notification infrastructure.",
+      "evidence": "Calm CEO reported Sleep Stories drove 2x more daily active users than meditation content (Bloomberg, 2023). Matthew McConaughey's Sleep Story has been played 100M+ times."
+    }
+  ],
+  "strengths": [
+    "Ethical approach to notification design",
+    "Sleep Stories = brilliant habit stacking",
+    "Content quality creates genuine user value"
+  ],
+  "weaknesses": [
+    "Content expansion increases choice complexity",
+    "Annual subscription creates pressure to justify cost",
+    "Limited intrinsic motivation mechanisms"
+  ],
+  "behavioral_hooks": [
+    "gentle default nudges (10-min sessions)",
+    "habit stacking via Sleep Stories",
+    "content expansion for adjacent needs"
+  ],
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "links": {
+    "teardown_page": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/calm/",
+    "products_list": "/api/v1/products.json",
+    "comparisons": {
+      "figma": "/api/v1/compare/calm-vs-figma.json",
+      "shopify": "/api/v1/compare/calm-vs-shopify.json",
+      "airbnb": "/api/v1/compare/airbnb-vs-calm.json",
+      "duolingo": "/api/v1/compare/calm-vs-duolingo.json",
+      "pinterest": "/api/v1/compare/calm-vs-pinterest.json",
+      "strava": "/api/v1/compare/calm-vs-strava.json",
+      "bumble": "/api/v1/compare/bumble-vs-calm.json",
+      "notion": "/api/v1/compare/calm-vs-notion.json",
+      "spotify": "/api/v1/compare/calm-vs-spotify.json",
+      "whatsapp": "/api/v1/compare/calm-vs-whatsapp.json",
+      "peloton": "/api/v1/compare/calm-vs-peloton.json",
+      "discord": "/api/v1/compare/calm-vs-discord.json",
+      "tinder": "/api/v1/compare/calm-vs-tinder.json",
+      "venmo": "/api/v1/compare/calm-vs-venmo.json",
+      "doordash": "/api/v1/compare/calm-vs-doordash.json",
+      "snapchat": "/api/v1/compare/calm-vs-snapchat.json",
+      "uber": "/api/v1/compare/calm-vs-uber.json",
+      "amazon": "/api/v1/compare/amazon-vs-calm.json",
+      "candy-crush": "/api/v1/compare/calm-vs-candy-crush.json",
+      "chatgpt": "/api/v1/compare/calm-vs-chatgpt.json",
+      "coinbase": "/api/v1/compare/calm-vs-coinbase.json",
+      "tiktok": "/api/v1/compare/calm-vs-tiktok.json",
+      "youtube": "/api/v1/compare/calm-vs-youtube.json",
+      "slack": "/api/v1/compare/calm-vs-slack.json",
+      "booking-com": "/api/v1/compare/booking-com-vs-calm.json",
+      "linkedin": "/api/v1/compare/calm-vs-linkedin.json",
+      "netflix": "/api/v1/compare/calm-vs-netflix.json",
+      "robinhood": "/api/v1/compare/calm-vs-robinhood.json",
+      "instagram": "/api/v1/compare/calm-vs-instagram.json"
+    },
+    "category": "/api/v1/categories/wellness.json"
+  },
+  "rank": 3,
+  "rank_of": 30
+}

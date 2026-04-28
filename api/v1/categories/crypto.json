@@ -1,0 +1,42 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "name": "Crypto",
+  "slug": "crypto",
+  "product_count": 1,
+  "avg_score": 32.0,
+  "dimension_averages": {
+    "choice_architecture": 8.0,
+    "cognitive_load": 7.0,
+    "motivation_design": 8.0,
+    "trust_transparency": 5.0,
+    "ethical_alignment": 4.0
+  },
+  "products": [
+    {
+      "slug": "coinbase",
+      "name": "Coinbase",
+      "emoji": "🪙",
+      "category": "FinTech / Crypto Exchange",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 7,
+        "motivation_design": 8,
+        "trust_transparency": 5,
+        "ethical_alignment": 4
+      },
+      "total": 32,
+      "pct": 64,
+      "key_insight": "Coinbase occupies a unique position in behavioral design: it's simultaneously the most 'responsible' major crypto exchange (compliant, publicly traded, institutionally backed) and a platform whose core business benefits from the most volatile, speculative asset class in modern finance. The product design reflects this tension. Coinbase Earn pays users in crypto to complete educational modules — genuinely teaching blockchain fundamentals, but also creating an endowment effect (once you own some ETH, you're more likely to buy more). The simplified buy/sell interface removes friction that traditional finance considers protective. The portfolio tracker with real-time gains/losses creates a checking habit identical to Robinhood's. The price alerts are external triggers optimized for volatility spikes — exactly when behavioral economics predicts the worst decision-making. Coinbase's 'trusted, simple, compliant' brand positioning is genuine, but the product design still exploits the same FOMO, loss aversion, and variable reward dynamics that drive all speculative trading behavior.",
+      "top_technique": "Coinbase Earn as Endowment-Seeding Education",
+      "links": {
+        "detail": "/api/v1/products/coinbase.json",
+        "teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/coinbase/"
+      }
+    }
+  ],
+  "links": {
+    "categories_list": "/api/v1/categories.json",
+    "category_page": "https://zicozhou10.github.io/behavioral-design-hub/categories/crypto/"
+  }
+}

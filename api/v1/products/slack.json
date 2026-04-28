@@ -1,0 +1,104 @@
+{
+  "slug": "slack",
+  "name": "Slack",
+  "emoji": "💬",
+  "emoji_html": "&#x1F4BC;",
+  "category": "Workplace Communication / SaaS",
+  "category_short": "Productivity",
+  "tagline": "Slack turned workplace messaging into a presence-monitored, always-on notification engine — the green dot is the most anxiety-producing UI element in enterprise software.",
+  "scores": {
+    "choice_architecture": 7,
+    "cognitive_load": 5,
+    "motivation_design": 7,
+    "trust_transparency": 7,
+    "ethical_alignment": 5
+  },
+  "total": 31,
+  "pct": 62,
+  "key_insight": "Slack is the clearest example of how behavioral design optimized for engagement metrics can directly conflict with user wellbeing in a workplace context. The green dot creates surveillance anxiety, channel proliferation fragments attention, and notification urgency turns every message into a potential trigger. The product works brilliantly for Slack's business (more messages = more 'engaged' = easier enterprise renewal) but actively undermines the deep work that knowledge workers are ostensibly paid to do. Slack proves that 'engagement' as a success metric can be actively harmful when the user's goal isn't entertainment but productive work.",
+  "top_technique": "The Green Dot: Presence as Social Control",
+  "top_framework": "Nudge Theory",
+  "top_evidence": "85% of managers cite productivity paranoia (Microsoft 2024). Knowledge workers check Slack 30+ times/day. 77 app-switches/day = #1 digital interruption source (RescueTime 2024).",
+  "techniques": [
+    {
+      "title": "The Green Dot: Presence as Social Control",
+      "framework": "Nudge Theory",
+      "description": "Slack's green/yellow/empty presence indicator is the most powerful behavioral nudge in enterprise software. Being 'green' signals availability and engagement; going 'away' signals potential slacking. Managers don't need to ask 'are you working?' — the dot answers for them. The default is automatic presence based on activity, meaning every keyboard pause is broadcast to your entire organization. This creates a panopticon effect where workers self-regulate their behavior because they know they're being observed.",
+      "evidence": "A 2024 Microsoft Work Trend Index found 85% of managers say 'productivity paranoia' is their #1 concern. Slack's presence indicator directly feeds this — despite Slack's own research showing presence ≠ productivity. Foucault's panopticon theory predicts that visible surveillance produces self-disciplining behavior even when no one is actively watching."
+    },
+    {
+      "title": "Channel Proliferation as Cognitive Overload",
+      "framework": "Cognitive Load Theory",
+      "description": "Slack's frictionless channel creation (anyone can create a channel at any time) leads to channel sprawl. Average enterprise Slack workspace has 500-2000 channels. Users face a constant triage problem: which channels to monitor, which @mentions to respond to, which threads to follow. This is Sweller's 'split attention effect' at organizational scale — attention is fractured across channels rather than concentrated on deep work.",
+      "evidence": "Slack's own 2024 Workforce Index: knowledge workers check Slack 30+ times per day. Cal Newport's 'Deep Work' research: each context switch costs 23 minutes of refocusing time (Gloria Mark, UC Irvine). A 500-channel workspace with 30 daily checks = 690 minutes of potential refocusing overhead per day. Slack's business model benefits from maximizing messages (engagement metric for enterprise sales)."
+    },
+    {
+      "title": "Notification Urgency Architecture",
+      "framework": "Hook Model",
+      "description": "Slack's notification system creates a variable reward schedule: most messages are low-priority, but occasionally a message from your boss or a critical @channel appears. You can't distinguish importance without checking — creating the same 'maybe this time' loop as a slot machine. The red badge counter on the app icon serves as an external trigger that accumulates anxiety until cleared. Slack defaults to notifying on all channel activity, not just @mentions.",
+      "evidence": "Nir Eyal (Hook Model author) has specifically cited Slack as an example of a product where the Hook Model creates compulsive checking rather than intentional usage. RescueTime 2024: Slack users average 77 app-switches per day, making it the #1 source of digital interruptions in the workplace."
+    },
+    {
+      "title": "Emoji Reactions as Micro-Engagement Loop",
+      "framework": "Self-Determination Theory",
+      "description": "Slack's emoji reaction system satisfies SDT's relatedness need with minimal effort — a single click communicates acknowledgment, agreement, humor, or approval. Custom emoji (company-specific) create in-group identity markers. The reaction count visible on messages provides social proof and creates a micro-competition for engagement. Threading plus reactions means every message potentially becomes a micro-social-media post within the workplace.",
+      "evidence": "Slack reports 26M+ custom emoji created across workspaces (Slack 2024). The 'reaction as acknowledgment' pattern reduces explicit reply overhead but creates new social norms — not reacting to a message can be interpreted as disagreement or disengagement, adding another layer of social monitoring."
+    }
+  ],
+  "strengths": [
+    "Channel organization genuinely useful",
+    "Emoji reactions reduce reply overhead",
+    "Integration ecosystem (2,400+ apps) centralizes tools"
+  ],
+  "weaknesses": [
+    "Green dot creates panopticon surveillance anxiety",
+    "Default notifications optimize for interruption",
+    "Channel proliferation undermines deep work"
+  ],
+  "behavioral_hooks": [
+    "green dot (panopticon presence)",
+    "channel proliferation (attention fragmentation)",
+    "notification urgency (variable reward)",
+    "emoji reactions (micro-engagement)"
+  ],
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "links": {
+    "teardown_page": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/slack/",
+    "products_list": "/api/v1/products.json",
+    "comparisons": {
+      "figma": "/api/v1/compare/figma-vs-slack.json",
+      "shopify": "/api/v1/compare/shopify-vs-slack.json",
+      "airbnb": "/api/v1/compare/airbnb-vs-slack.json",
+      "calm": "/api/v1/compare/calm-vs-slack.json",
+      "duolingo": "/api/v1/compare/duolingo-vs-slack.json",
+      "pinterest": "/api/v1/compare/pinterest-vs-slack.json",
+      "strava": "/api/v1/compare/slack-vs-strava.json",
+      "bumble": "/api/v1/compare/bumble-vs-slack.json",
+      "notion": "/api/v1/compare/notion-vs-slack.json",
+      "spotify": "/api/v1/compare/slack-vs-spotify.json",
+      "whatsapp": "/api/v1/compare/slack-vs-whatsapp.json",
+      "peloton": "/api/v1/compare/peloton-vs-slack.json",
+      "discord": "/api/v1/compare/discord-vs-slack.json",
+      "tinder": "/api/v1/compare/slack-vs-tinder.json",
+      "venmo": "/api/v1/compare/slack-vs-venmo.json",
+      "doordash": "/api/v1/compare/doordash-vs-slack.json",
+      "snapchat": "/api/v1/compare/slack-vs-snapchat.json",
+      "uber": "/api/v1/compare/slack-vs-uber.json",
+      "amazon": "/api/v1/compare/amazon-vs-slack.json",
+      "candy-crush": "/api/v1/compare/candy-crush-vs-slack.json",
+      "chatgpt": "/api/v1/compare/chatgpt-vs-slack.json",
+      "coinbase": "/api/v1/compare/coinbase-vs-slack.json",
+      "tiktok": "/api/v1/compare/slack-vs-tiktok.json",
+      "youtube": "/api/v1/compare/slack-vs-youtube.json",
+      "booking-com": "/api/v1/compare/booking-com-vs-slack.json",
+      "linkedin": "/api/v1/compare/linkedin-vs-slack.json",
+      "netflix": "/api/v1/compare/netflix-vs-slack.json",
+      "robinhood": "/api/v1/compare/robinhood-vs-slack.json",
+      "instagram": "/api/v1/compare/instagram-vs-slack.json"
+    },
+    "category": "/api/v1/categories/productivity.json"
+  },
+  "rank": 25,
+  "rank_of": 30
+}

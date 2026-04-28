@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Behavioral Design API &mdash; Free JSON Data for 30 Products</title>
+<meta name="description" content="Free, open JSON API with behavioral design scores for 30 digital products. 490 endpoints. No auth required. CORS enabled.">
+<meta property="og:title" content="Behavioral Design API &mdash; Free JSON Data">
+<meta property="og:description" content="Research-backed behavioral science scores as structured JSON. 30 products, 435 comparisons, 22 categories. Free, no auth.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zicozhou10.github.io/behavioral-design-hub/api/">
+<link rel="canonical" href="https://zicozhou10.github.io/behavioral-design-hub/api/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  "name": "Behavioral Design Hub API",
+  "description": "Free JSON API providing behavioral design scores for 30 digital products across 5 research-backed dimensions.",
+  "url": "https://zicozhou10.github.io/behavioral-design-hub/api/",
+  "documentation": "https://zicozhou10.github.io/behavioral-design-hub/api/",
+  "provider": {
+    "@type": "Organization",
+    "name": "Behavioral Design Hub",
+    "url": "https://zicozhou10.github.io/behavioral-design-hub/"
+  },
+  "termsOfService": "Free for non-commercial use with attribution",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a0f;--surface:#12121a;--card:#1a1a28;--border:#2a2a3a;--text:#e8e8f0;--muted:#8888a0;--accent:#6c5ce7;--accent-l:#a29bfe;--green:#00b894;--yellow:#fdcb6e;--red:#e17055;--code-bg:#1e1e2e}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.ct{max-width:800px;margin:0 auto;padding:32px 20px}
+.nv{display:flex;justify-content:space-between;align-items:center;margin-bottom:40px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.nv a{color:var(--accent-l);text-decoration:none;font-size:.88rem;font-weight:500}
+.nb{font-weight:700;font-size:.95rem}
+h1{font-size:clamp(1.4rem,3.5vw,2rem);font-weight:800;margin-bottom:8px}
+h2{font-size:1.2rem;font-weight:700;margin:32px 0 12px;color:var(--accent-l)}
+h3{font-size:1rem;font-weight:600;margin:20px 0 8px}
+p{margin-bottom:12px;color:var(--muted)}
+.badge{display:inline-block;padding:4px 12px;border-radius:20px;font-size:.78rem;font-weight:600;margin:4px}
+.badge-green{background:rgba(0,184,148,0.15);color:var(--green)}
+.badge-blue{background:rgba(108,92,231,0.15);color:var(--accent-l)}
+code{background:var(--code-bg);padding:2px 6px;border-radius:4px;font-size:.88rem;font-family:"SF Mono",Monaco,Consolas,monospace}
+pre{background:var(--code-bg);border:1px solid var(--border);border-radius:8px;padding:16px;overflow-x:auto;margin:12px 0;font-size:.85rem;line-height:1.5}
+pre code{background:none;padding:0}
+.endpoint{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px;margin:12px 0}
+.endpoint-method{display:inline-block;padding:2px 8px;border-radius:4px;font-size:.75rem;font-weight:700;background:var(--green);color:#000;margin-right:8px}
+.endpoint-path{font-family:monospace;font-weight:600;font-size:.92rem}
+.endpoint-desc{color:var(--muted);font-size:.85rem;margin-top:6px}
+.stats{display:flex;gap:24px;margin:20px 0;flex-wrap:wrap}
+.stat{text-align:center;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px 24px}
+.stat-val{font-size:1.8rem;font-weight:800;color:var(--accent-l)}
+.stat-label{font-size:.75rem;color:var(--muted);text-transform:uppercase}
+.try-it{margin:8px 0}
+.try-it a{color:var(--accent-l);text-decoration:none;font-size:.85rem}
+.try-it a:hover{text-decoration:underline}
+.ft{text-align:center;padding:24px 0;border-top:1px solid var(--border);margin-top:40px;font-size:.78rem;color:var(--muted)}
+.ft a{color:var(--accent-l);text-decoration:none}
+</style>
+    <!-- aeo-injected -->
+    <meta name="ai-citation-author" content="Zico (Behavioral Design Hub)">
+    <meta name="ai-citation-published" content="2026-04-28T03:55:23Z">
+    <meta name="ai-citation-methodology" content="/methodology/">
+    <meta name="ai-citation-license" content="CC-BY-4.0">
+    <meta name="ai-citation-evidence-count" content="4">
+    <meta name="ai-citation-type" content="api-endpoint-documentation">
+  </head>
+<body>
+<div class="ct">
+
+<nav class="nv">
+  <a href="https://zicozhou10.github.io/behavioral-design-hub/" class="nb">Behavioral Design Hub</a>
+  <div>
+    <a href="https://zicozhou10.github.io/behavioral-design-hub/leaderboard/">Leaderboard</a> &middot;
+    <a href="https://zicozhou10.github.io/behavioral-design-hub/categories/">Categories</a> &middot;
+    <a href="https://zicozhou10.github.io/behavioral-design-hub/tools/behavioral-design-score/">Score Yours</a>
+  </div>
+</nav>
+
+<h1>Behavioral Design API</h1>
+<p style="color:var(--text);font-size:1.05rem">Free, structured JSON data for behavioral design research. No authentication. CORS enabled.</p>
+
+<div style="margin:12px 0">
+  <span class="badge badge-green">Free</span>
+  <span class="badge badge-green">No Auth</span>
+  <span class="badge badge-blue">CORS Enabled</span>
+  <span class="badge badge-blue">Static JSON</span>
+  <span class="badge badge-blue">490 Endpoints</span>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-val">30</div><div class="stat-label">Products</div></div>
+  <div class="stat"><div class="stat-val">435</div><div class="stat-label">Comparisons</div></div>
+  <div class="stat"><div class="stat-val">22</div><div class="stat-label">Categories</div></div>
+  <div class="stat"><div class="stat-val">5</div><div class="stat-label">Dimensions</div></div>
+</div>
+
+<h2>Quick Start</h2>
+<pre><code>// Fetch all products
+fetch('https://zicozhou10.github.io/behavioral-design-hub/api/v1/products.json')
+  .then(r =&gt; r.json())
+  .then(data =&gt; console.log(data.products));
+
+// Fetch a single product
+fetch('https://zicozhou10.github.io/behavioral-design-hub/api/v1/products/figma.json')
+  .then(r =&gt; r.json())
+  .then(product =&gt; console.log(product.scores));
+
+// Compare two products
+fetch('https://zicozhou10.github.io/behavioral-design-hub/api/v1/compare/figma-vs-shopify.json')
+  .then(r =&gt; r.json())
+  .then(cmp =&gt; console.log(cmp.overall_winner));</code></pre>
+
+<h2>Endpoints</h2>
+
+<div class="endpoint">
+  <span class="endpoint-method">GET</span>
+  <span class="endpoint-path">/api/v1/index.json</span>
+  <div class="endpoint-desc">API discovery &mdash; lists all available endpoints, products, and scoring metadata.</div>
+  <div class="try-it"><a href="https://zicozhou10.github.io/behavioral-design-hub/api/v1/index.json">Try it &rarr;</a></div>
+</div>
+
+<div class="endpoint">
+  <span class="endpoint-method">GET</span>
+  <span class="endpoint-path">/api/v1/products.json</span>
+  <div class="endpoint-desc">All 30 products with scores, insights, and navigation links. Sorted by total score descending.</div>
+  <div class="try-it"><a href="https://zicozhou10.github.io/behavioral-design-hub/api/v1/products.json">Try it &rarr;</a></div>
+</div>
+
+<div class="endpoint">
+  <span class="endpoint-method">GET</span>
+  <span class="endpoint-path">/api/v1/products/{slug}.json</span>
+  <div class="endpoint-desc">Full detail for a single product: scores, techniques, frameworks, evidence, strengths, weaknesses, and all comparison links.</div>
+  <div class="try-it"><a href="https://zicozhou10.github.io/behavioral-design-hub/api/v1/products/figma.json">Example: figma &rarr;</a></div>
+</div>
+
+<div class="endpoint">
+  <span class="endpoint-method">GET</span>
+  <span class="endpoint-path">/api/v1/compare/{slug-a}-vs-{slug-b}.json</span>
+  <div class="endpoint-desc">Head-to-head comparison with per-dimension breakdown, winner analysis, and links to both product details.</div>
+  <div class="try-it"><a href="https://zicozhou10.github.io/behavioral-design-hub/api/v1/compare/figma-vs-shopify.json">Example: figma-vs-shopify &rarr;</a></div>
+</div>
+
+<div class="endpoint">
+  <span class="endpoint-method">GET</span>
+  <span class="endpoint-path">/api/v1/categories.json</span>
+  <div class="endpoint-desc">All 22 industry categories with average scores, leaders, and product lists.</div>
+  <div class="try-it"><a href="https://zicozhou10.github.io/behavioral-design-hub/api/v1/categories.json">Try it &rarr;</a></div>
+</div>
+
+<div class="endpoint">
+  <span class="endpoint-method">GET</span>
+  <span class="endpoint-path">/api/v1/categories/{category-slug}.json</span>
+  <div class="endpoint-desc">Single category detail with dimension averages and full product data for products in that category.</div>
+  <div class="try-it"><a href="https://zicozhou10.github.io/behavioral-design-hub/api/v1/categories/communication.json">Example &rarr;</a></div>
+</div>
+
+<h2>Scoring Dimensions</h2>
+<p>Each product is scored 0&ndash;10 on five research-backed behavioral science dimensions:</p>
+<pre><code>{
+  "choice_architecture": 9,    // How well defaults and option framing guide decisions
+  "cognitive_load": 7,         // How effectively complexity is managed
+  "motivation_design": 8,      // How intrinsic/extrinsic motivation is leveraged
+  "trust_transparency": 7,     // How trust is built and maintained
+  "ethical_alignment": 7       // How ethical the behavioral techniques are
+}
+// Total = sum of 5 dimensions (max 50)
+// Percentage = total / 50 * 100</code></pre>
+
+<h2>Data License</h2>
+<p>This data is free for non-commercial use with attribution. Please link back to <a href="https://zicozhou10.github.io/behavioral-design-hub/" style="color:var(--accent-l)">https://zicozhou10.github.io/behavioral-design-hub</a>.</p>
+<p>For commercial use, contact us via the hub.</p>
+
+<footer class="ft">
+  <p>&copy; 2026 <a href="https://zicozhou10.github.io/behavioral-design-hub/">Behavioral Design Hub</a>. Research-backed behavioral science tools for product teams.</p>
+  <p style="margin-top:8px">API generated by generate_api.py &mdash; 2026-04-28</p>
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+{
+  "api_version": "v1",
+  "updated": "2026-04-28",
+  "comparison": "Booking.com vs Tinder",
+  "products": {
+    "booking-com": {
+      "name": "Booking.com",
+      "emoji": "🏨",
+      "category": "Travel",
+      "scores": {
+        "choice_architecture": 8,
+        "cognitive_load": 6,
+        "motivation_design": 9,
+        "trust_transparency": 4,
+        "ethical_alignment": 3
+      },
+      "total": 30,
+      "pct": 60,
+      "key_insight": "Booking.com is arguably the most aggressive deployer of behavioral design patterns in consumer tech — and uniquely, they've been transparent about it. The platform runs over 1,000 A/B tests simultaneously, and the result is a UI so dense with urgency signals that it has become a case study in regulatory behavioral design complaints. 'Only 2 rooms left!' '14 people looking right now!' 'Booked 3 times in the last 24 hours!' — each message exploits a different psychological lever (scarcity, social proof, loss aversion). The EU fined Booking.com in 2020 for misleading urgency claims, yet the patterns persist because they work. The ethical tension is stark: Booking.com's design genuinely helps users make faster decisions in a complex market (hotels have variable pricing, real scarcity), but the same urgency cues are applied indiscriminately — to fully available hotels and nearly-sold-out ones alike. When scarcity signals are always on, they become manipulation rather than information. Booking.com represents what happens when conversion optimization is pursued without ethical guardrails.",
+      "top_technique": "Manufactured Urgency Through Scarcity Signals"
+    },
+    "tinder": {
+      "name": "Tinder",
+      "emoji": "🔥",
+      "category": "Dating",
+      "scores": {
+        "choice_architecture": 9,
+        "cognitive_load": 8,
+        "motivation_design": 9,
+        "trust_transparency": 4,
+        "ethical_alignment": 4
+      },
+      "total": 34,
+      "pct": 68,
+      "key_insight": "Tinder solved the paradox of choice in dating by reducing a multi-dimensional human evaluation to a binary swipe. This is brilliant choice architecture — and also the product's deepest ethical tension. The swipe creates a variable ratio reward schedule identical to slot machines: most swipes yield nothing, but the occasional match triggers a dopamine spike that reinforces the swiping behavior. Tinder's business model depends on users NOT finding matches efficiently (premium features gate the very discovery the app promises), creating a fundamental misalignment between user goals (find a partner) and business goals (maximize engagement time). The result: an app that is behaviorally addictive by design, yet genuinely useful as a discovery mechanism that didn't exist before.",
+      "top_technique": "Swipe as Binary Choice Architecture"
+    }
+  },
+  "overall_winner": "tinder",
+  "overall_difference": 4,
+  "dimension_wins": {
+    "booking-com": 0,
+    "tinder": 3,
+    "ties": 2
+  },
+  "dimensions": [
+    {
+      "dimension": "choice_architecture",
+      "label": "Choice Architecture",
+      "booking-com": 8,
+      "tinder": 9,
+      "difference": -1,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "cognitive_load",
+      "label": "Cognitive Load Management",
+      "booking-com": 6,
+      "tinder": 8,
+      "difference": -2,
+      "winner": "tinder"
+    },
+    {
+      "dimension": "motivation_design",
+      "label": "Motivation Design",
+      "booking-com": 9,
+      "tinder": 9,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "trust_transparency",
+      "label": "Trust & Transparency",
+      "booking-com": 4,
+      "tinder": 4,
+      "difference": 0,
+      "winner": "tie"
+    },
+    {
+      "dimension": "ethical_alignment",
+      "label": "Ethical Alignment",
+      "booking-com": 3,
+      "tinder": 4,
+      "difference": -1,
+      "winner": "tinder"
+    }
+  ],
+  "links": {
+    "comparison_page": "https://zicozhou10.github.io/behavioral-design-hub/compare/booking-com-vs-tinder/",
+    "product_a_detail": "/api/v1/products/booking-com.json",
+    "product_b_detail": "/api/v1/products/tinder.json",
+    "product_a_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/booking-com/",
+    "product_b_teardown": "https://zicozhou10.github.io/behavioral-design-hub/teardowns/tinder/"
+  }
+}
